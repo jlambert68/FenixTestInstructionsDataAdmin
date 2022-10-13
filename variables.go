@@ -48,12 +48,44 @@ const (
 	TestInstructionTypeName_CA_CustodyAccount TestInstructionTypeUUIDType = "Custody Account"
 
 	// *************************************
-	// *** TestInstruction ***
+	// *** TestInstruction *** - *** TestInstruction ***
 	TestInstructionUUID_CA_CleanupClass OriginalElementUUIDType = "5501bf8a-0512-476e-a8bd-75d0be3e2bad"
 	TestInstructionName_CA_CleanupClass TestInstructionNameType = "CleanupClass"
 
+	// *** DropZone ***
+	TestInstructionDropZoneUUID_CA_CleanupClass_DeleteLocalMarketAndConfirm                 DropZoneUUIDType = "0692a87b-e111-4d6c-9ec3-57f7891ee957"
+	TestInstructionDropZoneName_CA_CleanupClass_DeleteLocalMarketAndConfirmDropZoneUUIDType DropZoneNameType = "DeleteLocalMarketAndConfirm"
+
+	// Attribute
+	TestInstructionAttributeUUID_CA_CleanupClass_CustodyAccountId AttributeValueUUIDType           = "831b9553-f05e-4912-a832-69f785da9256"
+	TestInstructionAttributeNAme_CA_CleanupClass_CustodyAccountId TestInstructionAttributeNameType = "CustodyAccountId"
+
+	TestInstructionAttributeUUID_CA_CleanupClass_MarketName AttributeValueUUIDType           = "0918d9c1-da59-4d62-99ee-0e38cd2a078f"
+	TestInstructionAttributeNAme_CA_CleanupClass_MarketName TestInstructionAttributeNameType = "MarketName"
+
+	// *** TestInstruction *** - *** TestInstruction ***
 	TestInstructionUUID_CA_AddOrDeleteSelectedSwift OriginalElementUUIDType = "ceb23b06-c1b3-4981-9806-0a53bbe42a67"
 	TestInstructionName_CA_AddOrDeleteSelectedSwift TestInstructionNameType = "Add or Delete Selected Swift"
+
+	// *** DropZone ***
+	TestInstructionDropZoneUUID_CA_AddOrDeleteSelectedSwift_Add DropZoneUUIDType = "60c864ef-8c12-4028-9f58-f372416dbb87"
+	TestInstructionDropZoneName_CA_AddOrDeleteSelectedSwift_Add DropZoneNameType = "Add"
+
+	TestInstructionDropZoneUUID_CA_AddOrDeleteSelectedSwift_Delete DropZoneUUIDType = "d204851f-2d4c-4cfa-bee9-a48ac806ada1"
+	TestInstructionDropZoneName_CA_AddOrDeleteSelectedSwift_Delete DropZoneNameType = "Delete"
+
+	// Attribute
+	TestInstructionAttributeUUID_CA_AddOrDeleteSelectedSwift_TestDataInterval AttributeValueUUIDType           = "d45806fa-37d8-4720-9f39-2e78edfcfc26"
+	TestInstructionAttributeNAme_CA_AddOrDeleteSelectedSwift_TestDataInterval TestInstructionAttributeNameType = "TestDataInterval"
+
+	TestInstructionAttributeUUID_CA_AddOrDeleteSelectedSwift_TestDataType AttributeValueUUIDType           = "e3b8dcab-76a7-4059-a732-94b9aafe7650"
+	TestInstructionAttributeNAme_CA_AddOrDeleteSelectedSwift_TestDataType TestInstructionAttributeNameType = "TestDataType"
+
+	TestInstructionAttributeUUID_CA_AddOrDeleteSelectedSwift_TestDataBIC AttributeValueUUIDType           = "fbd294a9-b6e2-43a9-86ae-a49c54d71021"
+	TestInstructionAttributeNAme_CA_AddOrDeleteSelectedSwift_TestDataBIC TestInstructionAttributeNameType = "TestDataBIC"
+
+	TestInstructionAttributeUUID_CA_AddOrDeleteSelectedSwift_TestDataChannel AttributeValueUUIDType           = "4b728987-f371-4e4a-b9c6-8e4df1125312"
+	TestInstructionAttributeNAme_CA_AddOrDeleteSelectedSwift_TestDataChannel TestInstructionAttributeNameType = "TestDataChannel"
 )
 
 // *** TestInstructionContainers - Custody Arrangement ***
@@ -82,6 +114,11 @@ const (
 	TestInstructionContainerUUID_Fenix_EmptySerialContainer OriginalElementUUIDType          = "f81b9734-5dce-43c9-8d77-3368940cf126"
 	TestInstructionContainerName_Fenix_EmptySerialContainer TestInstructionContainerNameType = "Emtpy serial processed TestInstructionsContainer"
 
+	// *** DropZone ***
+	TestInstructionContainerDropZoneUUID_Fenix_EmptySerialContainer DropZoneUUIDType = "c5e37024-e40c-49f7-8667-eab485c65105"
+	TestInstructionContainerDropZoneName_Fenix_EmptySerialContainer DropZoneUUIDType = "My first DropZone for a TestInstructionContainer"
+
+	// *** TestInstructionContainer ***
 	TestInstructionContainerUUID_Fenix_EmptyParallellContainer OriginalElementUUIDType          = "aa1b9734-5dce-43c9-8d77-3368940cf126"
 	TestInstructionContainerName_Fenix_EmptyParallelContainer  TestInstructionContainerNameType = "Emtpy parallelled processed TestInstructionsContainer"
 )
