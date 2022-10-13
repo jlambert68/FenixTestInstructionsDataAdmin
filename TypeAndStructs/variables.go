@@ -8,7 +8,7 @@ type TestInstructionNameType string
 type TestInstructionTypeUUIDType string
 type TestInstructionTypeNameType string
 type UpdatedTimeStampType string
-type colorType string
+type ColorType string
 type TCRuleDeletionType string
 type TCRuleSwapType string
 type DropZoneUUIDType string
@@ -30,7 +30,8 @@ type TestInstructionContainerExecutionTypeType string //'SERIAL_PROCESSED', 'PAR
 
 type TestCaseModelElementTypeType string
 
-type TestInstructions []struct {
+type TestInstructions []TestInstructionStruct
+type TestInstructionStruct struct {
 	DomainUUID                   DomainUUIDType              `json:"DomainUuid"`
 	DomainName                   DomainNameType              `json:"DomainName"`
 	TestInstructionUUID          OriginalElementUUIDType     `json:"TestInstructionUuid"`
@@ -46,7 +47,8 @@ type TestInstructions []struct {
 	UpdatedTimeStamp             UpdatedTimeStampType        `json:"UpdatedTimeStamp"`
 }
 
-type BasicTestInstructionInformation []struct {
+type BasicTestInstructionsInformation []BasicTestInstructionInformationStruct
+type BasicTestInstructionInformationStruct struct {
 	DomainUUID                   DomainUUIDType              `json:"DomainUuid"`
 	DomainName                   DomainNameType              `json:"DomainName"`
 	TestInstructionUUID          OriginalElementUUIDType     `json:"TestInstructionUuid"`
@@ -57,7 +59,7 @@ type BasicTestInstructionInformation []struct {
 	MajorVersionNumber           int                         `json:"MajorVersionNumber"`
 	MinorVersionNumber           int                         `json:"MinorVersionNumber"`
 	UpdatedTimeStamp             UpdatedTimeStampType        `json:"UpdatedTimeStamp"`
-	TestInstructionColor         colorType                   `json:"TestInstructionColor"`
+	TestInstructionColor         ColorType                   `json:"TestInstructionColor"`
 	TCRuleDeletion               TCRuleDeletionType          `json:"TCRuleDeletion"`
 	TCRuleSwap                   TCRuleSwapType              `json:"TCRuleSwap"`
 	TestInstructionDescription   string                      `json:"TestInstructionDescription"`
@@ -65,7 +67,8 @@ type BasicTestInstructionInformation []struct {
 	Enabled                      bool                        `json:"Enabled"`
 }
 
-type ImmatureTestInstructionInformation []struct {
+type ImmatureTestInstructionsInformation []ImmatureTestInstructionInformationStruct
+type ImmatureTestInstructionInformationStruct struct {
 	DomainUUID                   DomainUUIDType                   `json:"DomainUuid"`
 	DomainName                   DomainNameType                   `json:"DomainName"`
 	TestInstructionUUID          OriginalElementUUIDType          `json:"TestInstructionUuid"`
@@ -74,7 +77,7 @@ type ImmatureTestInstructionInformation []struct {
 	DropZoneName                 DropZoneNameType                 `json:"DropZoneName"`
 	DropZoneDescription          string                           `json:"DropZoneDescription"`
 	DropZoneMouseOver            string                           `json:"DropZoneMouseOver"`
-	DropZoneColor                colorType                        `json:"DropZoneColor"`
+	DropZoneColor                ColorType                        `json:"DropZoneColor"`
 	TestInstructionAttributeType TestInstructionAttributeTypeType `json:"TestInstructionAttributeType"` //TEXTBOX...
 	TestInstructionAttributeUUID TestInstructionAttributeUUIDType `json:"TestInstructionAttributeUuid"`
 	TestInstructionAttributeName TestInstructionAttributeNameType `json:"TestInstructionAttributeName"`
@@ -84,7 +87,8 @@ type ImmatureTestInstructionInformation []struct {
 	AttributeActionCommand       AttributeActionCommandType       `json:"AttributeActionCommand"`
 }
 
-type TestInstructionAttributes []struct {
+type TestInstructionAttributes []TestInstructionAttributeStruct
+type TestInstructionAttributeStruct struct {
 	DomainUUID                                    DomainUUIDType                        `json:"DomainUuid"`
 	DomainName                                    DomainNameType                        `json:"DomainName"`
 	TestInstructionUUID                           OriginalElementUUIDType               `json:"TestInstructionUuid"`
@@ -106,7 +110,8 @@ type TestInstructionAttributes []struct {
 	TestInstructionAttributeType                  TestInstructionAttributeTypeType      `json:"TestInstructionAttributeType"` // TEXTBOX...
 }
 
-type TestInstructionContainers []struct {
+type TestInstructionContainers []TestInstructionContainerStruct
+type TestInstructionContainerStruct struct {
 	DomainUUID                            DomainUUIDType                       `json:"DomainUuid"`
 	DomainName                            DomainNameType                       `json:"DomainName"`
 	TestInstructionContainerUUID          OriginalElementUUIDType              `json:"TestInstructionContainerUuid"`
@@ -123,7 +128,8 @@ type TestInstructionContainers []struct {
 	ChildrenIsParallelProcessed           bool                                 `json:"ChildrenIsParallelProcessed"`
 }
 
-type BasicTestInstructionContainerInformation []struct {
+type BasicTestInstructionContainersInformation []BasicTestInstructionContainerInformationStruct
+type BasicTestInstructionContainerInformationStruct struct {
 	DomainUUID                            DomainUUIDType                            `json:"DomainUuid"`
 	DomainName                            DomainNameType                            `json:"DomainName"`
 	TestInstructionContainerUUID          OriginalElementUUIDType                   `json:"TestInstructionContainerUuid"`
@@ -134,7 +140,7 @@ type BasicTestInstructionContainerInformation []struct {
 	MajorVersionNumber                    int                                       `json:"MajorVersionNumber"`
 	MinorVersionNumber                    int                                       `json:"MinorVersionNumber"`
 	UpdatedTimeStamp                      UpdatedTimeStampType                      `json:"UpdatedTimeStamp"`
-	TestInstructionContainerColor         colorType                                 `json:"TestInstructionContainerColor"`
+	TestInstructionContainerColor         ColorType                                 `json:"TestInstructionContainerColor"`
 	TCRuleDeletion                        TCRuleDeletionType                        `json:"TCRuleDeletion"`
 	TCRuleSwap                            TCRuleSwapType                            `json:"TCRuleSwap"`
 	TestInstructionContainerDescription   string                                    `json:"TestInstructionContainerDescription"`
@@ -143,7 +149,8 @@ type BasicTestInstructionContainerInformation []struct {
 	TestInstructionContainerExecutionType TestInstructionContainerExecutionTypeType `json:"TestInstructionContainerExecutionType"`
 }
 
-type ImmatureTestInstructionContainerMessage []struct {
+type ImmatureTestInstructionContainersMessage []ImmatureTestInstructionContainerMessageStruct
+type ImmatureTestInstructionContainerMessageStruct struct {
 	DomainUUID                   DomainUUIDType                   `json:"DomainUuid"`
 	DomainName                   DomainNameType                   `json:"DomainName"`
 	TestInstructionContainerUUID OriginalElementUUIDType          `json:"TestInstructionContainerUuid"`
@@ -152,7 +159,7 @@ type ImmatureTestInstructionContainerMessage []struct {
 	DropZoneName                 DropZoneNameType                 `json:"DropZoneName"`
 	DropZoneDescription          string                           `json:"DropZoneDescription"`
 	DropZoneMouseOver            string                           `json:"DropZoneMouseOver"`
-	DropZoneColor                colorType                        `json:"DropZoneColor"`
+	DropZoneColor                ColorType                        `json:"DropZoneColor"`
 	TestInstructionAttributeType TestInstructionAttributeTypeType `json:"TestInstructionAttributeType"` //TEXTBOX
 	TestInstructionAttributeUUID TestInstructionAttributeUUIDType `json:"TestInstructionAttributeUuid"`
 	TestInstructionAttributeName TestInstructionAttributeNameType `json:"TestInstructionAttributeName"`
@@ -161,7 +168,8 @@ type ImmatureTestInstructionContainerMessage []struct {
 	FirstImmatureElementUUID     OriginalElementUUIDType          `json:"FirstImmatureElementUuid"`
 }
 
-type ImmatureElementModelMessage []struct {
+type ImmatureElementModelsMessage []ImmatureElementModelMessageStruct
+type ImmatureElementModelMessageStruct struct {
 	DomainUUID               DomainUUIDType               `json:"DomainUuid"`
 	DomainName               DomainNameType               `json:"DomainName"`
 	ImmatureElementUUID      OriginalElementUUIDType      `json:"ImmatureElementUuid"`
