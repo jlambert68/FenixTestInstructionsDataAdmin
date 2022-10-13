@@ -16,6 +16,9 @@ const (
 	// *** DropZone ***
 	TestInstructionDropZoneUUID_CA_CleanupClass_DeleteLocalMarketAndConfirm                 TypeAndStructs.DropZoneUUIDType = "0692a87b-e111-4d6c-9ec3-57f7891ee957"
 	TestInstructionDropZoneName_CA_CleanupClass_DeleteLocalMarketAndConfirmDropZoneUUIDType TypeAndStructs.DropZoneNameType = "DeleteLocalMarketAndConfirm"
+	TestInstructionDropZoneDescription                                                      string                          = "Delete local market and confirm"
+	TestInstructionDropZoneMouseOver                                                        string                          = "Delete local market and confirm"
+	TestInstructionDropZoneColor                                                            string                          = "#00000000"
 
 	// Attribute
 	TestInstructionAttributeUUID_CA_CleanupClass_CustodyAccountId TypeAndStructs.AttributeValueUUIDType           = "831b9553-f05e-4912-a832-69f785da9256"
@@ -38,8 +41,10 @@ const (
 )
 
 type TestInstruction_CA_CleanupClassStruct struct {
-	TestInstruction                 TypeAndStructs.TestInstructionStruct
-	BasicTestInstructionInformation TypeAndStructs.BasicTestInstructionInformationStruct
+	TestInstruction                    TypeAndStructs.TestInstructionStruct
+	BasicTestInstructionInformation    TypeAndStructs.BasicTestInstructionInformationStruct
+	ImmatureTestInstructionInformation TypeAndStructs.ImmatureTestInstructionInformationStruct
+	TestInstructionAttribute           TypeAndStructs.TestInstructionAttributeStruct
 }
 
 var TestInstruction_CA_CleanupClass TestInstruction_CA_CleanupClassStruct
@@ -81,6 +86,47 @@ func Initate_TestInstruction_CA_CleanupClass() {
 		TestInstructionDescription:   TestInstructionDescription,
 		TestInstructionMouseOverText: TestInstructionMouseOverText,
 		Enabled:                      TestInstructionEnabled,
+	}
+
+	TestInstruction_CA_CleanupClass.ImmatureTestInstructionInformation = TypeAndStructs.ImmatureTestInstructionInformationStruct{
+		DomainUUID:                   Domains.DomainUUID_CA,
+		DomainName:                   Domains.DomainName_CA,
+		TestInstructionUUID:          TestInstructionUUID_CA_CleanupClass,
+		TestInstructionName:          TestInstructionName_CA_CleanupClass,
+		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_CleanupClass_DeleteLocalMarketAndConfirm,
+		DropZoneName:                 TestInstructionDropZoneName_CA_CleanupClass_DeleteLocalMarketAndConfirmDropZoneUUIDType,
+		DropZoneDescription:          TestInstructionDropZoneDescription,
+		DropZoneMouseOver:            TestInstructionDropZoneMouseOver,
+		DropZoneColor:                TestInstructionColor,
+		TestInstructionAttributeType: "",
+		TestInstructionAttributeUUID: "",
+		TestInstructionAttributeName: "",
+		AttributeValueAsString:       "",
+		AttributeValueUUID:           "",
+		FirstImmatureElementUUID:     "",
+		AttributeActionCommand:       0,
+	}
+
+	TestInstruction_CA_CleanupClass.TestInstructionAttribute = TypeAndStructs.TestInstructionAttributeStruct{
+		DomainUUID:                                    Domains.DomainUUID_CA,
+		DomainName:                                    Domains.DomainName_CA,
+		TestInstructionUUID:                           TestInstructionUUID_CA_CleanupClass,
+		TestInstructionName:                           TestInstructionName_CA_CleanupClass,
+		TestInstructionAttributeUUID:                  "",
+		TestInstructionAttributeName:                  "",
+		TestInstructionAttributeDescription:           "",
+		TestInstructionAttributeMouseOver:             "",
+		TestInstructionAttributeTypeUUID:              "",
+		TestInstructionAttributeTypeName:              "",
+		TestInstructionAttributeValueAsString:         "",
+		TestInstructionAttributeValueUUID:             "",
+		TestInstructionAttributeVisible:               false,
+		TestInstructionAttributeEnabled:               false,
+		TestInstructionAttributeMandatory:             false,
+		TestInstructionAttributeVisibleInTestCaseArea: false,
+		TestInstructionAttributeIsDeprecated:          false,
+		TestInstructionAttributeInputMask:             "",
+		TestInstructionAttributeType:                  "",
 	}
 
 }
