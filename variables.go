@@ -4,8 +4,6 @@ type DomainUUIDType string
 type DomainNameType string
 type OriginalElementUUIDType string
 type OriginalElementNameType string
-type TemporaryElementUUIDType string
-type TestInstructionUUIDType string
 type TestInstructionNameType string
 type TestInstructionTypeUUIDType string
 type TestInstructionTypeNameType string
@@ -25,7 +23,6 @@ type TestInstructionAttributeInputMaskType string
 type TestInstructionAttributeTypeUUIDType string
 type TestInstructionAttributeTypeNameType string
 
-type TestInstructionContainerUUIDType string
 type TestInstructionContainerNameType string
 type TestInstructionContainerTypeUUIDType string
 type TestInstructionContainerTypeNameType string
@@ -33,15 +30,60 @@ type TestInstructionContainerExecutionTypeType string //'SERIAL_PROCESSED', 'PAR
 
 type TestCaseModelElementTypeType string
 
+// ** Domains ***
 const (
-	DomainUUID_CA                                               DomainUUIDType              = "78a97c41-a098-4122-88d2-01ed4b6c4844"
-	DomainName_CA                                               DomainNameType              = "Custody Arrangement"
-	TestInstructionUUID_CA_CleanupClass                         OriginalElementUUIDType     = "5501bf8a-0512-476e-a8bd-75d0be3e2bad"
-	TestInstructionName_CA_CleanupClass                         TestInstructionNameType     = "CleanupClass"
+	DomainUUID_CA DomainUUIDType = "78a97c41-a098-4122-88d2-01ed4b6c4844"
+	DomainName_CA DomainNameType = "Custody Arrangement"
+)
+
+// *** TestInstructions - Custody Arrangement ***
+const (
+
+	// *************************************
+	// *** TestInstructionType ***
 	TestInstructionTypeUUID_CA_FundExecutionAgreementManagement TestInstructionTypeUUIDType = "ceca6136-66df-4dcc-930f-44d729142334"
 	TestInstructionTypeName_CA_FundExecutionAgreementManagement TestInstructionTypeUUIDType = "Fund Execution Agreement management"
-	TestInstructionTypeUUID_CA_CustodyAccount                   TestInstructionTypeUUIDType = "5005928a-f253-4828-9c2f-023571760759"
-	TestInstructionTypeName_CA_CustodyAccount                   TestInstructionTypeUUIDType = "Custody Account"
+
+	TestInstructionTypeUUID_CA_CustodyAccount TestInstructionTypeUUIDType = "5005928a-f253-4828-9c2f-023571760759"
+	TestInstructionTypeName_CA_CustodyAccount TestInstructionTypeUUIDType = "Custody Account"
+
+	// *************************************
+	// *** TestInstruction ***
+	TestInstructionUUID_CA_CleanupClass OriginalElementUUIDType = "5501bf8a-0512-476e-a8bd-75d0be3e2bad"
+	TestInstructionName_CA_CleanupClass TestInstructionNameType = "CleanupClass"
+
+	TestInstructionUUID_CA_AddOrDeleteSelectedSwift OriginalElementUUIDType = "ceb23b06-c1b3-4981-9806-0a53bbe42a67"
+	TestInstructionName_CA_AddOrDeleteSelectedSwift TestInstructionNameType = "Add or Delete Selected Swift"
+)
+
+// *** TestInstructionContainers - Custody Arrangement ***
+const (
+
+	// *************************************
+	// *** TestInstructionContainerType ***
+	TestInstructionContainerTypeUUID_CA_BaseContainers     TestInstructionContainerTypeUUIDType = "aa1b9734-5dce-43c9-8d77-3368940cf126"
+	TestInstructionContainerTypeNameType_CA_BaseContainers TestInstructionContainerTypeNameType = "CA Base containers"
+
+	// *************************************
+	// *** TestInstructionContainer ***
+	TestInstructionContainerUUID_CA_EmptyParallellContainer OriginalElementUUIDType          = "aa1b9734-5dce-43c9-8d77-3368940cf126"
+	TestInstructionContainerName_CA_EmptyParallellContainer TestInstructionContainerNameType = "Empty parallelled processed Turbo TestInstructionsContainer"
+)
+
+// *** TestInstructionContainers - Fenix ***
+const (
+	// *************************************
+	// *** TestInstructionContainerType ***
+	TestInstructionContainerTypeUUID_Fenix_BaseContainers     TestInstructionContainerTypeUUIDType = "b107bdd9-4152-4020-b3f0-fc750b45885e"
+	TestInstructionContainerTypeNameType_Fenix_BaseContainers TestInstructionContainerTypeNameType = "Base containers"
+
+	// *************************************
+	// *** TestInstructionContainer ***
+	TestInstructionContainerUUID_Fenix_EmptySerialContainer OriginalElementUUIDType          = "f81b9734-5dce-43c9-8d77-3368940cf126"
+	TestInstructionContainerName_Fenix_EmptySerialContainer TestInstructionContainerNameType = "Emtpy serial processed TestInstructionsContainer"
+
+	TestInstructionContainerUUID_Fenix_EmptyParallellContainer OriginalElementUUIDType          = "aa1b9734-5dce-43c9-8d77-3368940cf126"
+	TestInstructionContainerName_Fenix_EmptyParallelContainer  TestInstructionContainerNameType = "Emtpy parallelled processed TestInstructionsContainer"
 )
 
 type TestInstructions []struct {
@@ -123,7 +165,7 @@ type TestInstructionAttributes []struct {
 type TestInstructionContainers []struct {
 	DomainUUID                            DomainUUIDType                       `json:"DomainUuid"`
 	DomainName                            DomainNameType                       `json:"DomainName"`
-	TestInstructionContainerUUID          TestInstructionContainerUUIDType     `json:"TestInstructionContainerUuid"`
+	TestInstructionContainerUUID          OriginalElementUUIDType              `json:"TestInstructionContainerUuid"`
 	TestInstructionContainerName          TestInstructionContainerNameType     `json:"TestInstructionContainerName"`
 	TestInstructionContainerTypeUUID      TestInstructionContainerTypeUUIDType `json:"TestInstructionContainerTypeUuid"`
 	TestInstructionContainerTypeName      TestInstructionContainerTypeNameType `json:"TestInstructionContainerTypeName"`
@@ -140,7 +182,7 @@ type TestInstructionContainers []struct {
 type BasicTestInstructionContainerInformation []struct {
 	DomainUUID                            DomainUUIDType                            `json:"DomainUuid"`
 	DomainName                            DomainNameType                            `json:"DomainName"`
-	TestInstructionContainerUUID          TestInstructionContainerUUIDType          `json:"TestInstructionContainerUuid"`
+	TestInstructionContainerUUID          OriginalElementUUIDType                   `json:"TestInstructionContainerUuid"`
 	TestInstructionContainerName          TestInstructionContainerNameType          `json:"TestInstructionContainerName"`
 	TestInstructionContainerTypeUUID      TestInstructionContainerTypeUUIDType      `json:"TestInstructionContainerTypeUuid"`
 	TestInstructionContainerTypeName      TestInstructionContainerTypeNameType      `json:"TestInstructionContainerTypeName"`
@@ -160,7 +202,7 @@ type BasicTestInstructionContainerInformation []struct {
 type ImmatureTestInstructionContainerMessage []struct {
 	DomainUUID                   DomainUUIDType                   `json:"DomainUuid"`
 	DomainName                   DomainNameType                   `json:"DomainName"`
-	TestInstructionContainerUUID TestInstructionContainerUUIDType `json:"TestInstructionContainerUuid"`
+	TestInstructionContainerUUID OriginalElementUUIDType          `json:"TestInstructionContainerUuid"`
 	TestInstructionContainerName TestInstructionContainerNameType `json:"TestInstructionContainerName"`
 	DropZoneUUID                 DropZoneUUIDType                 `json:"DropZoneUuid"`
 	DropZoneName                 DropZoneNameType                 `json:"DropZoneName"`
