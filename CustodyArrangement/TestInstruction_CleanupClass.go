@@ -10,8 +10,19 @@ const (
 
 	// *************************************
 	// *** TestInstruction *** CleanupClass
-	TestInstructionUUID_CA_CleanupClass TypeAndStructs.OriginalElementUUIDType = "5501bf8a-0512-476e-a8bd-75d0be3e2bad"
-	TestInstructionName_CA_CleanupClass TypeAndStructs.TestInstructionNameType = "CleanupClass"
+	TestInstructionUUID_CA_CleanupClass               TypeAndStructs.OriginalElementUUIDType = "5501bf8a-0512-476e-a8bd-75d0be3e2bad"
+	TestInstructionName_CA_CleanupClass               TypeAndStructs.TestInstructionNameType = "CleanupClass"
+	TestInstructionTypeUUID_CA_CleanupClass                                                  = TestInstructionTypeUUID_CA_CustodyAccount
+	TestInstructionTypeName_CA_CleanupClass                                                  = TestInstructionTypeName_CA_CustodyAccount
+	TestInstructionDescription_CA_CleanupClass        string                                 = "A TestInstruction that's cool"
+	TestInstructionMouseOverText_CA_CleanupClass      string                                 = "This will be shown when hovering above this TestInstruction"
+	TestInstructionDeprecated_CA_CleanupClass         bool                                   = false
+	TestInstructionEnabled_CA_CleanupClass            bool                                   = true
+	TestInstructionMajorVersionNumber_CA_CleanupClass int                                    = 1
+	TestInstructionMinorVersionNumber_CA_CleanupClass int                                    = 0
+	TestInstructionColor_CA_CleanupClass              TypeAndStructs.ColorType               = "#00ff00AA"
+	TCRuleDeletion_CA_CleanupClass                    TypeAndStructs.TCRuleDeletionType      = "TCRuleDeletion020"
+	TCRuleSwap_CA_CleanupClass                        TypeAndStructs.TCRuleSwapType          = "TCRuleSwap020"
 
 	// *** DropZone *** DeleteLocalMarketAndConfirm
 	TestInstructionDropZoneUUID_CA_CleanupClass_DeleteLocalMarketAndConfirm        TypeAndStructs.DropZoneUUIDType = "0692a87b-e111-4d6c-9ec3-57f7891ee957"
@@ -33,18 +44,8 @@ const (
 	TestInstructionAttributeActionCommand_CA_CleanupClass_MarketName                                                 = Domains.AttributeActionCommand_USE_DROPZONE_VALUE_FOR_ATTRIBUTE
 )
 
-const (
-	TestInstructionDescription_CA_CleanupClass        string                            = "A TestInstruction that's cool"
-	TestInstructionMouseOverText_CA_CleanupClass      string                            = "This will be shown when hovering above this TestInstruction"
-	TestInstructionDeprecated_CA_CleanupClass         bool                              = false
-	TestInstructionEnabled_CA_CleanupClass            bool                              = true
-	TestInstructionMajorVersionNumber_CA_CleanupClass int                               = 1
-	TestInstructionMinorVersionNumber_CA_CleanupClass int                               = 0
-	TestInstructionColor_CA_CleanupClass              TypeAndStructs.ColorType          = "#00ff00AA"
-	TCRuleDeletion_CA_CleanupClass                    TypeAndStructs.TCRuleDeletionType = "TCRuleDeletion020"
-	TCRuleSwap_CA_CleanupClass                        TypeAndStructs.TCRuleSwapType     = "TCRuleSwap020"
-)
-
+// TestInstruction_CA_CleanupClassStruct
+// Struct for holding all data for the TestInstruction
 type TestInstruction_CA_CleanupClassStruct struct {
 	TestInstruction                    TypeAndStructs.TestInstructionStruct
 	BasicTestInstructionInformation    TypeAndStructs.BasicTestInstructionInformationStruct
@@ -52,8 +53,11 @@ type TestInstruction_CA_CleanupClassStruct struct {
 	TestInstructionAttribute           []TypeAndStructs.TestInstructionAttributeStruct
 }
 
+// Variable that holds the data for the TestInstruction
 var TestInstruction_CA_CleanupClass TestInstruction_CA_CleanupClassStruct
 
+// Initate_TestInstruction_CA_CleanupClass
+// Function that creates all data for the TestInstruction
 func Initate_TestInstruction_CA_CleanupClass() {
 
 	updatedTimeStamp := TypeAndStructs.UpdatedTimeStampType(shared_code.GenerateDatetimeTimeStampForDB())
@@ -64,8 +68,8 @@ func Initate_TestInstruction_CA_CleanupClass() {
 		DomainName:                   Domains.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_CleanupClass,
 		TestInstructionName:          TestInstructionName_CA_CleanupClass,
-		TestInstructionTypeUUID:      TestInstructionTypeUUID_CA_CustodyAccount,
-		TestInstructionTypeName:      TestInstructionTypeName_CA_CustodyAccount,
+		TestInstructionTypeUUID:      TestInstructionTypeUUID_CA_CleanupClass,
+		TestInstructionTypeName:      TestInstructionTypeName_CA_CleanupClass,
 		TestInstructionDescription:   TestInstructionDescription_CA_CleanupClass,
 		TestInstructionMouseOverText: TestInstructionMouseOverText_CA_CleanupClass,
 		Deprecated:                   TestInstructionDeprecated_CA_CleanupClass,
@@ -81,8 +85,8 @@ func Initate_TestInstruction_CA_CleanupClass() {
 		DomainName:                   Domains.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_CleanupClass,
 		TestInstructionName:          TestInstructionName_CA_CleanupClass,
-		TestInstructionTypeUUID:      TestInstructionTypeUUID_CA_CustodyAccount,
-		TestInstructionTypeName:      TestInstructionTypeName_CA_CustodyAccount,
+		TestInstructionTypeUUID:      TestInstructionTypeUUID_CA_CleanupClass,
+		TestInstructionTypeName:      TestInstructionTypeName_CA_CleanupClass,
 		Deprecated:                   TestInstructionDeprecated_CA_CleanupClass,
 		MajorVersionNumber:           TestInstructionMajorVersionNumber_CA_CleanupClass,
 		MinorVersionNumber:           TestInstructionMinorVersionNumber_CA_CleanupClass,
@@ -119,9 +123,10 @@ func Initate_TestInstruction_CA_CleanupClass() {
 		TestInstruction_CA_CleanupClass.ImmatureTestInstructionInformation,
 		TestInstruction_CA_CleanupClass_CustodyAccountId)
 
+	// DropZone: DeleteLocalMarketAndConfirm
 	// ImmatureTestInstructionInformation  - DropZone: DeleteLocalMarketAndConfirm, Attr: MarketName
-	var TestInstruction_CA_CleanupClass_MarketName TypeAndStructs.ImmatureTestInstructionInformationStruct
-	TestInstruction_CA_CleanupClass_MarketName = TypeAndStructs.ImmatureTestInstructionInformationStruct{
+	var TestInstruction_CA_CleanupClass_DeleteLocalMarketAndConfirm_MarketName TypeAndStructs.ImmatureTestInstructionInformationStruct
+	TestInstruction_CA_CleanupClass_DeleteLocalMarketAndConfirm_MarketName = TypeAndStructs.ImmatureTestInstructionInformationStruct{
 		DomainUUID:                   Domains.DomainUUID_CA,
 		DomainName:                   Domains.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_CleanupClass,
@@ -141,11 +146,11 @@ func Initate_TestInstruction_CA_CleanupClass() {
 	}
 	TestInstruction_CA_CleanupClass.ImmatureTestInstructionInformation = append(
 		TestInstruction_CA_CleanupClass.ImmatureTestInstructionInformation,
-		TestInstruction_CA_CleanupClass_MarketName)
+		TestInstruction_CA_CleanupClass_DeleteLocalMarketAndConfirm_MarketName)
 
 	// TestInstruction Attribute - 'CustodyAccountId'
-	var TestInstructionAttribute_CA_CleanupClass_CustodyAccountId TypeAndStructs.TestInstructionAttributeStruct
-	TestInstructionAttribute_CA_CleanupClass_CustodyAccountId = TypeAndStructs.TestInstructionAttributeStruct{
+	var TestInstructionAttribute_CA_CleanupClass_DeleteLocalMarketAndConfirm_CustodyAccountId TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_CA_CleanupClass_DeleteLocalMarketAndConfirm_CustodyAccountId = TypeAndStructs.TestInstructionAttributeStruct{
 		DomainUUID:                                    Domains.DomainUUID_CA,
 		DomainName:                                    Domains.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_CleanupClass,
@@ -168,11 +173,11 @@ func Initate_TestInstruction_CA_CleanupClass() {
 	}
 	TestInstruction_CA_CleanupClass.TestInstructionAttribute = append(
 		TestInstruction_CA_CleanupClass.TestInstructionAttribute,
-		TestInstructionAttribute_CA_CleanupClass_CustodyAccountId)
+		TestInstructionAttribute_CA_CleanupClass_DeleteLocalMarketAndConfirm_CustodyAccountId)
 
 	// TestInstruction Attribute - 'MarketName'
-	var TestInstructionAttribute_CA_CleanupClass_MarketName TypeAndStructs.TestInstructionAttributeStruct
-	TestInstructionAttribute_CA_CleanupClass_MarketName = TypeAndStructs.TestInstructionAttributeStruct{
+	var TestInstructionAttribute_CA_CleanupClass_DeleteLocalMarketAndConfirm_MarketName TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_CA_CleanupClass_DeleteLocalMarketAndConfirm_MarketName = TypeAndStructs.TestInstructionAttributeStruct{
 		DomainUUID:                                    Domains.DomainUUID_CA,
 		DomainName:                                    Domains.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_CleanupClass,
@@ -195,6 +200,6 @@ func Initate_TestInstruction_CA_CleanupClass() {
 	}
 	TestInstruction_CA_CleanupClass.TestInstructionAttribute = append(
 		TestInstruction_CA_CleanupClass.TestInstructionAttribute,
-		TestInstructionAttribute_CA_CleanupClass_MarketName)
+		TestInstructionAttribute_CA_CleanupClass_DeleteLocalMarketAndConfirm_MarketName)
 
 }
