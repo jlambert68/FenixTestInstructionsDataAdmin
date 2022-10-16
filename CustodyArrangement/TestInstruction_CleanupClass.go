@@ -149,8 +149,8 @@ func Initate_TestInstruction_CA_CleanupClass() {
 		TestInstruction_CA_CleanupClass_DeleteLocalMarketAndConfirm_MarketName)
 
 	// TestInstruction Attribute - 'CustodyAccountId'
-	var TestInstructionAttribute_CA_CleanupClass_DeleteLocalMarketAndConfirm_CustodyAccountId TypeAndStructs.TestInstructionAttributeStruct
-	TestInstructionAttribute_CA_CleanupClass_DeleteLocalMarketAndConfirm_CustodyAccountId = TypeAndStructs.TestInstructionAttributeStruct{
+	var TestInstructionAttribute_CA_CleanupClass_CustodyAccountId TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_CA_CleanupClass_CustodyAccountId = TypeAndStructs.TestInstructionAttributeStruct{
 		DomainUUID:                                    Domains.DomainUUID_CA,
 		DomainName:                                    Domains.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_CleanupClass,
@@ -161,8 +161,8 @@ func Initate_TestInstruction_CA_CleanupClass() {
 		TestInstructionAttributeMouseOver:             "Custody Account that should be cleaned",
 		TestInstructionAttributeTypeUUID:              TestInstructionAttributeTypeUUID_CA_Standard,
 		TestInstructionAttributeTypeName:              TestInstructionAttributeTypeName_CA_Standard,
-		TestInstructionAttributeValueAsString:         "#NO_VALUE#",
-		TestInstructionAttributeValueUUID:             "831b9553-f05e-4912-a832-69f785da9256",
+		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValueNO_VALUE,
+		TestInstructionAttributeValueUUID:             Domains.TestInstructionAttributeValueUUIDNo_VALUE,
 		TestInstructionAttributeVisible:               true,
 		TestInstructionAttributeEnabled:               true,
 		TestInstructionAttributeMandatory:             true,
@@ -173,11 +173,11 @@ func Initate_TestInstruction_CA_CleanupClass() {
 	}
 	TestInstruction_CA_CleanupClass.TestInstructionAttribute = append(
 		TestInstruction_CA_CleanupClass.TestInstructionAttribute,
-		TestInstructionAttribute_CA_CleanupClass_DeleteLocalMarketAndConfirm_CustodyAccountId)
+		TestInstructionAttribute_CA_CleanupClass_CustodyAccountId)
 
 	// TestInstruction Attribute - 'MarketName'
-	var TestInstructionAttribute_CA_CleanupClass_DeleteLocalMarketAndConfirm_MarketName TypeAndStructs.TestInstructionAttributeStruct
-	TestInstructionAttribute_CA_CleanupClass_DeleteLocalMarketAndConfirm_MarketName = TypeAndStructs.TestInstructionAttributeStruct{
+	var TestInstructionAttribute_CA_CleanupClass_MarketName TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_CA_CleanupClass_MarketName = TypeAndStructs.TestInstructionAttributeStruct{
 		DomainUUID:                                    Domains.DomainUUID_CA,
 		DomainName:                                    Domains.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_CleanupClass,
@@ -188,8 +188,8 @@ func Initate_TestInstruction_CA_CleanupClass() {
 		TestInstructionAttributeMouseOver:             "Custody Account that should be cleaned",
 		TestInstructionAttributeTypeUUID:              TestInstructionAttributeTypeUUID_CA_Standard,
 		TestInstructionAttributeTypeName:              TestInstructionAttributeTypeName_CA_Standard,
-		TestInstructionAttributeValueAsString:         "#NO_VALUE#",
-		TestInstructionAttributeValueUUID:             "0918d9c1-da59-4d62-99ee-0e38cd2a078f",
+		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValueNO_VALUE,
+		TestInstructionAttributeValueUUID:             Domains.TestInstructionAttributeValueUUIDNo_VALUE,
 		TestInstructionAttributeVisible:               true,
 		TestInstructionAttributeEnabled:               true,
 		TestInstructionAttributeMandatory:             true,
@@ -200,6 +200,6 @@ func Initate_TestInstruction_CA_CleanupClass() {
 	}
 	TestInstruction_CA_CleanupClass.TestInstructionAttribute = append(
 		TestInstruction_CA_CleanupClass.TestInstructionAttribute,
-		TestInstructionAttribute_CA_CleanupClass_DeleteLocalMarketAndConfirm_MarketName)
+		TestInstructionAttribute_CA_CleanupClass_MarketName)
 
 }

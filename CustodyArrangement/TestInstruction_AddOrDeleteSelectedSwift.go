@@ -311,4 +311,112 @@ func Initate_TestInstruction_CA_AddOrDeleteSelectedSwift() {
 		TestInstruction_CA_AddOrDeleteSelectedSwift.ImmatureTestInstructionInformation,
 		TestInstruction_CA_AddOrDeleteSelectedSwift_Delete_TestDataChannel)
 
+	// TestInstruction Attribute - 'TestDataInterval'
+	var TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_TestDataInterval TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_TestDataInterval = TypeAndStructs.TestInstructionAttributeStruct{
+		DomainUUID:                                    Domains.DomainUUID_CA,
+		DomainName:                                    Domains.DomainName_CA,
+		TestInstructionUUID:                           TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
+		TestInstructionName:                           TestInstructionName_CA_AddOrDeleteSelectedSwift,
+		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_AddOrDeleteSelectedSwift_TestDataInterval,
+		TestInstructionAttributeName:                  TestInstructionAttributeName_CA_AddOrDeleteSelectedSwift_TestDataInterval,
+		TestInstructionAttributeDescription:           "The Interval",
+		TestInstructionAttributeMouseOver:             "The Interval",
+		TestInstructionAttributeTypeUUID:              TestInstructionAttributeTypeUUID_CA_Standard,
+		TestInstructionAttributeTypeName:              TestInstructionAttributeTypeName_CA_Standard,
+		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValueNO_VALUE,
+		TestInstructionAttributeValueUUID:             Domains.TestInstructionAttributeValueUUIDNo_VALUE,
+		TestInstructionAttributeVisible:               true,
+		TestInstructionAttributeEnabled:               true,
+		TestInstructionAttributeMandatory:             true,
+		TestInstructionAttributeVisibleInTestCaseArea: false,
+		TestInstructionAttributeIsDeprecated:          false,
+		TestInstructionAttributeInputMask:             ".",
+		TestInstructionAttributeType:                  TestInstructionAttributeType_CA_AddOrDeleteSelectedSwift_TestDataInterval,
+	}
+	TestInstruction_CA_AddOrDeleteSelectedSwift.TestInstructionAttribute = append(
+		TestInstruction_CA_AddOrDeleteSelectedSwift.TestInstructionAttribute,
+		TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_TestDataInterval)
+
+	// TestInstruction Attribute - 'TestDataType'
+	var TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_TestDataType TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_TestDataType = TypeAndStructs.TestInstructionAttributeStruct{
+		DomainUUID:                                    Domains.DomainUUID_CA,
+		DomainName:                                    Domains.DomainName_CA,
+		TestInstructionUUID:                           TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
+		TestInstructionName:                           TestInstructionName_CA_AddOrDeleteSelectedSwift,
+		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_AddOrDeleteSelectedSwift_TestDataType,
+		TestInstructionAttributeName:                  TestInstructionAttributeName_CA_AddOrDeleteSelectedSwift_TestDataType,
+		TestInstructionAttributeDescription:           "The channel datatype",
+		TestInstructionAttributeMouseOver:             "The channel datatype",
+		TestInstructionAttributeTypeUUID:              TestInstructionAttributeTypeUUID_CA_Standard,
+		TestInstructionAttributeTypeName:              TestInstructionAttributeTypeName_CA_Standard,
+		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValueNO_VALUE,
+		TestInstructionAttributeValueUUID:             Domains.TestInstructionAttributeValueUUIDNo_VALUE,
+		TestInstructionAttributeVisible:               true,
+		TestInstructionAttributeEnabled:               true,
+		TestInstructionAttributeMandatory:             true,
+		TestInstructionAttributeVisibleInTestCaseArea: false,
+		TestInstructionAttributeIsDeprecated:          false,
+		TestInstructionAttributeInputMask:             ".",
+		TestInstructionAttributeType:                  TestInstructionAttributeType_CA_AddOrDeleteSelectedSwift_TestDataType,
+	}
+	TestInstruction_CA_AddOrDeleteSelectedSwift.TestInstructionAttribute = append(
+		TestInstruction_CA_AddOrDeleteSelectedSwift.TestInstructionAttribute,
+		TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_TestDataType)
+
+	// TestInstruction Attribute - 'TestDataBIC'
+	var TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_TestDataBIC TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_TestDataBIC = TypeAndStructs.TestInstructionAttributeStruct{
+		DomainUUID:                                    Domains.DomainUUID_CA,
+		DomainName:                                    Domains.DomainName_CA,
+		TestInstructionUUID:                           TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
+		TestInstructionName:                           TestInstructionName_CA_AddOrDeleteSelectedSwift,
+		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_AddOrDeleteSelectedSwift_TestDataBIC,
+		TestInstructionAttributeName:                  TestInstructionAttributeName_CA_AddOrDeleteSelectedSwift_TestDataBIC,
+		TestInstructionAttributeDescription:           "The BIC",
+		TestInstructionAttributeMouseOver:             "The BIC",
+		TestInstructionAttributeTypeUUID:              TestInstructionAttributeTypeUUID_CA_Standard,
+		TestInstructionAttributeTypeName:              TestInstructionAttributeTypeName_CA_Standard,
+		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValueNO_VALUE,
+		TestInstructionAttributeValueUUID:             Domains.TestInstructionAttributeValueUUIDNo_VALUE,
+		TestInstructionAttributeVisible:               true,
+		TestInstructionAttributeEnabled:               true,
+		TestInstructionAttributeMandatory:             true,
+		TestInstructionAttributeVisibleInTestCaseArea: false,
+		TestInstructionAttributeIsDeprecated:          false,
+		TestInstructionAttributeInputMask:             ".",
+		TestInstructionAttributeType:                  TestInstructionAttributeType_CA_AddOrDeleteSelectedSwift_TestDataBIC,
+	}
+	TestInstruction_CA_AddOrDeleteSelectedSwift.TestInstructionAttribute = append(
+		TestInstruction_CA_AddOrDeleteSelectedSwift.TestInstructionAttribute,
+		TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_TestDataBIC)
+
+	// TestInstruction Attribute - 'TestDataChannel'
+	var TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_TestDataChannel TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_TestDataChannel = TypeAndStructs.TestInstructionAttributeStruct{
+		DomainUUID:                                    Domains.DomainUUID_CA,
+		DomainName:                                    Domains.DomainName_CA,
+		TestInstructionUUID:                           TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
+		TestInstructionName:                           TestInstructionName_CA_AddOrDeleteSelectedSwift,
+		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_AddOrDeleteSelectedSwift_TestDataChannel,
+		TestInstructionAttributeName:                  TestInstructionAttributeName_CA_AddOrDeleteSelectedSwift_TestDataChannel,
+		TestInstructionAttributeDescription:           "The channel",
+		TestInstructionAttributeMouseOver:             "The channel",
+		TestInstructionAttributeTypeUUID:              TestInstructionAttributeTypeUUID_CA_Standard,
+		TestInstructionAttributeTypeName:              TestInstructionAttributeTypeName_CA_Standard,
+		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValueNO_VALUE,
+		TestInstructionAttributeValueUUID:             Domains.TestInstructionAttributeValueUUIDNo_VALUE,
+		TestInstructionAttributeVisible:               true,
+		TestInstructionAttributeEnabled:               true,
+		TestInstructionAttributeMandatory:             true,
+		TestInstructionAttributeVisibleInTestCaseArea: false,
+		TestInstructionAttributeIsDeprecated:          false,
+		TestInstructionAttributeInputMask:             ".",
+		TestInstructionAttributeType:                  TestInstructionAttributeType_CA_AddOrDeleteSelectedSwift_TestDataChannel,
+	}
+	TestInstruction_CA_AddOrDeleteSelectedSwift.TestInstructionAttribute = append(
+		TestInstruction_CA_AddOrDeleteSelectedSwift.TestInstructionAttribute,
+		TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_TestDataChannel)
+
 }
