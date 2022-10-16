@@ -55,6 +55,7 @@ type TestInstruction_CA_CleanupClassStruct struct {
 	ImmatureElementModel               []TypeAndStructs.ImmatureElementModelMessageStruct
 }
 
+// TestInstruction_CA_CleanupClass
 // Variable that holds the data for the TestInstruction
 var TestInstruction_CA_CleanupClass TestInstruction_CA_CleanupClassStruct
 
