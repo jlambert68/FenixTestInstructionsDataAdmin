@@ -42,8 +42,9 @@ type BondShowBondAttributesType bool
 type BondTCRuleDeletionType string
 type BondTCRuleSwapType string
 type BondUpdatedTimeStampType string
-type BondTestCaseModelElementTypeType string
-type BondTestCaseModelElementTypeGrpcMappingIDType int
+
+// type BondTestCaseModelElementTypeType string
+// type BondTestCaseModelElementTypeGrpcMappingIDType int
 
 type TestCaseModelElementTypeType string
 type TestCaseModelElementDescriptionType string
