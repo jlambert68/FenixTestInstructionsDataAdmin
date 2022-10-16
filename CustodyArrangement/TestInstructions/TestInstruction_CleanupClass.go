@@ -2,6 +2,7 @@ package TestInstructions
 
 import (
 	"FenixTestInstructionsDataAdmin/Domains"
+	"FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
 	"FenixTestInstructionsDataAdmin/TypeAndStructs"
 	"FenixTestInstructionsDataAdmin/shared_code"
 )
@@ -51,6 +52,7 @@ type TestInstruction_CA_CleanupClassStruct struct {
 	BasicTestInstructionInformation    TypeAndStructs.BasicTestInstructionInformationStruct
 	ImmatureTestInstructionInformation []TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstructionAttribute           []TypeAndStructs.TestInstructionAttributeStruct
+	ImmatureElementModel               []TypeAndStructs.ImmatureElementModelMessageStruct
 }
 
 // Variable that holds the data for the TestInstruction
@@ -202,4 +204,23 @@ func Initate_TestInstruction_CA_CleanupClass() {
 		TestInstruction_CA_CleanupClass.TestInstructionAttribute,
 		TestInstructionAttribute_CA_CleanupClass_MarketName)
 
+	// ImmatureElementModel - CleanupClass
+	var TestInstructionImmatureElementModel_CA_CleanupClass TypeAndStructs.ImmatureElementModelMessageStruct
+	TestInstructionImmatureElementModel_CA_CleanupClass = TypeAndStructs.ImmatureElementModelMessageStruct{
+		DomainUUID:               Domains.DomainUUID_CA,
+		DomainName:               Domains.DomainName_CA,
+		ImmatureElementUUID:      TestInstructionUUID_CA_CleanupClass,
+		ImmatureElementName:      TypeAndStructs.OriginalElementNameType(TestInstructionName_CA_CleanupClass),
+		PreviousElementUUID:      TestInstructionUUID_CA_CleanupClass,
+		NextElementUUID:          TestInstructionUUID_CA_CleanupClass,
+		FirstChildElementUUID:    TestInstructionUUID_CA_CleanupClass,
+		ParentElementUUID:        TestInstructionUUID_CA_CleanupClass,
+		TestCaseModelElementType: TestCaseModelElementTypes.TestCaseModelElementType_TI,
+		OriginalElementUUID:      TestInstructionUUID_CA_CleanupClass,
+		TopImmatureElementUUID:   TestInstructionUUID_CA_CleanupClass,
+		IsTopElement:             true,
+	}
+	TestInstruction_CA_CleanupClass.ImmatureElementModel = append(
+		TestInstruction_CA_CleanupClass.ImmatureElementModel,
+		TestInstructionImmatureElementModel_CA_CleanupClass)
 }

@@ -2,6 +2,7 @@ package TestInstructions
 
 import (
 	"FenixTestInstructionsDataAdmin/Domains"
+	"FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
 	"FenixTestInstructionsDataAdmin/TypeAndStructs"
 	"FenixTestInstructionsDataAdmin/shared_code"
 )
@@ -69,6 +70,7 @@ type TestInstruction_CA_AddOrDeleteSelectedSwiftStruct struct {
 	BasicTestInstructionInformation    TypeAndStructs.BasicTestInstructionInformationStruct
 	ImmatureTestInstructionInformation []TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstructionAttribute           []TypeAndStructs.TestInstructionAttributeStruct
+	ImmatureElementModel               []TypeAndStructs.ImmatureElementModelMessageStruct
 }
 
 // Variable that holds the data for the TestInstruction
@@ -419,4 +421,23 @@ func Initate_TestInstruction_CA_AddOrDeleteSelectedSwift() {
 		TestInstruction_CA_AddOrDeleteSelectedSwift.TestInstructionAttribute,
 		TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_TestDataChannel)
 
+	// ImmatureElementModel - AddOrDeleteSelectedSwift
+	var TestInstructionImmatureElementModel_CA_AddOrDeleteSelectedSwift TypeAndStructs.ImmatureElementModelMessageStruct
+	TestInstructionImmatureElementModel_CA_AddOrDeleteSelectedSwift = TypeAndStructs.ImmatureElementModelMessageStruct{
+		DomainUUID:               Domains.DomainUUID_CA,
+		DomainName:               Domains.DomainName_CA,
+		ImmatureElementUUID:      TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
+		ImmatureElementName:      TypeAndStructs.OriginalElementNameType(TestInstructionName_CA_AddOrDeleteSelectedSwift),
+		PreviousElementUUID:      TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
+		NextElementUUID:          TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
+		FirstChildElementUUID:    TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
+		ParentElementUUID:        TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
+		TestCaseModelElementType: TestCaseModelElementTypes.TestCaseModelElementType_TI,
+		OriginalElementUUID:      TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
+		TopImmatureElementUUID:   TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
+		IsTopElement:             true,
+	}
+	TestInstruction_CA_AddOrDeleteSelectedSwift.ImmatureElementModel = append(
+		TestInstruction_CA_AddOrDeleteSelectedSwift.ImmatureElementModel,
+		TestInstructionImmatureElementModel_CA_AddOrDeleteSelectedSwift)
 }
