@@ -28,7 +28,26 @@ type TestInstructionContainerTypeUUIDType string
 type TestInstructionContainerTypeNameType string
 type TestInstructionContainerExecutionTypeType string //'SERIAL_PROCESSED', 'PARALLELLED_PROCESSED'
 
+type BondUUIDType string
+type BondNameType string
+type BondDescriptionType string
+type BondMouseOverTextType string
+type BondDeprecatedType bool
+type BondEnabledType bool
+type BondVisibleType bool
+type BondColorType string
+type BondCanBeDeletedType bool
+type BondCanBeSwappedOutType bool
+type BondShowBondAttributesType bool
+type BondTCRuleDeletionType string
+type BondTCRuleSwapType string
+type BondUpdatedTimeStampType string
+type BondTestCaseModelElementTypeType string
+type BondTestCaseModelElementTypeGrpcMappingIDType int
+
 type TestCaseModelElementTypeType string
+type TestCaseModelElementDescriptionType string
+type TestCaseModelElementGrpcMappingIdType int
 
 type TestInstructions []TestInstructionStruct
 type TestInstructionStruct struct {
@@ -182,4 +201,23 @@ type ImmatureElementModelMessageStruct struct {
 	OriginalElementUUID      OriginalElementUUIDType      `json:"OriginalElementUuid"`
 	TopImmatureElementUUID   OriginalElementUUIDType      `json:"TopImmatureElementUuid"`
 	IsTopElement             bool                         `json:"IsTopElement"`
+}
+
+type ImmatureBondStruct struct {
+	BondUUID                              BondUUIDType                          `json:"BondUuid"`
+	BondName                              BondNameType                          `json:"BondName"`
+	BondDescription                       BondDescriptionType                   `json:"BondDescription"`
+	BondMouseOverText                     BondMouseOverTextType                 `json:"BondMouseOverText"`
+	Deprecated                            BondDeprecatedType                    `json:"Deprecated"`
+	Enabled                               BondEnabledType                       `json:"Enabled"`
+	Visible                               BondVisibleType                       `json:"Visible"`
+	BondColor                             BondColorType                         `json:"BondColor"`
+	CanBeDeleted                          BondCanBeDeletedType                  `json:"CanBeDeleted"`
+	CanBeSwappedOut                       BondCanBeSwappedOutType               `json:"CanBeSwappedOut"`
+	ShowBondAttributes                    BondShowBondAttributesType            `json:"ShowBondAttributes"`
+	TCRuleDeletion                        BondTCRuleDeletionType                `json:"TCRuleDeletion"`
+	TCRuleSwap                            BondTCRuleSwapType                    `json:"TCRuleSwap"`
+	UpdatedTimeStamp                      UpdatedTimeStampType                  `json:"UpdatedTimeStamp"`
+	TestCaseModelElementType              TestCaseModelElementTypeType          `json:"TestCaseModelElementType"`
+	TestCaseModelElementTypeGrpcMappingID TestCaseModelElementGrpcMappingIdType `json:"TestCaseModelElementTypeGrpcMappingId"`
 }

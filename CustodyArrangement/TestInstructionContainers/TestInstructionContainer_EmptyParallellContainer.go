@@ -1,4 +1,4 @@
-package CustodyArrangement
+package TestInstructionContainers
 
 import "FenixTestInstructionsDataAdmin/TypeAndStructs"
 

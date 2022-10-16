@@ -1,4 +1,4 @@
-package Fenix
+package TestInstructionContainers
 
 import "FenixTestInstructionsDataAdmin/TypeAndStructs"
 

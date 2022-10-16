@@ -1,4 +1,4 @@
-package CustodyArrangement
+package TestInstructions
 
 import (
 	"FenixTestInstructionsDataAdmin/Domains"
