@@ -3,6 +3,7 @@ package Bonds
 import (
 	"FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
 	"FenixTestInstructionsDataAdmin/TypeAndStructs"
+	"FenixTestInstructionsDataAdmin/shared_code"
 )
 
 const (
@@ -227,3 +228,301 @@ const (
 	Bond_B12x_TestCaseModelElementType              TypeAndStructs.TestCaseModelElementTypeType          = TestCaseModelElementTypes.TestCaseModelElementType_B12x
 	Bond_B12x_TestCaseModelElementTypeGrpcMappingID TypeAndStructs.TestCaseModelElementGrpcMappingIdType = TestCaseModelElementTypes.TestCaseModelElementGrpcMappingId_B12x
 )
+
+// ImmatureBonds
+// Variable that holds the data for the ImmatureBonds
+var ImmatureBonds []TypeAndStructs.ImmatureBondStruct
+
+// Initate_TestInstruction_CA_CleanupClass
+// Function that creates all data for the TestInstruction
+func Initate_ImmatureBonds() {
+
+	updatedTimeStamp := TypeAndStructs.UpdatedTimeStampType(shared_code.GenerateDatetimeTimeStampForDB())
+
+	// B0_BOND
+	var BOND_B0 TypeAndStructs.ImmatureBondStruct
+	BOND_B0 = TypeAndStructs.ImmatureBondStruct{
+		BondUUID:                              Bond_B0_BondUuid,
+		BondName:                              Bond_B0_BondName,
+		BondDescription:                       Bond_B0_BondDescription,
+		BondMouseOverText:                     Bond_B0_BondMouseOverText,
+		Deprecated:                            Bond_B0_Deprecated,
+		Enabled:                               Bond_B0_Enabled,
+		Visible:                               Bond_B0_Visible,
+		BondColor:                             Bond_B0_BondColor,
+		CanBeDeleted:                          Bond_B0_CanBeDeleted,
+		CanBeSwappedOut:                       Bond_B0_CanBeSwappedOut,
+		ShowBondAttributes:                    Bond_B10oxo_ShowBondAttributes,
+		TCRuleDeletion:                        Bond_B0_TCRuleDeletion,
+		TCRuleSwap:                            Bond_B0_TCRuleSwap,
+		UpdatedTimeStamp:                      updatedTimeStamp,
+		TestCaseModelElementType:              Bond_B0_TestCaseModelElementType,
+		TestCaseModelElementTypeGrpcMappingID: Bond_B0_TestCaseModelElementTypeGrpcMappingID,
+	}
+	ImmatureBonds = append(ImmatureBonds, BOND_B0)
+
+	// B1f_BOND
+	var BOND_B1f TypeAndStructs.ImmatureBondStruct
+	BOND_B1f = TypeAndStructs.ImmatureBondStruct{
+		BondUUID:                              Bond_B1f_BondUuid,
+		BondName:                              Bond_B1f_BondName,
+		BondDescription:                       Bond_B1f_BondDescription,
+		BondMouseOverText:                     Bond_B1f_BondMouseOverText,
+		Deprecated:                            Bond_B1f_Deprecated,
+		Enabled:                               Bond_B1f_Enabled,
+		Visible:                               Bond_B1f_Visible,
+		BondColor:                             Bond_B1f_BondColor,
+		CanBeDeleted:                          Bond_B1f_CanBeDeleted,
+		CanBeSwappedOut:                       Bond_B1f_CanBeSwappedOut,
+		ShowBondAttributes:                    Bond_B10oxo_ShowBondAttributes,
+		TCRuleDeletion:                        Bond_B1f_TCRuleDeletion,
+		TCRuleSwap:                            Bond_B1f_TCRuleSwap,
+		UpdatedTimeStamp:                      updatedTimeStamp,
+		TestCaseModelElementType:              Bond_B1f_TestCaseModelElementType,
+		TestCaseModelElementTypeGrpcMappingID: Bond_B1f_TestCaseModelElementTypeGrpcMappingID,
+	}
+	ImmatureBonds = append(ImmatureBonds, BOND_B1f)
+
+	//B10ox_BOND
+	var BOND_B10ox TypeAndStructs.ImmatureBondStruct
+	BOND_B10ox = TypeAndStructs.ImmatureBondStruct{
+		BondUUID:                              Bond_B10ox_BondUuid,
+		BondName:                              Bond_B10ox_BondName,
+		BondDescription:                       Bond_B10ox_BondDescription,
+		BondMouseOverText:                     Bond_B10ox_BondMouseOverText,
+		Deprecated:                            Bond_B10ox_Deprecated,
+		Enabled:                               Bond_B10ox_Enabled,
+		Visible:                               Bond_B10ox_Visible,
+		BondColor:                             Bond_B10ox_BondColor,
+		CanBeDeleted:                          Bond_B10ox_CanBeDeleted,
+		CanBeSwappedOut:                       Bond_B10ox_CanBeSwappedOut,
+		ShowBondAttributes:                    Bond_B10oxo_ShowBondAttributes,
+		TCRuleDeletion:                        Bond_B10ox_TCRuleDeletion,
+		TCRuleSwap:                            Bond_B10ox_TCRuleSwap,
+		UpdatedTimeStamp:                      updatedTimeStamp,
+		TestCaseModelElementType:              Bond_B10ox_TestCaseModelElementType,
+		TestCaseModelElementTypeGrpcMappingID: Bond_B10ox_TestCaseModelElementTypeGrpcMappingID,
+	}
+	ImmatureBonds = append(ImmatureBonds, BOND_B10ox)
+
+	// B10xo_BOND
+	var BOND_B10xo TypeAndStructs.ImmatureBondStruct
+	BOND_B10xo = TypeAndStructs.ImmatureBondStruct{
+		BondUUID:                              Bond_B10xo_BondUuid,
+		BondName:                              Bond_B10xo_BondName,
+		BondDescription:                       Bond_B10xo_BondDescription,
+		BondMouseOverText:                     Bond_B10xo_BondMouseOverText,
+		Deprecated:                            Bond_B10xo_Deprecated,
+		Enabled:                               Bond_B10xo_Enabled,
+		Visible:                               Bond_B10xo_Visible,
+		BondColor:                             Bond_B10xo_BondColor,
+		CanBeDeleted:                          Bond_B10xo_CanBeDeleted,
+		CanBeSwappedOut:                       Bond_B10xo_CanBeSwappedOut,
+		ShowBondAttributes:                    Bond_B10oxo_ShowBondAttributes,
+		TCRuleDeletion:                        Bond_B10xo_TCRuleDeletion,
+		TCRuleSwap:                            Bond_B10xo_TCRuleSwap,
+		UpdatedTimeStamp:                      updatedTimeStamp,
+		TestCaseModelElementType:              Bond_B10xo_TestCaseModelElementType,
+		TestCaseModelElementTypeGrpcMappingID: Bond_B10xo_TestCaseModelElementTypeGrpcMappingID,
+	}
+	ImmatureBonds = append(ImmatureBonds, BOND_B10xo)
+
+	// B11fx_BOND
+	var BOND_B11fx TypeAndStructs.ImmatureBondStruct
+	BOND_B11fx = TypeAndStructs.ImmatureBondStruct{
+		BondUUID:                              Bond_B11fx_BondUuid,
+		BondName:                              Bond_B11fx_BondName,
+		BondDescription:                       Bond_B11fx_BondDescription,
+		BondMouseOverText:                     Bond_B11fx_BondMouseOverText,
+		Deprecated:                            Bond_B11fx_Deprecated,
+		Enabled:                               Bond_B11fx_Enabled,
+		Visible:                               Bond_B11fx_Visible,
+		BondColor:                             Bond_B11fx_BondColor,
+		CanBeDeleted:                          Bond_B11fx_CanBeDeleted,
+		CanBeSwappedOut:                       Bond_B11fx_CanBeSwappedOut,
+		ShowBondAttributes:                    Bond_B10oxo_ShowBondAttributes,
+		TCRuleDeletion:                        Bond_B11fx_TCRuleDeletion,
+		TCRuleSwap:                            Bond_B11fx_TCRuleSwap,
+		UpdatedTimeStamp:                      updatedTimeStamp,
+		TestCaseModelElementType:              Bond_B11fx_TestCaseModelElementType,
+		TestCaseModelElementTypeGrpcMappingID: Bond_B11fx_TestCaseModelElementTypeGrpcMappingID,
+	}
+	ImmatureBonds = append(ImmatureBonds, BOND_B11fx)
+
+	// B11f_BOND
+	var BOND_B11f TypeAndStructs.ImmatureBondStruct
+	BOND_B11f = TypeAndStructs.ImmatureBondStruct{
+		BondUUID:                              Bond_B11f_BondUuid,
+		BondName:                              Bond_B11f_BondName,
+		BondDescription:                       Bond_B11f_BondDescription,
+		BondMouseOverText:                     Bond_B11f_BondMouseOverText,
+		Deprecated:                            Bond_B11f_Deprecated,
+		Enabled:                               Bond_B11f_Enabled,
+		Visible:                               Bond_B11f_Visible,
+		BondColor:                             Bond_B11f_BondColor,
+		CanBeDeleted:                          Bond_B11f_CanBeDeleted,
+		CanBeSwappedOut:                       Bond_B11f_CanBeSwappedOut,
+		ShowBondAttributes:                    Bond_B10oxo_ShowBondAttributes,
+		TCRuleDeletion:                        Bond_B11f_TCRuleDeletion,
+		TCRuleSwap:                            Bond_B11f_TCRuleSwap,
+		UpdatedTimeStamp:                      updatedTimeStamp,
+		TestCaseModelElementType:              Bond_B11f_TestCaseModelElementType,
+		TestCaseModelElementTypeGrpcMappingID: Bond_B11f_TestCaseModelElementTypeGrpcMappingID,
+	}
+	ImmatureBonds = append(ImmatureBonds, BOND_B11f)
+
+	// B12_BOND
+	var BOND_B12 TypeAndStructs.ImmatureBondStruct
+	BOND_B12 = TypeAndStructs.ImmatureBondStruct{
+		BondUUID:                              Bond_B12_BondUuid,
+		BondName:                              Bond_B12_BondName,
+		BondDescription:                       Bond_B12_BondDescription,
+		BondMouseOverText:                     Bond_B12_BondMouseOverText,
+		Deprecated:                            Bond_B12_Deprecated,
+		Enabled:                               Bond_B12_Enabled,
+		Visible:                               Bond_B12_Visible,
+		BondColor:                             Bond_B12_BondColor,
+		CanBeDeleted:                          Bond_B12_CanBeDeleted,
+		CanBeSwappedOut:                       Bond_B12_CanBeSwappedOut,
+		ShowBondAttributes:                    Bond_B10oxo_ShowBondAttributes,
+		TCRuleDeletion:                        Bond_B12_TCRuleDeletion,
+		TCRuleSwap:                            Bond_B12_TCRuleSwap,
+		UpdatedTimeStamp:                      updatedTimeStamp,
+		TestCaseModelElementType:              Bond_B12_TestCaseModelElementType,
+		TestCaseModelElementTypeGrpcMappingID: Bond_B12_TestCaseModelElementTypeGrpcMappingID,
+	}
+	ImmatureBonds = append(ImmatureBonds, BOND_B12)
+
+	// B11lx_BOND
+	var BOND_B11lx TypeAndStructs.ImmatureBondStruct
+	BOND_B11lx = TypeAndStructs.ImmatureBondStruct{
+		BondUUID:                              Bond_B11lx_BondUuid,
+		BondName:                              Bond_B11lx_BondName,
+		BondDescription:                       Bond_B11lx_BondDescription,
+		BondMouseOverText:                     Bond_B11lx_BondMouseOverText,
+		Deprecated:                            Bond_B11lx_Deprecated,
+		Enabled:                               Bond_B11lx_Enabled,
+		Visible:                               Bond_B11lx_Visible,
+		BondColor:                             Bond_B11lx_BondColor,
+		CanBeDeleted:                          Bond_B11lx_CanBeDeleted,
+		CanBeSwappedOut:                       Bond_B11lx_CanBeSwappedOut,
+		ShowBondAttributes:                    Bond_B10oxo_ShowBondAttributes,
+		TCRuleDeletion:                        Bond_B11lx_TCRuleDeletion,
+		TCRuleSwap:                            Bond_B11lx_TCRuleSwap,
+		UpdatedTimeStamp:                      updatedTimeStamp,
+		TestCaseModelElementType:              Bond_B11lx_TestCaseModelElementType,
+		TestCaseModelElementTypeGrpcMappingID: Bond_B11lx_TestCaseModelElementTypeGrpcMappingID,
+	}
+	ImmatureBonds = append(ImmatureBonds, BOND_B11lx)
+
+	// B10_BOND
+	var BOND_B10 TypeAndStructs.ImmatureBondStruct
+	BOND_B10 = TypeAndStructs.ImmatureBondStruct{
+		BondUUID:                              Bond_B10_BondUuid,
+		BondName:                              Bond_B10_BondName,
+		BondDescription:                       Bond_B10_BondDescription,
+		BondMouseOverText:                     Bond_B10_BondMouseOverText,
+		Deprecated:                            Bond_B10_Deprecated,
+		Enabled:                               Bond_B10_Enabled,
+		Visible:                               Bond_B10_Visible,
+		BondColor:                             Bond_B10_BondColor,
+		CanBeDeleted:                          Bond_B10_CanBeDeleted,
+		CanBeSwappedOut:                       Bond_B10_CanBeSwappedOut,
+		ShowBondAttributes:                    Bond_B10oxo_ShowBondAttributes,
+		TCRuleDeletion:                        Bond_B10_TCRuleDeletion,
+		TCRuleSwap:                            Bond_B10_TCRuleSwap,
+		UpdatedTimeStamp:                      updatedTimeStamp,
+		TestCaseModelElementType:              Bond_B10_TestCaseModelElementType,
+		TestCaseModelElementTypeGrpcMappingID: Bond_B10_TestCaseModelElementTypeGrpcMappingID,
+	}
+	ImmatureBonds = append(ImmatureBonds, BOND_B10)
+
+	// B11l_BOND
+	var BOND_B11l TypeAndStructs.ImmatureBondStruct
+	BOND_B11l = TypeAndStructs.ImmatureBondStruct{
+		BondUUID:                              Bond_B11l_BondUuid,
+		BondName:                              Bond_B11l_BondName,
+		BondDescription:                       Bond_B11l_BondDescription,
+		BondMouseOverText:                     Bond_B11l_BondMouseOverText,
+		Deprecated:                            Bond_B11l_Deprecated,
+		Enabled:                               Bond_B11l_Enabled,
+		Visible:                               Bond_B11l_Visible,
+		BondColor:                             Bond_B11l_BondColor,
+		CanBeDeleted:                          Bond_B11l_CanBeDeleted,
+		CanBeSwappedOut:                       Bond_B11l_CanBeSwappedOut,
+		ShowBondAttributes:                    Bond_B10oxo_ShowBondAttributes,
+		TCRuleDeletion:                        Bond_B11l_TCRuleDeletion,
+		TCRuleSwap:                            Bond_B11l_TCRuleSwap,
+		UpdatedTimeStamp:                      updatedTimeStamp,
+		TestCaseModelElementType:              Bond_B11l_TestCaseModelElementType,
+		TestCaseModelElementTypeGrpcMappingID: Bond_B11l_TestCaseModelElementTypeGrpcMappingID,
+	}
+	ImmatureBonds = append(ImmatureBonds, BOND_B11l)
+
+	// B10oxo_BOND
+	var BOND_B10oxo TypeAndStructs.ImmatureBondStruct
+	BOND_B10oxo = TypeAndStructs.ImmatureBondStruct{
+		BondUUID:                              Bond_B10oxo_BondUuid,
+		BondName:                              Bond_B10oxo_BondName,
+		BondDescription:                       Bond_B10oxo_BondDescription,
+		BondMouseOverText:                     Bond_B10oxo_BondMouseOverText,
+		Deprecated:                            Bond_B10oxo_Deprecated,
+		Enabled:                               Bond_B10oxo_Enabled,
+		Visible:                               Bond_B10oxo_Visible,
+		BondColor:                             Bond_B10oxo_BondColor,
+		CanBeDeleted:                          Bond_B10oxo_CanBeDeleted,
+		CanBeSwappedOut:                       Bond_B10oxo_CanBeSwappedOut,
+		ShowBondAttributes:                    Bond_B10oxo_ShowBondAttributes,
+		TCRuleDeletion:                        Bond_B10oxo_TCRuleDeletion,
+		TCRuleSwap:                            Bond_B10oxo_TCRuleSwap,
+		UpdatedTimeStamp:                      updatedTimeStamp,
+		TestCaseModelElementType:              Bond_B10oxo_TestCaseModelElementType,
+		TestCaseModelElementTypeGrpcMappingID: Bond_B10oxo_TestCaseModelElementTypeGrpcMappingID,
+	}
+	ImmatureBonds = append(ImmatureBonds, BOND_B10oxo)
+
+	// B1l_BOND
+	var BOND_B1l TypeAndStructs.ImmatureBondStruct
+	BOND_B1l = TypeAndStructs.ImmatureBondStruct{
+		BondUUID:                              Bond_B1l_BondUuid,
+		BondName:                              Bond_B1l_BondName,
+		BondDescription:                       Bond_B1l_BondDescription,
+		BondMouseOverText:                     Bond_B1l_BondMouseOverText,
+		Deprecated:                            Bond_B1l_Deprecated,
+		Enabled:                               Bond_B1l_Enabled,
+		Visible:                               Bond_B1l_Visible,
+		BondColor:                             Bond_B1l_BondColor,
+		CanBeDeleted:                          Bond_B1l_CanBeDeleted,
+		CanBeSwappedOut:                       Bond_B1l_CanBeSwappedOut,
+		ShowBondAttributes:                    Bond_B10oxo_ShowBondAttributes,
+		TCRuleDeletion:                        Bond_B1l_TCRuleDeletion,
+		TCRuleSwap:                            Bond_B1l_TCRuleSwap,
+		UpdatedTimeStamp:                      updatedTimeStamp,
+		TestCaseModelElementType:              Bond_B1l_TestCaseModelElementType,
+		TestCaseModelElementTypeGrpcMappingID: Bond_B1l_TestCaseModelElementTypeGrpcMappingID,
+	}
+	ImmatureBonds = append(ImmatureBonds, BOND_B1l)
+
+	// B12x_BOND
+	var BOND_B12x TypeAndStructs.ImmatureBondStruct
+	BOND_B12x = TypeAndStructs.ImmatureBondStruct{
+		BondUUID:                              Bond_B12x_BondUuid,
+		BondName:                              Bond_B12x_BondName,
+		BondDescription:                       Bond_B12x_BondDescription,
+		BondMouseOverText:                     Bond_B12x_BondMouseOverText,
+		Deprecated:                            Bond_B12x_Deprecated,
+		Enabled:                               Bond_B12x_Enabled,
+		Visible:                               Bond_B12x_Visible,
+		BondColor:                             Bond_B12x_BondColor,
+		CanBeDeleted:                          Bond_B12x_CanBeDeleted,
+		CanBeSwappedOut:                       Bond_B12x_CanBeSwappedOut,
+		ShowBondAttributes:                    Bond_B10oxo_ShowBondAttributes,
+		TCRuleDeletion:                        Bond_B12x_TCRuleDeletion,
+		TCRuleSwap:                            Bond_B12x_TCRuleSwap,
+		UpdatedTimeStamp:                      updatedTimeStamp,
+		TestCaseModelElementType:              Bond_B12x_TestCaseModelElementType,
+		TestCaseModelElementTypeGrpcMappingID: Bond_B12x_TestCaseModelElementTypeGrpcMappingID,
+	}
+	ImmatureBonds = append(ImmatureBonds, BOND_B12x)
+
+}
