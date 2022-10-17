@@ -205,7 +205,7 @@ type ImmatureElementModelMessageStruct struct {
 }
 
 type ImmatureBondStruct struct {
-	BondUUID                              BondUUIDType                          `json:"BondUuid"`
+	BondUUID                              OriginalElementUUIDType               `json:"BondUuid"`
 	BondName                              BondNameType                          `json:"BondName"`
 	BondDescription                       BondDescriptionType                   `json:"BondDescription"`
 	BondMouseOverText                     BondMouseOverTextType                 `json:"BondMouseOverText"`

@@ -8,7 +8,7 @@ import (
 
 const (
 	// B0_BOND
-	Bond_B0_BondUuid                              TypeAndStructs.BondUUIDType                          = "14dc7af0-5e46-4073-b920-8dffee7ca307"
+	Bond_B0_BondUuid                              TypeAndStructs.OriginalElementUUIDType               = "14dc7af0-5e46-4073-b920-8dffee7ca307"
 	Bond_B0_BondName                              TypeAndStructs.BondNameType                          = "B0_BOND"
 	Bond_B0_BondDescription                       TypeAndStructs.BondDescriptionType                   = "Bond with zero connection. This is the base for any TestCase: 'B0'"
 	Bond_B0_BondMouseOverText                     TypeAndStructs.BondMouseOverTextType                 = "Bond with zero connection. This is the base for any TestCase: 'B0'"
@@ -25,7 +25,7 @@ const (
 	Bond_B0_TestCaseModelElementTypeGrpcMappingID TypeAndStructs.TestCaseModelElementGrpcMappingIdType = TestCaseModelElementTypes.TestCaseModelElementGrpcMappingId_B0
 
 	// B1f_BOND
-	Bond_B1f_BondUuid                              TypeAndStructs.BondUUIDType                          = "2faab7f8-9f08-44ad-bc02-15b205146f48"
+	Bond_B1f_BondUuid                              TypeAndStructs.OriginalElementUUIDType               = "2faab7f8-9f08-44ad-bc02-15b205146f48"
 	Bond_B1f_BondName                              TypeAndStructs.BondNameType                          = "B1f_BOND_NONE_SWAPPABLE"
 	Bond_B1f_BondDescription                       TypeAndStructs.BondDescriptionType                   = "Bond with one connection. Use for starting and ending a TestCase and is only found in pre-created TestInstructionContainers"
 	Bond_B1f_BondMouseOverText                     TypeAndStructs.BondMouseOverTextType                 = "Bond with one connection. Use for starting and ending a TestCase and is only found in pre-created TestInstructionContainers"
@@ -42,7 +42,7 @@ const (
 	Bond_B1f_TestCaseModelElementTypeGrpcMappingID TypeAndStructs.TestCaseModelElementGrpcMappingIdType = TestCaseModelElementTypes.TestCaseModelElementGrpcMappingId_B1f
 
 	// B10ox_BOND
-	Bond_B10ox_BondUuid                              TypeAndStructs.BondUUIDType                          = "8a978853-f067-4978-aea0-07cceae8a1e1"
+	Bond_B10ox_BondUuid                              TypeAndStructs.OriginalElementUUIDType               = "8a978853-f067-4978-aea0-07cceae8a1e1"
 	Bond_B10ox_BondName                              TypeAndStructs.BondNameType                          = "B10ox_BOND"
 	Bond_B10ox_BondDescription                       TypeAndStructs.BondDescriptionType                   = "Bond with zero connections. This Bond is used in Pre-created containers and is used when user swap TIC(B10*x) into TIC(B11fx-n-B11l)."
 	Bond_B10ox_BondMouseOverText                     TypeAndStructs.BondMouseOverTextType                 = "Bond with zero connections. This Bond is used in Pre-created containers and is used when user swap TIC(B10*x) into TIC(B11fx-n-B11l)."
@@ -59,7 +59,7 @@ const (
 	Bond_B10ox_TestCaseModelElementTypeGrpcMappingID TypeAndStructs.TestCaseModelElementGrpcMappingIdType = TestCaseModelElementTypes.TestCaseModelElementGrpcMappingId_B10ox
 
 	// B10xo_BOND
-	Bond_B10xo_BondUuid                              TypeAndStructs.BondUUIDType                          = "f3277f00-c2e7-496d-948b-28ce1534785f"
+	Bond_B10xo_BondUuid                              TypeAndStructs.OriginalElementUUIDType               = "f3277f00-c2e7-496d-948b-28ce1534785f"
 	Bond_B10xo_BondName                              TypeAndStructs.BondNameType                          = "B10xo_BOND"
 	Bond_B10xo_BondDescription                       TypeAndStructs.BondDescriptionType                   = "Bond with zero connections. This Bond is used in Pre-created containers and is used when user swap TIC(B10x*) into TIC(B11f-n-B11lx)."
 	Bond_B10xo_BondMouseOverText                     TypeAndStructs.BondMouseOverTextType                 = "Bond with zero connections. This Bond is used in Pre-created containers and is used when user swap TIC(B10x*) into TIC(B11f-n-B11lx)."
@@ -76,7 +76,7 @@ const (
 	Bond_B10xo_TestCaseModelElementTypeGrpcMappingID TypeAndStructs.TestCaseModelElementGrpcMappingIdType = TestCaseModelElementTypes.TestCaseModelElementGrpcMappingId_B10xo
 
 	// B11fx_BOND
-	Bond_B11fx_BondUuid                              TypeAndStructs.BondUUIDType                          = "a2361365-1cc6-449b-bcf4-525608adcf8f"
+	Bond_B11fx_BondUuid                              TypeAndStructs.OriginalElementUUIDType               = "a2361365-1cc6-449b-bcf4-525608adcf8f"
 	Bond_B11fx_BondName                              TypeAndStructs.BondNameType                          = "B11fx_BOND_NONE_SWAPPABLE"
 	Bond_B11fx_BondDescription                       TypeAndStructs.BondDescriptionType                   = "Bond with one connection which appear as first element inside a TestInstructionContainer. This Bond is used in Pre-created containers and is used to stop a user to add new TestInstructions or TestInstructionsContainers before(first) structure."
 	Bond_B11fx_BondMouseOverText                     TypeAndStructs.BondMouseOverTextType                 = "Bond with one connection which appear as first element inside a TestInstructionContainer. This Bond is used in Pre-created containers and is used to stop a user to add new TestInstructions or TestInstructionsContainers before(first) structure."
@@ -93,7 +93,7 @@ const (
 	Bond_B11fx_TestCaseModelElementTypeGrpcMappingID TypeAndStructs.TestCaseModelElementGrpcMappingIdType = TestCaseModelElementTypes.TestCaseModelElementGrpcMappingId_B11fx
 
 	// B11f_BOND
-	Bond_B11f_BondUuid                              TypeAndStructs.BondUUIDType                          = "efe03475-91a2-4525-bac1-89fcfb246491"
+	Bond_B11f_BondUuid                              TypeAndStructs.OriginalElementUUIDType               = "efe03475-91a2-4525-bac1-89fcfb246491"
 	Bond_B11f_BondName                              TypeAndStructs.BondNameType                          = "B11f_BOND"
 	Bond_B11f_BondDescription                       TypeAndStructs.BondDescriptionType                   = "Bond with one connection which appear as first element inside a TestInstructionContainer"
 	Bond_B11f_BondMouseOverText                     TypeAndStructs.BondMouseOverTextType                 = "Bond with one connection which appear as first element inside a TestInstructionContainer"
@@ -110,7 +110,7 @@ const (
 	Bond_B11f_TestCaseModelElementTypeGrpcMappingID TypeAndStructs.TestCaseModelElementGrpcMappingIdType = TestCaseModelElementTypes.TestCaseModelElementGrpcMappingId_B11f
 
 	// B12_BOND
-	Bond_B12_BondUuid                              TypeAndStructs.BondUUIDType                          = "78f4c8ef-b8f3-40a2-a335-b28d2ba02e76"
+	Bond_B12_BondUuid                              TypeAndStructs.OriginalElementUUIDType               = "78f4c8ef-b8f3-40a2-a335-b28d2ba02e76"
 	Bond_B12_BondName                              TypeAndStructs.BondNameType                          = "B12_BOND"
 	Bond_B12_BondDescription                       TypeAndStructs.BondDescriptionType                   = "Bond with two connections which connects TestInstructions or TestInstructionContainers"
 	Bond_B12_BondMouseOverText                     TypeAndStructs.BondMouseOverTextType                 = "Bond with two connections which connects TestInstructions or TestInstructionContainers"
@@ -127,7 +127,7 @@ const (
 	Bond_B12_TestCaseModelElementTypeGrpcMappingID TypeAndStructs.TestCaseModelElementGrpcMappingIdType = TestCaseModelElementTypes.TestCaseModelElementGrpcMappingId_B12
 
 	// B11lx_BOND
-	Bond_B11lx_BondUuid                              TypeAndStructs.BondUUIDType                          = "b1aaae68-076d-4527-a167-228958c9ab01"
+	Bond_B11lx_BondUuid                              TypeAndStructs.OriginalElementUUIDType               = "b1aaae68-076d-4527-a167-228958c9ab01"
 	Bond_B11lx_BondName                              TypeAndStructs.BondNameType                          = "B11lx_BOND_NONE_SWAPPABLE"
 	Bond_B11lx_BondDescription                       TypeAndStructs.BondDescriptionType                   = "Bond with one connection which appear as first element inside a TestInstructionContainer. This Bond is used in Pre-created containers and is used to stop a user to add new TestInstructions or TestInstructionsContainers after(last) structure."
 	Bond_B11lx_BondMouseOverText                     TypeAndStructs.BondMouseOverTextType                 = "Bond with one connection which appear as first element inside a TestInstructionContainer. This Bond is used in Pre-created containers and is used to stop a user to add new TestInstructions or TestInstructionsContainers after(last) structure."
@@ -144,7 +144,7 @@ const (
 	Bond_B11lx_TestCaseModelElementTypeGrpcMappingID TypeAndStructs.TestCaseModelElementGrpcMappingIdType = TestCaseModelElementTypes.TestCaseModelElementGrpcMappingId_B11lx
 
 	// B10_BOND
-	Bond_B10_BondUuid                              TypeAndStructs.BondUUIDType                          = "0883d538-1cff-4be1-ba1f-4dc1f68f6242"
+	Bond_B10_BondUuid                              TypeAndStructs.OriginalElementUUIDType               = "0883d538-1cff-4be1-ba1f-4dc1f68f6242"
 	Bond_B10_BondName                              TypeAndStructs.BondNameType                          = "B10_BOND"
 	Bond_B10_BondDescription                       TypeAndStructs.BondDescriptionType                   = "Bond with zero connections which appear as an element in a new TestInstructionContainer without any other elements"
 	Bond_B10_BondMouseOverText                     TypeAndStructs.BondMouseOverTextType                 = "Bond with zero connections which appear as an element in a new TestInstructionContainer without any other elements"
@@ -161,7 +161,7 @@ const (
 	Bond_B10_TestCaseModelElementTypeGrpcMappingID TypeAndStructs.TestCaseModelElementGrpcMappingIdType = TestCaseModelElementTypes.TestCaseModelElementGrpcMappingId_B10
 
 	// B11l_BOND
-	Bond_B11l_BondUuid                              TypeAndStructs.BondUUIDType                          = "2c45d283-4625-40e3-bf8e-cb070f1a6210"
+	Bond_B11l_BondUuid                              TypeAndStructs.OriginalElementUUIDType               = "2c45d283-4625-40e3-bf8e-cb070f1a6210"
 	Bond_B11l_BondName                              TypeAndStructs.BondNameType                          = "B11l_BOND"
 	Bond_B11l_BondDescription                       TypeAndStructs.BondDescriptionType                   = "Bond with one connection which appear as last element inside a TestInstructionContainer"
 	Bond_B11l_BondMouseOverText                     TypeAndStructs.BondMouseOverTextType                 = "Bond with one connection which appear as last element inside a TestInstructionContainer"
@@ -178,7 +178,7 @@ const (
 	Bond_B11l_TestCaseModelElementTypeGrpcMappingID TypeAndStructs.TestCaseModelElementGrpcMappingIdType = TestCaseModelElementTypes.TestCaseModelElementGrpcMappingId_B11l
 
 	// B10oxo_BOND
-	Bond_B10oxo_BondUuid                              TypeAndStructs.BondUUIDType                          = "f1cc879d-3b95-4dea-84e5-e2a166c5fc95"
+	Bond_B10oxo_BondUuid                              TypeAndStructs.OriginalElementUUIDType               = "f1cc879d-3b95-4dea-84e5-e2a166c5fc95"
 	Bond_B10oxo_BondName                              TypeAndStructs.BondNameType                          = "B10oxo_BOND"
 	Bond_B10oxo_BondDescription                       TypeAndStructs.BondDescriptionType                   = "Bond with zero connections. This Bond is used in Pre-created containers and is used when user swap TIC(B10*x*) into TIC(B11fx-n-B11lx)."
 	Bond_B10oxo_BondMouseOverText                     TypeAndStructs.BondMouseOverTextType                 = "Bond with zero connections. This Bond is used in Pre-created containers and is used when user swap TIC(B10*x*) into TIC(B11fx-n-B11lx)."
@@ -195,7 +195,7 @@ const (
 	Bond_B10oxo_TestCaseModelElementTypeGrpcMappingID TypeAndStructs.TestCaseModelElementGrpcMappingIdType = TestCaseModelElementTypes.TestCaseModelElementGrpcMappingId_B10oxo
 
 	// B1l_BOND
-	Bond_B1l_BondUuid                              TypeAndStructs.BondUUIDType                          = "123ab7f8-9f08-44ad-bc02-15b205146f48"
+	Bond_B1l_BondUuid                              TypeAndStructs.OriginalElementUUIDType               = "123ab7f8-9f08-44ad-bc02-15b205146f48"
 	Bond_B1l_BondName                              TypeAndStructs.BondNameType                          = "B1l_BOND_NONE_SWAPPABLE"
 	Bond_B1l_BondDescription                       TypeAndStructs.BondDescriptionType                   = "Bond with one connection. Use for starting and ending a TestCase and is only found in pre-created TestInstructionContainers"
 	Bond_B1l_BondMouseOverText                     TypeAndStructs.BondMouseOverTextType                 = "Bond with one connection. Use for starting and ending a TestCase and is only found in pre-created TestInstructionContainers"
@@ -212,7 +212,7 @@ const (
 	Bond_B1l_TestCaseModelElementTypeGrpcMappingID TypeAndStructs.TestCaseModelElementGrpcMappingIdType = TestCaseModelElementTypes.TestCaseModelElementGrpcMappingId_B1l
 
 	// B12x_BOND
-	Bond_B12x_BondUuid                              TypeAndStructs.BondUUIDType                          = "9e613527-daa6-4559-9c73-adb8213eccd9"
+	Bond_B12x_BondUuid                              TypeAndStructs.OriginalElementUUIDType               = "9e613527-daa6-4559-9c73-adb8213eccd9"
 	Bond_B12x_BondName                              TypeAndStructs.BondNameType                          = "B12x_BOND_NONE_SWAPPABLE"
 	Bond_B12x_BondDescription                       TypeAndStructs.BondDescriptionType                   = "Bond with two connections which connects TestInstructions or TestInstructiB12x_BOND_NONE_SWAPPABLEonContainers. This Bond is used in Pre-created containers and is used to stop a user to add new TestInstructions or TestInstructionsContainers within a pre-created container."
 	Bond_B12x_BondMouseOverText                     TypeAndStructs.BondMouseOverTextType                 = "Bond with two connections which connects TestInstructions or TestInstructiB12x_BOND_NONE_SWAPPABLEonContainers. This Bond is used in Pre-created containers and is used to stop a user to add new TestInstructions or TestInstructionsContainers within a pre-created container."

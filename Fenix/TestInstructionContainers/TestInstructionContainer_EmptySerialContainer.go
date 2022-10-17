@@ -1,7 +1,9 @@
 package TestInstructionContainers
 
 import (
+	"FenixTestInstructionsDataAdmin/Bonds"
 	"FenixTestInstructionsDataAdmin/Domains"
+	"FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
 	"FenixTestInstructionsDataAdmin/TypeAndStructs"
 	"FenixTestInstructionsDataAdmin/shared_code"
 )
@@ -12,8 +14,8 @@ const (
 	TestInstructionContainerName_Fenix_EmptySerialContainer                        TypeAndStructs.TestInstructionContainerNameType = "Empty serial processed TestInstructionsContainer"
 	TestInstructionContainerTypeUUID_Fenix_EmptySerialContainer                                                                    = TestInstructionContainerTypeUUID_Fenix_BaseContainers
 	TestInstructionContainerTypeName_Fenix_EmptySerialContainer                                                                    = TestInstructionContainerTypeNameType_Fenix_BaseContainers
-	TestInstructionContainerDescription_Fenix_EmptySerialContainer                 string                                          = ""
-	TestInstructionContainerMouseOverText_Fenix_EmptySerialContainer               string                                          = ""
+	TestInstructionContainerDescription_Fenix_EmptySerialContainer                 string                                          = "Children of this container is processed in serial"
+	TestInstructionContainerMouseOverText_Fenix_EmptySerialContainer               string                                          = "Children of this container is processed in serial"
 	TestInstructionContainerDeprecated_Fenix_EmptySerialContainer                  bool                                            = false
 	TestInstructionContainerEnabled_Fenix_EmptySerialContainer                     bool                                            = true
 	TestInstructionContainerMajorVersionNumber_Fenix_EmptySerialContainer          int                                             = 1
@@ -24,8 +26,7 @@ const (
 	TCRuleSwap_CA_Fenix_EmptySerialContainer                                       TypeAndStructs.TCRuleSwapType                   = "TCRuleSwap012"
 
 	// *** DropZone ***
-	TestInstructionContainerDropZoneUUID_Fenix_EmptySerialContainer TypeAndStructs.DropZoneUUIDType = "c5e37024-e40c-49f7-8667-eab485c65105"
-	TestInstructionContainerDropZoneName_Fenix_EmptySerialContainer TypeAndStructs.DropZoneUUIDType = "My first DropZone for a TestInstructionContainer"
+	// No DropZone for 'EmptySerialContainer'
 )
 
 // TestInstructionContainer_Fenix_SerialStruct
@@ -65,6 +66,7 @@ func Initiate_TestInstructionContainer_Fenix_Serial() {
 		ChildrenIsParallelProcessed:           TestInstructionContainerChildrenIsParallelProcessed_Fenix_EmptySerialContainer,
 	}
 
+	// BasicTestInstructionContainerInformation - 'EmptySerialContainer'
 	TestInstructionContainer_Fenix_Serial.BasicTestInstructionContainerInformation = TypeAndStructs.BasicTestInstructionContainerInformationStruct{
 		DomainUUID:                            Domains.DomainUUID_Fenix,
 		DomainName:                            Domains.DomainName_Fenix,
@@ -84,4 +86,44 @@ func Initiate_TestInstructionContainer_Fenix_Serial() {
 		Enabled:                               TestInstructionContainerEnabled_Fenix_EmptySerialContainer,
 		TestInstructionContainerExecutionType: Domains.TestInstructionContainerExecutionType_SERIAL_PROCESSED,
 	}
+
+	// ImmatureTestInstructionContainerMessage - 'EmptySerialContainer'
+	// No DropZone for 'EmptySerialContainer'
+
+	// ImmatureElementModelMessage - 'EmptySerialContainer' - 'TIC' in 'TIC(B10)'
+	var ImmatureElementModel_TIC TypeAndStructs.ImmatureElementModelMessageStruct
+	ImmatureElementModel_TIC = TypeAndStructs.ImmatureElementModelMessageStruct{
+		DomainUUID:               Domains.DomainUUID_Fenix,
+		DomainName:               Domains.DomainName_Fenix,
+		ImmatureElementUUID:      TestInstructionContainerUUID_Fenix_EmptySerialContainer,
+		ImmatureElementName:      TypeAndStructs.OriginalElementNameType(TestInstructionContainerName_Fenix_EmptySerialContainer),
+		PreviousElementUUID:      TestInstructionContainerUUID_Fenix_EmptySerialContainer,
+		NextElementUUID:          TestInstructionContainerUUID_Fenix_EmptySerialContainer,
+		FirstChildElementUUID:    Bonds.Bond_B10_BondUuid,
+		ParentElementUUID:        TestInstructionContainerUUID_Fenix_EmptySerialContainer,
+		TestCaseModelElementType: TestCaseModelElementTypes.TestCaseModelElementType_TIC,
+		OriginalElementUUID:      TestInstructionContainerUUID_Fenix_EmptySerialContainer,
+		TopImmatureElementUUID:   TestInstructionContainerUUID_Fenix_EmptySerialContainer,
+		IsTopElement:             true,
+	}
+	TestInstructionContainer_Fenix_Serial.ImmatureElementModel = append(TestInstructionContainer_Fenix_Serial.ImmatureElementModel, ImmatureElementModel_TIC)
+
+	// ImmatureElementModelMessage - 'EmptySerialContainer' - 'B10' in 'TIC(B10)'
+	var ImmatureElementModel_B10 TypeAndStructs.ImmatureElementModelMessageStruct
+	ImmatureElementModel_B10 = TypeAndStructs.ImmatureElementModelMessageStruct{
+		DomainUUID:               Domains.DomainUUID_Fenix,
+		DomainName:               Domains.DomainName_Fenix,
+		ImmatureElementUUID:      Bonds.Bond_B10_BondUuid,
+		ImmatureElementName:      TypeAndStructs.OriginalElementNameType(Bonds.Bond_B0_BondName),
+		PreviousElementUUID:      Bonds.Bond_B10_BondUuid,
+		NextElementUUID:          Bonds.Bond_B10_BondUuid,
+		FirstChildElementUUID:    Bonds.Bond_B10_BondUuid,
+		ParentElementUUID:        TestInstructionContainerUUID_Fenix_EmptySerialContainer,
+		TestCaseModelElementType: TestCaseModelElementTypes.TestCaseModelElementType_B10,
+		OriginalElementUUID:      Bonds.Bond_B10_BondUuid,
+		TopImmatureElementUUID:   TestInstructionContainerUUID_Fenix_EmptySerialContainer,
+		IsTopElement:             false,
+	}
+	TestInstructionContainer_Fenix_Serial.ImmatureElementModel = append(TestInstructionContainer_Fenix_Serial.ImmatureElementModel, ImmatureElementModel_B10)
+
 }
