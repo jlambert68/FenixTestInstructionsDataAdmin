@@ -41,6 +41,8 @@ const (
 	TestInstructionAttributeValueUUID_CA_TestCaseTearDown_ExpectedToBePassed          TypeAndStructs.AttributeValueUUIDType           = Domains.TestInstructionAttributeValueUUID_TRUE
 	TestInstructionAttributeDescription_CA_TestCaseTearDown_ExpectedToBePassed        string                                          = "Should the TestInstruction execution to be expected to succeed or not"
 	TestInstructionAttributeMouseOverText_CA_TestCaseTearDown_ExpectedToBePassed      string                                          = "Should the TestInstruction execution to be expected to succeed or not"
+
+	FangEngine_Class_Name_CA_TestCaseTearDown = "GeneralSetupTearDown"
 )
 
 // TestInstruction_CA_TestCaseTearDownStruct
