@@ -107,10 +107,10 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() {
 		TestInstructionAttribute:           nil,
 		ImmatureElementModel:               nil,
 		FangEngineClassesMethodsAttributes: FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct{
-			FangEngineClassNameUUID:  FangEngineClassesAndMethods.FangEngine_ClassName_UUID_CA_CustodyAccount,
-			FangEngineClassNameNAME:  FangEngineClassesAndMethods.FangEngine_ClassName_Name_CA_CustodyAccount,
-			FangEngineMethodNameUUID: FangEngineClassesAndMethods.FangEngine_MethodName_UUID_CA_CustodyAccount_Search,
-			FangEngineMethodNameNAME: FangEngineClassesAndMethods.FangEngine_MethodName_Name_CA_CustodyAccount_Search,
+			FangEngineClassNameUUID:  FangEngineClassesAndMethods.FangEngine_ClassName_UUID_CA_SettlementAgreement,
+			FangEngineClassNameNAME:  FangEngineClassesAndMethods.FangEngine_ClassName_Name_CA_SettlementAgreement,
+			FangEngineMethodNameUUID: FangEngineClassesAndMethods.FangEngine_MethodName_UUID_CA_SettlementAgreement_Edit,
+			FangEngineMethodNameNAME: FangEngineClassesAndMethods.FangEngine_MethodName_Name_CA_SettlementAgreement_Edit,
 			Attributes:               make(map[TypeAndStructs.TestInstructionAttributeUUIDType]FangEngineClassesAndMethods.FangEngineAttributesStruct),
 		},
 	}
@@ -193,7 +193,7 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() {
 		FangEngineAttributeNameUUID:  FangEngineClassesAndMethods.FangEngine_AttributeName_UUID_CA_SettlementAgreement_Edit_TestDataDuplicateCheck,
 		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_AttributeName_Name_CA_SettlementAgreement_Edit_TestDataDuplicateCheck,
 	}
-	TestInstruction_CA_CustodyAccount_Search.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataDuplicateCheck] = tempFangEngineAttributeTestDataDuplicateCheck
+	TestInstruction_CA_SettlementAgreement_Edit.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataDuplicateCheck] = tempFangEngineAttributeTestDataDuplicateCheck
 
 	// TestInstruction Attribute - 'TestDataContractualRule'
 	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataContractualRule TypeAndStructs.TestInstructionAttributeStruct
@@ -230,7 +230,7 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() {
 		FangEngineAttributeNameUUID:  FangEngineClassesAndMethods.FangEngine_AttributeName_UUID_CA_SettlementAgreement_Edit_TestDataContractualRule,
 		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_AttributeName_Name_CA_SettlementAgreement_Edit_TestDataContractualRule,
 	}
-	TestInstruction_CA_CustodyAccount_Search.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataContractualRule] = tempFangEngineAttributeTestDataContractualRule
+	TestInstruction_CA_SettlementAgreement_Edit.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataContractualRule] = tempFangEngineAttributeTestDataContractualRule
 
 	// TestInstruction Attribute - 'TestDataMatchAffirmEligible'
 	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataMatchAffirmEligible TypeAndStructs.TestInstructionAttributeStruct
@@ -267,7 +267,7 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() {
 		FangEngineAttributeNameUUID:  FangEngineClassesAndMethods.FangEngine_AttributeName_UUID_CA_SettlementAgreement_Edit_TestDataMatchAffirmEligible,
 		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_AttributeName_Name_CA_SettlementAgreement_Edit_TestDataMatchAffirmEligible,
 	}
-	TestInstruction_CA_CustodyAccount_Search.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataMatchAffirmEligible] = tempFangEngineAttributeTestDataMatchAffirmEligible
+	TestInstruction_CA_SettlementAgreement_Edit.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataMatchAffirmEligible] = tempFangEngineAttributeTestDataMatchAffirmEligible
 
 	// TestInstruction Attribute - 'TestDataDirectAffirmInd'
 	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataDirectAffirmInd TypeAndStructs.TestInstructionAttributeStruct
@@ -304,7 +304,7 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() {
 		FangEngineAttributeNameUUID:  FangEngineClassesAndMethods.FangEngine_AttributeName_UUID_CA_SettlementAgreement_Edit_TestDataDirectAffirmInd,
 		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_AttributeName_Name_CA_SettlementAgreement_Edit_TestDataDirectAffirmInd,
 	}
-	TestInstruction_CA_CustodyAccount_Search.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataDirectAffirmInd] = tempFangEngineAttributeTestDataDirectAffirmInd
+	TestInstruction_CA_SettlementAgreement_Edit.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataDirectAffirmInd] = tempFangEngineAttributeTestDataDirectAffirmInd
 
 	// TestInstruction Attribute - 'TestDataAffirmDublicateCheck'
 	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck TypeAndStructs.TestInstructionAttributeStruct
@@ -341,7 +341,7 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() {
 		FangEngineAttributeNameUUID:  FangEngineClassesAndMethods.FangEngine_AttributeName_UUID_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck,
 		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_AttributeName_Name_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck,
 	}
-	TestInstruction_CA_CustodyAccount_Search.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck] = tempFangEngineAttributeTestDataAffirmDublicateCheck
+	TestInstruction_CA_SettlementAgreement_Edit.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck] = tempFangEngineAttributeTestDataAffirmDublicateCheck
 
 	// TestInstruction Attribute - 'TestDataAffirmCancelledInd'
 	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataAffirmCancelledInd TypeAndStructs.TestInstructionAttributeStruct
@@ -378,7 +378,44 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() {
 		FangEngineAttributeNameUUID:  FangEngineClassesAndMethods.FangEngine_AttributeName_UUID_CA_SettlementAgreement_Edit_TestDataAffirmCancelledInd,
 		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_AttributeName_Name_CA_SettlementAgreement_Edit_TestDataAffirmCancelledInd,
 	}
-	TestInstruction_CA_CustodyAccount_Search.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataAffirmCancelledInd] = tempFangEngineAttributeTestDataAffirmCancelledInd
+	TestInstruction_CA_SettlementAgreement_Edit.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataAffirmCancelledInd] = tempFangEngineAttributeTestDataAffirmCancelledInd
+
+	// TestInstruction Attribute - 'TestDataNearMatch'
+	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataNearMatch TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataNearMatch = TypeAndStructs.TestInstructionAttributeStruct{
+		DomainUUID:                                    Domains.DomainUUID_CA,
+		DomainName:                                    Domains.DomainName_CA,
+		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_Edit,
+		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_Edit,
+		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataNearMatch,
+		TestInstructionAttributeName:                  TestInstructionAttributeName_CA_SettlementAgreement_Edit_TestDataNearMatch,
+		TestInstructionAttributeDescription:           TestInstructionAttributeDescription_CA_SettlementAgreement_Edit_TestDataNearMatch,
+		TestInstructionAttributeMouseOver:             TestInstructionAttributeMouseOverText_CA_SettlementAgreement_Edit_TestDataNearMatch,
+		TestInstructionAttributeTypeUUID:              TestInstructionAttributeTypeUUID_CA_Standard,
+		TestInstructionAttributeTypeName:              TestInstructionAttributeTypeName_CA_Standard,
+		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
+		TestInstructionAttributeValueUUID:             Domains.TestInstructionAttributeValueUUID_NO_VALUE,
+		TestInstructionAttributeVisible:               true,
+		TestInstructionAttributeEnabled:               true,
+		TestInstructionAttributeMandatory:             true,
+		TestInstructionAttributeVisibleInTestCaseArea: false,
+		TestInstructionAttributeIsDeprecated:          false,
+		TestInstructionAttributeInputMask:             ".",
+		TestInstructionAttributeType:                  TestInstructionAttributeType_CA_SettlementAgreement_Edit_TestDataNearMatch,
+	}
+	TestInstruction_CA_SettlementAgreement_Edit.TestInstructionAttribute = append(
+		TestInstruction_CA_SettlementAgreement_Edit.TestInstructionAttribute,
+		TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataNearMatch)
+
+	// Add FangEngine relation for Attribute - 'TestDataNearMatch'
+	var tempFangEngineAttributeTestDataNearMatch FangEngineClassesAndMethods.FangEngineAttributesStruct
+	tempFangEngineAttributeTestDataNearMatch = FangEngineClassesAndMethods.FangEngineAttributesStruct{
+		TestInstructionAttributeUUID: TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataNearMatch,
+		TestInstructionAttributeName: TestInstructionAttributeName_CA_SettlementAgreement_Edit_TestDataNearMatch,
+		FangEngineAttributeNameUUID:  FangEngineClassesAndMethods.FangEngine_AttributeName_UUID_CA_SettlementAgreement_Edit_TestDataNearMatch,
+		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_AttributeName_Name_CA_SettlementAgreement_Edit_TestDataNearMatch,
+	}
+	TestInstruction_CA_SettlementAgreement_Edit.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataNearMatch] = tempFangEngineAttributeTestDataNearMatch
 
 	// TestInstruction Attribute - 'TestDataReturnDeliveryService'
 	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataReturnDeliveryService TypeAndStructs.TestInstructionAttributeStruct
@@ -415,6 +452,6 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() {
 		FangEngineAttributeNameUUID:  FangEngineClassesAndMethods.FangEngine_AttributeName_UUID_CA_SettlementAgreement_Edit_TestDataReturnDeliveryService,
 		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_AttributeName_Name_CA_SettlementAgreement_Edit_TestDataReturnDeliveryService,
 	}
-	TestInstruction_CA_CustodyAccount_Search.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataReturnDeliveryService] = tempFangEngineAttributeTestDataReturnDeliveryService
+	TestInstruction_CA_SettlementAgreement_Edit.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataReturnDeliveryService] = tempFangEngineAttributeTestDataReturnDeliveryService
 
 }
