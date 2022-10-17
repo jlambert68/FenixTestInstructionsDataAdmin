@@ -30,14 +30,11 @@ const (
 	// No Dropzone needed
 
 	// Attribute - 'CustodyAccountId'
-	TestInstructionAttributeUUID_CA_CustodyAccount_Search_CustodyAccountId               TypeAndStructs.TestInstructionAttributeUUIDType = TestInstructionAttributeUUID_CA_CustodyAccountId
-	TestInstructionAttributeName_CA_CustodyAccount_Search_CustodyAccountId               TypeAndStructs.TestInstructionAttributeNameType = TestInstructionAttributeName_CA_CustodyAccountId
-	TestInstructionAttributeType_CA_CustodyAccount_Search_CustodyAccountId               TypeAndStructs.TestInstructionAttributeTypeType = TestInstructionAttributeType_CA_CustodyAccountId
-	TestInstructionAttributeActionCommand_CA_CustodyAccount_Search_CustodyAccountId      TypeAndStructs.AttributeActionCommandType       = Domains.AttributeActionCommand_USE_DROPZONE_VALUE_FOR_ATTRIBUTE
-	TestInstructionAttributeValueAsStringValue_CA_CustodyAccount_Search_CustodyAccountId TypeAndStructs.AttributeValueAsStringType       = Domains.TestInstructionAttributeValueAsStringValue_TRUE
-	TestInstructionAttributeValueUUID_CA_CustodyAccount_Search_CustodyAccountId          TypeAndStructs.AttributeValueUUIDType           = Domains.TestInstructionAttributeValueUUID_TRUE
-	TestInstructionAttributeDescription_CA_CustodyAccount_Search_CustodyAccountId        string                                          = "Should the TestInstruction execution to be expected to succeed or not"
-	TestInstructionAttributeMouseOverText_CA_CustodyAccount_Search_CustodyAccountId      string                                          = "Should the TestInstruction execution to be expected to succeed or not"
+	TestInstructionAttributeUUID_CA_CustodyAccount_Search_CustodyAccountId          TypeAndStructs.TestInstructionAttributeUUIDType = "8f7c1ad6-2891-4e28-9b96-567d21385916"
+	TestInstructionAttributeName_CA_CustodyAccount_Search_CustodyAccountId          TypeAndStructs.TestInstructionAttributeNameType = "CustodyAccountId"
+	TestInstructionAttributeType_CA_CustodyAccount_Search_CustodyAccountId          TypeAndStructs.TestInstructionAttributeTypeType = "TEXTBOX"
+	TestInstructionAttributeDescription_CA_CustodyAccount_Search_CustodyAccountId   string                                          = "The Custody Account to search for"
+	TestInstructionAttributeMouseOverText_CA_CustodyAccount_Search_CustodyAccountId string                                          = "The Custody Account to search for"
 )
 
 // TestInstruction_CA_CustodyAccount_SearchStruct
@@ -59,7 +56,7 @@ var TestInstruction_CA_CustodyAccount_Search TestInstruction_CA_CustodyAccount_S
 // Function that creates all data for the TestInstruction
 func Initate_TestInstruction_CA_CustodyAccount_Search() {
 
-	// Initiate variable to store all TestInstruction data
+	// Initiate variable to be able to store all TestInstruction data
 	TestInstruction_CA_TestCaseSetUp = TestInstruction_CA_TestCaseSetUpStruct{
 		TestInstruction:                    TypeAndStructs.TestInstructionStruct{},
 		BasicTestInstructionInformation:    TypeAndStructs.BasicTestInstructionInformationStruct{},
