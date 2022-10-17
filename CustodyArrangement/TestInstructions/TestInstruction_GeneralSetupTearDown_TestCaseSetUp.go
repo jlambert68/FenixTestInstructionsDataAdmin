@@ -1,6 +1,7 @@
 package TestInstructions
 
 import (
+	"FenixTestInstructionsDataAdmin/CustodyArrangement/FangEngineClassesAndMethods"
 	"FenixTestInstructionsDataAdmin/Domains"
 	"FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
 	"FenixTestInstructionsDataAdmin/TypeAndStructs"
@@ -51,6 +52,7 @@ type TestInstruction_CA_TestCaseSetUpStruct struct {
 	ImmatureTestInstructionInformation []TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstructionAttribute           []TypeAndStructs.TestInstructionAttributeStruct
 	ImmatureElementModel               []TypeAndStructs.ImmatureElementModelMessageStruct
+	FangEngineClassesMethodsAttributes FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct
 }
 
 // TestInstruction_CA_TestCaseSetUp
@@ -61,6 +63,23 @@ var TestInstruction_CA_TestCaseSetUp TestInstruction_CA_TestCaseSetUpStruct
 // Function that creates all data for the TestInstruction
 func Initate_TestInstruction_CA_TestCaseSetUp() {
 
+	// Initiate variable to store all TestInstruction data
+	TestInstruction_CA_TestCaseSetUp = TestInstruction_CA_TestCaseSetUpStruct{
+		TestInstruction:                    TypeAndStructs.TestInstructionStruct{},
+		BasicTestInstructionInformation:    TypeAndStructs.BasicTestInstructionInformationStruct{},
+		ImmatureTestInstructionInformation: nil,
+		TestInstructionAttribute:           nil,
+		ImmatureElementModel:               nil,
+		FangEngineClassesMethodsAttributes: FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct{
+			FangEngineClassNameUUID:  "",
+			FangEngineClassNameNAME:  "",
+			FangEngineMethodNameUUID: "",
+			FangEngineMethodNameNAME: "",
+			Attributes:               make(map[TypeAndStructs.TestInstructionAttributeUUIDType]FangEngineClassesAndMethods.FangEngineAttributesStruct),
+		},
+	}
+
+	// Create TimeStamp to be used on all places where creation/update timestamp is needed
 	updatedTimeStamp := TypeAndStructs.UpdatedTimeStampType(shared_code.GenerateDatetimeTimeStampForDB())
 
 	// TestInstruction - TestCaseSetUp
