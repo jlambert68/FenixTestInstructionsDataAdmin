@@ -3,7 +3,6 @@ package TestInstructions
 import (
 	"FenixTestInstructionsDataAdmin/CustodyArrangement/FangEngineClassesAndMethods"
 	"FenixTestInstructionsDataAdmin/Domains"
-	"FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
 	"FenixTestInstructionsDataAdmin/TypeAndStructs"
 	"FenixTestInstructionsDataAdmin/shared_code"
 )
@@ -159,9 +158,9 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() {
 	// Dropzone Add
 	// No Dropzone needed
 
-	// TestInstruction Attribute - 'TestDataInterval'
-	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataInterval TypeAndStructs.TestInstructionAttributeStruct
-	TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataInterval = TypeAndStructs.TestInstructionAttributeStruct{
+	// TestInstruction Attribute - 'TestDataDuplicateCheck'
+	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataDuplicateCheck TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataDuplicateCheck = TypeAndStructs.TestInstructionAttributeStruct{
 		DomainUUID:                                    Domains.DomainUUID_CA,
 		DomainName:                                    Domains.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_Edit,
@@ -184,19 +183,29 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() {
 	}
 	TestInstruction_CA_SettlementAgreement_Edit.TestInstructionAttribute = append(
 		TestInstruction_CA_SettlementAgreement_Edit.TestInstructionAttribute,
-		TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataInterval)
+		TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataDuplicateCheck)
 
-	// TestInstruction Attribute - 'TestDataType'
-	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataType TypeAndStructs.TestInstructionAttributeStruct
-	TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataType = TypeAndStructs.TestInstructionAttributeStruct{
+	// Add FangEngine relation for Attribute - 'TestDataDuplicateCheck'
+	var tempFangEngineAttributeTestDataDuplicateCheck FangEngineClassesAndMethods.FangEngineAttributesStruct
+	tempFangEngineAttributeTestDataDuplicateCheck = FangEngineClassesAndMethods.FangEngineAttributesStruct{
+		TestInstructionAttributeUUID: TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataDuplicateCheck,
+		TestInstructionAttributeName: TestInstructionAttributeName_CA_SettlementAgreement_Edit_TestDataDuplicateCheck,
+		FangEngineAttributeNameUUID:  FangEngineClassesAndMethods.FangEngine_AttributeName_UUID_CA_SettlementAgreement_Edit_TestDataDuplicateCheck,
+		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_AttributeName_Name_CA_SettlementAgreement_Edit_TestDataDuplicateCheck,
+	}
+	TestInstruction_CA_CustodyAccount_Search.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataDuplicateCheck] = tempFangEngineAttributeTestDataDuplicateCheck
+
+	// TestInstruction Attribute - 'TestDataContractualRule'
+	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataContractualRule TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataContractualRule = TypeAndStructs.TestInstructionAttributeStruct{
 		DomainUUID:                                    Domains.DomainUUID_CA,
 		DomainName:                                    Domains.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_Edit,
 		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_Edit,
-		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataType,
-		TestInstructionAttributeName:                  TestInstructionAttributeName_CA_SettlementAgreement_Edit_TestDataType,
-		TestInstructionAttributeDescription:           "The channel datatype",
-		TestInstructionAttributeMouseOver:             "The channel datatype",
+		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataContractualRule,
+		TestInstructionAttributeName:                  TestInstructionAttributeName_CA_SettlementAgreement_Edit_TestDataContractualRule,
+		TestInstructionAttributeDescription:           TestInstructionAttributeDescription_CA_SettlementAgreement_Edit_TestDataContractualRule,
+		TestInstructionAttributeMouseOver:             TestInstructionAttributeMouseOverText_CA_SettlementAgreement_Edit_TestDataContractualRule,
 		TestInstructionAttributeTypeUUID:              TestInstructionAttributeTypeUUID_CA_Standard,
 		TestInstructionAttributeTypeName:              TestInstructionAttributeTypeName_CA_Standard,
 		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
@@ -207,23 +216,33 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() {
 		TestInstructionAttributeVisibleInTestCaseArea: false,
 		TestInstructionAttributeIsDeprecated:          false,
 		TestInstructionAttributeInputMask:             ".",
-		TestInstructionAttributeType:                  TestInstructionAttributeType_CA_SettlementAgreement_Edit_TestDataType,
+		TestInstructionAttributeType:                  TestInstructionAttributeType_CA_SettlementAgreement_Edit_TestDataContractualRule,
 	}
 	TestInstruction_CA_SettlementAgreement_Edit.TestInstructionAttribute = append(
 		TestInstruction_CA_SettlementAgreement_Edit.TestInstructionAttribute,
-		TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataType)
+		TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataContractualRule)
 
-	// TestInstruction Attribute - 'TestDataBIC'
-	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataBIC TypeAndStructs.TestInstructionAttributeStruct
-	TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataBIC = TypeAndStructs.TestInstructionAttributeStruct{
+	// Add FangEngine relation for Attribute - 'TestDataContractualRule'
+	var tempFangEngineAttributeTestDataContractualRule FangEngineClassesAndMethods.FangEngineAttributesStruct
+	tempFangEngineAttributeTestDataContractualRule = FangEngineClassesAndMethods.FangEngineAttributesStruct{
+		TestInstructionAttributeUUID: TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataContractualRule,
+		TestInstructionAttributeName: TestInstructionAttributeName_CA_SettlementAgreement_Edit_TestDataContractualRule,
+		FangEngineAttributeNameUUID:  FangEngineClassesAndMethods.FangEngine_AttributeName_UUID_CA_SettlementAgreement_Edit_TestDataContractualRule,
+		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_AttributeName_Name_CA_SettlementAgreement_Edit_TestDataContractualRule,
+	}
+	TestInstruction_CA_CustodyAccount_Search.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataContractualRule] = tempFangEngineAttributeTestDataContractualRule
+
+	// TestInstruction Attribute - 'TestDataMatchAffirmEligible'
+	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataMatchAffirmEligible TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataMatchAffirmEligible = TypeAndStructs.TestInstructionAttributeStruct{
 		DomainUUID:                                    Domains.DomainUUID_CA,
 		DomainName:                                    Domains.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_Edit,
 		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_Edit,
-		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataBIC,
-		TestInstructionAttributeName:                  TestInstructionAttributeName_CA_SettlementAgreement_Edit_TestDataBIC,
-		TestInstructionAttributeDescription:           "The BIC",
-		TestInstructionAttributeMouseOver:             "The BIC",
+		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataMatchAffirmEligible,
+		TestInstructionAttributeName:                  TestInstructionAttributeName_CA_SettlementAgreement_Edit_TestDataMatchAffirmEligible,
+		TestInstructionAttributeDescription:           TestInstructionAttributeDescription_CA_SettlementAgreement_Edit_TestDataMatchAffirmEligible,
+		TestInstructionAttributeMouseOver:             TestInstructionAttributeMouseOverText_CA_SettlementAgreement_Edit_TestDataMatchAffirmEligible,
 		TestInstructionAttributeTypeUUID:              TestInstructionAttributeTypeUUID_CA_Standard,
 		TestInstructionAttributeTypeName:              TestInstructionAttributeTypeName_CA_Standard,
 		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
@@ -234,23 +253,33 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() {
 		TestInstructionAttributeVisibleInTestCaseArea: false,
 		TestInstructionAttributeIsDeprecated:          false,
 		TestInstructionAttributeInputMask:             ".",
-		TestInstructionAttributeType:                  TestInstructionAttributeType_CA_SettlementAgreement_Edit_TestDataBIC,
+		TestInstructionAttributeType:                  TestInstructionAttributeType_CA_SettlementAgreement_Edit_TestDataMatchAffirmEligible,
 	}
 	TestInstruction_CA_SettlementAgreement_Edit.TestInstructionAttribute = append(
 		TestInstruction_CA_SettlementAgreement_Edit.TestInstructionAttribute,
-		TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataBIC)
+		TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataMatchAffirmEligible)
 
-	// TestInstruction Attribute - 'TestDataChannel'
-	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataChannel TypeAndStructs.TestInstructionAttributeStruct
-	TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataChannel = TypeAndStructs.TestInstructionAttributeStruct{
+	// Add FangEngine relation for Attribute - 'TestDataMatchAffirmEligible'
+	var tempFangEngineAttributeTestDataMatchAffirmEligible FangEngineClassesAndMethods.FangEngineAttributesStruct
+	tempFangEngineAttributeTestDataMatchAffirmEligible = FangEngineClassesAndMethods.FangEngineAttributesStruct{
+		TestInstructionAttributeUUID: TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataMatchAffirmEligible,
+		TestInstructionAttributeName: TestInstructionAttributeName_CA_SettlementAgreement_Edit_TestDataMatchAffirmEligible,
+		FangEngineAttributeNameUUID:  FangEngineClassesAndMethods.FangEngine_AttributeName_UUID_CA_SettlementAgreement_Edit_TestDataMatchAffirmEligible,
+		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_AttributeName_Name_CA_SettlementAgreement_Edit_TestDataMatchAffirmEligible,
+	}
+	TestInstruction_CA_CustodyAccount_Search.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataMatchAffirmEligible] = tempFangEngineAttributeTestDataMatchAffirmEligible
+
+	// TestInstruction Attribute - 'TestDataDirectAffirmInd'
+	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataDirectAffirmInd TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataDirectAffirmInd = TypeAndStructs.TestInstructionAttributeStruct{
 		DomainUUID:                                    Domains.DomainUUID_CA,
 		DomainName:                                    Domains.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_Edit,
 		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_Edit,
-		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataChannel,
-		TestInstructionAttributeName:                  TestInstructionAttributeName_CA_SettlementAgreement_Edit_TestDataChannel,
-		TestInstructionAttributeDescription:           "The channel",
-		TestInstructionAttributeMouseOver:             "The channel",
+		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataDirectAffirmInd,
+		TestInstructionAttributeName:                  TestInstructionAttributeName_CA_SettlementAgreement_Edit_TestDataDirectAffirmInd,
+		TestInstructionAttributeDescription:           TestInstructionAttributeDescription_CA_SettlementAgreement_Edit_TestDataDirectAffirmInd,
+		TestInstructionAttributeMouseOver:             TestInstructionAttributeMouseOverText_CA_SettlementAgreement_Edit_TestDataDirectAffirmInd,
 		TestInstructionAttributeTypeUUID:              TestInstructionAttributeTypeUUID_CA_Standard,
 		TestInstructionAttributeTypeName:              TestInstructionAttributeTypeName_CA_Standard,
 		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
@@ -261,29 +290,131 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() {
 		TestInstructionAttributeVisibleInTestCaseArea: false,
 		TestInstructionAttributeIsDeprecated:          false,
 		TestInstructionAttributeInputMask:             ".",
-		TestInstructionAttributeType:                  TestInstructionAttributeType_CA_SettlementAgreement_Edit_TestDataChannel,
+		TestInstructionAttributeType:                  TestInstructionAttributeType_CA_SettlementAgreement_Edit_TestDataDirectAffirmInd,
 	}
 	TestInstruction_CA_SettlementAgreement_Edit.TestInstructionAttribute = append(
 		TestInstruction_CA_SettlementAgreement_Edit.TestInstructionAttribute,
-		TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataChannel)
+		TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataDirectAffirmInd)
 
-	// ImmatureElementModel - SettlementAgreement_Edit
-	var TestInstructionImmatureElementModel_CA_SettlementAgreement_Edit TypeAndStructs.ImmatureElementModelMessageStruct
-	TestInstructionImmatureElementModel_CA_SettlementAgreement_Edit = TypeAndStructs.ImmatureElementModelMessageStruct{
-		DomainUUID:               Domains.DomainUUID_CA,
-		DomainName:               Domains.DomainName_CA,
-		ImmatureElementUUID:      TestInstructionUUID_CA_SettlementAgreement_Edit,
-		ImmatureElementName:      TypeAndStructs.OriginalElementNameType(TestInstructionName_CA_SettlementAgreement_Edit),
-		PreviousElementUUID:      TestInstructionUUID_CA_SettlementAgreement_Edit,
-		NextElementUUID:          TestInstructionUUID_CA_SettlementAgreement_Edit,
-		FirstChildElementUUID:    TestInstructionUUID_CA_SettlementAgreement_Edit,
-		ParentElementUUID:        TestInstructionUUID_CA_SettlementAgreement_Edit,
-		TestCaseModelElementType: TestCaseModelElementTypes.TestCaseModelElementType_TI,
-		OriginalElementUUID:      TestInstructionUUID_CA_SettlementAgreement_Edit,
-		TopImmatureElementUUID:   TestInstructionUUID_CA_SettlementAgreement_Edit,
-		IsTopElement:             true,
+	// Add FangEngine relation for Attribute - 'TestDataDirectAffirmInd'
+	var tempFangEngineAttributeTestDataDirectAffirmInd FangEngineClassesAndMethods.FangEngineAttributesStruct
+	tempFangEngineAttributeTestDataDirectAffirmInd = FangEngineClassesAndMethods.FangEngineAttributesStruct{
+		TestInstructionAttributeUUID: TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataDirectAffirmInd,
+		TestInstructionAttributeName: TestInstructionAttributeName_CA_SettlementAgreement_Edit_TestDataDirectAffirmInd,
+		FangEngineAttributeNameUUID:  FangEngineClassesAndMethods.FangEngine_AttributeName_UUID_CA_SettlementAgreement_Edit_TestDataDirectAffirmInd,
+		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_AttributeName_Name_CA_SettlementAgreement_Edit_TestDataDirectAffirmInd,
 	}
-	TestInstruction_CA_SettlementAgreement_Edit.ImmatureElementModel = append(
-		TestInstruction_CA_SettlementAgreement_Edit.ImmatureElementModel,
-		TestInstructionImmatureElementModel_CA_SettlementAgreement_Edit)
+	TestInstruction_CA_CustodyAccount_Search.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataDirectAffirmInd] = tempFangEngineAttributeTestDataDirectAffirmInd
+
+	// TestInstruction Attribute - 'TestDataAffirmDublicateCheck'
+	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck = TypeAndStructs.TestInstructionAttributeStruct{
+		DomainUUID:                                    Domains.DomainUUID_CA,
+		DomainName:                                    Domains.DomainName_CA,
+		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_Edit,
+		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_Edit,
+		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck,
+		TestInstructionAttributeName:                  TestInstructionAttributeName_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck,
+		TestInstructionAttributeDescription:           TestInstructionAttributeDescription_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck,
+		TestInstructionAttributeMouseOver:             TestInstructionAttributeMouseOverText_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck,
+		TestInstructionAttributeTypeUUID:              TestInstructionAttributeTypeUUID_CA_Standard,
+		TestInstructionAttributeTypeName:              TestInstructionAttributeTypeName_CA_Standard,
+		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
+		TestInstructionAttributeValueUUID:             Domains.TestInstructionAttributeValueUUID_NO_VALUE,
+		TestInstructionAttributeVisible:               true,
+		TestInstructionAttributeEnabled:               true,
+		TestInstructionAttributeMandatory:             true,
+		TestInstructionAttributeVisibleInTestCaseArea: false,
+		TestInstructionAttributeIsDeprecated:          false,
+		TestInstructionAttributeInputMask:             ".",
+		TestInstructionAttributeType:                  TestInstructionAttributeType_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck,
+	}
+	TestInstruction_CA_SettlementAgreement_Edit.TestInstructionAttribute = append(
+		TestInstruction_CA_SettlementAgreement_Edit.TestInstructionAttribute,
+		TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck)
+
+	// Add FangEngine relation for Attribute - 'TestDataAffirmDublicateCheck'
+	var tempFangEngineAttributeTestDataAffirmDublicateCheck FangEngineClassesAndMethods.FangEngineAttributesStruct
+	tempFangEngineAttributeTestDataAffirmDublicateCheck = FangEngineClassesAndMethods.FangEngineAttributesStruct{
+		TestInstructionAttributeUUID: TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck,
+		TestInstructionAttributeName: TestInstructionAttributeName_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck,
+		FangEngineAttributeNameUUID:  FangEngineClassesAndMethods.FangEngine_AttributeName_UUID_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck,
+		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_AttributeName_Name_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck,
+	}
+	TestInstruction_CA_CustodyAccount_Search.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck] = tempFangEngineAttributeTestDataAffirmDublicateCheck
+
+	// TestInstruction Attribute - 'TestDataAffirmCancelledInd'
+	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataAffirmCancelledInd TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataAffirmCancelledInd = TypeAndStructs.TestInstructionAttributeStruct{
+		DomainUUID:                                    Domains.DomainUUID_CA,
+		DomainName:                                    Domains.DomainName_CA,
+		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_Edit,
+		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_Edit,
+		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataAffirmCancelledInd,
+		TestInstructionAttributeName:                  TestInstructionAttributeName_CA_SettlementAgreement_Edit_TestDataAffirmCancelledInd,
+		TestInstructionAttributeDescription:           TestInstructionAttributeDescription_CA_SettlementAgreement_Edit_TestDataAffirmCancelledInd,
+		TestInstructionAttributeMouseOver:             TestInstructionAttributeMouseOverText_CA_SettlementAgreement_Edit_TestDataAffirmCancelledInd,
+		TestInstructionAttributeTypeUUID:              TestInstructionAttributeTypeUUID_CA_Standard,
+		TestInstructionAttributeTypeName:              TestInstructionAttributeTypeName_CA_Standard,
+		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
+		TestInstructionAttributeValueUUID:             Domains.TestInstructionAttributeValueUUID_NO_VALUE,
+		TestInstructionAttributeVisible:               true,
+		TestInstructionAttributeEnabled:               true,
+		TestInstructionAttributeMandatory:             true,
+		TestInstructionAttributeVisibleInTestCaseArea: false,
+		TestInstructionAttributeIsDeprecated:          false,
+		TestInstructionAttributeInputMask:             ".",
+		TestInstructionAttributeType:                  TestInstructionAttributeType_CA_SettlementAgreement_Edit_TestDataAffirmCancelledInd,
+	}
+	TestInstruction_CA_SettlementAgreement_Edit.TestInstructionAttribute = append(
+		TestInstruction_CA_SettlementAgreement_Edit.TestInstructionAttribute,
+		TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataAffirmCancelledInd)
+
+	// Add FangEngine relation for Attribute - 'TestDataAffirmCancelledInd'
+	var tempFangEngineAttributeTestDataAffirmCancelledInd FangEngineClassesAndMethods.FangEngineAttributesStruct
+	tempFangEngineAttributeTestDataAffirmCancelledInd = FangEngineClassesAndMethods.FangEngineAttributesStruct{
+		TestInstructionAttributeUUID: TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataAffirmCancelledInd,
+		TestInstructionAttributeName: TestInstructionAttributeName_CA_SettlementAgreement_Edit_TestDataAffirmCancelledInd,
+		FangEngineAttributeNameUUID:  FangEngineClassesAndMethods.FangEngine_AttributeName_UUID_CA_SettlementAgreement_Edit_TestDataAffirmCancelledInd,
+		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_AttributeName_Name_CA_SettlementAgreement_Edit_TestDataAffirmCancelledInd,
+	}
+	TestInstruction_CA_CustodyAccount_Search.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataAffirmCancelledInd] = tempFangEngineAttributeTestDataAffirmCancelledInd
+
+	// TestInstruction Attribute - 'TestDataReturnDeliveryService'
+	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataReturnDeliveryService TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataReturnDeliveryService = TypeAndStructs.TestInstructionAttributeStruct{
+		DomainUUID:                                    Domains.DomainUUID_CA,
+		DomainName:                                    Domains.DomainName_CA,
+		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_Edit,
+		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_Edit,
+		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataReturnDeliveryService,
+		TestInstructionAttributeName:                  TestInstructionAttributeName_CA_SettlementAgreement_Edit_TestDataReturnDeliveryService,
+		TestInstructionAttributeDescription:           TestInstructionAttributeDescription_CA_SettlementAgreement_Edit_TestDataReturnDeliveryService,
+		TestInstructionAttributeMouseOver:             TestInstructionAttributeMouseOverText_CA_SettlementAgreement_Edit_TestDataReturnDeliveryService,
+		TestInstructionAttributeTypeUUID:              TestInstructionAttributeTypeUUID_CA_Standard,
+		TestInstructionAttributeTypeName:              TestInstructionAttributeTypeName_CA_Standard,
+		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
+		TestInstructionAttributeValueUUID:             Domains.TestInstructionAttributeValueUUID_NO_VALUE,
+		TestInstructionAttributeVisible:               true,
+		TestInstructionAttributeEnabled:               true,
+		TestInstructionAttributeMandatory:             true,
+		TestInstructionAttributeVisibleInTestCaseArea: false,
+		TestInstructionAttributeIsDeprecated:          false,
+		TestInstructionAttributeInputMask:             ".",
+		TestInstructionAttributeType:                  TestInstructionAttributeType_CA_SettlementAgreement_Edit_TestDataReturnDeliveryService,
+	}
+	TestInstruction_CA_SettlementAgreement_Edit.TestInstructionAttribute = append(
+		TestInstruction_CA_SettlementAgreement_Edit.TestInstructionAttribute,
+		TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataReturnDeliveryService)
+
+	// Add FangEngine relation for Attribute - 'TestDataReturnDeliveryService'
+	var tempFangEngineAttributeTestDataReturnDeliveryService FangEngineClassesAndMethods.FangEngineAttributesStruct
+	tempFangEngineAttributeTestDataReturnDeliveryService = FangEngineClassesAndMethods.FangEngineAttributesStruct{
+		TestInstructionAttributeUUID: TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataReturnDeliveryService,
+		TestInstructionAttributeName: TestInstructionAttributeName_CA_SettlementAgreement_Edit_TestDataReturnDeliveryService,
+		FangEngineAttributeNameUUID:  FangEngineClassesAndMethods.FangEngine_AttributeName_UUID_CA_SettlementAgreement_Edit_TestDataReturnDeliveryService,
+		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_AttributeName_Name_CA_SettlementAgreement_Edit_TestDataReturnDeliveryService,
+	}
+	TestInstruction_CA_CustodyAccount_Search.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataReturnDeliveryService] = tempFangEngineAttributeTestDataReturnDeliveryService
+
 }
