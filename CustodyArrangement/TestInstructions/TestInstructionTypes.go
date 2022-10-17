@@ -12,4 +12,7 @@ const (
 
 	TestInstructionTypeUUID_CA_CustodyAccount TypeAndStructs.TestInstructionTypeUUIDType = "5005928a-f253-4828-9c2f-023571760759"
 	TestInstructionTypeName_CA_CustodyAccount TypeAndStructs.TestInstructionTypeNameType = "Custody Account"
+
+	TestInstructionTypeUUID_CA_GeneralSetUpTearDown TypeAndStructs.TestInstructionTypeUUIDType = "a8edbfba-4b1f-4777-8196-1323ad75620f"
+	TestInstructionTypeName_CA_GeneralSetUpTearDown TypeAndStructs.TestInstructionTypeNameType = "GeneralSetUpTearDown"
 )
