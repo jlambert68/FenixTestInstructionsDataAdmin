@@ -15,4 +15,7 @@ const (
 
 	TestInstructionTypeUUID_CA_GeneralSetUpTearDown TypeAndStructs.TestInstructionTypeUUIDType = "a8edbfba-4b1f-4777-8196-1323ad75620f"
 	TestInstructionTypeName_CA_GeneralSetUpTearDown TypeAndStructs.TestInstructionTypeNameType = "GeneralSetUpTearDown"
+
+	TestInstructionTypeUUID_CA_SettlementAgreementManagement TypeAndStructs.TestInstructionTypeUUIDType = "c0ab80af-4371-41af-b555-bdd1368c4095"
+	TestInstructionTypeName_CA_SettlementAgreementManagement TypeAndStructs.TestInstructionTypeNameType = "Settlement Agreement management"
 )

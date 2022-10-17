@@ -1,6 +1,7 @@
 package TestInstructions
 
 import (
+	"FenixTestInstructionsDataAdmin/CustodyArrangement/FangEngineClassesAndMethods"
 	"FenixTestInstructionsDataAdmin/Domains"
 	"FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
 	"FenixTestInstructionsDataAdmin/TypeAndStructs"
@@ -71,6 +72,7 @@ type TestInstruction_CA_AddOrDeleteSelectedSwiftStruct struct {
 	ImmatureTestInstructionInformation []TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstructionAttribute           []TypeAndStructs.TestInstructionAttributeStruct
 	ImmatureElementModel               []TypeAndStructs.ImmatureElementModelMessageStruct
+	FangEngineClassesMethodsAttributes FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct
 }
 
 // Variable that holds the data for the TestInstruction
@@ -80,6 +82,23 @@ var TestInstruction_CA_AddOrDeleteSelectedSwift TestInstruction_CA_AddOrDeleteSe
 // Function that creates all data for the TestInstruction
 func Initate_TestInstruction_CA_AddOrDeleteSelectedSwift() {
 
+	// Initiate variable to be able to store all TestInstruction data
+	TestInstruction_CA_AddOrDeleteSelectedSwift = TestInstruction_CA_AddOrDeleteSelectedSwiftStruct{
+		TestInstruction:                    TypeAndStructs.TestInstructionStruct{},
+		BasicTestInstructionInformation:    TypeAndStructs.BasicTestInstructionInformationStruct{},
+		ImmatureTestInstructionInformation: nil,
+		TestInstructionAttribute:           nil,
+		ImmatureElementModel:               nil,
+		FangEngineClassesMethodsAttributes: FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct{
+			FangEngineClassNameUUID:  FangEngineClassesAndMethods.FangEngine_ClassName_UUID_CA_CustodyAccount,
+			FangEngineClassNameNAME:  FangEngineClassesAndMethods.FangEngine_ClassName_Name_CA_CustodyAccount,
+			FangEngineMethodNameUUID: FangEngineClassesAndMethods.FangEngine_MethodName_UUID_CA_CustodyAccount_Search,
+			FangEngineMethodNameNAME: FangEngineClassesAndMethods.FangEngine_MethodName_Name_CA_CustodyAccount_Search,
+			Attributes:               make(map[TypeAndStructs.TestInstructionAttributeUUIDType]FangEngineClassesAndMethods.FangEngineAttributesStruct),
+		},
+	}
+
+	// Create TimeStamp to be used on all places where creation/update timestamp is needed
 	updatedTimeStamp := TypeAndStructs.UpdatedTimeStampType(shared_code.GenerateDatetimeTimeStampForDB())
 
 	// TestInstruction - AddOrDeleteSelectedSwift

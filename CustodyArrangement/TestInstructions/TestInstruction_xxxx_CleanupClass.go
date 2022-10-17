@@ -1,6 +1,7 @@
 package TestInstructions
 
 import (
+	"FenixTestInstructionsDataAdmin/CustodyArrangement/FangEngineClassesAndMethods"
 	"FenixTestInstructionsDataAdmin/Domains"
 	"FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
 	"FenixTestInstructionsDataAdmin/TypeAndStructs"
@@ -53,6 +54,7 @@ type TestInstruction_CA_CleanupClassStruct struct {
 	ImmatureTestInstructionInformation []TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstructionAttribute           []TypeAndStructs.TestInstructionAttributeStruct
 	ImmatureElementModel               []TypeAndStructs.ImmatureElementModelMessageStruct
+	FangEngineClassesMethodsAttributes FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct
 }
 
 // TestInstruction_CA_CleanupClass
@@ -63,6 +65,23 @@ var TestInstruction_CA_CleanupClass TestInstruction_CA_CleanupClassStruct
 // Function that creates all data for the TestInstruction
 func Initate_TestInstruction_CA_CleanupClass() {
 
+	// Initiate variable to be able to store all TestInstruction data
+	TestInstruction_CA_CleanupClass = TestInstruction_CA_CleanupClassStruct{
+		TestInstruction:                    TypeAndStructs.TestInstructionStruct{},
+		BasicTestInstructionInformation:    TypeAndStructs.BasicTestInstructionInformationStruct{},
+		ImmatureTestInstructionInformation: nil,
+		TestInstructionAttribute:           nil,
+		ImmatureElementModel:               nil,
+		FangEngineClassesMethodsAttributes: FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct{
+			FangEngineClassNameUUID:  FangEngineClassesAndMethods.FangEngine_ClassName_UUID_CA_CustodyAccount,
+			FangEngineClassNameNAME:  FangEngineClassesAndMethods.FangEngine_ClassName_Name_CA_CustodyAccount,
+			FangEngineMethodNameUUID: FangEngineClassesAndMethods.FangEngine_MethodName_UUID_CA_CustodyAccount_Search,
+			FangEngineMethodNameNAME: FangEngineClassesAndMethods.FangEngine_MethodName_Name_CA_CustodyAccount_Search,
+			Attributes:               make(map[TypeAndStructs.TestInstructionAttributeUUIDType]FangEngineClassesAndMethods.FangEngineAttributesStruct),
+		},
+	}
+
+	// Create TimeStamp to be used on all places where creation/update timestamp is needed
 	updatedTimeStamp := TypeAndStructs.UpdatedTimeStampType(shared_code.GenerateDatetimeTimeStampForDB())
 
 	// TestInstruction - CleanupClass
@@ -178,6 +197,16 @@ func Initate_TestInstruction_CA_CleanupClass() {
 		TestInstruction_CA_CleanupClass.TestInstructionAttribute,
 		TestInstructionAttribute_CA_CleanupClass_CustodyAccountId)
 
+	// Add FangEngine relation for Attribute - 'CustodyAccountId'
+	var tempFangEngineAttributeCustodyAccountId FangEngineClassesAndMethods.FangEngineAttributesStruct
+	tempFangEngineAttributeCustodyAccountId = FangEngineClassesAndMethods.FangEngineAttributesStruct{
+		TestInstructionAttributeUUID: TestInstructionAttributeUUID_CA_CleanupClass_CustodyAccountId,
+		TestInstructionAttributeName: TestInstructionAttributeName_CA_CleanupClass_CustodyAccountId,
+		FangEngineAttributeNameUUID:  FangEngineClassesAndMethods.FangEngine_AttributeName_UUID_CA_CleanUpClass_CustodyAccountId,
+		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_AttributeName_Name_CA_CleanUpClass_CustodyAccountId,
+	}
+	TestInstruction_CA_CustodyAccount_Search.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_CleanupClass_CustodyAccountId] = tempFangEngineAttributeCustodyAccountId
+
 	// TestInstruction Attribute - 'MarketName'
 	var TestInstructionAttribute_CA_CleanupClass_MarketName TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_CleanupClass_MarketName = TypeAndStructs.TestInstructionAttributeStruct{
@@ -204,6 +233,16 @@ func Initate_TestInstruction_CA_CleanupClass() {
 	TestInstruction_CA_CleanupClass.TestInstructionAttribute = append(
 		TestInstruction_CA_CleanupClass.TestInstructionAttribute,
 		TestInstructionAttribute_CA_CleanupClass_MarketName)
+
+	// Add FangEngine relation for Attribute - 'MarketName'
+	var tempFangEngineAttributeMarketName FangEngineClassesAndMethods.FangEngineAttributesStruct
+	tempFangEngineAttributeMarketName = FangEngineClassesAndMethods.FangEngineAttributesStruct{
+		TestInstructionAttributeUUID: TestInstructionAttributeUUID_CA_CleanupClass_MarketName,
+		TestInstructionAttributeName: TestInstructionAttributeName_CA_CleanupClass_MarketName,
+		FangEngineAttributeNameUUID:  FangEngineClassesAndMethods.FangEngine_AttributeName_UUID_CA_CleanUpClass_MarketName,
+		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_AttributeName_Name_CA_CleanUpClass_MarketName,
+	}
+	TestInstruction_CA_CustodyAccount_Search.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_CleanupClass_MarketName] = tempFangEngineAttributeMarketName
 
 	// ImmatureElementModel - CleanupClass
 	var TestInstructionImmatureElementModel_CA_CleanupClass TypeAndStructs.ImmatureElementModelMessageStruct
