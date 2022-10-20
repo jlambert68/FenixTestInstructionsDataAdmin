@@ -19,8 +19,8 @@ const (
 	TestInstructionMouseOverText_CA_SettlementAgreement_Edit      string                                 = "Edit an existing Settlement Agreement"
 	TestInstructionDeprecated_CA_SettlementAgreement_Edit         bool                                   = false
 	TestInstructionEnabled_CA_SettlementAgreement_Edit            bool                                   = true
-	TestInstructionMajorVersionNumber_CA_SettlementAgreement_Edit int                                    = 1
-	TestInstructionMinorVersionNumber_CA_SettlementAgreement_Edit int                                    = 0
+	TestInstructionMajorVersionNumber_CA_SettlementAgreement_Edit int                                    = 0
+	TestInstructionMinorVersionNumber_CA_SettlementAgreement_Edit int                                    = 1
 	TestInstructionColor_CA_SettlementAgreement_Edit              TypeAndStructs.ColorType               = "xxxxx"
 	TCRuleDeletion_CA_SettlementAgreement_Edit                    TypeAndStructs.TCRuleDeletionType      = "TCRuleDeletion011"
 	TCRuleSwap_CA_SettlementAgreement_Edit                        TypeAndStructs.TCRuleSwapType          = "TCRuleSwap011"

@@ -19,8 +19,8 @@ const (
 	TestInstructionMouseOverText_CA_SettlementAgreement_AddSelectedSwift      string                                 = "AddSelectedSwift to an existing Settlement Agreement"
 	TestInstructionDeprecated_CA_SettlementAgreement_AddSelectedSwift         bool                                   = false
 	TestInstructionEnabled_CA_SettlementAgreement_AddSelectedSwift            bool                                   = true
-	TestInstructionMajorVersionNumber_CA_SettlementAgreement_AddSelectedSwift int                                    = 1
-	TestInstructionMinorVersionNumber_CA_SettlementAgreement_AddSelectedSwift int                                    = 0
+	TestInstructionMajorVersionNumber_CA_SettlementAgreement_AddSelectedSwift int                                    = 0
+	TestInstructionMinorVersionNumber_CA_SettlementAgreement_AddSelectedSwift int                                    = 1
 	TestInstructionColor_CA_SettlementAgreement_AddSelectedSwift              TypeAndStructs.ColorType               = "xxxxx"
 	TCRuleDeletion_CA_SettlementAgreement_AddSelectedSwift                    TypeAndStructs.TCRuleDeletionType      = "TCRuleDeletion011"
 	TCRuleSwap_CA_SettlementAgreement_AddSelectedSwift                        TypeAndStructs.TCRuleSwapType          = "TCRuleSwap011"

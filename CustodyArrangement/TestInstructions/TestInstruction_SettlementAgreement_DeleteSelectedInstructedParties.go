@@ -3,6 +3,7 @@ package TestInstructions
 import (
 	"FenixTestInstructionsDataAdmin/CustodyArrangement/FangEngineClassesAndMethods"
 	"FenixTestInstructionsDataAdmin/Domains"
+	"FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
 	"FenixTestInstructionsDataAdmin/TypeAndStructs"
 	"FenixTestInstructionsDataAdmin/shared_code"
 )
@@ -18,33 +19,22 @@ const (
 	TestInstructionMouseOverText_CA_SettlementAgreement_DeleteSelectedInstructedParties      string                                 = "DeleteSelectedInstructedParties for an existing Settlement Agreement"
 	TestInstructionDeprecated_CA_SettlementAgreement_DeleteSelectedInstructedParties         bool                                   = false
 	TestInstructionEnabled_CA_SettlementAgreement_DeleteSelectedInstructedParties            bool                                   = true
-	TestInstructionMajorVersionNumber_CA_SettlementAgreement_DeleteSelectedInstructedParties int                                    = 1
-	TestInstructionMinorVersionNumber_CA_SettlementAgreement_DeleteSelectedInstructedParties int                                    = 0
+	TestInstructionMajorVersionNumber_CA_SettlementAgreement_DeleteSelectedInstructedParties int                                    = 0
+	TestInstructionMinorVersionNumber_CA_SettlementAgreement_DeleteSelectedInstructedParties int                                    = 1
 	TestInstructionColor_CA_SettlementAgreement_DeleteSelectedInstructedParties              TypeAndStructs.ColorType               = "xxxxx"
 	TCRuleDeletion_CA_SettlementAgreement_DeleteSelectedInstructedParties                    TypeAndStructs.TCRuleDeletionType      = "TCRuleDeletion011"
 	TCRuleSwap_CA_SettlementAgreement_DeleteSelectedInstructedParties                        TypeAndStructs.TCRuleSwapType          = "TCRuleSwap011"
 )
 
-// TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedPartiesStruct
-// Struct for holding all data for the TestInstruction
-type TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedPartiesStruct struct {
-	TestInstruction                    TypeAndStructs.TestInstructionStruct
-	BasicTestInstructionInformation    TypeAndStructs.BasicTestInstructionInformationStruct
-	ImmatureTestInstructionInformation []TypeAndStructs.ImmatureTestInstructionInformationStruct
-	TestInstructionAttribute           []TypeAndStructs.TestInstructionAttributeStruct
-	ImmatureElementModel               []TypeAndStructs.ImmatureElementModelMessageStruct
-	FangEngineClassesMethodsAttributes FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct
-}
-
 // Variable that holds the data for the TestInstruction
-var TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedPartiesStruct
+var TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties TestInstruction_CA_TestCaseSetUpStruct
 
 // Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties
 // Function that creates all data for the TestInstruction
 func Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties() {
 
 	// Initiate variable to be able to store all TestInstruction data
-	TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties = TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedPartiesStruct{
+	TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties = TestInstruction_CA_TestCaseSetUpStruct{
 		TestInstruction:                    TypeAndStructs.TestInstructionStruct{},
 		BasicTestInstructionInformation:    TypeAndStructs.BasicTestInstructionInformationStruct{},
 		ImmatureTestInstructionInformation: nil,
@@ -104,5 +94,25 @@ func Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedPart
 
 	// TestInstruction
 	// No Attributes needed
+
+	// ImmatureElementModel - 'SettlementAgreement' - MethodName: 'DeleteSelectedInstructedParties'
+	var TestInstructionImmatureElementModel_CA_SettlementAgreement_DeleteSelectedInstructedParties TypeAndStructs.ImmatureElementModelMessageStruct
+	TestInstructionImmatureElementModel_CA_SettlementAgreement_DeleteSelectedInstructedParties = TypeAndStructs.ImmatureElementModelMessageStruct{
+		DomainUUID:               Domains.DomainUUID_CA,
+		DomainName:               Domains.DomainName_CA,
+		ImmatureElementUUID:      TestInstructionUUID_CA_SettlementAgreement_DeleteSelectedInstructedParties,
+		ImmatureElementName:      TypeAndStructs.OriginalElementNameType(TestInstructionName_CA_SettlementAgreement_DeleteSelectedInstructedParties),
+		PreviousElementUUID:      TestInstructionUUID_CA_SettlementAgreement_DeleteSelectedInstructedParties,
+		NextElementUUID:          TestInstructionUUID_CA_SettlementAgreement_DeleteSelectedInstructedParties,
+		FirstChildElementUUID:    TestInstructionUUID_CA_SettlementAgreement_DeleteSelectedInstructedParties,
+		ParentElementUUID:        TestInstructionUUID_CA_SettlementAgreement_DeleteSelectedInstructedParties,
+		TestCaseModelElementType: TestCaseModelElementTypes.TestCaseModelElementType_TI,
+		OriginalElementUUID:      TestInstructionUUID_CA_SettlementAgreement_DeleteSelectedInstructedParties,
+		TopImmatureElementUUID:   TestInstructionUUID_CA_SettlementAgreement_DeleteSelectedInstructedParties,
+		IsTopElement:             true,
+	}
+	TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties.ImmatureElementModel = append(
+		TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties.ImmatureElementModel,
+		TestInstructionImmatureElementModel_CA_SettlementAgreement_DeleteSelectedInstructedParties)
 
 }
