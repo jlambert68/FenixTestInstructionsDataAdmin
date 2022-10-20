@@ -3,6 +3,7 @@ package TestInstructions
 import (
 	"FenixTestInstructionsDataAdmin/CustodyArrangement/FangEngineClassesAndMethods"
 	"FenixTestInstructionsDataAdmin/Domains"
+	"FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
 	"FenixTestInstructionsDataAdmin/TypeAndStructs"
 	"FenixTestInstructionsDataAdmin/shared_code"
 )
@@ -46,33 +47,22 @@ const (
 	TestInstructionAttributeMouseOverText_CA_SettlementAgreement_AddSelectedSwift_TestDataBic string                                          = "TestDataBic is xxxxx"
 
 	// Attribute - 'TestDataInterval'
-	TestInstructionAttributeUUID_CA_SettlementAgreement_AddSelectedSwift_TestDataInterval          TypeAndStructs.TestInstructionAttributeUUIDType = "0dae0c87-c659-46e1-a03b-15231f91d567"
+	TestInstructionAttributeUUID_CA_SettlementAgreement_AddSelectedSwift_TestDataInterval          TypeAndStructs.TestInstructionAttributeUUIDType = "1b7ce8bd-0399-498d-a254-be6c554c2ec3"
 	TestInstructionAttributeName_CA_SettlementAgreement_AddSelectedSwift_TestDataInterval          TypeAndStructs.TestInstructionAttributeNameType = "TestDataInterval"
 	TestInstructionAttributeType_CA_SettlementAgreement_AddSelectedSwift_TestDataInterval          TypeAndStructs.TestInstructionAttributeTypeType = "TEXTBOX"
 	TestInstructionAttributeDescription_CA_SettlementAgreement_AddSelectedSwift_TestDataInterval   string                                          = "TestDataInterval is xxxxx"
 	TestInstructionAttributeMouseOverText_CA_SettlementAgreement_AddSelectedSwift_TestDataInterval string                                          = "TestDataInterval is xxxxx"
 )
 
-// TestInstruction_CA_SettlementAgreement_AddSelectedSwiftStruct
-// Struct for holding all data for the TestInstruction
-type TestInstruction_CA_SettlementAgreement_AddSelectedSwiftStruct struct {
-	TestInstruction                    TypeAndStructs.TestInstructionStruct
-	BasicTestInstructionInformation    TypeAndStructs.BasicTestInstructionInformationStruct
-	ImmatureTestInstructionInformation []TypeAndStructs.ImmatureTestInstructionInformationStruct
-	TestInstructionAttribute           []TypeAndStructs.TestInstructionAttributeStruct
-	ImmatureElementModel               []TypeAndStructs.ImmatureElementModelMessageStruct
-	FangEngineClassesMethodsAttributes FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct
-}
-
 // Variable that holds the data for the TestInstruction
-var TestInstruction_CA_SettlementAgreement_AddSelectedSwift TestInstruction_CA_SettlementAgreement_AddSelectedSwiftStruct
+var TestInstruction_CA_SettlementAgreement_AddSelectedSwift TestInstruction_CA_TestCaseSetUpStruct
 
 // Initate_TestInstruction_CA_SettlementAgreement_AddSelectedSwift
 // Function that creates all data for the TestInstruction
 func Initate_TestInstruction_CA_SettlementAgreement_AddSelectedSwift() {
 
 	// Initiate variable to be able to store all TestInstruction data
-	TestInstruction_CA_SettlementAgreement_AddSelectedSwift = TestInstruction_CA_SettlementAgreement_AddSelectedSwiftStruct{
+	TestInstruction_CA_SettlementAgreement_AddSelectedSwift = TestInstruction_CA_TestCaseSetUpStruct{
 		TestInstruction:                    TypeAndStructs.TestInstructionStruct{},
 		BasicTestInstructionInformation:    TypeAndStructs.BasicTestInstructionInformationStruct{},
 		ImmatureTestInstructionInformation: nil,
@@ -277,5 +267,25 @@ func Initate_TestInstruction_CA_SettlementAgreement_AddSelectedSwift() {
 		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_AttributeName_Name_CA_SettlementAgreement_AddSelectedSwift_TestDataInterval,
 	}
 	TestInstruction_CA_SettlementAgreement_AddSelectedSwift.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_AddSelectedSwift_TestDataInterval] = tempFangEngineAttributeTestDataInterval
+
+	// ImmatureElementModel - 'SettlementAgreement' - MethodName: 'AddSelectedSwift'
+	var TestInstructionImmatureElementModel_CA_SettlementAgreement_AddSelectedSwift TypeAndStructs.ImmatureElementModelMessageStruct
+	TestInstructionImmatureElementModel_CA_SettlementAgreement_AddSelectedSwift = TypeAndStructs.ImmatureElementModelMessageStruct{
+		DomainUUID:               Domains.DomainUUID_CA,
+		DomainName:               Domains.DomainName_CA,
+		ImmatureElementUUID:      TestInstructionUUID_CA_SettlementAgreement_AddSelectedSwift,
+		ImmatureElementName:      TypeAndStructs.OriginalElementNameType(TestInstructionName_CA_SettlementAgreement_AddSelectedSwift),
+		PreviousElementUUID:      TestInstructionUUID_CA_SettlementAgreement_AddSelectedSwift,
+		NextElementUUID:          TestInstructionUUID_CA_SettlementAgreement_AddSelectedSwift,
+		FirstChildElementUUID:    TestInstructionUUID_CA_SettlementAgreement_AddSelectedSwift,
+		ParentElementUUID:        TestInstructionUUID_CA_SettlementAgreement_AddSelectedSwift,
+		TestCaseModelElementType: TestCaseModelElementTypes.TestCaseModelElementType_TI,
+		OriginalElementUUID:      TestInstructionUUID_CA_SettlementAgreement_AddSelectedSwift,
+		TopImmatureElementUUID:   TestInstructionUUID_CA_SettlementAgreement_AddSelectedSwift,
+		IsTopElement:             true,
+	}
+	TestInstruction_CA_SettlementAgreement_AddSelectedSwift.ImmatureElementModel = append(
+		TestInstruction_CA_SettlementAgreement_AddSelectedSwift.ImmatureElementModel,
+		TestInstructionImmatureElementModel_CA_SettlementAgreement_AddSelectedSwift)
 
 }
