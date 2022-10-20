@@ -34,7 +34,7 @@ const (
 	TestInstructionDropZoneColor_CA_CleanupClass_DeleteLocalMarketAndConfirm       TypeAndStructs.ColorType        = "#00000000"
 
 	// Attribute - 'CustodyAccountId'
-	TestInstructionAttributeUUID_CA_CleanupClass_CustodyAccountId          TypeAndStructs.TestInstructionAttributeUUIDType = "831b9553-f05e-4912-a832-69f785da9256"
+	GooTestInstructionAttributeUUID_CA_CleanupClass_CustodyAccountId          TypeAndStructs.TestInstructionAttributeUUIDType = "831b9553-f05e-4912-a832-69f785da9256"
 	TestInstructionAttributeName_CA_CleanupClass_CustodyAccountId          TypeAndStructs.TestInstructionAttributeNameType = "CustodyAccountId"
 	TestInstructionAttributeType_CA_CleanupClass_CustodyAccountId          TypeAndStructs.TestInstructionAttributeTypeType = "TEXTBOX"
 	TestInstructionAttributeActionCommand_CA_CleanupClass_CustodyAccountId                                                 = Domains.AttributeActionCommand_USE_DROPZONE_VALUE_FOR_ATTRIBUTE

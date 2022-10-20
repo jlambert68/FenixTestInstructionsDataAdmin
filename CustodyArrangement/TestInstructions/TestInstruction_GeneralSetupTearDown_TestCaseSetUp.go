@@ -44,17 +44,6 @@ const (
 	TestInstructionAttributeMouseOverText_CA_TestCaseSetUp_ExpectedToBePassed      string                                          = "Should the TestInstruction execution to be expected to succeed or not"
 )
 
-// TestInstruction_CA_TestCaseSetUpStruct
-// Struct for holding all data for the TestInstruction
-type TestInstruction_CA_TestCaseSetUpStruct struct {
-	TestInstruction                    TypeAndStructs.TestInstructionStruct
-	BasicTestInstructionInformation    TypeAndStructs.BasicTestInstructionInformationStruct
-	ImmatureTestInstructionInformation []TypeAndStructs.ImmatureTestInstructionInformationStruct
-	TestInstructionAttribute           []TypeAndStructs.TestInstructionAttributeStruct
-	ImmatureElementModel               []TypeAndStructs.ImmatureElementModelMessageStruct
-	FangEngineClassesMethodsAttributes FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct
-}
-
 // TestInstruction_CA_TestCaseSetUp
 // Variable that holds the data for the TestInstruction
 var TestInstruction_CA_TestCaseSetUp TestInstruction_CA_TestCaseSetUpStruct

@@ -20,8 +20,8 @@ const (
 	TestInstructionMouseOverText_CA_CustodyAccount_Search      string                                 = "Search for a specific Custody Account"
 	TestInstructionDeprecated_CA_CustodyAccount_Search         bool                                   = false
 	TestInstructionEnabled_CA_CustodyAccount_Search            bool                                   = true
-	TestInstructionMajorVersionNumber_CA_CustodyAccount_Search int                                    = 1
-	TestInstructionMinorVersionNumber_CA_CustodyAccount_Search int                                    = 0
+	TestInstructionMajorVersionNumber_CA_CustodyAccount_Search int                                    = 0
+	TestInstructionMinorVersionNumber_CA_CustodyAccount_Search int                                    = 1
 	TestInstructionColor_CA_CustodyAccount_Search              TypeAndStructs.ColorType               = "#00ff00AA"
 	TCRuleDeletion_CA_CustodyAccount_Search                    TypeAndStructs.TCRuleDeletionType      = "TCRuleDeletion011"
 	TCRuleSwap_CA_CustodyAccount_Search                        TypeAndStructs.TCRuleSwapType          = "TCRuleSwap011"
@@ -37,27 +37,16 @@ const (
 	TestInstructionAttributeMouseOverText_CA_CustodyAccount_Search_CustodyAccountId string                                          = "The Custody Account to search for"
 )
 
-// TestInstruction_CA_CustodyAccount_SearchStruct
-// Struct for holding all data for the TestInstruction
-type TestInstruction_CA_CustodyAccount_SearchStruct struct {
-	TestInstruction                    TypeAndStructs.TestInstructionStruct
-	BasicTestInstructionInformation    TypeAndStructs.BasicTestInstructionInformationStruct
-	ImmatureTestInstructionInformation []TypeAndStructs.ImmatureTestInstructionInformationStruct
-	TestInstructionAttribute           []TypeAndStructs.TestInstructionAttributeStruct
-	ImmatureElementModel               []TypeAndStructs.ImmatureElementModelMessageStruct
-	FangEngineClassesMethodsAttributes FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct
-}
-
 // TestInstruction_CA_CustodyAccount_Search
 // Variable that holds the data for the TestInstruction
-var TestInstruction_CA_CustodyAccount_Search TestInstruction_CA_CustodyAccount_SearchStruct
+var TestInstruction_CA_CustodyAccount_Search TestInstruction_CA_TestCaseSetUpStruct
 
 // Initate_TestInstruction_CA_CustodyAccount_Search
 // Function that creates all data for the TestInstruction
 func Initate_TestInstruction_CA_CustodyAccount_Search() {
 
 	// Initiate variable to be able to store all TestInstruction data
-	TestInstruction_CA_TestCaseSetUp = TestInstruction_CA_TestCaseSetUpStruct{
+	TestInstruction_CA_CustodyAccount_Search = TestInstruction_CA_TestCaseSetUpStruct{
 		TestInstruction:                    TypeAndStructs.TestInstructionStruct{},
 		BasicTestInstructionInformation:    TypeAndStructs.BasicTestInstructionInformationStruct{},
 		ImmatureTestInstructionInformation: nil,
@@ -150,6 +139,7 @@ func Initate_TestInstruction_CA_CustodyAccount_Search() {
 		FangEngineAttributeNameUUID:  FangEngineClassesAndMethods.FangEngine_AttributeName_UUID_CA_CustodyAccount_Search_CustodyAccountId,
 		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_AttributeName_Name_CA_CustodyAccount_Search_CustodyAccountId,
 	}
+	//TestInstruction_CA_CustodyAccount_Search.FangEngineClassesMethodsAttributes.Attributes = make(map[TypeAndStructs.TestInstructionAttributeUUIDType]FangEngineClassesAndMethods.FangEngineAttributesStruct)
 	TestInstruction_CA_CustodyAccount_Search.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_CustodyAccount_Search_CustodyAccountId] = tempFangEngineAttributeCustodyAccountId
 
 	// ImmatureElementModel - Search
