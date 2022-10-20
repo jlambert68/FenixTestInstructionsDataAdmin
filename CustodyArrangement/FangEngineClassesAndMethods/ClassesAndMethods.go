@@ -28,11 +28,20 @@ type FangEngineAttributesStruct struct {
 
 // Classes, Methods and their Parameters in FangEngine for Custody Arrangement
 const (
-	// ClassName - 'GeneralSetupTearDown'
-	FangEngine_ClassName_UUID_CA_GeneralSetupTearDown           FangEngine_ClassName_UUID_CA_Type  = "998b8ec9-6dc8-477a-a9a6-453417279537"
-	FangEngine_ClassName_Name_CA_GeneralSetupTearDown           FangEngine_ClassName_Name_CA_Type  = "GeneralSetupTearDown"
-	FangEngine_MethodName_UUID_CA_GeneralSetupTearDown_Setup    FangEngine_MethodName_UUID_CA_Type = "4d5ee1e6-858c-4b9f-8e15-3cb350b6367d"
-	FangEngine_MethodName_Name_CA_GeneralSetupTearDown_Setup    FangEngine_MethodName_Name_CA_Type = "Setup"
+
+	// General Attribute - ''
+	FangEngine_ClassName_UUID_CA_GeneralAttribute_ExpectedToBePassed FangEngine_AttributeName_UUID_CA_Type = "2e78043c-00bf-4a4a-8690-9981425ca239"
+	FangEngine_ClassName_Name_CA_GeneralAttribute_ExpectedToBePassed FangEngine_AttributeName_Name_CA_Type = "expectedToBePassed"
+
+	// ClassName - ***** 'GeneralSetupTearDown' *****
+	FangEngine_ClassName_UUID_CA_GeneralSetupTearDown FangEngine_ClassName_UUID_CA_Type = "998b8ec9-6dc8-477a-a9a6-453417279537"
+	FangEngine_ClassName_Name_CA_GeneralSetupTearDown FangEngine_ClassName_Name_CA_Type = "GeneralSetupTearDown"
+
+	// ClassName: 'GeneralSetupTearDown' - MethodName: 'Setup'
+	FangEngine_MethodName_UUID_CA_GeneralSetupTearDown_Setup FangEngine_MethodName_UUID_CA_Type = "4d5ee1e6-858c-4b9f-8e15-3cb350b6367d"
+	FangEngine_MethodName_Name_CA_GeneralSetupTearDown_Setup FangEngine_MethodName_Name_CA_Type = "Setup"
+
+	// ClassName: 'GeneralSetupTearDown' - MethodName: 'TearDown'
 	FangEngine_MethodName_UUID_CA_GeneralSetupTearDown_TearDown FangEngine_MethodName_UUID_CA_Type = "e58dd894-1d22-47ea-96d8-d2696eb347a0"
 	FangEngine_MethodName_Name_CA_GeneralSetupTearDown_TearDown FangEngine_MethodName_Name_CA_Type = "TearDown"
 

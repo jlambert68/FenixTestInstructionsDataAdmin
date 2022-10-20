@@ -20,8 +20,8 @@ const (
 	TestInstructionMouseOverText_CA_TestCaseTearDown      string                                 = "TearDown the Custody Arrangements execution engine after executing TestInstructions"
 	TestInstructionDeprecated_CA_TestCaseTearDown         bool                                   = false
 	TestInstructionEnabled_CA_TestCaseTearDown            bool                                   = true
-	TestInstructionMajorVersionNumber_CA_TestCaseTearDown int                                    = 1
-	TestInstructionMinorVersionNumber_CA_TestCaseTearDown int                                    = 0
+	TestInstructionMajorVersionNumber_CA_TestCaseTearDown int                                    = 0
+	TestInstructionMinorVersionNumber_CA_TestCaseTearDown int                                    = 1
 	TestInstructionColor_CA_TestCaseTearDown              TypeAndStructs.ColorType               = "#00ff00AA"
 	TCRuleDeletion_CA_TestCaseTearDown                    TypeAndStructs.TCRuleDeletionType      = "TCRuleDeletion020"
 	TCRuleSwap_CA_TestCaseTearDown                        TypeAndStructs.TCRuleSwapType          = "TCRuleSwap020"
@@ -34,7 +34,7 @@ const (
 	TestInstructionDropZoneColor_CA_TestCaseTearDown_TestCaseTearDownExpectsToSucceed       TypeAndStructs.ColorType        = "#00000000"
 
 	// Attribute - 'ExpectedToBePassed'
-	TestInstructionAttributeUUID_CA_TestCaseTearDown_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeUUIDType = TestInstructionAttributeUUID_CA_ExpectedToBePassed
+	TestInstructionAttributeUUID_CA_TestCaseTearDown_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeUUIDType = "4ee44b43-7942-4051-b548-20162b92e3b8" // TODO fix so they use the same UUID, Can't bu done now because UUID is key in Attrubutes-table in DB .TestInstructionAttributeUUID_CA_ExpectedToBePassed
 	TestInstructionAttributeName_CA_TestCaseTearDown_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeNameType = TestInstructionAttributeName_CA_ExpectedToBePassed
 	TestInstructionAttributeType_CA_TestCaseTearDown_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeTypeType = TestInstructionAttributeType_CA_ExpectedToBePassed
 	TestInstructionAttributeActionCommand_CA_TestCaseTearDown_ExpectedToBePassed      TypeAndStructs.AttributeActionCommandType       = Domains.AttributeActionCommand_USE_DROPZONE_VALUE_FOR_ATTRIBUTE
@@ -46,37 +46,26 @@ const (
 	FangEngine_Class_Name_CA_TestCaseTearDown = "GeneralSetupTearDown"
 )
 
-// TestInstruction_CA_TestCaseTearDownStruct
-// Struct for holding all data for the TestInstruction
-type TestInstruction_CA_TestCaseTearDownStruct struct {
-	TestInstruction                    TypeAndStructs.TestInstructionStruct
-	BasicTestInstructionInformation    TypeAndStructs.BasicTestInstructionInformationStruct
-	ImmatureTestInstructionInformation []TypeAndStructs.ImmatureTestInstructionInformationStruct
-	TestInstructionAttribute           []TypeAndStructs.TestInstructionAttributeStruct
-	ImmatureElementModel               []TypeAndStructs.ImmatureElementModelMessageStruct
-	FangEngineClassesMethodsAttributes FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct
-}
-
 // TestInstruction_CA_TestCaseTearDown
 // Variable that holds the data for the TestInstruction
-var TestInstruction_CA_TestCaseTearDown TestInstruction_CA_TestCaseTearDownStruct
+var TestInstruction_CA_TestCaseTearDown TestInstruction_CA_TestCaseSetUpStruct
 
 // Initate_TestInstruction_CA_TestCaseTearDown
 // Function that creates all data for the TestInstruction
 func Initate_TestInstruction_CA_TestCaseTearDown() {
 
 	// Initiate variable to be able to store all TestInstruction data
-	TestInstruction_CA_TestCaseTearDown = TestInstruction_CA_TestCaseTearDownStruct{
+	TestInstruction_CA_TestCaseTearDown = TestInstruction_CA_TestCaseSetUpStruct{
 		TestInstruction:                    TypeAndStructs.TestInstructionStruct{},
 		BasicTestInstructionInformation:    TypeAndStructs.BasicTestInstructionInformationStruct{},
 		ImmatureTestInstructionInformation: nil,
 		TestInstructionAttribute:           nil,
 		ImmatureElementModel:               nil,
 		FangEngineClassesMethodsAttributes: FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct{
-			FangEngineClassNameUUID:  FangEngineClassesAndMethods.FangEngine_ClassName_UUID_CA_CustodyAccount,
-			FangEngineClassNameNAME:  FangEngineClassesAndMethods.FangEngine_ClassName_Name_CA_CustodyAccount,
-			FangEngineMethodNameUUID: FangEngineClassesAndMethods.FangEngine_MethodName_UUID_CA_CustodyAccount_Search,
-			FangEngineMethodNameNAME: FangEngineClassesAndMethods.FangEngine_MethodName_Name_CA_CustodyAccount_Search,
+			FangEngineClassNameUUID:  FangEngineClassesAndMethods.FangEngine_ClassName_UUID_CA_GeneralSetupTearDown,
+			FangEngineClassNameNAME:  FangEngineClassesAndMethods.FangEngine_ClassName_Name_CA_GeneralSetupTearDown,
+			FangEngineMethodNameUUID: FangEngineClassesAndMethods.FangEngine_MethodName_UUID_CA_GeneralSetupTearDown_TearDown,
+			FangEngineMethodNameNAME: FangEngineClassesAndMethods.FangEngine_MethodName_Name_CA_GeneralSetupTearDown_TearDown,
 			Attributes:               make(map[TypeAndStructs.TestInstructionAttributeUUIDType]FangEngineClassesAndMethods.FangEngineAttributesStruct),
 		},
 	}
@@ -172,6 +161,16 @@ func Initate_TestInstruction_CA_TestCaseTearDown() {
 	TestInstruction_CA_TestCaseTearDown.TestInstructionAttribute = append(
 		TestInstruction_CA_TestCaseTearDown.TestInstructionAttribute,
 		TestInstructionAttribute_CA_TestCaseTearDown_ExpectedToBePassed)
+
+	// Add FangEngine relation for Attribute - 'ExpectedToBePassed'
+	var tempFangEngineAttributeTestDataContractualRule FangEngineClassesAndMethods.FangEngineAttributesStruct
+	tempFangEngineAttributeTestDataContractualRule = FangEngineClassesAndMethods.FangEngineAttributesStruct{
+		TestInstructionAttributeUUID: TestInstructionAttributeUUID_CA_TestCaseTearDown_ExpectedToBePassed,
+		TestInstructionAttributeName: TestInstructionAttributeName_CA_TestCaseTearDown_ExpectedToBePassed,
+		FangEngineAttributeNameUUID:  FangEngineClassesAndMethods.FangEngine_ClassName_UUID_CA_GeneralAttribute_ExpectedToBePassed,
+		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_ClassName_Name_CA_GeneralAttribute_ExpectedToBePassed,
+	}
+	TestInstruction_CA_TestCaseTearDown.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataContractualRule] = tempFangEngineAttributeTestDataContractualRule
 
 	// ImmatureElementModel - TestCaseTearDown
 	var TestInstructionImmatureElementModel_CA_TestCaseTearDown TypeAndStructs.ImmatureElementModelMessageStruct

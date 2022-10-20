@@ -20,8 +20,8 @@ const (
 	TestInstructionMouseOverText_CA_TestCaseSetUp      string                                 = "Initiate Custody Arrangements execution engine to be able to execute TestInstructions"
 	TestInstructionDeprecated_CA_TestCaseSetUp         bool                                   = false
 	TestInstructionEnabled_CA_TestCaseSetUp            bool                                   = true
-	TestInstructionMajorVersionNumber_CA_TestCaseSetUp int                                    = 1
-	TestInstructionMinorVersionNumber_CA_TestCaseSetUp int                                    = 0
+	TestInstructionMajorVersionNumber_CA_TestCaseSetUp int                                    = 0
+	TestInstructionMinorVersionNumber_CA_TestCaseSetUp int                                    = 1
 	TestInstructionColor_CA_TestCaseSetUp              TypeAndStructs.ColorType               = "#00ff00AA"
 	TCRuleDeletion_CA_TestCaseSetUp                    TypeAndStructs.TCRuleDeletionType      = "TCRuleDeletion020"
 	TCRuleSwap_CA_TestCaseSetUp                        TypeAndStructs.TCRuleSwapType          = "TCRuleSwap020"
@@ -60,10 +60,10 @@ func Initate_TestInstruction_CA_TestCaseSetUp() {
 		TestInstructionAttribute:           nil,
 		ImmatureElementModel:               nil,
 		FangEngineClassesMethodsAttributes: FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct{
-			FangEngineClassNameUUID:  "",
-			FangEngineClassNameNAME:  "",
-			FangEngineMethodNameUUID: "",
-			FangEngineMethodNameNAME: "",
+			FangEngineClassNameUUID:  FangEngineClassesAndMethods.FangEngine_ClassName_UUID_CA_GeneralSetupTearDown,
+			FangEngineClassNameNAME:  FangEngineClassesAndMethods.FangEngine_ClassName_Name_CA_GeneralSetupTearDown,
+			FangEngineMethodNameUUID: FangEngineClassesAndMethods.FangEngine_MethodName_UUID_CA_GeneralSetupTearDown_Setup,
+			FangEngineMethodNameNAME: FangEngineClassesAndMethods.FangEngine_MethodName_Name_CA_GeneralSetupTearDown_Setup,
 			Attributes:               make(map[TypeAndStructs.TestInstructionAttributeUUIDType]FangEngineClassesAndMethods.FangEngineAttributesStruct),
 		},
 	}
@@ -159,6 +159,16 @@ func Initate_TestInstruction_CA_TestCaseSetUp() {
 	TestInstruction_CA_TestCaseSetUp.TestInstructionAttribute = append(
 		TestInstruction_CA_TestCaseSetUp.TestInstructionAttribute,
 		TestInstructionAttribute_CA_TestCaseSetUp_ExpectedToBePassed)
+
+	// Add FangEngine relation for Attribute - 'ExpectedToBePassed'
+	var tempFangEngineAttributeTestDataContractualRule FangEngineClassesAndMethods.FangEngineAttributesStruct
+	tempFangEngineAttributeTestDataContractualRule = FangEngineClassesAndMethods.FangEngineAttributesStruct{
+		TestInstructionAttributeUUID: TestInstructionAttributeUUID_CA_TestCaseSetUp_ExpectedToBePassed,
+		TestInstructionAttributeName: TestInstructionAttributeName_CA_TestCaseSetUp_ExpectedToBePassed,
+		FangEngineAttributeNameUUID:  FangEngineClassesAndMethods.FangEngine_ClassName_UUID_CA_GeneralAttribute_ExpectedToBePassed,
+		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_ClassName_Name_CA_GeneralAttribute_ExpectedToBePassed,
+	}
+	TestInstruction_CA_SettlementAgreement_Edit.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataContractualRule] = tempFangEngineAttributeTestDataContractualRule
 
 	// ImmatureElementModel - TestCaseSetUp
 	var TestInstructionImmatureElementModel_CA_TestCaseSetUp TypeAndStructs.ImmatureElementModelMessageStruct

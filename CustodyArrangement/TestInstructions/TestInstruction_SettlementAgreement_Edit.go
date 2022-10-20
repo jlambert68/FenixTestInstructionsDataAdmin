@@ -3,6 +3,7 @@ package TestInstructions
 import (
 	"FenixTestInstructionsDataAdmin/CustodyArrangement/FangEngineClassesAndMethods"
 	"FenixTestInstructionsDataAdmin/Domains"
+	"FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
 	"FenixTestInstructionsDataAdmin/TypeAndStructs"
 	"FenixTestInstructionsDataAdmin/shared_code"
 )
@@ -53,7 +54,7 @@ const (
 	TestInstructionAttributeMouseOverText_CA_SettlementAgreement_Edit_TestDataDirectAffirmInd string                                          = "TestDataDirectAffirmInd is xxxxx"
 
 	// Attribute - 'TestDataAffirmDublicateCheck'
-	TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck          TypeAndStructs.TestInstructionAttributeUUIDType = "0dae0c87-c659-46e1-a03b-15231f91d567"
+	TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck          TypeAndStructs.TestInstructionAttributeUUIDType = "0b22e854-bc7c-4f9b-9964-051ce216f14e"
 	TestInstructionAttributeName_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck          TypeAndStructs.TestInstructionAttributeNameType = "TestDataAffirmDublicateCheck"
 	TestInstructionAttributeType_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck          TypeAndStructs.TestInstructionAttributeTypeType = "TEXTBOX"
 	TestInstructionAttributeDescription_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck   string                                          = "TestDataAffirmDublicateCheck is xxxxx"
@@ -81,26 +82,15 @@ const (
 	TestInstructionAttributeMouseOverText_CA_SettlementAgreement_Edit_TestDataReturnDeliveryService string                                          = "TestDataReturnDeliveryService is xxxxx"
 )
 
-// TestInstruction_CA_SettlementAgreement_EditStruct
-// Struct for holding all data for the TestInstruction
-type TestInstruction_CA_SettlementAgreement_EditStruct struct {
-	TestInstruction                    TypeAndStructs.TestInstructionStruct
-	BasicTestInstructionInformation    TypeAndStructs.BasicTestInstructionInformationStruct
-	ImmatureTestInstructionInformation []TypeAndStructs.ImmatureTestInstructionInformationStruct
-	TestInstructionAttribute           []TypeAndStructs.TestInstructionAttributeStruct
-	ImmatureElementModel               []TypeAndStructs.ImmatureElementModelMessageStruct
-	FangEngineClassesMethodsAttributes FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct
-}
-
 // Variable that holds the data for the TestInstruction
-var TestInstruction_CA_SettlementAgreement_Edit TestInstruction_CA_SettlementAgreement_EditStruct
+var TestInstruction_CA_SettlementAgreement_Edit TestInstruction_CA_TestCaseSetUpStruct
 
 // Initate_TestInstruction_CA_SettlementAgreement_Edit
 // Function that creates all data for the TestInstruction
 func Initate_TestInstruction_CA_SettlementAgreement_Edit() {
 
 	// Initiate variable to be able to store all TestInstruction data
-	TestInstruction_CA_SettlementAgreement_Edit = TestInstruction_CA_SettlementAgreement_EditStruct{
+	TestInstruction_CA_SettlementAgreement_Edit = TestInstruction_CA_TestCaseSetUpStruct{
 		TestInstruction:                    TypeAndStructs.TestInstructionStruct{},
 		BasicTestInstructionInformation:    TypeAndStructs.BasicTestInstructionInformationStruct{},
 		ImmatureTestInstructionInformation: nil,
@@ -454,4 +444,23 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() {
 	}
 	TestInstruction_CA_SettlementAgreement_Edit.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataReturnDeliveryService] = tempFangEngineAttributeTestDataReturnDeliveryService
 
+	// ImmatureElementModel - 'SettlementAgreement' - MethodName: 'Edit'
+	var TestInstructionImmatureElementModel_CA_SettlementAgreement_Edit TypeAndStructs.ImmatureElementModelMessageStruct
+	TestInstructionImmatureElementModel_CA_SettlementAgreement_Edit = TypeAndStructs.ImmatureElementModelMessageStruct{
+		DomainUUID:               Domains.DomainUUID_CA,
+		DomainName:               Domains.DomainName_CA,
+		ImmatureElementUUID:      TestInstructionUUID_CA_SettlementAgreement_Edit,
+		ImmatureElementName:      TypeAndStructs.OriginalElementNameType(TestInstructionName_CA_SettlementAgreement_Edit),
+		PreviousElementUUID:      TestInstructionUUID_CA_SettlementAgreement_Edit,
+		NextElementUUID:          TestInstructionUUID_CA_SettlementAgreement_Edit,
+		FirstChildElementUUID:    TestInstructionUUID_CA_SettlementAgreement_Edit,
+		ParentElementUUID:        TestInstructionUUID_CA_SettlementAgreement_Edit,
+		TestCaseModelElementType: TestCaseModelElementTypes.TestCaseModelElementType_TI,
+		OriginalElementUUID:      TestInstructionUUID_CA_SettlementAgreement_Edit,
+		TopImmatureElementUUID:   TestInstructionUUID_CA_SettlementAgreement_Edit,
+		IsTopElement:             true,
+	}
+	TestInstruction_CA_SettlementAgreement_Edit.ImmatureElementModel = append(
+		TestInstruction_CA_SettlementAgreement_Edit.ImmatureElementModel,
+		TestInstructionImmatureElementModel_CA_SettlementAgreement_Edit)
 }
