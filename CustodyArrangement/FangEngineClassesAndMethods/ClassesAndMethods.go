@@ -12,11 +12,13 @@ type FangEngine_AttributeName_Name_CA_Type string
 
 // Type this is used for specifying Classes, Methods and Attributes for FangEngine which is used by Custody Arrangements TestAutomation
 type FangEngineClassesMethodsAttributesStruct struct {
-	FangEngineClassNameUUID  FangEngine_ClassName_UUID_CA_Type
-	FangEngineClassNameNAME  FangEngine_ClassName_Name_CA_Type
-	FangEngineMethodNameUUID FangEngine_MethodName_UUID_CA_Type
-	FangEngineMethodNameNAME FangEngine_MethodName_Name_CA_Type
-	Attributes               map[TypeAndStructs.TestInstructionAttributeUUIDType]FangEngineAttributesStruct
+	TestInstructionOriginalUUID TypeAndStructs.OriginalElementUUIDType
+	TestInstructionName         TypeAndStructs.TestInstructionNameType
+	FangEngineClassNameUUID     FangEngine_ClassName_UUID_CA_Type
+	FangEngineClassNameNAME     FangEngine_ClassName_Name_CA_Type
+	FangEngineMethodNameUUID    FangEngine_MethodName_UUID_CA_Type
+	FangEngineMethodNameNAME    FangEngine_MethodName_Name_CA_Type
+	Attributes                  map[TypeAndStructs.TestInstructionAttributeUUIDType]FangEngineAttributesStruct
 }
 
 type FangEngineAttributesStruct struct {

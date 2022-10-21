@@ -62,11 +62,13 @@ func Initate_TestInstruction_CA_TestCaseTearDown() TestInstruction_CA_TestCaseSe
 		TestInstructionAttribute:           nil,
 		ImmatureElementModel:               nil,
 		FangEngineClassesMethodsAttributes: FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct{
-			FangEngineClassNameUUID:  FangEngineClassesAndMethods.FangEngine_ClassName_UUID_CA_GeneralSetupTearDown,
-			FangEngineClassNameNAME:  FangEngineClassesAndMethods.FangEngine_ClassName_Name_CA_GeneralSetupTearDown,
-			FangEngineMethodNameUUID: FangEngineClassesAndMethods.FangEngine_MethodName_UUID_CA_GeneralSetupTearDown_TearDown,
-			FangEngineMethodNameNAME: FangEngineClassesAndMethods.FangEngine_MethodName_Name_CA_GeneralSetupTearDown_TearDown,
-			Attributes:               make(map[TypeAndStructs.TestInstructionAttributeUUIDType]FangEngineClassesAndMethods.FangEngineAttributesStruct),
+			TestInstructionOriginalUUID: TestInstructionUUID_CA_TestCaseTearDown,
+			TestInstructionName:         TestInstructionName_CA_TestCaseTearDown,
+			FangEngineClassNameUUID:     FangEngineClassesAndMethods.FangEngine_ClassName_UUID_CA_GeneralSetupTearDown,
+			FangEngineClassNameNAME:     FangEngineClassesAndMethods.FangEngine_ClassName_Name_CA_GeneralSetupTearDown,
+			FangEngineMethodNameUUID:    FangEngineClassesAndMethods.FangEngine_MethodName_UUID_CA_GeneralSetupTearDown_TearDown,
+			FangEngineMethodNameNAME:    FangEngineClassesAndMethods.FangEngine_MethodName_Name_CA_GeneralSetupTearDown_TearDown,
+			Attributes:                  make(map[TypeAndStructs.TestInstructionAttributeUUIDType]FangEngineClassesAndMethods.FangEngineAttributesStruct),
 		},
 	}
 

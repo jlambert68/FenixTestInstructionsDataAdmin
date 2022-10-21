@@ -53,11 +53,13 @@ func Initate_TestInstruction_CA_CustodyAccount_Search() TestInstruction_CA_TestC
 		TestInstructionAttribute:           nil,
 		ImmatureElementModel:               nil,
 		FangEngineClassesMethodsAttributes: FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct{
-			FangEngineClassNameUUID:  FangEngineClassesAndMethods.FangEngine_ClassName_UUID_CA_CustodyAccount,
-			FangEngineClassNameNAME:  FangEngineClassesAndMethods.FangEngine_ClassName_Name_CA_CustodyAccount,
-			FangEngineMethodNameUUID: FangEngineClassesAndMethods.FangEngine_MethodName_UUID_CA_CustodyAccount_Search,
-			FangEngineMethodNameNAME: FangEngineClassesAndMethods.FangEngine_MethodName_Name_CA_CustodyAccount_Search,
-			Attributes:               make(map[TypeAndStructs.TestInstructionAttributeUUIDType]FangEngineClassesAndMethods.FangEngineAttributesStruct),
+			TestInstructionOriginalUUID: TestInstructionUUID_CA_CustodyAccount_Search,
+			TestInstructionName:         TestInstructionName_CA_CustodyAccount_Search,
+			FangEngineClassNameUUID:     FangEngineClassesAndMethods.FangEngine_ClassName_UUID_CA_CustodyAccount,
+			FangEngineClassNameNAME:     FangEngineClassesAndMethods.FangEngine_ClassName_Name_CA_CustodyAccount,
+			FangEngineMethodNameUUID:    FangEngineClassesAndMethods.FangEngine_MethodName_UUID_CA_CustodyAccount_Search,
+			FangEngineMethodNameNAME:    FangEngineClassesAndMethods.FangEngine_MethodName_Name_CA_CustodyAccount_Search,
+			Attributes:                  make(map[TypeAndStructs.TestInstructionAttributeUUIDType]FangEngineClassesAndMethods.FangEngineAttributesStruct),
 		},
 	}
 
