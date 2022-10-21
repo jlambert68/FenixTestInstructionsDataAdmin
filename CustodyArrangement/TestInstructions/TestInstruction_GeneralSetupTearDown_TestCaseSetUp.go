@@ -66,10 +66,9 @@ func Initate_TestInstruction_CA_TestCaseSetUp() TestInstruction_CA_TestCaseSetUp
 			FangEngineClassNameNAME:     FangEngineClassesAndMethods.FangEngine_ClassName_Name_CA_GeneralSetupTearDown,
 			FangEngineMethodNameUUID:    FangEngineClassesAndMethods.FangEngine_MethodName_UUID_CA_GeneralSetupTearDown_Setup,
 			FangEngineMethodNameNAME:    FangEngineClassesAndMethods.FangEngine_MethodName_Name_CA_GeneralSetupTearDown_Setup,
-			Attributes:                  nil,
+			Attributes:                  make(map[TypeAndStructs.TestInstructionAttributeUUIDType]FangEngineClassesAndMethods.FangEngineAttributesStruct),
 		},
 	}
-	TestInstruction_CA_TestCaseSetUp.FangEngineClassesMethodsAttributes.Attributes = make(map[TypeAndStructs.TestInstructionAttributeUUIDType]FangEngineClassesAndMethods.FangEngineAttributesStruct)
 
 	// Create TimeStamp to be used on all places where creation/update timestamp is needed
 	updatedTimeStamp := TypeAndStructs.UpdatedTimeStampType(shared_code.GenerateDatetimeTimeStampForDB())
@@ -171,7 +170,7 @@ func Initate_TestInstruction_CA_TestCaseSetUp() TestInstruction_CA_TestCaseSetUp
 		FangEngineAttributeNameUUID:  FangEngineClassesAndMethods.FangEngine_ClassName_UUID_CA_GeneralAttribute_ExpectedToBePassed,
 		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_ClassName_Name_CA_GeneralAttribute_ExpectedToBePassed,
 	}
-	TestInstruction_CA_SettlementAgreement_Edit.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_TestCaseSetUp_ExpectedToBePassed] = tempFangEngineAttributeExpectedToBePassed
+	TestInstruction_CA_TestCaseSetUp.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_TestCaseSetUp_ExpectedToBePassed] = tempFangEngineAttributeExpectedToBePassed
 
 	// ImmatureElementModel - TestCaseSetUp
 	var TestInstructionImmatureElementModel_CA_TestCaseSetUp TypeAndStructs.ImmatureElementModelMessageStruct
