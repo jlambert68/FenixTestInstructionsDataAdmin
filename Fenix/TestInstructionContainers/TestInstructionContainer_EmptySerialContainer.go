@@ -1,11 +1,11 @@
 package TestInstructionContainers
 
 import (
-	"FenixTestInstructionsDataAdmin/Bonds"
-	"FenixTestInstructionsDataAdmin/Domains"
-	"FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
-	"FenixTestInstructionsDataAdmin/TypeAndStructs"
-	"FenixTestInstructionsDataAdmin/shared_code"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/Bonds"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/Domains"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TypeAndStructs"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/shared_code"
 )
 
 const (

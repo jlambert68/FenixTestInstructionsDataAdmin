@@ -1,8 +1,8 @@
 package main
 
 import (
-	"FenixTestInstructionsDataAdmin/CustodyArrangement/TestInstructions"
-	"FenixTestInstructionsDataAdmin/GenerateSqlData"
+	CustodyArrangementTestInstructions "github.com/jlambert68/FenixTestInstructionsDataAdmin/CustodyArrangement/TestInstructions"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/GenerateSqlData"
 )
 
 func main() {
@@ -29,7 +29,7 @@ func main() {
 	//TestInstructions.Initate_TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties()
 	//GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&TestInstructions.TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties)
 
-	TestInstructions.Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties()
-	GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&TestInstructions.TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties)
+	CustodyArrangementTestInstructions.Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties()
+	GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&CustodyArrangementTestInstructions.TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties)
 
 }

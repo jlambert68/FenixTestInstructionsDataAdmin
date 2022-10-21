@@ -1,6 +1,6 @@
 package Domains
 
-import "FenixTestInstructionsDataAdmin/TypeAndStructs"
+import "github.com/jlambert68/FenixTestInstructionsDataAdmin/TypeAndStructs"
 
 // ** AttributeActionCommands ***
 const (

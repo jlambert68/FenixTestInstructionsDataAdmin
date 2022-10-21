@@ -1,10 +1,10 @@
 package GenerateSqlData
 
 import (
-	"FenixTestInstructionsDataAdmin/BaseSQL"
-	"FenixTestInstructionsDataAdmin/CustodyArrangement/TestInstructions"
-	"FenixTestInstructionsDataAdmin/shared_code"
 	"fmt"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/BaseSQL"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/CustodyArrangement/TestInstructions"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/shared_code"
 )
 
 // Initate_TestInstruction_CA_CustodyAccount_Search

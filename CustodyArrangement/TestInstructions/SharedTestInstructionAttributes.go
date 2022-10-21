@@ -1,7 +1,7 @@
 package TestInstructions
 
 import (
-	"FenixTestInstructionsDataAdmin/TypeAndStructs"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TypeAndStructs"
 )
 
 // *************************************

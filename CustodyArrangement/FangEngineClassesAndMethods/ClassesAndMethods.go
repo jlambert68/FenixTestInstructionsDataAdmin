@@ -1,6 +1,6 @@
 package FangEngineClassesAndMethods
 
-import "FenixTestInstructionsDataAdmin/TypeAndStructs"
+import "github.com/jlambert68/FenixTestInstructionsDataAdmin/TypeAndStructs"
 
 // Types for FangEngine
 type FangEngine_ClassName_UUID_CA_Type string

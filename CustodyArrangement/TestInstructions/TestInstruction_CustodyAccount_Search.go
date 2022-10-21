@@ -1,11 +1,11 @@
 package TestInstructions
 
 import (
-	"FenixTestInstructionsDataAdmin/CustodyArrangement/FangEngineClassesAndMethods"
-	"FenixTestInstructionsDataAdmin/Domains"
-	"FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
-	"FenixTestInstructionsDataAdmin/TypeAndStructs"
-	"FenixTestInstructionsDataAdmin/shared_code"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/CustodyArrangement/FangEngineClassesAndMethods"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/Domains"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TypeAndStructs"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/shared_code"
 )
 
 const (
