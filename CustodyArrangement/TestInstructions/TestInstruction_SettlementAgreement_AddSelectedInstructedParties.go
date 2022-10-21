@@ -38,7 +38,7 @@ var TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties TestInst
 
 // Initate_TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties
 // Function that creates all data for the TestInstruction
-func Initate_TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties() {
+func Initate_TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties() TestInstruction_CA_TestCaseSetUpStruct {
 
 	// Initiate variable to be able to store all TestInstruction data
 	TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties = TestInstruction_CA_TestCaseSetUpStruct{
@@ -156,4 +156,5 @@ func Initate_TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties
 		TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties.ImmatureElementModel,
 		TestInstructionImmatureElementModel_CA_SettlementAgreement_AddSelectedInstructedParties)
 
+	return TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties
 }

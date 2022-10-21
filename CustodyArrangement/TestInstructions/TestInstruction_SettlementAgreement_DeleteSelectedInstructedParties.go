@@ -31,7 +31,7 @@ var TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties TestI
 
 // Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties
 // Function that creates all data for the TestInstruction
-func Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties() {
+func Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties() TestInstruction_CA_TestCaseSetUpStruct {
 
 	// Initiate variable to be able to store all TestInstruction data
 	TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties = TestInstruction_CA_TestCaseSetUpStruct{
@@ -115,4 +115,5 @@ func Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedPart
 		TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties.ImmatureElementModel,
 		TestInstructionImmatureElementModel_CA_SettlementAgreement_DeleteSelectedInstructedParties)
 
+	return TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties
 }

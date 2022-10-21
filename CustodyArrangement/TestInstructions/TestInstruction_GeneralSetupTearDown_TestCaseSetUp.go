@@ -50,7 +50,7 @@ var TestInstruction_CA_TestCaseSetUp TestInstruction_CA_TestCaseSetUpStruct
 
 // Initate_TestInstruction_CA_TestCaseSetUp
 // Function that creates all data for the TestInstruction
-func Initate_TestInstruction_CA_TestCaseSetUp() {
+func Initate_TestInstruction_CA_TestCaseSetUp() TestInstruction_CA_TestCaseSetUpStruct {
 
 	// Initiate variable to store all TestInstruction data
 	TestInstruction_CA_TestCaseSetUp = TestInstruction_CA_TestCaseSetUpStruct{
@@ -189,4 +189,6 @@ func Initate_TestInstruction_CA_TestCaseSetUp() {
 	TestInstruction_CA_TestCaseSetUp.ImmatureElementModel = append(
 		TestInstruction_CA_TestCaseSetUp.ImmatureElementModel,
 		TestInstructionImmatureElementModel_CA_TestCaseSetUp)
+
+	return TestInstruction_CA_TestCaseSetUp
 }

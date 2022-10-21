@@ -87,7 +87,7 @@ var TestInstruction_CA_SettlementAgreement_Edit TestInstruction_CA_TestCaseSetUp
 
 // Initate_TestInstruction_CA_SettlementAgreement_Edit
 // Function that creates all data for the TestInstruction
-func Initate_TestInstruction_CA_SettlementAgreement_Edit() {
+func Initate_TestInstruction_CA_SettlementAgreement_Edit() TestInstruction_CA_TestCaseSetUpStruct {
 
 	// Initiate variable to be able to store all TestInstruction data
 	TestInstruction_CA_SettlementAgreement_Edit = TestInstruction_CA_TestCaseSetUpStruct{
@@ -463,4 +463,6 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() {
 	TestInstruction_CA_SettlementAgreement_Edit.ImmatureElementModel = append(
 		TestInstruction_CA_SettlementAgreement_Edit.ImmatureElementModel,
 		TestInstructionImmatureElementModel_CA_SettlementAgreement_Edit)
+
+	return TestInstruction_CA_SettlementAgreement_Edit
 }

@@ -38,7 +38,7 @@ var TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift TestInstruction_C
 
 // Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift
 // Function that creates all data for the TestInstruction
-func Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift() {
+func Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift() TestInstruction_CA_TestCaseSetUpStruct {
 
 	// Initiate variable to be able to store all TestInstruction data
 	TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift = TestInstruction_CA_TestCaseSetUpStruct{
@@ -156,4 +156,5 @@ func Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift() {
 		TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift.ImmatureElementModel,
 		TestInstructionImmatureElementModel_CA_SettlementAgreement_DeleteSelectedSwift)
 
+	return TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift
 }

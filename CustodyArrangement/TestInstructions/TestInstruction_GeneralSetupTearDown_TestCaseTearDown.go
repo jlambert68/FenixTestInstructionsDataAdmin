@@ -52,7 +52,7 @@ var TestInstruction_CA_TestCaseTearDown TestInstruction_CA_TestCaseSetUpStruct
 
 // Initate_TestInstruction_CA_TestCaseTearDown
 // Function that creates all data for the TestInstruction
-func Initate_TestInstruction_CA_TestCaseTearDown() {
+func Initate_TestInstruction_CA_TestCaseTearDown() TestInstruction_CA_TestCaseSetUpStruct {
 
 	// Initiate variable to be able to store all TestInstruction data
 	TestInstruction_CA_TestCaseTearDown = TestInstruction_CA_TestCaseSetUpStruct{
@@ -191,4 +191,6 @@ func Initate_TestInstruction_CA_TestCaseTearDown() {
 	TestInstruction_CA_TestCaseTearDown.ImmatureElementModel = append(
 		TestInstruction_CA_TestCaseTearDown.ImmatureElementModel,
 		TestInstructionImmatureElementModel_CA_TestCaseTearDown)
+
+	return TestInstruction_CA_TestCaseTearDown
 }

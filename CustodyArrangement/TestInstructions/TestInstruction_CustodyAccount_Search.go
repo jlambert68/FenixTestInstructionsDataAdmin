@@ -43,7 +43,7 @@ var TestInstruction_CA_CustodyAccount_Search TestInstruction_CA_TestCaseSetUpStr
 
 // Initate_TestInstruction_CA_CustodyAccount_Search
 // Function that creates all data for the TestInstruction
-func Initate_TestInstruction_CA_CustodyAccount_Search() {
+func Initate_TestInstruction_CA_CustodyAccount_Search() TestInstruction_CA_TestCaseSetUpStruct {
 
 	// Initiate variable to be able to store all TestInstruction data
 	TestInstruction_CA_CustodyAccount_Search = TestInstruction_CA_TestCaseSetUpStruct{
@@ -161,4 +161,6 @@ func Initate_TestInstruction_CA_CustodyAccount_Search() {
 	TestInstruction_CA_CustodyAccount_Search.ImmatureElementModel = append(
 		TestInstruction_CA_CustodyAccount_Search.ImmatureElementModel,
 		TestInstructionImmatureElementModel_CA_CustodyAccount_Search)
+
+	return TestInstruction_CA_CustodyAccount_Search
 }

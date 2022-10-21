@@ -59,7 +59,7 @@ var TestInstruction_CA_SettlementAgreement_AddSelectedSwift TestInstruction_CA_T
 
 // Initate_TestInstruction_CA_SettlementAgreement_AddSelectedSwift
 // Function that creates all data for the TestInstruction
-func Initate_TestInstruction_CA_SettlementAgreement_AddSelectedSwift() {
+func Initate_TestInstruction_CA_SettlementAgreement_AddSelectedSwift() TestInstruction_CA_TestCaseSetUpStruct {
 
 	// Initiate variable to be able to store all TestInstruction data
 	TestInstruction_CA_SettlementAgreement_AddSelectedSwift = TestInstruction_CA_TestCaseSetUpStruct{
@@ -287,5 +287,7 @@ func Initate_TestInstruction_CA_SettlementAgreement_AddSelectedSwift() {
 	TestInstruction_CA_SettlementAgreement_AddSelectedSwift.ImmatureElementModel = append(
 		TestInstruction_CA_SettlementAgreement_AddSelectedSwift.ImmatureElementModel,
 		TestInstructionImmatureElementModel_CA_SettlementAgreement_AddSelectedSwift)
+
+	return TestInstruction_CA_SettlementAgreement_AddSelectedSwift
 
 }
