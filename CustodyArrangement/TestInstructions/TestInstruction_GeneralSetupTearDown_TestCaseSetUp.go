@@ -66,9 +66,10 @@ func Initate_TestInstruction_CA_TestCaseSetUp() TestInstruction_CA_TestCaseSetUp
 			FangEngineClassNameNAME:     FangEngineClassesAndMethods.FangEngine_ClassName_Name_CA_GeneralSetupTearDown,
 			FangEngineMethodNameUUID:    FangEngineClassesAndMethods.FangEngine_MethodName_UUID_CA_GeneralSetupTearDown_Setup,
 			FangEngineMethodNameNAME:    FangEngineClassesAndMethods.FangEngine_MethodName_Name_CA_GeneralSetupTearDown_Setup,
-			Attributes:                  make(map[TypeAndStructs.TestInstructionAttributeUUIDType]FangEngineClassesAndMethods.FangEngineAttributesStruct),
+			Attributes:                  nil,
 		},
 	}
+	TestInstruction_CA_TestCaseSetUp.FangEngineClassesMethodsAttributes.Attributes = make(map[TypeAndStructs.TestInstructionAttributeUUIDType]FangEngineClassesAndMethods.FangEngineAttributesStruct)
 
 	// Create TimeStamp to be used on all places where creation/update timestamp is needed
 	updatedTimeStamp := TypeAndStructs.UpdatedTimeStampType(shared_code.GenerateDatetimeTimeStampForDB())
