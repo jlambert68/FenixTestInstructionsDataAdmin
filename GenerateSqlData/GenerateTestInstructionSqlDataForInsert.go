@@ -11,16 +11,16 @@ import (
 // Function that creates all data for the TestInstruction
 func GenerateSqlInsert_For_TestInstructions(testInstructionSetUp *TestInstructions.TestInstruction_CA_TestCaseSetUpStruct) {
 
-	testInstructionsSQL := BaseSQL.TestInstructionsSQL
-	basicTestInstructionInformationSQL := BaseSQL.BasicTestInstructionInformationSQL
-	immatureTestInstructionInformationSQL := BaseSQL.ImmatureTestInstructionInformationSQL
-	testInstructionAttributesSQL := BaseSQL.TestInstructionAttributesSQL
-	immatureElementModelMessageSQL := BaseSQL.ImmatureElementModelMessageSQL
+	testInstructionsSQL := BaseSQL.TestInstructionsSQLInsert
+	basicTestInstructionInformationSQL := BaseSQL.BasicTestInstructionInformationSQLInsert
+	immatureTestInstructionInformationSQL := BaseSQL.ImmatureTestInstructionInformationSQLInsert
+	testInstructionAttributesSQL := BaseSQL.TestInstructionAttributesSQLInsert
+	immatureElementModelMessageSQL := BaseSQL.ImmatureElementModelMessageSQLInsert
 
 	var dataRowToBeInsertedMultiType []interface{}
 	var dataRowsToBeInsertedMultiType [][]interface{}
 
-	// 'TestInstructionsSQL'
+	// 'TestInstructionsSQLInsert'
 	// Create data to be inserted in the DB-table 'TestInstructions'
 	dataRowsToBeInsertedMultiType = nil
 	dataRowToBeInsertedMultiType = nil
@@ -48,7 +48,7 @@ func GenerateSqlInsert_For_TestInstructions(testInstructionSetUp *TestInstructio
 		testInstructionsSQL = ""
 	}
 
-	// 'BasicTestInstructionInformationSQL'
+	// 'BasicTestInstructionInformationSQLInsert'
 	// Create data to be inserted in the DB-table 'BasicTestInstructionInformation'
 	dataRowsToBeInsertedMultiType = nil
 	dataRowToBeInsertedMultiType = nil
@@ -79,7 +79,7 @@ func GenerateSqlInsert_For_TestInstructions(testInstructionSetUp *TestInstructio
 		basicTestInstructionInformationSQL = ""
 	}
 
-	// 'ImmatureTestInstructionInformationSQL'
+	// 'ImmatureTestInstructionInformationSQLInsert'
 	// Create data to be inserted in the DB-table 'ImmatureTestInstructionInformation'
 	dataRowsToBeInsertedMultiType = nil
 
@@ -114,7 +114,7 @@ func GenerateSqlInsert_For_TestInstructions(testInstructionSetUp *TestInstructio
 		immatureTestInstructionInformationSQL = ""
 	}
 
-	// 'TestInstructionAttributesSQL'
+	// 'TestInstructionAttributesSQLInsert'
 	// Create data to be inserted in the DB-table 'TestInstructionAttributes'
 	dataRowsToBeInsertedMultiType = nil
 
@@ -152,7 +152,7 @@ func GenerateSqlInsert_For_TestInstructions(testInstructionSetUp *TestInstructio
 		testInstructionAttributesSQL = ""
 	}
 
-	// 'ImmatureElementModelMessageSQL'
+	// 'ImmatureElementModelMessageSQLInsert'
 	// Create data to be inserted in the DB-table 'ImmatureElementModelMessage'
 	dataRowsToBeInsertedMultiType = nil
 
