@@ -26,15 +26,15 @@ const (
 	TCRuleDeletion_CA_TestCaseTearDown                    TypeAndStructs.TCRuleDeletionType      = "TCRuleDeletion020"
 	TCRuleSwap_CA_TestCaseTearDown                        TypeAndStructs.TCRuleSwapType          = "TCRuleSwap020"
 
-	// *** DropZone *** 'TestCaseTearDownExpectsToSucceed'
-	TestInstructionDropZoneUUID_CA_TestCaseTearDown_TestCaseTearDownExpectsToSucceed        TypeAndStructs.DropZoneUUIDType = "5b48d863-4394-447c-9979-e632a0b941f6"
-	TestInstructionDropZoneName_CA_TestCaseTearDown_TestCaseTearDownExpectsToSucceed        TypeAndStructs.DropZoneNameType = "TestCaseTearDownExpectsToSucceed"
-	TestInstructionDropZoneDescription_CA_TestCaseTearDown_TestCaseTearDownExpectsToSucceed string                          = "Presets attribute that TestInstruction expects to succeed in its execution"
-	TestInstructionDropZoneMouseOver_CA_TestCaseTearDown_TestCaseTearDownExpectsToSucceed   string                          = "Presets attribute that TestInstruction expects to succeed in its execution"
-	TestInstructionDropZoneColor_CA_TestCaseTearDown_TestCaseTearDownExpectsToSucceed       TypeAndStructs.ColorType        = "#00000000"
+	// *** DropZone *** 'TestCaseTearDown_ExpectsToSucceed'
+	TestInstructionDropZoneUUID_CA_TestCaseTearDown_ExpectsToSucceed        TypeAndStructs.DropZoneUUIDType = "1e8a5ba3-ae79-425a-a701-acad5a18cd89"
+	TestInstructionDropZoneName_CA_TestCaseTearDown_ExpectsToSucceed        TypeAndStructs.DropZoneNameType = "TestCaseTearDown_ExpectsToSucceed"
+	TestInstructionDropZoneDescription_CA_TestCaseTearDown_ExpectsToSucceed string                          = "Presets attribute that TestInstruction expects to succeed in its execution"
+	TestInstructionDropZoneMouseOver_CA_TestCaseTearDown_ExpectsToSucceed   string                          = "Presets attribute that TestInstruction expects to succeed in its execution"
+	TestInstructionDropZoneColor_CA_TestCaseTearDown_ExpectsToSucceed       TypeAndStructs.ColorType        = "#00000000"
 
 	// Attribute - 'ExpectedToBePassed'
-	TestInstructionAttributeUUID_CA_TestCaseTearDown_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeUUIDType = "4ee44b43-7942-4051-b548-20162b92e3b8" // TODO fix so they use the same UUID, Can't bu done now because UUID is key in Attrubutes-table in DB .TestInstructionAttributeUUID_CA_ExpectedToBePassed
+	TestInstructionAttributeUUID_CA_TestCaseTearDown_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeUUIDType = "8261c605-1be0-44ca-8b2f-415342a810bd" // TODO fix so they use the same UUID, Can't bu done now because UUID is key in Attrubutes-table in DB .TestInstructionAttributeUUID_CA_ExpectedToBePassed
 	TestInstructionAttributeName_CA_TestCaseTearDown_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeNameType = TestInstructionAttributeName_CA_ExpectedToBePassed
 	TestInstructionAttributeType_CA_TestCaseTearDown_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeTypeType = TestInstructionAttributeType_CA_ExpectedToBePassed
 	TestInstructionAttributeActionCommand_CA_TestCaseTearDown_ExpectedToBePassed      TypeAndStructs.AttributeActionCommandType       = Domains.AttributeActionCommand_USE_DROPZONE_VALUE_FOR_ATTRIBUTE
@@ -112,19 +112,19 @@ func Initate_TestInstruction_CA_TestCaseTearDown() TestInstruction_CA_TestCaseSe
 		Enabled:                      TestInstructionEnabled_CA_TestCaseTearDown,
 	}
 
-	// DropZone 'TestCaseTearDownExpectsToSucceed'
-	// ImmatureTestInstructionInformation  - DropZone: TestCaseTearDownExpectsToSucceed, Attr: ExpectedToBePassed
+	// DropZone 'TestCaseTearDown_ExpectsToSucceed'
+	// ImmatureTestInstructionInformation  - DropZone: TestCaseTearDown_ExpectsToSucceed, Attr: ExpectedToBePassed
 	var TestInstruction_CA_TestCaseTearDown_ExpectedToBePassed TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstruction_CA_TestCaseTearDown_ExpectedToBePassed = TypeAndStructs.ImmatureTestInstructionInformationStruct{
 		DomainUUID:                   Domains.DomainUUID_CA,
 		DomainName:                   Domains.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_TestCaseTearDown,
 		TestInstructionName:          TestInstructionName_CA_TestCaseTearDown,
-		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_TestCaseTearDown_TestCaseTearDownExpectsToSucceed,
-		DropZoneName:                 TestInstructionDropZoneName_CA_TestCaseTearDown_TestCaseTearDownExpectsToSucceed,
-		DropZoneDescription:          TestInstructionDropZoneDescription_CA_TestCaseTearDown_TestCaseTearDownExpectsToSucceed,
-		DropZoneMouseOver:            TestInstructionDropZoneMouseOver_CA_TestCaseTearDown_TestCaseTearDownExpectsToSucceed,
-		DropZoneColor:                TestInstructionDropZoneColor_CA_TestCaseTearDown_TestCaseTearDownExpectsToSucceed,
+		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_TestCaseTearDown_ExpectsToSucceed,
+		DropZoneName:                 TestInstructionDropZoneName_CA_TestCaseTearDown_ExpectsToSucceed,
+		DropZoneDescription:          TestInstructionDropZoneDescription_CA_TestCaseTearDown_ExpectsToSucceed,
+		DropZoneMouseOver:            TestInstructionDropZoneMouseOver_CA_TestCaseTearDown_ExpectsToSucceed,
+		DropZoneColor:                TestInstructionDropZoneColor_CA_TestCaseTearDown_ExpectsToSucceed,
 		TestInstructionAttributeType: TestInstructionAttributeType_CA_TestCaseTearDown_ExpectedToBePassed,
 		TestInstructionAttributeUUID: TestInstructionAttributeUUID_CA_TestCaseTearDown_ExpectedToBePassed,
 		TestInstructionAttributeName: TestInstructionAttributeName_CA_TestCaseTearDown_ExpectedToBePassed,
@@ -148,8 +148,8 @@ func Initate_TestInstruction_CA_TestCaseTearDown() TestInstruction_CA_TestCaseSe
 		TestInstructionAttributeName:                  TestInstructionAttributeName_CA_TestCaseTearDown_ExpectedToBePassed,
 		TestInstructionAttributeDescription:           TestInstructionAttributeDescription_CA_TestCaseTearDown_ExpectedToBePassed,
 		TestInstructionAttributeMouseOver:             TestInstructionAttributeMouseOverText_CA_TestCaseTearDown_ExpectedToBePassed,
-		TestInstructionAttributeTypeUUID:              TestInstructionAttributeTypeUUID_CA_Standard,
-		TestInstructionAttributeTypeName:              TestInstructionAttributeTypeName_CA_Standard,
+		TestInstructionAttributeTypeUUID:              TestInstructionAttributeTypeUUID_CA_ExpectedToPass,
+		TestInstructionAttributeTypeName:              TestInstructionAttributeTypeName_CA_ExpectedToPass,
 		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
 		TestInstructionAttributeValueUUID:             Domains.TestInstructionAttributeValueUUID_NO_VALUE,
 		TestInstructionAttributeVisible:               true,

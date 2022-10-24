@@ -19,8 +19,8 @@ const (
 	TestInstructionMouseOverText_CA_AddOrDeleteSelectedSwift      string                                 = "xxxxxxxx"
 	TestInstructionDeprecated_CA_AddOrDeleteSelectedSwift         bool                                   = false
 	TestInstructionEnabled_CA_AddOrDeleteSelectedSwift            bool                                   = true
-	TestInstructionMajorVersionNumber_CA_AddOrDeleteSelectedSwift int                                    = 1
-	TestInstructionMinorVersionNumber_CA_AddOrDeleteSelectedSwift int                                    = 0
+	TestInstructionMajorVersionNumber_CA_AddOrDeleteSelectedSwift int                                    = 0
+	TestInstructionMinorVersionNumber_CA_AddOrDeleteSelectedSwift int                                    = 1
 	TestInstructionColor_CA_AddOrDeleteSelectedSwift              TypeAndStructs.ColorType               = "xxxxx"
 	TCRuleDeletion_CA_AddOrDeleteSelectedSwift                    TypeAndStructs.TCRuleDeletionType      = "TCRuleDeletion020"
 	TCRuleSwap_CA_AddOrDeleteSelectedSwift                        TypeAndStructs.TCRuleSwapType          = "TCRuleSwap020"
@@ -38,6 +38,16 @@ const (
 	TestInstructionDropZoneDescription_CA_AddOrDeleteSelectedSwift_Delete string                          = "Delete Selected Swift"
 	TestInstructionDropZoneMouseOver_CA_AddOrDeleteSelectedSwift_Delete   string                          = "Delete Selected Swift"
 	TestInstructionDropZoneColor_CA_AddOrDeleteSelectedSwift_Delete       TypeAndStructs.ColorType        = "#F3F0F0FF"
+
+	// Attribute - 'ExpectedToBePassed'
+	TestInstructionAttributeUUID_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeUUIDType = "794a843d-980b-4ae9-b080-1085513280c1"
+	TestInstructionAttributeName_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeNameType = TestInstructionAttributeName_CA_ExpectedToBePassed
+	TestInstructionAttributeType_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeTypeType = TestInstructionAttributeType_CA_ExpectedToBePassed
+	TestInstructionAttributeActionCommand_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed      TypeAndStructs.AttributeActionCommandType       = Domains.AttributeActionCommand_USE_DROPZONE_VALUE_FOR_ATTRIBUTE
+	TestInstructionAttributeValueAsStringValue_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed TypeAndStructs.AttributeValueAsStringType       = Domains.TestInstructionAttributeValueAsStringValue_TRUE
+	TestInstructionAttributeValueUUID_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed          TypeAndStructs.AttributeValueUUIDType           = Domains.TestInstructionAttributeValueUUID_TRUE
+	TestInstructionAttributeDescription_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed        string                                          = "Should the TestInstruction execution to be expected to succeed or not"
+	TestInstructionAttributeMouseOverText_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed      string                                          = "Should the TestInstruction execution to be expected to succeed or not"
 
 	// Attribute - 'TestDataInterval'
 	TestInstructionAttributeUUID_CA_AddOrDeleteSelectedSwift_TestDataInterval          TypeAndStructs.TestInstructionAttributeUUIDType = "d45806fa-37d8-4720-9f39-2e78edfcfc26"
@@ -141,6 +151,30 @@ func Initate_TestInstruction_CA_AddOrDeleteSelectedSwift() {
 	}
 
 	// Dropzone Add
+	// ImmatureTestInstructionInformation  - DropZone: AddOrDeleteSelectedSwift_Add, Attr: ExpectedToBePassed
+	var TestInstruction_CA_AddOrDeleteSelectedSwift_Add_ExpectedToBePassed TypeAndStructs.ImmatureTestInstructionInformationStruct
+	TestInstruction_CA_AddOrDeleteSelectedSwift_Add_ExpectedToBePassed = TypeAndStructs.ImmatureTestInstructionInformationStruct{
+		DomainUUID:                   Domains.DomainUUID_CA,
+		DomainName:                   Domains.DomainName_CA,
+		TestInstructionUUID:          TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
+		TestInstructionName:          TestInstructionName_CA_AddOrDeleteSelectedSwift,
+		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_AddOrDeleteSelectedSwift_Add,
+		DropZoneName:                 TestInstructionDropZoneName_CA_AddOrDeleteSelectedSwift_Add,
+		DropZoneDescription:          TestInstructionDropZoneDescription_CA_AddOrDeleteSelectedSwift_Add,
+		DropZoneMouseOver:            TestInstructionDropZoneMouseOver_CA_AddOrDeleteSelectedSwift_Add,
+		DropZoneColor:                TestInstructionDropZoneColor_CA_AddOrDeleteSelectedSwift_Add,
+		TestInstructionAttributeType: TestInstructionAttributeType_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed,
+		TestInstructionAttributeUUID: TestInstructionAttributeUUID_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed,
+		TestInstructionAttributeName: TestInstructionAttributeName_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed,
+		AttributeValueAsString:       TestInstructionAttributeValueAsStringValue_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed,
+		AttributeValueUUID:           TestInstructionAttributeValueUUID_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed,
+		FirstImmatureElementUUID:     TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
+		AttributeActionCommand:       TestInstructionAttributeActionCommand_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed,
+	}
+	TestInstruction_CA_AddOrDeleteSelectedSwift.ImmatureTestInstructionInformation = append(
+		TestInstruction_CA_AddOrDeleteSelectedSwift.ImmatureTestInstructionInformation,
+		TestInstruction_CA_AddOrDeleteSelectedSwift_Add_ExpectedToBePassed)
+
 	// ImmatureTestInstructionInformation  - DropZone: Add, Attr: TestDataInterval
 	var TestInstruction_CA_AddOrDeleteSelectedSwift_Add_TestDataInterval TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstruction_CA_AddOrDeleteSelectedSwift_Add_TestDataInterval = TypeAndStructs.ImmatureTestInstructionInformationStruct{
@@ -238,6 +272,30 @@ func Initate_TestInstruction_CA_AddOrDeleteSelectedSwift() {
 		TestInstruction_CA_AddOrDeleteSelectedSwift_Add_TestDataChannel)
 
 	// DropZone: Delete
+	// ImmatureTestInstructionInformation  - DropZone: AddOrDeleteSelectedSwift_Delete, Attr: ExpectedToBePassed
+	var TestInstruction_CA_AddOrDeleteSelectedSwift_Delete_ExpectedToBePassed TypeAndStructs.ImmatureTestInstructionInformationStruct
+	TestInstruction_CA_AddOrDeleteSelectedSwift_Delete_ExpectedToBePassed = TypeAndStructs.ImmatureTestInstructionInformationStruct{
+		DomainUUID:                   Domains.DomainUUID_CA,
+		DomainName:                   Domains.DomainName_CA,
+		TestInstructionUUID:          TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
+		TestInstructionName:          TestInstructionName_CA_AddOrDeleteSelectedSwift,
+		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_AddOrDeleteSelectedSwift_Delete,
+		DropZoneName:                 TestInstructionDropZoneName_CA_AddOrDeleteSelectedSwift_Delete,
+		DropZoneDescription:          TestInstructionDropZoneDescription_CA_AddOrDeleteSelectedSwift_Delete,
+		DropZoneMouseOver:            TestInstructionDropZoneMouseOver_CA_AddOrDeleteSelectedSwift_Delete,
+		DropZoneColor:                TestInstructionDropZoneColor_CA_AddOrDeleteSelectedSwift_Delete,
+		TestInstructionAttributeType: TestInstructionAttributeType_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed,
+		TestInstructionAttributeUUID: TestInstructionAttributeUUID_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed,
+		TestInstructionAttributeName: TestInstructionAttributeName_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed,
+		AttributeValueAsString:       TestInstructionAttributeValueAsStringValue_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed,
+		AttributeValueUUID:           TestInstructionAttributeValueUUID_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed,
+		FirstImmatureElementUUID:     TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
+		AttributeActionCommand:       TestInstructionAttributeActionCommand_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed,
+	}
+	TestInstruction_CA_AddOrDeleteSelectedSwift.ImmatureTestInstructionInformation = append(
+		TestInstruction_CA_AddOrDeleteSelectedSwift.ImmatureTestInstructionInformation,
+		TestInstruction_CA_AddOrDeleteSelectedSwift_Delete_ExpectedToBePassed)
+
 	// ImmatureTestInstructionInformation  - DropZone: Delete, Attr: TestDataInterval
 	var TestInstruction_CA_AddOrDeleteSelectedSwift_Delete_TestDataInterval TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstruction_CA_AddOrDeleteSelectedSwift_Delete_TestDataInterval = TypeAndStructs.ImmatureTestInstructionInformationStruct{
@@ -333,6 +391,43 @@ func Initate_TestInstruction_CA_AddOrDeleteSelectedSwift() {
 	TestInstruction_CA_AddOrDeleteSelectedSwift.ImmatureTestInstructionInformation = append(
 		TestInstruction_CA_AddOrDeleteSelectedSwift.ImmatureTestInstructionInformation,
 		TestInstruction_CA_AddOrDeleteSelectedSwift_Delete_TestDataChannel)
+
+	// TestInstruction Attribute - 'ExpectedToBePassed'
+	var TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed = TypeAndStructs.TestInstructionAttributeStruct{
+		DomainUUID:                                    Domains.DomainUUID_CA,
+		DomainName:                                    Domains.DomainName_CA,
+		TestInstructionUUID:                           TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
+		TestInstructionName:                           TestInstructionName_CA_AddOrDeleteSelectedSwift,
+		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed,
+		TestInstructionAttributeName:                  TestInstructionAttributeName_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed,
+		TestInstructionAttributeDescription:           TestInstructionAttributeDescription_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed,
+		TestInstructionAttributeMouseOver:             TestInstructionAttributeMouseOverText_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed,
+		TestInstructionAttributeTypeUUID:              TestInstructionAttributeTypeUUID_CA_ExpectedToPass,
+		TestInstructionAttributeTypeName:              TestInstructionAttributeTypeName_CA_ExpectedToPass,
+		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
+		TestInstructionAttributeValueUUID:             Domains.TestInstructionAttributeValueUUID_NO_VALUE,
+		TestInstructionAttributeVisible:               true,
+		TestInstructionAttributeEnabled:               true,
+		TestInstructionAttributeMandatory:             true,
+		TestInstructionAttributeVisibleInTestCaseArea: false,
+		TestInstructionAttributeIsDeprecated:          false,
+		TestInstructionAttributeInputMask:             ".",
+		TestInstructionAttributeType:                  TestInstructionAttributeType_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed,
+	}
+	TestInstruction_CA_AddOrDeleteSelectedSwift.TestInstructionAttribute = append(
+		TestInstruction_CA_AddOrDeleteSelectedSwift.TestInstructionAttribute,
+		TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed)
+
+	// Add FangEngine relation for Attribute - 'ExpectedToBePassed'
+	var tempFangEngineAttributeExpectedToBePassed FangEngineClassesAndMethods.FangEngineAttributesStruct
+	tempFangEngineAttributeExpectedToBePassed = FangEngineClassesAndMethods.FangEngineAttributesStruct{
+		TestInstructionAttributeUUID: TestInstructionAttributeUUID_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed,
+		TestInstructionAttributeName: TestInstructionAttributeName_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed,
+		FangEngineAttributeNameUUID:  FangEngineClassesAndMethods.FangEngine_ClassName_UUID_CA_GeneralAttribute_ExpectedToBePassed,
+		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_ClassName_Name_CA_GeneralAttribute_ExpectedToBePassed,
+	}
+	TestInstruction_CA_AddOrDeleteSelectedSwift.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed] = tempFangEngineAttributeExpectedToBePassed
 
 	// TestInstruction Attribute - 'TestDataInterval'
 	var TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_TestDataInterval TypeAndStructs.TestInstructionAttributeStruct

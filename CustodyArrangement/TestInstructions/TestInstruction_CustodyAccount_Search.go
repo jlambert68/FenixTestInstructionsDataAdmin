@@ -26,8 +26,22 @@ const (
 	TCRuleDeletion_CA_CustodyAccount_Search                    TypeAndStructs.TCRuleDeletionType      = "TCRuleDeletion011"
 	TCRuleSwap_CA_CustodyAccount_Search                        TypeAndStructs.TCRuleSwapType          = "TCRuleSwap011"
 
-	// *** DropZone *** 'SearchExpectsToSucceed'
-	// No Dropzone needed
+	// *** DropZone *** 'SearchExpectsToSucceed_ExpectsToSucceed'
+	TestInstructionDropZoneUUID_CA_CustodyAccount_Search_ExpectsToSucceed        TypeAndStructs.DropZoneUUIDType = "96d9babf-e6ff-49ef-bf69-4ae1c34cf672"
+	TestInstructionDropZoneName_CA_CustodyAccount_Search_ExpectsToSucceed        TypeAndStructs.DropZoneNameType = "CustodyAccount_Search_ExpectsToSucceed"
+	TestInstructionDropZoneDescription_CA_CustodyAccount_Search_ExpectsToSucceed string                          = "Presets attribute that TestInstruction expects to succeed in its execution"
+	TestInstructionDropZoneMouseOver_CA_CustodyAccount_Search_ExpectsToSucceed   string                          = "Presets attribute that TestInstruction expects to succeed in its execution"
+	TestInstructionDropZoneColor_CA_CustodyAccount_Search_ExpectsToSucceed       TypeAndStructs.ColorType        = "#00000000"
+
+	// Attribute - 'ExpectedToBePassed'
+	TestInstructionAttributeUUID_CA_CustodyAccount_Search_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeUUIDType = "a2950f1d-abfd-4452-94b6-e77ddfbb8f51" // TODO fix so they use the same UUID, Can't bu done now because UUID is key in Attrubutes-table in DB .TestInstructionAttributeUUID_CA_ExpectedToBePassed
+	TestInstructionAttributeName_CA_CustodyAccount_Search_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeNameType = TestInstructionAttributeName_CA_ExpectedToBePassed
+	TestInstructionAttributeType_CA_CustodyAccount_Search_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeTypeType = TestInstructionAttributeType_CA_ExpectedToBePassed
+	TestInstructionAttributeActionCommand_CA_CustodyAccount_Search_ExpectedToBePassed      TypeAndStructs.AttributeActionCommandType       = Domains.AttributeActionCommand_USE_DROPZONE_VALUE_FOR_ATTRIBUTE
+	TestInstructionAttributeValueAsStringValue_CA_CustodyAccount_Search_ExpectedToBePassed TypeAndStructs.AttributeValueAsStringType       = Domains.TestInstructionAttributeValueAsStringValue_TRUE
+	TestInstructionAttributeValueUUID_CA_CustodyAccount_Search_ExpectedToBePassed          TypeAndStructs.AttributeValueUUIDType           = Domains.TestInstructionAttributeValueUUID_TRUE
+	TestInstructionAttributeDescription_CA_CustodyAccount_Search_ExpectedToBePassed        string                                          = "Should the TestInstruction execution to be expected to succeed or not"
+	TestInstructionAttributeMouseOverText_CA_CustodyAccount_Search_ExpectedToBePassed      string                                          = "Should the TestInstruction execution to be expected to succeed or not"
 
 	// Attribute - 'CustodyAccountId'
 	TestInstructionAttributeUUID_CA_CustodyAccount_Search_CustodyAccountId          TypeAndStructs.TestInstructionAttributeUUIDType = "8f7c1ad6-2891-4e28-9b96-567d21385916"
@@ -104,7 +118,67 @@ func Initate_TestInstruction_CA_CustodyAccount_Search() TestInstruction_CA_TestC
 	}
 
 	// DropZone 'SearchExpectsToSucceed'
-	// No DropZone needed
+	// DropZone 'CustodyAccount_Search_ExpectsToSucceed'
+	// ImmatureTestInstructionInformation  - DropZone: CustodyAccount_Search_ExpectsToSucceed, Attr: ExpectedToBePassed
+	var TestInstruction_CA_CustodyAccount_Search_ExpectedToBePassed TypeAndStructs.ImmatureTestInstructionInformationStruct
+	TestInstruction_CA_CustodyAccount_Search_ExpectedToBePassed = TypeAndStructs.ImmatureTestInstructionInformationStruct{
+		DomainUUID:                   Domains.DomainUUID_CA,
+		DomainName:                   Domains.DomainName_CA,
+		TestInstructionUUID:          TestInstructionUUID_CA_CustodyAccount_Search,
+		TestInstructionName:          TestInstructionName_CA_CustodyAccount_Search,
+		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_CustodyAccount_Search_ExpectsToSucceed,
+		DropZoneName:                 TestInstructionDropZoneName_CA_CustodyAccount_Search_ExpectsToSucceed,
+		DropZoneDescription:          TestInstructionDropZoneDescription_CA_CustodyAccount_Search_ExpectsToSucceed,
+		DropZoneMouseOver:            TestInstructionDropZoneMouseOver_CA_CustodyAccount_Search_ExpectsToSucceed,
+		DropZoneColor:                TestInstructionDropZoneColor_CA_CustodyAccount_Search_ExpectsToSucceed,
+		TestInstructionAttributeType: TestInstructionAttributeType_CA_CustodyAccount_Search_ExpectedToBePassed,
+		TestInstructionAttributeUUID: TestInstructionAttributeUUID_CA_CustodyAccount_Search_ExpectedToBePassed,
+		TestInstructionAttributeName: TestInstructionAttributeName_CA_CustodyAccount_Search_ExpectedToBePassed,
+		AttributeValueAsString:       TestInstructionAttributeValueAsStringValue_CA_CustodyAccount_Search_ExpectedToBePassed,
+		AttributeValueUUID:           TestInstructionAttributeValueUUID_CA_CustodyAccount_Search_ExpectedToBePassed,
+		FirstImmatureElementUUID:     TestInstructionUUID_CA_CustodyAccount_Search,
+		AttributeActionCommand:       TestInstructionAttributeActionCommand_CA_CustodyAccount_Search_ExpectedToBePassed,
+	}
+	TestInstruction_CA_CustodyAccount_Search.ImmatureTestInstructionInformation = append(
+		TestInstruction_CA_CustodyAccount_Search.ImmatureTestInstructionInformation,
+		TestInstruction_CA_CustodyAccount_Search_ExpectedToBePassed)
+
+	// TestInstruction Attribute - 'ExpectedToBePassed'
+	var TestInstructionAttribute_CA_CustodyAccount_Search_ExpectedToBePassed TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_CA_CustodyAccount_Search_ExpectedToBePassed = TypeAndStructs.TestInstructionAttributeStruct{
+		DomainUUID:                                    Domains.DomainUUID_CA,
+		DomainName:                                    Domains.DomainName_CA,
+		TestInstructionUUID:                           TestInstructionUUID_CA_CustodyAccount_Search,
+		TestInstructionName:                           TestInstructionName_CA_CustodyAccount_Search,
+		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_CustodyAccount_Search_ExpectedToBePassed,
+		TestInstructionAttributeName:                  TestInstructionAttributeName_CA_CustodyAccount_Search_ExpectedToBePassed,
+		TestInstructionAttributeDescription:           TestInstructionAttributeDescription_CA_CustodyAccount_Search_ExpectedToBePassed,
+		TestInstructionAttributeMouseOver:             TestInstructionAttributeMouseOverText_CA_CustodyAccount_Search_ExpectedToBePassed,
+		TestInstructionAttributeTypeUUID:              TestInstructionAttributeTypeUUID_CA_ExpectedToPass,
+		TestInstructionAttributeTypeName:              TestInstructionAttributeTypeName_CA_ExpectedToPass,
+		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
+		TestInstructionAttributeValueUUID:             Domains.TestInstructionAttributeValueUUID_NO_VALUE,
+		TestInstructionAttributeVisible:               true,
+		TestInstructionAttributeEnabled:               true,
+		TestInstructionAttributeMandatory:             true,
+		TestInstructionAttributeVisibleInTestCaseArea: false,
+		TestInstructionAttributeIsDeprecated:          false,
+		TestInstructionAttributeInputMask:             ".",
+		TestInstructionAttributeType:                  TestInstructionAttributeType_CA_CustodyAccount_Search_ExpectedToBePassed,
+	}
+	TestInstruction_CA_CustodyAccount_Search.TestInstructionAttribute = append(
+		TestInstruction_CA_CustodyAccount_Search.TestInstructionAttribute,
+		TestInstructionAttribute_CA_CustodyAccount_Search_ExpectedToBePassed)
+
+	// Add FangEngine relation for Attribute - 'ExpectedToBePassed'
+	var tempFangEngineAttributeExpectedToBePassed FangEngineClassesAndMethods.FangEngineAttributesStruct
+	tempFangEngineAttributeExpectedToBePassed = FangEngineClassesAndMethods.FangEngineAttributesStruct{
+		TestInstructionAttributeUUID: TestInstructionAttributeUUID_CA_CustodyAccount_Search_ExpectedToBePassed,
+		TestInstructionAttributeName: TestInstructionAttributeName_CA_CustodyAccount_Search_ExpectedToBePassed,
+		FangEngineAttributeNameUUID:  FangEngineClassesAndMethods.FangEngine_ClassName_UUID_CA_GeneralAttribute_ExpectedToBePassed,
+		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_ClassName_Name_CA_GeneralAttribute_ExpectedToBePassed,
+	}
+	TestInstruction_CA_CustodyAccount_Search.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_CustodyAccount_Search_ExpectedToBePassed] = tempFangEngineAttributeExpectedToBePassed
 
 	// TestInstruction Attribute - 'CustodyAccountId'
 	var TestInstructionAttribute_CA_CustodyAccount_Search_CustodyAccountId TypeAndStructs.TestInstructionAttributeStruct

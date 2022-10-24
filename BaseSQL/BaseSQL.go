@@ -61,7 +61,7 @@ const (
 	// ImmatureElementModelMessage
 	ImmatureElementModelMessageSQLDelete = "SET search_path TO \"FenixGuiBuilder\";" +
 		"DELETE FROM \"ImmatureElementModelMessage\" " +
-		"WHERE \"TestInstructionUuid\" IN "
+		"WHERE \"TopImmatureElementUuid\" IN "
 
 	ImmatureElementModelMessageSQLInsert = "SET search_path TO \"FenixGuiBuilder\";" +
 		"INSERT INTO \"ImmatureElementModelMessage\" " +

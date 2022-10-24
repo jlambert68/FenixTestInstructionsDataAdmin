@@ -25,6 +25,23 @@ const (
 	TCRuleDeletion_CA_SettlementAgreement_Edit                    TypeAndStructs.TCRuleDeletionType      = "TCRuleDeletion011"
 	TCRuleSwap_CA_SettlementAgreement_Edit                        TypeAndStructs.TCRuleSwapType          = "TCRuleSwap011"
 
+	// *** DropZone *** 'SettlementAgreement_Edit_ExpectsToSucceed'
+	TestInstructionDropZoneUUID_CA_SettlementAgreement_Edit_ExpectsToSucceed        TypeAndStructs.DropZoneUUIDType = "35b69f2a-4672-4b31-acf5-a01db3be3f70"
+	TestInstructionDropZoneName_CA_SettlementAgreement_Edit_ExpectsToSucceed        TypeAndStructs.DropZoneNameType = "SettlementAgreement_Edit_ExpectsToSucceed"
+	TestInstructionDropZoneDescription_CA_SettlementAgreement_Edit_ExpectsToSucceed string                          = "Presets attribute that TestInstruction expects to succeed in its execution"
+	TestInstructionDropZoneMouseOver_CA_SettlementAgreement_Edit_ExpectsToSucceed   string                          = "Presets attribute that TestInstruction expects to succeed in its execution"
+	TestInstructionDropZoneColor_CA_SettlementAgreement_Edit_ExpectsToSucceed       TypeAndStructs.ColorType        = "#00000000"
+
+	// Attribute - 'ExpectedToBePassed'
+	TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeUUIDType = "c1374659-3c59-4854-bd8b-623d6a6f59b1"
+	TestInstructionAttributeName_CA_SettlementAgreement_Edit_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeNameType = TestInstructionAttributeName_CA_ExpectedToBePassed
+	TestInstructionAttributeType_CA_SettlementAgreement_Edit_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeTypeType = TestInstructionAttributeType_CA_ExpectedToBePassed
+	TestInstructionAttributeActionCommand_CA_SettlementAgreement_Edit_ExpectedToBePassed      TypeAndStructs.AttributeActionCommandType       = Domains.AttributeActionCommand_USE_DROPZONE_VALUE_FOR_ATTRIBUTE
+	TestInstructionAttributeValueAsStringValue_CA_SettlementAgreement_Edit_ExpectedToBePassed TypeAndStructs.AttributeValueAsStringType       = Domains.TestInstructionAttributeValueAsStringValue_TRUE
+	TestInstructionAttributeValueUUID_CA_SettlementAgreement_Edit_ExpectedToBePassed          TypeAndStructs.AttributeValueUUIDType           = Domains.TestInstructionAttributeValueUUID_TRUE
+	TestInstructionAttributeDescription_CA_SettlementAgreement_Edit_ExpectedToBePassed        string                                          = "Should the TestInstruction execution to be expected to succeed or not"
+	TestInstructionAttributeMouseOverText_CA_SettlementAgreement_Edit_ExpectedToBePassed      string                                          = "Should the TestInstruction execution to be expected to succeed or not"
+
 	// Attribute - 'TestDataDuplicateCheck'
 	TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataDuplicateCheck          TypeAndStructs.TestInstructionAttributeUUIDType = "48763abc-b792-4bff-9132-258ec747f7ea"
 	TestInstructionAttributeName_CA_SettlementAgreement_Edit_TestDataDuplicateCheck          TypeAndStructs.TestInstructionAttributeNameType = "TestDataDuplicateCheck"
@@ -147,8 +164,67 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() TestInstruction_CA_Te
 		Enabled:                      TestInstructionEnabled_CA_SettlementAgreement_Edit,
 	}
 
-	// Dropzone Add
-	// No Dropzone needed
+	// DropZone 'SettlementAgreement_Edit_ExpectsToSucceed'
+	// ImmatureTestInstructionInformation  - DropZone: SettlementAgreement_Edit_ExpectsToSucceed, Attr: ExpectedToBePassed
+	var TestInstruction_CA_SettlementAgreement_Edit_ExpectedToBePassed TypeAndStructs.ImmatureTestInstructionInformationStruct
+	TestInstruction_CA_SettlementAgreement_Edit_ExpectedToBePassed = TypeAndStructs.ImmatureTestInstructionInformationStruct{
+		DomainUUID:                   Domains.DomainUUID_CA,
+		DomainName:                   Domains.DomainName_CA,
+		TestInstructionUUID:          TestInstructionUUID_CA_SettlementAgreement_Edit,
+		TestInstructionName:          TestInstructionName_CA_SettlementAgreement_Edit,
+		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_SettlementAgreement_Edit_ExpectsToSucceed,
+		DropZoneName:                 TestInstructionDropZoneName_CA_SettlementAgreement_Edit_ExpectsToSucceed,
+		DropZoneDescription:          TestInstructionDropZoneDescription_CA_SettlementAgreement_Edit_ExpectsToSucceed,
+		DropZoneMouseOver:            TestInstructionDropZoneMouseOver_CA_SettlementAgreement_Edit_ExpectsToSucceed,
+		DropZoneColor:                TestInstructionDropZoneColor_CA_SettlementAgreement_Edit_ExpectsToSucceed,
+		TestInstructionAttributeType: TestInstructionAttributeType_CA_SettlementAgreement_Edit_ExpectedToBePassed,
+		TestInstructionAttributeUUID: TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_ExpectedToBePassed,
+		TestInstructionAttributeName: TestInstructionAttributeName_CA_SettlementAgreement_Edit_ExpectedToBePassed,
+		AttributeValueAsString:       TestInstructionAttributeValueAsStringValue_CA_SettlementAgreement_Edit_ExpectedToBePassed,
+		AttributeValueUUID:           TestInstructionAttributeValueUUID_CA_SettlementAgreement_Edit_ExpectedToBePassed,
+		FirstImmatureElementUUID:     TestInstructionUUID_CA_SettlementAgreement_Edit,
+		AttributeActionCommand:       TestInstructionAttributeActionCommand_CA_SettlementAgreement_Edit_ExpectedToBePassed,
+	}
+	TestInstruction_CA_SettlementAgreement_Edit.ImmatureTestInstructionInformation = append(
+		TestInstruction_CA_SettlementAgreement_Edit.ImmatureTestInstructionInformation,
+		TestInstruction_CA_SettlementAgreement_Edit_ExpectedToBePassed)
+
+	// TestInstruction Attribute - 'ExpectedToBePassed'
+	var TestInstructionAttribute_CA_SettlementAgreement_Edit_ExpectedToBePassed TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_CA_SettlementAgreement_Edit_ExpectedToBePassed = TypeAndStructs.TestInstructionAttributeStruct{
+		DomainUUID:                                    Domains.DomainUUID_CA,
+		DomainName:                                    Domains.DomainName_CA,
+		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_Edit,
+		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_Edit,
+		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_ExpectedToBePassed,
+		TestInstructionAttributeName:                  TestInstructionAttributeName_CA_SettlementAgreement_Edit_ExpectedToBePassed,
+		TestInstructionAttributeDescription:           TestInstructionAttributeDescription_CA_SettlementAgreement_Edit_ExpectedToBePassed,
+		TestInstructionAttributeMouseOver:             TestInstructionAttributeMouseOverText_CA_SettlementAgreement_Edit_ExpectedToBePassed,
+		TestInstructionAttributeTypeUUID:              TestInstructionAttributeTypeUUID_CA_ExpectedToPass,
+		TestInstructionAttributeTypeName:              TestInstructionAttributeTypeName_CA_ExpectedToPass,
+		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
+		TestInstructionAttributeValueUUID:             Domains.TestInstructionAttributeValueUUID_NO_VALUE,
+		TestInstructionAttributeVisible:               true,
+		TestInstructionAttributeEnabled:               true,
+		TestInstructionAttributeMandatory:             true,
+		TestInstructionAttributeVisibleInTestCaseArea: false,
+		TestInstructionAttributeIsDeprecated:          false,
+		TestInstructionAttributeInputMask:             ".",
+		TestInstructionAttributeType:                  TestInstructionAttributeType_CA_SettlementAgreement_Edit_ExpectedToBePassed,
+	}
+	TestInstruction_CA_SettlementAgreement_Edit.TestInstructionAttribute = append(
+		TestInstruction_CA_SettlementAgreement_Edit.TestInstructionAttribute,
+		TestInstructionAttribute_CA_SettlementAgreement_Edit_ExpectedToBePassed)
+
+	// Add FangEngine relation for Attribute - 'ExpectedToBePassed'
+	var tempFangEngineAttributeExpectedToBePassed FangEngineClassesAndMethods.FangEngineAttributesStruct
+	tempFangEngineAttributeExpectedToBePassed = FangEngineClassesAndMethods.FangEngineAttributesStruct{
+		TestInstructionAttributeUUID: TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_ExpectedToBePassed,
+		TestInstructionAttributeName: TestInstructionAttributeName_CA_SettlementAgreement_Edit_ExpectedToBePassed,
+		FangEngineAttributeNameUUID:  FangEngineClassesAndMethods.FangEngine_ClassName_UUID_CA_GeneralAttribute_ExpectedToBePassed,
+		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_ClassName_Name_CA_GeneralAttribute_ExpectedToBePassed,
+	}
+	TestInstruction_CA_SettlementAgreement_Edit.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_ExpectedToBePassed] = tempFangEngineAttributeExpectedToBePassed
 
 	// TestInstruction Attribute - 'TestDataDuplicateCheck'
 	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataDuplicateCheck TypeAndStructs.TestInstructionAttributeStruct

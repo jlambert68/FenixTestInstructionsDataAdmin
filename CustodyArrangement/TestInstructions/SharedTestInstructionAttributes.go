@@ -11,4 +11,5 @@ const (
 	TestInstructionAttributeUUID_CA_ExpectedToBePassed TypeAndStructs.TestInstructionAttributeUUIDType = "932e9376-ef25-43cb-9602-fede5504a894"
 	TestInstructionAttributeName_CA_ExpectedToBePassed TypeAndStructs.TestInstructionAttributeNameType = "ExpectedToBePassed"
 	TestInstructionAttributeType_CA_ExpectedToBePassed TypeAndStructs.TestInstructionAttributeTypeType = "TEXTBOX"
+	TestInstructionAttributeTypeTypeName_CA_ExpectedToBePassed
 )

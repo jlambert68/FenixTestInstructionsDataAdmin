@@ -31,5 +31,6 @@ func main() {
 
 	CustodyArrangementTestInstructions.Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties()
 	GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&CustodyArrangementTestInstructions.TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties)
+	GenerateSqlData.GenerateSqlDelete_For_TestInstructions()
 
 }

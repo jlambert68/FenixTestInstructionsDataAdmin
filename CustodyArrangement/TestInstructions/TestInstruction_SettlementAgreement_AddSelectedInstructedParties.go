@@ -25,6 +25,23 @@ const (
 	TCRuleDeletion_CA_SettlementAgreement_AddSelectedInstructedParties                    TypeAndStructs.TCRuleDeletionType      = "TCRuleDeletion011"
 	TCRuleSwap_CA_SettlementAgreement_AddSelectedInstructedParties                        TypeAndStructs.TCRuleSwapType          = "TCRuleSwap011"
 
+	// *** DropZone *** 'SettlementAgreement_AddSelectedInstructedParties_ExpectsToSucceed'
+	TestInstructionDropZoneUUID_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectsToSucceed        TypeAndStructs.DropZoneUUIDType = "14bd3a26-6948-4668-970a-7e1d1a2f3572"
+	TestInstructionDropZoneName_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectsToSucceed        TypeAndStructs.DropZoneNameType = "SettlementAgreement_AddSelectedInstructedParties_ExpectsToSucceed"
+	TestInstructionDropZoneDescription_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectsToSucceed string                          = "Presets attribute that TestInstruction expects to succeed in its execution"
+	TestInstructionDropZoneMouseOver_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectsToSucceed   string                          = "Presets attribute that TestInstruction expects to succeed in its execution"
+	TestInstructionDropZoneColor_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectsToSucceed       TypeAndStructs.ColorType        = "#00000000"
+
+	// Attribute - 'ExpectedToBePassed'
+	TestInstructionAttributeUUID_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeUUIDType = "6c716404-2d8e-46b7-aba8-7e9a850fc4e6" // TODO fix so they use the same UUID, Can't bu done now because UUID is key in Attrubutes-table in DB .TestInstructionAttributeUUID_CA_ExpectedToBePassed
+	TestInstructionAttributeName_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeNameType = TestInstructionAttributeName_CA_ExpectedToBePassed
+	TestInstructionAttributeType_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeTypeType = TestInstructionAttributeType_CA_ExpectedToBePassed
+	TestInstructionAttributeActionCommand_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed      TypeAndStructs.AttributeActionCommandType       = Domains.AttributeActionCommand_USE_DROPZONE_VALUE_FOR_ATTRIBUTE
+	TestInstructionAttributeValueAsStringValue_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed TypeAndStructs.AttributeValueAsStringType       = Domains.TestInstructionAttributeValueAsStringValue_TRUE
+	TestInstructionAttributeValueUUID_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed          TypeAndStructs.AttributeValueUUIDType           = Domains.TestInstructionAttributeValueUUID_TRUE
+	TestInstructionAttributeDescription_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed        string                                          = "Should the TestInstruction execution to be expected to succeed or not"
+	TestInstructionAttributeMouseOverText_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed      string                                          = "Should the TestInstruction execution to be expected to succeed or not"
+
 	// Attribute - 'bicAddress'
 	TestInstructionAttributeUUID_CA_SettlementAgreement_AddSelectedInstructedParties_bicAddress          TypeAndStructs.TestInstructionAttributeUUIDType = "c8c0899b-c48a-448d-a964-c2cde5a3db77"
 	TestInstructionAttributeName_CA_SettlementAgreement_AddSelectedInstructedParties_bicAddress          TypeAndStructs.TestInstructionAttributeNameType = "bicAddress"
@@ -98,8 +115,67 @@ func Initate_TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties
 		Enabled:                      TestInstructionEnabled_CA_SettlementAgreement_AddSelectedInstructedParties,
 	}
 
-	// Dropzone Add
-	// No Dropzone needed
+	// DropZone 'SettlementAgreement_AddSelectedInstructedParties_ExpectsToSucceed'
+	// ImmatureTestInstructionInformation  - DropZone: SettlementAgreement_AddSelectedInstructedParties_ExpectsToSucceed, Attr: ExpectedToBePassed
+	var TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed TypeAndStructs.ImmatureTestInstructionInformationStruct
+	TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed = TypeAndStructs.ImmatureTestInstructionInformationStruct{
+		DomainUUID:                   Domains.DomainUUID_CA,
+		DomainName:                   Domains.DomainName_CA,
+		TestInstructionUUID:          TestInstructionUUID_CA_SettlementAgreement_AddSelectedInstructedParties,
+		TestInstructionName:          TestInstructionName_CA_SettlementAgreement_AddSelectedInstructedParties,
+		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectsToSucceed,
+		DropZoneName:                 TestInstructionDropZoneName_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectsToSucceed,
+		DropZoneDescription:          TestInstructionDropZoneDescription_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectsToSucceed,
+		DropZoneMouseOver:            TestInstructionDropZoneMouseOver_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectsToSucceed,
+		DropZoneColor:                TestInstructionDropZoneColor_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectsToSucceed,
+		TestInstructionAttributeType: TestInstructionAttributeType_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed,
+		TestInstructionAttributeUUID: TestInstructionAttributeUUID_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed,
+		TestInstructionAttributeName: TestInstructionAttributeName_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed,
+		AttributeValueAsString:       TestInstructionAttributeValueAsStringValue_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed,
+		AttributeValueUUID:           TestInstructionAttributeValueUUID_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed,
+		FirstImmatureElementUUID:     TestInstructionUUID_CA_SettlementAgreement_AddSelectedInstructedParties,
+		AttributeActionCommand:       TestInstructionAttributeActionCommand_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed,
+	}
+	TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties.ImmatureTestInstructionInformation = append(
+		TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties.ImmatureTestInstructionInformation,
+		TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed)
+
+	// TestInstruction Attribute - 'ExpectedToBePassed'
+	var TestInstructionAttribute_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed = TypeAndStructs.TestInstructionAttributeStruct{
+		DomainUUID:                                    Domains.DomainUUID_CA,
+		DomainName:                                    Domains.DomainName_CA,
+		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_AddSelectedInstructedParties,
+		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_AddSelectedInstructedParties,
+		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed,
+		TestInstructionAttributeName:                  TestInstructionAttributeName_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed,
+		TestInstructionAttributeDescription:           TestInstructionAttributeDescription_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed,
+		TestInstructionAttributeMouseOver:             TestInstructionAttributeMouseOverText_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed,
+		TestInstructionAttributeTypeUUID:              TestInstructionAttributeTypeUUID_CA_ExpectedToPass,
+		TestInstructionAttributeTypeName:              TestInstructionAttributeTypeName_CA_ExpectedToPass,
+		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
+		TestInstructionAttributeValueUUID:             Domains.TestInstructionAttributeValueUUID_NO_VALUE,
+		TestInstructionAttributeVisible:               true,
+		TestInstructionAttributeEnabled:               true,
+		TestInstructionAttributeMandatory:             true,
+		TestInstructionAttributeVisibleInTestCaseArea: false,
+		TestInstructionAttributeIsDeprecated:          false,
+		TestInstructionAttributeInputMask:             ".",
+		TestInstructionAttributeType:                  TestInstructionAttributeType_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed,
+	}
+	TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties.TestInstructionAttribute = append(
+		TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties.TestInstructionAttribute,
+		TestInstructionAttribute_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed)
+
+	// Add FangEngine relation for Attribute - 'ExpectedToBePassed'
+	var tempFangEngineAttributeExpectedToBePassed FangEngineClassesAndMethods.FangEngineAttributesStruct
+	tempFangEngineAttributeExpectedToBePassed = FangEngineClassesAndMethods.FangEngineAttributesStruct{
+		TestInstructionAttributeUUID: TestInstructionAttributeUUID_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed,
+		TestInstructionAttributeName: TestInstructionAttributeName_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed,
+		FangEngineAttributeNameUUID:  FangEngineClassesAndMethods.FangEngine_ClassName_UUID_CA_GeneralAttribute_ExpectedToBePassed,
+		FangEngineAttributeNameName:  FangEngineClassesAndMethods.FangEngine_ClassName_Name_CA_GeneralAttribute_ExpectedToBePassed,
+	}
+	TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed] = tempFangEngineAttributeExpectedToBePassed
 
 	// TestInstruction Attribute - 'bicAddress'
 	var TestInstructionAttribute_CA_SettlementAgreement_AddSelectedInstructedParties_bicAddress TypeAndStructs.TestInstructionAttributeStruct

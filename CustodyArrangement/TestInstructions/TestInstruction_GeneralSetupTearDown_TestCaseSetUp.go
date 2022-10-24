@@ -26,15 +26,15 @@ const (
 	TCRuleDeletion_CA_TestCaseSetUp                    TypeAndStructs.TCRuleDeletionType      = "TCRuleDeletion020"
 	TCRuleSwap_CA_TestCaseSetUp                        TypeAndStructs.TCRuleSwapType          = "TCRuleSwap020"
 
-	// *** DropZone *** 'TestCaseSetUpExpectsToSucceed'
-	TestInstructionDropZoneUUID_CA_TestCaseSetUp_TestCaseSetUpExpectsToSucceed        TypeAndStructs.DropZoneUUIDType = "d216e39f-323c-4a73-ae0a-b2fbbf1feb4f"
-	TestInstructionDropZoneName_CA_TestCaseSetUp_TestCaseSetUpExpectsToSucceed        TypeAndStructs.DropZoneNameType = "TestCaseSetUpExpectsToSucceed"
-	TestInstructionDropZoneDescription_CA_TestCaseSetUp_TestCaseSetUpExpectsToSucceed string                          = "Presets attribute that TestInstruction expects to succeed in its execution"
-	TestInstructionDropZoneMouseOver_CA_TestCaseSetUp_TestCaseSetUpExpectsToSucceed   string                          = "Presets attribute that TestInstruction expects to succeed in its execution"
-	TestInstructionDropZoneColor_CA_TestCaseSetUp_TestCaseSetUpExpectsToSucceed       TypeAndStructs.ColorType        = "#00000000"
+	// *** DropZone *** 'TestCaseSetUp_ExpectsToSucceed'
+	TestInstructionDropZoneUUID_CA_TestCaseSetUp_ExpectsToSucceed        TypeAndStructs.DropZoneUUIDType = "941e4fd9-5f25-4d9c-a39a-07caa5c68c4e"
+	TestInstructionDropZoneName_CA_TestCaseSetUp_ExpectsToSucceed        TypeAndStructs.DropZoneNameType = "TestCaseSetUp_ExpectsToSucceed"
+	TestInstructionDropZoneDescription_CA_TestCaseSetUp_ExpectsToSucceed string                          = "Presets attribute that TestInstruction expects to succeed in its execution"
+	TestInstructionDropZoneMouseOver_CA_TestCaseSetUp_ExpectsToSucceed   string                          = "Presets attribute that TestInstruction expects to succeed in its execution"
+	TestInstructionDropZoneColor_CA_TestCaseSetUp_ExpectsToSucceed       TypeAndStructs.ColorType        = "#00000000"
 
 	// Attribute - 'ExpectedToBePassed'
-	TestInstructionAttributeUUID_CA_TestCaseSetUp_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeUUIDType = TestInstructionAttributeUUID_CA_ExpectedToBePassed
+	TestInstructionAttributeUUID_CA_TestCaseSetUp_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeUUIDType = "c66aac87-6583-490d-bea9-832406babb73" //TestInstructionAttributeUUID_CA_ExpectedToBePassed
 	TestInstructionAttributeName_CA_TestCaseSetUp_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeNameType = TestInstructionAttributeName_CA_ExpectedToBePassed
 	TestInstructionAttributeType_CA_TestCaseSetUp_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeTypeType = TestInstructionAttributeType_CA_ExpectedToBePassed
 	TestInstructionAttributeActionCommand_CA_TestCaseSetUp_ExpectedToBePassed      TypeAndStructs.AttributeActionCommandType       = Domains.AttributeActionCommand_USE_DROPZONE_VALUE_FOR_ATTRIBUTE
@@ -110,19 +110,19 @@ func Initate_TestInstruction_CA_TestCaseSetUp() TestInstruction_CA_TestCaseSetUp
 		Enabled:                      TestInstructionEnabled_CA_TestCaseSetUp,
 	}
 
-	// DropZone 'TestCaseSetUpExpectsToSucceed'
-	// ImmatureTestInstructionInformation  - DropZone: TestCaseSetUpExpectsToSucceed, Attr: ExpectedToBePassed
+	// DropZone 'TestCaseSetUp_ExpectsToSucceed'
+	// ImmatureTestInstructionInformation  - DropZone: TestCaseSetUp_ExpectsToSucceed, Attr: ExpectedToBePassed
 	var TestInstruction_CA_TestCaseSetUp_ExpectedToBePassed TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstruction_CA_TestCaseSetUp_ExpectedToBePassed = TypeAndStructs.ImmatureTestInstructionInformationStruct{
 		DomainUUID:                   Domains.DomainUUID_CA,
 		DomainName:                   Domains.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_TestCaseSetUp,
 		TestInstructionName:          TestInstructionName_CA_TestCaseSetUp,
-		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_TestCaseSetUp_TestCaseSetUpExpectsToSucceed,
-		DropZoneName:                 TestInstructionDropZoneName_CA_TestCaseSetUp_TestCaseSetUpExpectsToSucceed,
-		DropZoneDescription:          TestInstructionDropZoneDescription_CA_TestCaseSetUp_TestCaseSetUpExpectsToSucceed,
-		DropZoneMouseOver:            TestInstructionDropZoneMouseOver_CA_TestCaseSetUp_TestCaseSetUpExpectsToSucceed,
-		DropZoneColor:                TestInstructionDropZoneColor_CA_TestCaseSetUp_TestCaseSetUpExpectsToSucceed,
+		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_TestCaseSetUp_ExpectsToSucceed,
+		DropZoneName:                 TestInstructionDropZoneName_CA_TestCaseSetUp_ExpectsToSucceed,
+		DropZoneDescription:          TestInstructionDropZoneDescription_CA_TestCaseSetUp_ExpectsToSucceed,
+		DropZoneMouseOver:            TestInstructionDropZoneMouseOver_CA_TestCaseSetUp_ExpectsToSucceed,
+		DropZoneColor:                TestInstructionDropZoneColor_CA_TestCaseSetUp_ExpectsToSucceed,
 		TestInstructionAttributeType: TestInstructionAttributeType_CA_TestCaseSetUp_ExpectedToBePassed,
 		TestInstructionAttributeUUID: TestInstructionAttributeUUID_CA_TestCaseSetUp_ExpectedToBePassed,
 		TestInstructionAttributeName: TestInstructionAttributeName_CA_TestCaseSetUp_ExpectedToBePassed,
@@ -146,8 +146,8 @@ func Initate_TestInstruction_CA_TestCaseSetUp() TestInstruction_CA_TestCaseSetUp
 		TestInstructionAttributeName:                  TestInstructionAttributeName_CA_TestCaseSetUp_ExpectedToBePassed,
 		TestInstructionAttributeDescription:           TestInstructionAttributeDescription_CA_TestCaseSetUp_ExpectedToBePassed,
 		TestInstructionAttributeMouseOver:             TestInstructionAttributeMouseOverText_CA_TestCaseSetUp_ExpectedToBePassed,
-		TestInstructionAttributeTypeUUID:              TestInstructionAttributeTypeUUID_CA_Standard,
-		TestInstructionAttributeTypeName:              TestInstructionAttributeTypeName_CA_Standard,
+		TestInstructionAttributeTypeUUID:              TestInstructionAttributeTypeUUID_CA_ExpectedToPass,
+		TestInstructionAttributeTypeName:              TestInstructionAttributeTypeName_CA_ExpectedToPass,
 		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
 		TestInstructionAttributeValueUUID:             Domains.TestInstructionAttributeValueUUID_NO_VALUE,
 		TestInstructionAttributeVisible:               true,
