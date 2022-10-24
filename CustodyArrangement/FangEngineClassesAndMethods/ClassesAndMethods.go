@@ -22,10 +22,11 @@ type FangEngineClassesMethodsAttributesStruct struct {
 }
 
 type FangEngineAttributesStruct struct {
-	TestInstructionAttributeUUID TypeAndStructs.TestInstructionAttributeUUIDType
-	TestInstructionAttributeName TypeAndStructs.TestInstructionAttributeNameType
-	FangEngineAttributeNameUUID  FangEngine_AttributeName_UUID_CA_Type
-	FangEngineAttributeNameName  FangEngine_AttributeName_Name_CA_Type
+	TestInstructionAttributeUUID     TypeAndStructs.TestInstructionAttributeUUIDType
+	TestInstructionAttributeName     TypeAndStructs.TestInstructionAttributeNameType
+	TestInstructionAttributeTypeUUID TypeAndStructs.TestInstructionAttributeTypeUUIDType
+	FangEngineAttributeNameUUID      FangEngine_AttributeName_UUID_CA_Type
+	FangEngineAttributeNameName      FangEngine_AttributeName_Name_CA_Type
 }
 
 // Classes, Methods and their Parameters in FangEngine for Custody Arrangement
