@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	CustodyArrangementTestInstructions "github.com/jlambert68/FenixTestInstructionsDataAdmin/CustodyArrangement/TestInstructions"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/GenerateSqlData"
 )
@@ -42,5 +43,12 @@ func main() {
 		// SettlementAgreement::DeleteSelectedInstructedParties
 		GenerateSqlData.GenerateSqlDelete_For_TestInstructions()
 	}
+
+	// Delete Data In Execution Server
+	fmt.Println("DELETE FROM \"FenixExecution\".\"TestCaseExecutionQueue\";")
+	fmt.Println("DELETE FROM \"FenixExecution\".\"TestCasesUnderExecution\";")
+	fmt.Println("DELETE FROM \"FenixExecution\".\"TestInstructionAttributesUnderExecution\";")
+	fmt.Println("DELETE FROM \"FenixExecution\".\"TestInstructionExecutionQueue\";")
+	fmt.Println("DELETE FROM \"FenixExecution\".\"TestInstructionsUnderExecution\";")
 
 }
