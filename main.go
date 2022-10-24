@@ -7,30 +7,40 @@ import (
 
 func main() {
 
-	// CustodyAccount::Search
-	//TestInstructions.Initate_TestInstruction_CA_CustodyAccount_Search()
-	//GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&TestInstructions.TestInstruction_CA_CustodyAccount_Search)
+	doInsert := true
 
-	//TestInstructions.Initate_TestInstruction_CA_TestCaseSetUp()
-	//GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&TestInstructions.TestInstruction_CA_TestCaseSetUp)
+	if doInsert == true {
 
-	//TestInstructions.Initate_TestInstruction_CA_TestCaseTearDown()
-	//GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&TestInstructions.TestInstruction_CA_TestCaseTearDown)
+		// CustodyAccount::Search
+		CustodyArrangementTestInstructions.Initate_TestInstruction_CA_CustodyAccount_Search()
+		GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&CustodyArrangementTestInstructions.TestInstruction_CA_CustodyAccount_Search)
 
-	//TestInstructions.Initate_TestInstruction_CA_SettlementAgreement_Edit()
-	//GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&TestInstructions.TestInstruction_CA_SettlementAgreement_Edit)
+		// GeneralSetupTearDown::TestCaseSetUp
+		CustodyArrangementTestInstructions.Initate_TestInstruction_CA_TestCaseSetUp()
+		GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&CustodyArrangementTestInstructions.TestInstruction_CA_TestCaseSetUp)
 
-	//TestInstructions.Initate_TestInstruction_CA_SettlementAgreement_AddSelectedSwift()
-	//GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&TestInstructions.TestInstruction_CA_SettlementAgreement_AddSelectedSwift)
+		// GeneralSetupTearDown::TestCaseTearDown
+		CustodyArrangementTestInstructions.Initate_TestInstruction_CA_TestCaseTearDown()
+		GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&CustodyArrangementTestInstructions.TestInstruction_CA_TestCaseTearDown)
 
-	//TestInstructions.Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift()
-	//GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&TestInstructions.TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift)
+		// SettlementAgreement::Edit
+		CustodyArrangementTestInstructions.Initate_TestInstruction_CA_SettlementAgreement_Edit()
+		GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&CustodyArrangementTestInstructions.TestInstruction_CA_SettlementAgreement_Edit)
 
-	//TestInstructions.Initate_TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties()
-	//GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&TestInstructions.TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties)
+		// SettlementAgreement::AddSelectedSwift
+		CustodyArrangementTestInstructions.Initate_TestInstruction_CA_SettlementAgreement_AddSelectedSwift()
+		GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&CustodyArrangementTestInstructions.TestInstruction_CA_SettlementAgreement_AddSelectedSwift)
 
-	CustodyArrangementTestInstructions.Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties()
-	GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&CustodyArrangementTestInstructions.TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties)
-	GenerateSqlData.GenerateSqlDelete_For_TestInstructions()
+		// SettlementAgreement::DeleteSelectedSwift
+		CustodyArrangementTestInstructions.Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift()
+		GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&CustodyArrangementTestInstructions.TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift)
+
+		// SettlementAgreement::AddSelectedInstructedParties
+		CustodyArrangementTestInstructions.Initate_TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties()
+		GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&CustodyArrangementTestInstructions.TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties)
+	} else {
+		// SettlementAgreement::DeleteSelectedInstructedParties
+		GenerateSqlData.GenerateSqlDelete_For_TestInstructions()
+	}
 
 }

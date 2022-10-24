@@ -4,7 +4,6 @@ import (
 	"fmt"
 	fenixExecutionServerGrpcApi "github.com/jlambert68/FenixGrpcApi/FenixExecutionServer/fenixExecutionServerGrpcApi/go_grpc_api"
 	"google.golang.org/protobuf/types/known/timestamppb"
-	"log"
 	"time"
 )
 
@@ -54,12 +53,20 @@ func GenerateSQLInsertValues(testdata [][]interface{}) (sqlInsertValuesString st
 
 			default:
 				sqlInsertValuesString = sqlInsertValuesString + "'" + fmt.Sprint(value) + "'"
-				errorId := "33e11bc9-bfc7-4c2f-8440-30f8d9a89ab0"
-				log.Printf("Unhandled type, %s, with [ErrorId: %s]", valueType, errorId)
-				break
-				errorId = "33e11bc9-bfc7-4c2f-8440-30f8d9a89ab0"
-				log.Fatalf("Unhandled type, %s, with [ErrorId: %s]", valueType, errorId)
 
+				// Dummy use  of 'valueType'
+				if valueType == "ThisIsJustToBeAbleToDoSwitch" {
+
+				}
+				/*
+					errorId := "33e11bc9-bfc7-4c2f-8440-30f8d9a89ab0"
+					log.Printf("Unhandled type, %s, with [ErrorId: %s]", valueType, errorId)
+					break
+					errorId = "33e11bc9-bfc7-4c2f-8440-30f8d9a89ab0"
+					log.Fatalf("Unhandled type, %s, with [ErrorId: %s]", valueType, errorId)
+
+
+				*/
 			}
 
 			// After the last value then add ')'
