@@ -4,44 +4,76 @@ import (
 	"fmt"
 	CustodyArrangementTestInstructions "github.com/jlambert68/FenixTestInstructionsDataAdmin/CustodyArrangement/TestInstructions"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/GenerateSqlData"
+	"log"
 )
 
 func main() {
 
-	doInsert := true
+	// Which system to process data for
+	system := "Sub Custody"
+	//System := "Custody Arrangement"
 
-	if doInsert == true {
+	switch system {
+	case "Custody Arrangement":
 
-		// CustodyAccount::Search
-		CustodyArrangementTestInstructions.Initate_TestInstruction_CA_CustodyAccount_Search()
-		GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&CustodyArrangementTestInstructions.TestInstruction_CA_CustodyAccount_Search)
+		// Should data be Inserted into DB or Deleted from DB
+		doInsert := true
 
-		// GeneralSetupTearDown::TestCaseSetUp
-		CustodyArrangementTestInstructions.Initate_TestInstruction_CA_TestCaseSetUp()
-		GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&CustodyArrangementTestInstructions.TestInstruction_CA_TestCaseSetUp)
+		if doInsert == true {
 
-		// GeneralSetupTearDown::TestCaseTearDown
-		CustodyArrangementTestInstructions.Initate_TestInstruction_CA_TestCaseTearDown()
-		GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&CustodyArrangementTestInstructions.TestInstruction_CA_TestCaseTearDown)
+			// CustodyAccount::Search
+			CustodyArrangementTestInstructions.Initate_TestInstruction_CA_CustodyAccount_Search()
+			GenerateSqlData.GenerateSqlInsert_For_TestInstructions_CA(&CustodyArrangementTestInstructions.TestInstruction_CA_CustodyAccount_Search)
 
-		// SettlementAgreement::Edit
-		CustodyArrangementTestInstructions.Initate_TestInstruction_CA_SettlementAgreement_Edit()
-		GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&CustodyArrangementTestInstructions.TestInstruction_CA_SettlementAgreement_Edit)
+			// GeneralSetupTearDown::TestCaseSetUp
+			CustodyArrangementTestInstructions.Initate_TestInstruction_CA_TestCaseSetUp()
+			GenerateSqlData.GenerateSqlInsert_For_TestInstructions_CA(&CustodyArrangementTestInstructions.TestInstruction_CA_TestCaseSetUp)
 
-		// SettlementAgreement::AddSelectedSwift
-		CustodyArrangementTestInstructions.Initate_TestInstruction_CA_SettlementAgreement_AddSelectedSwift()
-		GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&CustodyArrangementTestInstructions.TestInstruction_CA_SettlementAgreement_AddSelectedSwift)
+			// GeneralSetupTearDown::TestCaseTearDown
+			CustodyArrangementTestInstructions.Initate_TestInstruction_CA_TestCaseTearDown()
+			GenerateSqlData.GenerateSqlInsert_For_TestInstructions_CA(&CustodyArrangementTestInstructions.TestInstruction_CA_TestCaseTearDown)
 
-		// SettlementAgreement::DeleteSelectedSwift
-		CustodyArrangementTestInstructions.Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift()
-		GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&CustodyArrangementTestInstructions.TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift)
+			// SettlementAgreement::Edit
+			CustodyArrangementTestInstructions.Initate_TestInstruction_CA_SettlementAgreement_Edit()
+			GenerateSqlData.GenerateSqlInsert_For_TestInstructions_CA(&CustodyArrangementTestInstructions.TestInstruction_CA_SettlementAgreement_Edit)
 
-		// SettlementAgreement::AddSelectedInstructedParties
-		CustodyArrangementTestInstructions.Initate_TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties()
-		GenerateSqlData.GenerateSqlInsert_For_TestInstructions(&CustodyArrangementTestInstructions.TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties)
-	} else {
-		// SettlementAgreement::DeleteSelectedInstructedParties
-		GenerateSqlData.GenerateSqlDelete_For_TestInstructions()
+			// SettlementAgreement::AddSelectedSwift
+			CustodyArrangementTestInstructions.Initate_TestInstruction_CA_SettlementAgreement_AddSelectedSwift()
+			GenerateSqlData.GenerateSqlInsert_For_TestInstructions_CA(&CustodyArrangementTestInstructions.TestInstruction_CA_SettlementAgreement_AddSelectedSwift)
+
+			// SettlementAgreement::DeleteSelectedSwift
+			CustodyArrangementTestInstructions.Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift()
+			GenerateSqlData.GenerateSqlInsert_For_TestInstructions_CA(&CustodyArrangementTestInstructions.TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift)
+
+			// SettlementAgreement::AddSelectedInstructedParties
+			CustodyArrangementTestInstructions.Initate_TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties()
+			GenerateSqlData.GenerateSqlInsert_For_TestInstructions_CA(&CustodyArrangementTestInstructions.TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties)
+		} else {
+			// Delete all TestInstruction-data
+			GenerateSqlData.GenerateSqlDelete_For_TestInstructions_CA()
+		}
+
+	case "Sub Custody":
+
+		// Should data be Inserted into DB or Deleted from DB
+		doInsert := true
+
+		if doInsert == true {
+
+			// GeneralSetupTearDown::TestCaseSetUp
+			CustodyArrangementTestInstructions.Initate_TestInstruction_CA_TestCaseSetUp()
+			GenerateSqlData.GenerateSqlInsert_For_TestInstructions_CA(&CustodyArrangementTestInstructions.TestInstruction_CA_TestCaseSetUp)
+
+			// GeneralSetupTearDown::TestCaseTearDown
+			CustodyArrangementTestInstructions.Initate_TestInstruction_CA_TestCaseTearDown()
+			GenerateSqlData.GenerateSqlInsert_For_TestInstructions_CA(&CustodyArrangementTestInstructions.TestInstruction_CA_TestCaseTearDown)
+
+		} else {
+			// Delete all TestInstruction-data
+			GenerateSqlData.GenerateSqlDelete_For_TestInstructions_SC()
+		}
+	default:
+		log.Fatalln("Unknown system: " + system)
 	}
 
 	// Delete Data In Execution Server

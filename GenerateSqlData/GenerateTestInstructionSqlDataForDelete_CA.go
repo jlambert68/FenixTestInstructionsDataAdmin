@@ -9,7 +9,7 @@ import (
 
 // Initate_TestInstruction_CA_CustodyAccount_Search
 // Function that creates all data for the TestInstruction
-func GenerateSqlDelete_For_TestInstructions() {
+func GenerateSqlDelete_For_TestInstructions_CA() {
 
 	testInstructionsSQL := BaseSQL.TestInstructionsSQLDelete
 	basicTestInstructionInformationSQL := BaseSQL.BasicTestInstructionInformationSQLDelete

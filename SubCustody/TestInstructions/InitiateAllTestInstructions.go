@@ -1,0 +1,32 @@
+package TestInstructions
+
+func InitiateAllTestInstructionsForCA() AllTestInstructions_SC_TestCaseSetUpStruct {
+
+	var allTestInstructions_SC_TestCaseSetUp AllTestInstructions_SC_TestCaseSetUpStruct
+
+	// Generate data for TestInstructions within '_SC'
+	allTestInstructionsForGeneralSetupTearDown := InitiateTestInstructionsFor_GeneralSeupTearDown()
+
+	// Append 'GeneralSetupTearDown' TestInstructions into one structure
+	allTestInstructions_SC_TestCaseSetUp.TestInstruction = append(
+		allTestInstructions_SC_TestCaseSetUp.TestInstruction,
+		allTestInstructionsForGeneralSetupTearDown.TestInstruction...)
+	allTestInstructions_SC_TestCaseSetUp.BasicTestInstructionInformation = append(
+		allTestInstructions_SC_TestCaseSetUp.BasicTestInstructionInformation,
+		allTestInstructionsForGeneralSetupTearDown.BasicTestInstructionInformation...)
+	allTestInstructions_SC_TestCaseSetUp.ImmatureTestInstructionInformation = append(
+		allTestInstructions_SC_TestCaseSetUp.ImmatureTestInstructionInformation,
+		allTestInstructionsForGeneralSetupTearDown.ImmatureTestInstructionInformation...)
+	allTestInstructions_SC_TestCaseSetUp.TestInstructionAttribute = append(
+		allTestInstructions_SC_TestCaseSetUp.TestInstructionAttribute,
+		allTestInstructionsForGeneralSetupTearDown.TestInstructionAttribute...)
+	allTestInstructions_SC_TestCaseSetUp.ImmatureElementModel = append(
+		allTestInstructions_SC_TestCaseSetUp.ImmatureElementModel,
+		allTestInstructionsForGeneralSetupTearDown.ImmatureElementModel...)
+	allTestInstructions_SC_TestCaseSetUp.FangEngineClassesMethodsAttributes = append(
+		allTestInstructions_SC_TestCaseSetUp.FangEngineClassesMethodsAttributes,
+		allTestInstructionsForGeneralSetupTearDown.FangEngineClassesMethodsAttributes...)
+
+	return allTestInstructions_SC_TestCaseSetUp
+
+}

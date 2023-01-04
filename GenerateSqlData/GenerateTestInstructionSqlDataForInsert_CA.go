@@ -9,7 +9,7 @@ import (
 
 // Initate_TestInstruction_CA_CustodyAccount_Search
 // Function that creates all data for the TestInstruction
-func GenerateSqlInsert_For_TestInstructions(testInstructionSetUp *TestInstructions.TestInstruction_CA_TestCaseSetUpStruct) {
+func GenerateSqlInsert_For_TestInstructions_CA(testInstructionSetUp *TestInstructions.TestInstruction_CA_TestCaseSetUpStruct) {
 
 	testInstructionsSQL := BaseSQL.TestInstructionsSQLInsert
 	basicTestInstructionInformationSQL := BaseSQL.BasicTestInstructionInformationSQLInsert
