@@ -3,13 +3,13 @@ package GenerateSqlData
 import (
 	"fmt"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/BaseSQL"
-	"github.com/jlambert68/FenixTestInstructionsDataAdmin/CustodyArrangement/TestInstructions"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/shared_code"
 )
 
-// Initate_TestInstruction_CA_CustodyAccount_Search
+// Initate_TestInstruction_SC_CustodyAccount_Search
 // Function that creates all data for the TestInstruction
-func GenerateSqlInsert_For_TestInstructions_SC(testInstructionSetUp *TestInstructions.TestInstruction_CA_TestCaseSetUpStruct) {
+func GenerateSqlInsert_For_TestInstructions_SC(testInstructionSetUp *TestInstructions.TestInstruction_SC_TestCaseSetUpStruct) {
 
 	testInstructionsSQL := BaseSQL.TestInstructionsSQLInsert
 	basicTestInstructionInformationSQL := BaseSQL.BasicTestInstructionInformationSQLInsert
