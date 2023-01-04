@@ -7,6 +7,7 @@ import (
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/shared_code"
 )
 
+// GenerateSqlInsert_For_TestInstructions_SC
 // Initate_TestInstruction_SC_CustodyAccount_Search
 // Function that creates all data for the TestInstruction
 func GenerateSqlInsert_For_TestInstructions_SC(testInstructionSetUp *TestInstructions.TestInstruction_SC_TestCaseSetUpStruct) {
