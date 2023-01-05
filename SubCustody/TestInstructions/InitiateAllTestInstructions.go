@@ -1,6 +1,6 @@
 package TestInstructions
 
-func InitiateAllTestInstructionsForCA() AllTestInstructions_SC_TestCaseSetUpStruct {
+func InitiateAllTestInstructionsForSC() AllTestInstructions_SC_TestCaseSetUpStruct {
 
 	var allTestInstructions_SC_TestCaseSetUp AllTestInstructions_SC_TestCaseSetUpStruct
 
