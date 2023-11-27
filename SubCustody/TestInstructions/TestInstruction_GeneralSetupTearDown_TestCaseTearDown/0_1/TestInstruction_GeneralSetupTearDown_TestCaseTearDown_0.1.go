@@ -1,9 +1,11 @@
-package TestInstructions
+package __1
 
 import (
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/Domains"
-	"github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/FangEngineClassesAndMethods"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/FangEngineClassesAndMethods"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TestInstructionAndTestInstuctionContainerTypes"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TypeAndStructs"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/shared_code"
 )
@@ -14,8 +16,8 @@ const (
 	// *** TestInstruction *** 'TestCaseTearDown'
 	TestInstructionUUID_SC_TestCaseTearDown               TypeAndStructs.OriginalElementUUIDType = "89959686-1599-4a5f-bcf6-5b427cbdce93"
 	TestInstructionName_SC_TestCaseTearDown               TypeAndStructs.TestInstructionNameType = "TestCaseTearDown"
-	TestInstructionTypeUUID_SC_TestCaseTearDown                                                  = TestInstructionTypeUUID_SC_GeneralSetUpTearDown
-	TestInstructionTypeName_SC_TestCaseTearDown                                                  = TestInstructionTypeName_SC_GeneralSetUpTearDown
+	TestInstructionTypeUUID_SC_TestCaseTearDown                                                  = TestInstructions.TestInstructionTypeUUID_SC_GeneralSetUpTearDown
+	TestInstructionTypeName_SC_TestCaseTearDown                                                  = TestInstructions.TestInstructionTypeName_SC_GeneralSetUpTearDown
 	TestInstructionDescription_SC_TestCaseTearDown        string                                 = "TearDown the _SCs execution engine after executing TestInstructions"
 	TestInstructionMouseOverText_SC_TestCaseTearDown      string                                 = "TearDown the _SCs execution engine after executing TestInstructions"
 	TestInstructionDeprecated_SC_TestCaseTearDown         bool                                   = false
@@ -35,8 +37,8 @@ const (
 
 	// Attribute - 'ExpectedToBePassed'
 	TestInstructionAttributeUUID_SC_TestCaseTearDown_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeUUIDType = "5cfff942-1766-4d78-9973-c57c11609c43" // TODO fix so they use the same UUID, Can't bu done now because UUID is key in Attrubutes-table in DB .TestInstructionAttributeUUID_SC_ExpectedToBePassed
-	TestInstructionAttributeName_SC_TestCaseTearDown_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeNameType = TestInstructionAttributeName_SC_ExpectedToBePassed
-	TestInstructionAttributeType_SC_TestCaseTearDown_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeTypeType = TestInstructionAttributeType_SC_ExpectedToBePassed
+	TestInstructionAttributeName_SC_TestCaseTearDown_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeNameType = TestInstructions.TestInstructionAttributeName_SC_ExpectedToBePassed
+	TestInstructionAttributeType_SC_TestCaseTearDown_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeTypeType = TestInstructions.TestInstructionAttributeType_SC_ExpectedToBePassed
 	TestInstructionAttributeActionCommand_SC_TestCaseTearDown_ExpectedToBePassed      TypeAndStructs.AttributeActionCommandType       = Domains.AttributeActionCommand_USE_DROPZONE_VALUE_FOR_ATTRIBUTE
 	TestInstructionAttributeValueAsStringValue_SC_TestCaseTearDown_ExpectedToBePassed TypeAndStructs.AttributeValueAsStringType       = Domains.TestInstructionAttributeValueAsStringValue_TRUE
 	TestInstructionAttributeValueUUID_SC_TestCaseTearDown_ExpectedToBePassed          TypeAndStructs.AttributeValueUUIDType           = Domains.TestInstructionAttributeValueUUID_TRUE
@@ -46,16 +48,16 @@ const (
 	FangEngine_Class_Name_SC_TestCaseTearDown = "GeneralSetupTearDown"
 )
 
-// TestInstruction_SC_TestCaseTearDown
+// TestInstruction_SC_TestCaseTearDown_0_1
 // Variable that holds the data for the TestInstruction
-var TestInstruction_SC_TestCaseTearDown TestInstruction_SC_TestCaseSetUpStruct
+var TestInstruction_SC_TestCaseTearDown_0_1 TestInstructionAndTestInstuctionContainerTypes.TestInstructionStruct
 
-// Initate_TestInstruction_SC_TestCaseTearDown
+// Initate_TestInstruction_SC_TestCaseTearDown0_1
 // Function that creates all data for the TestInstruction
-func Initate_TestInstruction_SC_TestCaseTearDown() TestInstruction_SC_TestCaseSetUpStruct {
+func Initate_TestInstruction_SC_TestCaseTearDown0_1() TestInstructionAndTestInstuctionContainerTypes.TestInstructionStruct {
 
 	// Initiate variable to be able to store all TestInstruction data
-	TestInstruction_SC_TestCaseTearDown = TestInstruction_SC_TestCaseSetUpStruct{
+	TestInstruction_SC_TestCaseTearDown_0_1 = TestInstructionAndTestInstuctionContainerTypes.TestInstructionStruct{
 		TestInstruction:                    TypeAndStructs.TestInstructionStruct{},
 		BasicTestInstructionInformation:    TypeAndStructs.BasicTestInstructionInformationStruct{},
 		ImmatureTestInstructionInformation: nil,
@@ -76,7 +78,7 @@ func Initate_TestInstruction_SC_TestCaseTearDown() TestInstruction_SC_TestCaseSe
 	updatedTimeStamp := TypeAndStructs.UpdatedTimeStampType(shared_code.GenerateDatetimeTimeStampForDB())
 
 	// TestInstruction - TestCaseTearDown
-	TestInstruction_SC_TestCaseTearDown.TestInstruction = TypeAndStructs.TestInstructionStruct{
+	TestInstruction_SC_TestCaseTearDown_0_1.TestInstruction = TypeAndStructs.TestInstructionStruct{
 		DomainUUID:                   Domains.DomainUUID_SC,
 		DomainName:                   Domains.DomainName_SC,
 		TestInstructionUUID:          TestInstructionUUID_SC_TestCaseTearDown,
@@ -93,7 +95,7 @@ func Initate_TestInstruction_SC_TestCaseTearDown() TestInstruction_SC_TestCaseSe
 	}
 
 	// BasicTestInstructionInformation - TestCaseTearDown
-	TestInstruction_SC_TestCaseTearDown.BasicTestInstructionInformation = TypeAndStructs.BasicTestInstructionInformationStruct{
+	TestInstruction_SC_TestCaseTearDown_0_1.BasicTestInstructionInformation = TypeAndStructs.BasicTestInstructionInformationStruct{
 		DomainUUID:                   Domains.DomainUUID_SC,
 		DomainName:                   Domains.DomainName_SC,
 		TestInstructionUUID:          TestInstructionUUID_SC_TestCaseTearDown,
@@ -133,8 +135,8 @@ func Initate_TestInstruction_SC_TestCaseTearDown() TestInstruction_SC_TestCaseSe
 		FirstImmatureElementUUID:     TestInstructionUUID_SC_TestCaseTearDown,
 		AttributeActionCommand:       TestInstructionAttributeActionCommand_SC_TestCaseTearDown_ExpectedToBePassed,
 	}
-	TestInstruction_SC_TestCaseTearDown.ImmatureTestInstructionInformation = append(
-		TestInstruction_SC_TestCaseTearDown.ImmatureTestInstructionInformation,
+	TestInstruction_SC_TestCaseTearDown_0_1.ImmatureTestInstructionInformation = append(
+		TestInstruction_SC_TestCaseTearDown_0_1.ImmatureTestInstructionInformation,
 		TestInstruction_SC_TestCaseTearDown_ExpectedToBePassed)
 
 	// TestInstruction Attribute - 'ExpectedToBePassed'
@@ -148,8 +150,8 @@ func Initate_TestInstruction_SC_TestCaseTearDown() TestInstruction_SC_TestCaseSe
 		TestInstructionAttributeName:                  TestInstructionAttributeName_SC_TestCaseTearDown_ExpectedToBePassed,
 		TestInstructionAttributeDescription:           TestInstructionAttributeDescription_SC_TestCaseTearDown_ExpectedToBePassed,
 		TestInstructionAttributeMouseOver:             TestInstructionAttributeMouseOverText_SC_TestCaseTearDown_ExpectedToBePassed,
-		TestInstructionAttributeTypeUUID:              TestInstructionAttributeTypeUUID_SC_ExpectedToPass,
-		TestInstructionAttributeTypeName:              TestInstructionAttributeTypeName_SC_ExpectedToPass,
+		TestInstructionAttributeTypeUUID:              TestInstructions.TestInstructionAttributeTypeUUID_SC_ExpectedToPass,
+		TestInstructionAttributeTypeName:              TestInstructions.TestInstructionAttributeTypeName_SC_ExpectedToPass,
 		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
 		TestInstructionAttributeValueUUID:             Domains.TestInstructionAttributeValueUUID_NO_VALUE,
 		TestInstructionAttributeVisible:               true,
@@ -160,8 +162,8 @@ func Initate_TestInstruction_SC_TestCaseTearDown() TestInstruction_SC_TestCaseSe
 		TestInstructionAttributeInputMask:             ".",
 		TestInstructionAttributeType:                  TestInstructionAttributeType_SC_TestCaseTearDown_ExpectedToBePassed,
 	}
-	TestInstruction_SC_TestCaseTearDown.TestInstructionAttribute = append(
-		TestInstruction_SC_TestCaseTearDown.TestInstructionAttribute,
+	TestInstruction_SC_TestCaseTearDown_0_1.TestInstructionAttribute = append(
+		TestInstruction_SC_TestCaseTearDown_0_1.TestInstructionAttribute,
 		TestInstructionAttribute_SC_TestCaseTearDown_ExpectedToBePassed)
 
 	// Add FangEngine relation for Attribute - 'ExpectedToBePassed'
@@ -169,11 +171,11 @@ func Initate_TestInstruction_SC_TestCaseTearDown() TestInstruction_SC_TestCaseSe
 	tempFangEngineAttributeExpectedToBePassed = FangEngineClassesAndMethods.FangEngineAttributesStruct{
 		TestInstructionAttributeUUID:     TestInstructionAttributeUUID_SC_TestCaseTearDown_ExpectedToBePassed,
 		TestInstructionAttributeName:     TestInstructionAttributeName_SC_TestCaseTearDown_ExpectedToBePassed,
-		TestInstructionAttributeTypeUUID: TestInstructionAttributeTypeUUID_SC_ExpectedToPass,
+		TestInstructionAttributeTypeUUID: TestInstructions.TestInstructionAttributeTypeUUID_SC_ExpectedToPass,
 		FangEngineAttributeNameUUID:      FangEngineClassesAndMethods.FangEngine_ClassName_UUID_SC_GeneralAttribute_ExpectedToBePassed,
 		FangEngineAttributeNameName:      FangEngineClassesAndMethods.FangEngine_ClassName_Name_SC_GeneralAttribute_ExpectedToBePassed,
 	}
-	TestInstruction_SC_TestCaseTearDown.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_SC_TestCaseTearDown_ExpectedToBePassed] = tempFangEngineAttributeExpectedToBePassed
+	TestInstruction_SC_TestCaseTearDown_0_1.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_SC_TestCaseTearDown_ExpectedToBePassed] = tempFangEngineAttributeExpectedToBePassed
 
 	// ImmatureElementModel - TestCaseTearDown
 	var TestInstructionImmatureElementModel_SC_TestCaseTearDown TypeAndStructs.ImmatureElementModelMessageStruct
@@ -191,9 +193,9 @@ func Initate_TestInstruction_SC_TestCaseTearDown() TestInstruction_SC_TestCaseSe
 		TopImmatureElementUUID:   TestInstructionUUID_SC_TestCaseTearDown,
 		IsTopElement:             true,
 	}
-	TestInstruction_SC_TestCaseTearDown.ImmatureElementModel = append(
-		TestInstruction_SC_TestCaseTearDown.ImmatureElementModel,
+	TestInstruction_SC_TestCaseTearDown_0_1.ImmatureElementModel = append(
+		TestInstruction_SC_TestCaseTearDown_0_1.ImmatureElementModel,
 		TestInstructionImmatureElementModel_SC_TestCaseTearDown)
 
-	return TestInstruction_SC_TestCaseTearDown
+	return TestInstruction_SC_TestCaseTearDown_0_1
 }

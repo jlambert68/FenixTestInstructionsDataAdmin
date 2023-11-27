@@ -1,9 +1,11 @@
-package TestInstructions
+package __1
 
 import (
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/Domains"
-	"github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/FangEngineClassesAndMethods"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/FangEngineClassesAndMethods"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TestInstructionAndTestInstuctionContainerTypes"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TypeAndStructs"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/shared_code"
 )
@@ -14,8 +16,8 @@ const (
 	// *** TestInstruction *** 'TestCaseSetUp'
 	TestInstructionUUID_SC_TestCaseSetUp               TypeAndStructs.OriginalElementUUIDType = "26d38886-c112-48ef-a20f-4da8fb9a5ccb"
 	TestInstructionName_SC_TestCaseSetUp               TypeAndStructs.TestInstructionNameType = "TestCaseSetUp"
-	TestInstructionTypeUUID_SC_TestCaseSetUp                                                  = TestInstructionTypeUUID_SC_GeneralSetUpTearDown
-	TestInstructionTypeName_SC_TestCaseSetUp                                                  = TestInstructionTypeName_SC_GeneralSetUpTearDown
+	TestInstructionTypeUUID_SC_TestCaseSetUp                                                  = TestInstructions.TestInstructionTypeUUID_SC_GeneralSetUpTearDown
+	TestInstructionTypeName_SC_TestCaseSetUp                                                  = TestInstructions.TestInstructionTypeName_SC_GeneralSetUpTearDown
 	TestInstructionDescription_SC_TestCaseSetUp        string                                 = "Initiate _SCs execution engine to be able to execute TestInstructions"
 	TestInstructionMouseOverText_SC_TestCaseSetUp      string                                 = "Initiate _SCs execution engine to be able to execute TestInstructions"
 	TestInstructionDeprecated_SC_TestCaseSetUp         bool                                   = false
@@ -35,8 +37,8 @@ const (
 
 	// Attribute - 'ExpectedToBePassed'
 	TestInstructionAttributeUUID_SC_TestCaseSetUp_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeUUIDType = "f4682904-8f60-447c-b851-e713f2b4a03d" //TestInstructionAttributeUUID_SC_ExpectedToBePassed
-	TestInstructionAttributeName_SC_TestCaseSetUp_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeNameType = TestInstructionAttributeName_SC_ExpectedToBePassed
-	TestInstructionAttributeType_SC_TestCaseSetUp_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeTypeType = TestInstructionAttributeType_SC_ExpectedToBePassed
+	TestInstructionAttributeName_SC_TestCaseSetUp_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeNameType = TestInstructions.TestInstructionAttributeName_SC_ExpectedToBePassed
+	TestInstructionAttributeType_SC_TestCaseSetUp_ExpectedToBePassed               TypeAndStructs.TestInstructionAttributeTypeType = TestInstructions.TestInstructionAttributeType_SC_ExpectedToBePassed
 	TestInstructionAttributeActionCommand_SC_TestCaseSetUp_ExpectedToBePassed      TypeAndStructs.AttributeActionCommandType       = Domains.AttributeActionCommand_USE_DROPZONE_VALUE_FOR_ATTRIBUTE
 	TestInstructionAttributeValueAsStringValue_SC_TestCaseSetUp_ExpectedToBePassed TypeAndStructs.AttributeValueAsStringType       = Domains.TestInstructionAttributeValueAsStringValue_TRUE
 	TestInstructionAttributeValueUUID_SC_TestCaseSetUp_ExpectedToBePassed          TypeAndStructs.AttributeValueUUIDType           = Domains.TestInstructionAttributeValueUUID_TRUE
@@ -46,14 +48,14 @@ const (
 
 // TestInstruction_SC_TestCaseSetUp
 // Variable that holds the data for the TestInstruction
-var TestInstruction_SC_TestCaseSetUp TestInstruction_SC_TestCaseSetUpStruct
+var TestInstruction_SC_TestCaseSetUp TestInstructionAndTestInstuctionContainerTypes.TestInstructionStruct
 
 // Initate_TestInstruction_SC_TestCaseSetUp
 // Function that creates all data for the TestInstruction
-func Initate_TestInstruction_SC_TestCaseSetUp() TestInstruction_SC_TestCaseSetUpStruct {
+func Initate_TestInstruction_SC_TestCaseSetUp() TestInstructionAndTestInstuctionContainerTypes.TestInstructionStruct {
 
 	// Initiate variable to store all TestInstruction data
-	TestInstruction_SC_TestCaseSetUp = TestInstruction_SC_TestCaseSetUpStruct{
+	TestInstruction_SC_TestCaseSetUp = TestInstructionAndTestInstuctionContainerTypes.TestInstructionStruct{
 		TestInstruction:                    TypeAndStructs.TestInstructionStruct{},
 		BasicTestInstructionInformation:    TypeAndStructs.BasicTestInstructionInformationStruct{},
 		ImmatureTestInstructionInformation: nil,
@@ -146,8 +148,8 @@ func Initate_TestInstruction_SC_TestCaseSetUp() TestInstruction_SC_TestCaseSetUp
 		TestInstructionAttributeName:                  TestInstructionAttributeName_SC_TestCaseSetUp_ExpectedToBePassed,
 		TestInstructionAttributeDescription:           TestInstructionAttributeDescription_SC_TestCaseSetUp_ExpectedToBePassed,
 		TestInstructionAttributeMouseOver:             TestInstructionAttributeMouseOverText_SC_TestCaseSetUp_ExpectedToBePassed,
-		TestInstructionAttributeTypeUUID:              TestInstructionAttributeTypeUUID_SC_ExpectedToPass,
-		TestInstructionAttributeTypeName:              TestInstructionAttributeTypeName_SC_ExpectedToPass,
+		TestInstructionAttributeTypeUUID:              TestInstructions.TestInstructionAttributeTypeUUID_SC_ExpectedToPass,
+		TestInstructionAttributeTypeName:              TestInstructions.TestInstructionAttributeTypeName_SC_ExpectedToPass,
 		TestInstructionAttributeValueAsString:         Domains.TestInstructionAttributeValueAsStringValue_NO_VALUE,
 		TestInstructionAttributeValueUUID:             Domains.TestInstructionAttributeValueUUID_NO_VALUE,
 		TestInstructionAttributeVisible:               true,
@@ -167,7 +169,7 @@ func Initate_TestInstruction_SC_TestCaseSetUp() TestInstruction_SC_TestCaseSetUp
 	tempFangEngineAttributeExpectedToBePassed = FangEngineClassesAndMethods.FangEngineAttributesStruct{
 		TestInstructionAttributeUUID:     TestInstructionAttributeUUID_SC_TestCaseSetUp_ExpectedToBePassed,
 		TestInstructionAttributeName:     TestInstructionAttributeName_SC_TestCaseSetUp_ExpectedToBePassed,
-		TestInstructionAttributeTypeUUID: TestInstructionAttributeTypeUUID_SC_ExpectedToPass,
+		TestInstructionAttributeTypeUUID: TestInstructions.TestInstructionAttributeTypeUUID_SC_ExpectedToPass,
 		FangEngineAttributeNameUUID:      FangEngineClassesAndMethods.FangEngine_ClassName_UUID_SC_GeneralAttribute_ExpectedToBePassed,
 		FangEngineAttributeNameName:      FangEngineClassesAndMethods.FangEngine_ClassName_Name_SC_GeneralAttribute_ExpectedToBePassed,
 	}

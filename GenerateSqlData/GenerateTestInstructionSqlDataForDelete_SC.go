@@ -3,7 +3,8 @@ package GenerateSqlData
 import (
 	"fmt"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/BaseSQL"
-	"github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseSetUp/0_1"
+	__12 "github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseTearDown/0_1"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/shared_code"
 )
 
@@ -20,9 +21,9 @@ func GenerateSqlDelete_For_TestInstructions_SC() {
 
 	// GeneralSetUpTearDown
 	testInstructionUuidSlice = append(testInstructionUuidSlice,
-		string(TestInstructions.TestInstructionUUID_SC_TestCaseSetUp))
+		string(__1.TestInstructionUUID_SC_TestCaseSetUp))
 	testInstructionUuidSlice = append(testInstructionUuidSlice,
-		string(TestInstructions.TestInstructionUUID_SC_TestCaseTearDown))
+		string(__12.TestInstructionUUID_SC_TestCaseTearDown))
 
 	testInstructionsSQLToBeAdded := shared_code.GenerateSQLINArray(testInstructionUuidSlice)
 	testInstructionsSQLToBeAdded = testInstructionsSQLToBeAdded + ";"

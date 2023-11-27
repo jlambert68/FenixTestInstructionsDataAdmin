@@ -1,12 +1,17 @@
 package TestInstructions
 
+import (
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseSetUp/0_1"
+	__12 "github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseTearDown/0_1"
+)
+
 func InitiateTestInstructionsFor_GeneralSeupTearDown() AllTestInstructions_SC_TestCaseSetUpStruct {
 
 	var allTestInstructions_SC_TestCaseSetUp AllTestInstructions_SC_TestCaseSetUpStruct
 
 	// Generate data for TestInstructions within 'GeneralSeupTearDown'
-	testInstruction_SC_TestCaseSetUp := Initate_TestInstruction_SC_TestCaseSetUp()
-	testInstruction_SC_TestCaseTearDown := Initate_TestInstruction_SC_TestCaseTearDown()
+	testInstruction_SC_TestCaseSetUp := __1.Initate_TestInstruction_SC_TestCaseSetUp()
+	testInstruction_SC_TestCaseTearDown := __12.Initate_TestInstruction_SC_TestCaseTearDown0_1()
 
 	// Append 'TestCaseSetUp' TestInstructions into one structure
 	allTestInstructions_SC_TestCaseSetUp.TestInstruction = append(
