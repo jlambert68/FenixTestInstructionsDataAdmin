@@ -17,6 +17,7 @@ var TestInstructions_SC TestInstructionAndTestInstuctionContainerTypes.TestInstr
 
 func generateTestInstructions_SC() {
 
+	// Generate TestInstructions
 	// GeneralSetupTearDown::TestCaseSetUp
 	generalSetupTearDown_TestCaseSetUp_1_1.Initate_TestInstruction_SC_TestCaseSetUp()
 	generalSetupTearDown_TestCaseSetUp_1_0.Initate_TestInstruction_SC_TestCaseSetUp()
@@ -24,7 +25,11 @@ func generateTestInstructions_SC() {
 	// GeneralSetupTearDown::TestCaseTearDown
 	generalSetupTearDown_TestCaseTearDown_1_0.Initate_TestInstruction_SC_TestCaseTearDown()
 
-	// Generate all TestInstructions & TestInstructionContainers
+	// Generate TestInstructionContainers
+	// testInstructionContainer_SpecialSerialBaseContainer
+	testInstructionContainer_SpecialSerialBaseContainer_1_0.Initiate_TestInstructionContainer_SC_Serial()
+
+	// Build structure for all TestInstructions & TestInstructionContainers to be sent over gRPC to Fenix Backend
 	TestInstructions_SC = TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct{
 
 		// TestInstructions
