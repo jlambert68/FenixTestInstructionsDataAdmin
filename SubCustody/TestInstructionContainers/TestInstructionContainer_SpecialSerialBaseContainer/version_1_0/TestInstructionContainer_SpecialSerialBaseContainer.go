@@ -9,6 +9,7 @@ import (
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseSetUp"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseTearDown"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TestInstructionAndTestInstuctionContainerTypes"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TypeAndStructs"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/shared_code"
 )
@@ -34,18 +35,9 @@ const (
 	// No DropZone for 'SpecialSerialBaseContainer'
 )
 
-// TestInstructionContainer_SC_SerialStruct
-// Struct for holding all data for the TestInstructionContainer
-type TestInstructionContainer_SC_SerialStruct struct {
-	TestInstructionContainer                 TypeAndStructs.TestInstructionContainerStruct
-	BasicTestInstructionContainerInformation TypeAndStructs.BasicTestInstructionContainerInformationStruct
-	ImmatureTestInstructionContainer         []TypeAndStructs.ImmatureTestInstructionContainerMessageStruct
-	ImmatureElementModel                     []TypeAndStructs.ImmatureElementModelMessageStruct
-}
-
-// TestInstructionContainer_SC_Serial
+// TestInstructionContainer_SC_SpecialSerialBase
 // Variable that holds the data for the TestInstructionContainer
-var TestInstructionContainer_SC_Serial TestInstructionContainer_SC_SerialStruct
+var TestInstructionContainer_SC_SpecialSerialBase TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerStruct
 
 // Initiate_TestInstructionContainer_SC_Serial
 // Function that creates all data for the TestInstructionContainer
@@ -54,7 +46,7 @@ func Initiate_TestInstructionContainer_SC_Serial() {
 	updatedTimeStamp := TypeAndStructs.UpdatedTimeStampType(shared_code.GenerateDatetimeTimeStampForDB())
 
 	// TestInstructionContainer - 'SpecialSerialBaseContainer'
-	TestInstructionContainer_SC_Serial.TestInstructionContainer = TypeAndStructs.TestInstructionContainerStruct{
+	TestInstructionContainer_SC_SpecialSerialBase.TestInstructionContainer = TypeAndStructs.TestInstructionContainerStruct{
 		DomainUUID:                            Domains.DomainUUID_Fenix,
 		DomainName:                            Domains.DomainName_Fenix,
 		TestInstructionContainerUUID:          TestInstructionContainerUUID_SC_SpecialSerialBaseContainer,
@@ -72,7 +64,7 @@ func Initiate_TestInstructionContainer_SC_Serial() {
 	}
 
 	// BasicTestInstructionContainerInformation - 'SpecialSerialBaseContainer'
-	TestInstructionContainer_SC_Serial.BasicTestInstructionContainerInformation = TypeAndStructs.BasicTestInstructionContainerInformationStruct{
+	TestInstructionContainer_SC_SpecialSerialBase.BasicTestInstructionContainerInformation = TypeAndStructs.BasicTestInstructionContainerInformationStruct{
 		DomainUUID:                            Domains.DomainUUID_Fenix,
 		DomainName:                            Domains.DomainName_Fenix,
 		TestInstructionContainerUUID:          TestInstructionContainerUUID_SC_SpecialSerialBaseContainer,
@@ -111,7 +103,7 @@ func Initiate_TestInstructionContainer_SC_Serial() {
 		TopImmatureElementUUID:   TestInstructionContainerUUID_SC_SpecialSerialBaseContainer,
 		IsTopElement:             true,
 	}
-	TestInstructionContainer_SC_Serial.ImmatureElementModel = append(TestInstructionContainer_SC_Serial.ImmatureElementModel, ImmatureElementModel_TIC)
+	TestInstructionContainer_SC_SpecialSerialBase.ImmatureElementModel = append(TestInstructionContainer_SC_SpecialSerialBase.ImmatureElementModel, ImmatureElementModel_TIC)
 
 	// ImmatureElementModelMessage - 'SpecialSerialBaseContainer' - 'B11fx_1' in 'TIC(B11fx_1-TI_1-B12-TI_2-B11lx)'
 	var ImmatureElementModel_B11fx_1 TypeAndStructs.ImmatureElementModelMessageStruct
@@ -133,7 +125,7 @@ func Initiate_TestInstructionContainer_SC_Serial() {
 		TopImmatureElementUUID: TestInstructionContainerUUID_SC_SpecialSerialBaseContainer,
 		IsTopElement:           false,
 	}
-	TestInstructionContainer_SC_Serial.ImmatureElementModel = append(TestInstructionContainer_SC_Serial.ImmatureElementModel, ImmatureElementModel_B11fx_1)
+	TestInstructionContainer_SC_SpecialSerialBase.ImmatureElementModel = append(TestInstructionContainer_SC_SpecialSerialBase.ImmatureElementModel, ImmatureElementModel_B11fx_1)
 
 	// ImmatureElementModelMessage - 'SpecialSerialBaseContainer' - 'TI_1' in 'TIC(B11fx_1-TI_1-B12-TI_2-B11lx)'
 	var ImmatureElementModel_TI_1 TypeAndStructs.ImmatureElementModelMessageStruct
@@ -159,7 +151,7 @@ func Initiate_TestInstructionContainer_SC_Serial() {
 		TopImmatureElementUUID: TestInstructionContainerUUID_SC_SpecialSerialBaseContainer,
 		IsTopElement:           false,
 	}
-	TestInstructionContainer_SC_Serial.ImmatureElementModel = append(TestInstructionContainer_SC_Serial.ImmatureElementModel, ImmatureElementModel_TI_1)
+	TestInstructionContainer_SC_SpecialSerialBase.ImmatureElementModel = append(TestInstructionContainer_SC_SpecialSerialBase.ImmatureElementModel, ImmatureElementModel_TI_1)
 
 	// ImmatureElementModelMessage - 'SpecialSerialBaseContainer' - 'B12' in 'TIC(B11fx_1-TI_1-B12-TI_2-B11lx)'
 	var ImmatureElementModel_B12 TypeAndStructs.ImmatureElementModelMessageStruct
@@ -181,7 +173,7 @@ func Initiate_TestInstructionContainer_SC_Serial() {
 		TopImmatureElementUUID:   TestInstructionContainerUUID_SC_SpecialSerialBaseContainer,
 		IsTopElement:             false,
 	}
-	TestInstructionContainer_SC_Serial.ImmatureElementModel = append(TestInstructionContainer_SC_Serial.ImmatureElementModel, ImmatureElementModel_B12)
+	TestInstructionContainer_SC_SpecialSerialBase.ImmatureElementModel = append(TestInstructionContainer_SC_SpecialSerialBase.ImmatureElementModel, ImmatureElementModel_B12)
 
 	// ImmatureElementModelMessage - 'SpecialSerialBaseContainer' - 'TI_2' in 'TIC(B11fx_1-TI_1-B12-TI_2-B11lx)'
 	var ImmatureElementModel_TI_2 TypeAndStructs.ImmatureElementModelMessageStruct
@@ -207,7 +199,7 @@ func Initiate_TestInstructionContainer_SC_Serial() {
 		TopImmatureElementUUID: TestInstructionContainerUUID_SC_SpecialSerialBaseContainer,
 		IsTopElement:           false,
 	}
-	TestInstructionContainer_SC_Serial.ImmatureElementModel = append(TestInstructionContainer_SC_Serial.ImmatureElementModel, ImmatureElementModel_TI_2)
+	TestInstructionContainer_SC_SpecialSerialBase.ImmatureElementModel = append(TestInstructionContainer_SC_SpecialSerialBase.ImmatureElementModel, ImmatureElementModel_TI_2)
 
 	// ImmatureElementModelMessage - 'SpecialSerialBaseContainer' - 'B10' in 'TIC(B11fx_1-TI_1-B12-TI_2-B11lx)'
 	var ImmatureElementModel_B11lx TypeAndStructs.ImmatureElementModelMessageStruct
@@ -227,6 +219,6 @@ func Initiate_TestInstructionContainer_SC_Serial() {
 		TopImmatureElementUUID:   TestInstructionContainerUUID_SC_SpecialSerialBaseContainer,
 		IsTopElement:             false,
 	}
-	TestInstructionContainer_SC_Serial.ImmatureElementModel = append(TestInstructionContainer_SC_Serial.ImmatureElementModel, ImmatureElementModel_B11lx)
+	TestInstructionContainer_SC_SpecialSerialBase.ImmatureElementModel = append(TestInstructionContainer_SC_SpecialSerialBase.ImmatureElementModel, ImmatureElementModel_B11lx)
 
 }

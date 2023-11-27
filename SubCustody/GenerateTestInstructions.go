@@ -2,7 +2,7 @@ package SubCustody
 
 import (
 	testInstructionContainer_SpecialSerialBaseContainer "github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructionContainers/TestInstructionContainer_SpecialSerialBaseContainer"
-	testInstructionContainer_SpecialSerialBaseContainer_1_0 "github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructionContainers/TestInstructionContainer_SpecialSerialBaseContainer/"
+	testInstructionContainer_SpecialSerialBaseContainer_1_0 "github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructionContainers/TestInstructionContainer_SpecialSerialBaseContainer/version_1_0"
 	generalSetupTearDown_TestCaseSetUp "github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseSetUp"
 	generalSetupTearDown_TestCaseSetUp_1_0 "github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseSetUp/version_1_0"
 	generalSetupTearDown_TestCaseSetUp_1_1 "github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseSetUp/version_1_1"
@@ -82,38 +82,29 @@ func generateTestInstructions_SC() {
 
 				// 'SC_SpecialSerialBaseContainer'
 				testInstructionContainer_SpecialSerialBaseContainer.TestInstructionContainerUUID_SC_SpecialSerialBaseContainer: TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerInstanceVersionsStruct{
-				TestInstructionContainerVersions:     []TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerInstanceVersionStruct{
+					TestInstructionContainerVersions: []TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerInstanceVersionStruct{
 
-					//Version 'TestInstructionContainer_SpecialSerialBaseContainer_1.0'
-					TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerInstanceVersionStruct{
-						TestInstructionContainerInstance:             TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerStruct{},
-						TestInstructionContainerInstanceMajorVersion: 0,
-						TestInstructionContainerInstanceMinorVersion: 0,
-						Deprecated:                           false,
-						Enabled:                              false,
-						TestInstructionContainerInstanceHash: "",
+						//Version 'TestInstructionContainer_SpecialSerialBaseContainer_1.0'
+						TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerInstanceVersionStruct{
+							TestInstructionContainerInstance:             testInstructionContainer_SpecialSerialBaseContainer_1_0.TestInstructionContainer_SC_SpecialSerialBase,
+							TestInstructionContainerInstanceMajorVersion: testInstructionContainer_SpecialSerialBaseContainer_1_0.TestInstructionContainer_SC_SpecialSerialBase.TestInstructionContainer.MajorVersionNumber,
+							TestInstructionContainerInstanceMinorVersion: testInstructionContainer_SpecialSerialBaseContainer_1_0.TestInstructionContainer_SC_SpecialSerialBase.TestInstructionContainer.MinorVersionNumber,
+							Deprecated:                           testInstructionContainer_SpecialSerialBaseContainer_1_0.TestInstructionContainer_SC_SpecialSerialBase.TestInstructionContainer.Enabled,
+							Enabled:                              testInstructionContainer_SpecialSerialBaseContainer_1_0.TestInstructionContainer_SC_SpecialSerialBase.TestInstructionContainer.Enabled,
+							TestInstructionContainerInstanceHash: "HASH",
+						},
 					},
+					TestInstructionContainerVersionsHash: "HASH",
 				},
-				TestInstructionContainerVersionsHash: "",
-			},
 			},
 
-				MessageCreationTimeStamp:                                 time.Now(),
-				TestInstructionsAndTestInstructionsContainersMessageHash: "HASH",
-			},
+			TestInstructionContainersHash: "HASH",
 		},
+		TestInstructionsAndTestInstructionsContainersMessageHash: "HASH",
+		MessageCreationTimeStamp:                                 time.Now(),
 	}
 
 	// TODO Calculate alla Hashes for TestInstructions-block
 
-	// Generate all TestInstructionContainersMap
-	var TestInstructionContainers map[TypeAndStructs.OriginalElementUUIDType]TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerInstanceVersionsStruct
-	TestInstructionContainers = map[TypeAndStructs.OriginalElementUUIDType]TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerInstanceVersionsStruct{}
-
-	var xx TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerInstanceVersionsStruct
-	xx = TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerInstanceVersionsStruct{
-		TestInstructionContainerVersions:     nil,
-		TestInstructionContainerVersionsHash: "",
-	}
 	// TODO Calculate alla Hashes for TestInstructionContainersMap-block
 }
