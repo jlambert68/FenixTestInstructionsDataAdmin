@@ -3,8 +3,8 @@ package GenerateSqlData
 import (
 	"fmt"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/BaseSQL"
-	"github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseSetUp/0_1"
-	__12 "github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseTearDown/0_1"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseSetUp/version_1_0"
+	__12 "github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseTearDown/version_1_0"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/shared_code"
 )
 
@@ -21,7 +21,7 @@ func GenerateSqlDelete_For_TestInstructions_SC() {
 
 	// GeneralSetUpTearDown
 	testInstructionUuidSlice = append(testInstructionUuidSlice,
-		string(__1.TestInstructionUUID_SC_TestCaseSetUp))
+		string(version_1_0.TestInstructionUUID_SC_TestCaseSetUp))
 	testInstructionUuidSlice = append(testInstructionUuidSlice,
 		string(__12.TestInstructionUUID_SC_TestCaseTearDown))
 

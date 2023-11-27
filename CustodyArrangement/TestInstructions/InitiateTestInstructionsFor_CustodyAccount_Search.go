@@ -4,10 +4,10 @@ func InitiateTestInstructionsFor_CustodyAccount() AllTestInstructions_CA_TestCas
 
 	var allTestInstructions_CA_TestCaseSetUp AllTestInstructions_CA_TestCaseSetUpStruct
 
-	// Generate data for TestInstructions within 'CustodyAccount'
+	// Generate data for TestInstructionsMap within 'CustodyAccount'
 	testInstruction_CA_CustodyAccount_Search := Initate_TestInstruction_CA_CustodyAccount_Search()
 
-	// Append 'TestCaseSetUp' TestInstructions into one structure
+	// Append 'TestCaseSetUp' TestInstructionsMap into one structure
 	allTestInstructions_CA_TestCaseSetUp.TestInstruction = append(
 		allTestInstructions_CA_TestCaseSetUp.TestInstruction,
 		testInstruction_CA_CustodyAccount_Search.TestInstruction)

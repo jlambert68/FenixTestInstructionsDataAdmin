@@ -22,7 +22,7 @@ func GenerateSqlInsert_For_TestInstructions_SC(testInstructionSetUp *TestInstruc
 	var dataRowsToBeInsertedMultiType [][]interface{}
 
 	// 'TestInstructionsSQLInsert'
-	// Create data to be inserted in the DB-table 'TestInstructions'
+	// Create data to be inserted in the DB-table 'TestInstructionsMap'
 	dataRowsToBeInsertedMultiType = nil
 	dataRowToBeInsertedMultiType = nil
 

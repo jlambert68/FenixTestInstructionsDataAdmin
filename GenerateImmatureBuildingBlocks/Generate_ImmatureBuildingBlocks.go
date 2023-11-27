@@ -16,7 +16,7 @@ func GenerateImmatureBuildingBlocks() (
 	var immatureTestInstructionContainers []*fenixTestCaseBuilderServerGrpcApi.ImmatureTestInstructionContainerMessage
 	immatureTestInstructionContainers = generateImmatureTestInstructionContainersMessagesSubCustody()
 
-	// Generate the full gRPC response for available TestInstructions and TestInstructionsContainers
+	// Generate the full gRPC response for available TestInstructionsMap and TestInstructionsContainers
 	responseMessage = &fenixTestCaseBuilderServerGrpcApi.
 		AvailableTestInstructionsAndPreCreatedTestInstructionContainersResponseMessage{
 		ImmatureTestInstructions:          immatureTestInstructions,

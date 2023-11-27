@@ -4,8 +4,8 @@ import (
 	"fmt"
 	CustodyArrangementTestInstructions "github.com/jlambert68/FenixTestInstructionsDataAdmin/CustodyArrangement/TestInstructions"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/GenerateSqlData"
-	"github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseSetUp/0_1"
-	SubCustodyTestInstructions "github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseTearDown/0_1"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseSetUp/version_1_0"
+	SubCustodyTestInstructions "github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseTearDown/version_1_0"
 	"log"
 )
 
@@ -63,12 +63,12 @@ func main() {
 		if doInsert == true {
 
 			// GeneralSetupTearDown::TestCaseSetUp
-			__1.Initate_TestInstruction_SC_TestCaseSetUp()
-			GenerateSqlData.GenerateSqlInsert_For_TestInstructions_SC(&__1.TestInstruction_SC_TestCaseSetUp)
+			version_1_0.Initate_TestInstruction_SC_TestCaseSetUp()
+			GenerateSqlData.GenerateSqlInsert_For_TestInstructions_SC(&version_1_0.TestInstruction_SC_TestCaseSetUp)
 
 			// GeneralSetupTearDown::TestCaseTearDown
-			SubCustodyTestInstructions.Initate_TestInstruction_SC_TestCaseTearDown0_1()
-			GenerateSqlData.GenerateSqlInsert_For_TestInstructions_SC(&SubCustodyTestInstructions.TestInstruction_SC_TestCaseTearDown_0_1)
+			SubCustodyTestInstructions.Initate_TestInstruction_SC_TestCaseTearDown()
+			GenerateSqlData.GenerateSqlInsert_For_TestInstructions_SC(&SubCustodyTestInstructions.TestInstruction_SC_TestCaseTearDown)
 
 		} else {
 			// Delete all TestInstruction-data

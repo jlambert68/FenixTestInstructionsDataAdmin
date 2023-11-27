@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-// MessageTypes used when defining the TestInstructions and TestInstructionContainers themselves
+// MessageTypes used when defining the TestInstructionsMap and TestInstructionContainersMap themselves
 
 // TestInstructionStruct
 // Struct for holding all data for a TestInstruction
@@ -28,7 +28,7 @@ type TestInstructionContainerStruct struct {
 	ImmatureElementModel                     []TypeAndStructs.ImmatureElementModelMessageStruct
 }
 
-// MessageTypes used when sending available TestInstructions and TestInstructionContainers to Fenix backend
+// MessageTypes used when sending available TestInstructionsMap and TestInstructionContainersMap to Fenix backend
 
 // TestInstructionInstanceVersionStruct
 // Struct for one TestInstruction, to be sent over gRPC to Fenix backend
@@ -44,15 +44,15 @@ type TestInstructionInstanceVersionStruct struct {
 // TestInstructionInstanceVersionsStruct
 // Struct for all versions of one TestInstruction, to be sent over gRPC to Fenix backend
 type TestInstructionInstanceVersionsStruct struct {
-	TestInstructionVersions     []TestInstructionInstanceVersionStruct
-	TestInstructionVersionsHash string // SHA256 of all TestInstructionVersions.TestInstructionInstanceHash using Fenix standard way of hashing values together
+	TestInstructionVersions     []TestInstructionInstanceVersionStruct // Last version is first in slice
+	TestInstructionVersionsHash string                                 // SHA256 of all TestInstructionVersions.TestInstructionInstanceHash using Fenix standard way of hashing values together
 }
 
 // TestInstructionsStruct
-// Struct for all TestInstructions, to be sent over gPRC to Fenix backend
+// Struct for all TestInstructionsMap, to be sent over gPRC to Fenix backend
 type TestInstructionsStruct struct {
-	TestInstructions     []TestInstructionInstanceVersionsStruct
-	TestInstructionsHash string // SHA256 of all TestInstructions.TestInstructionVersionsHash using Fenix standard way of hashing values together
+	TestInstructionsMap  map[TypeAndStructs.OriginalElementUUIDType]TestInstructionInstanceVersionsStruct
+	TestInstructionsHash string // SHA256 of all TestInstructionsMap.TestInstructionVersionsHash using Fenix standard way of hashing values together
 }
 
 // TestInstructionContainerInstanceVersionStruct
@@ -69,15 +69,15 @@ type TestInstructionContainerInstanceVersionStruct struct {
 // TestInstructionContainerInstanceVersionsStruct
 // Struct for all versions of one TestInstructionContainer, to be sent over gRPC to Fenix backend
 type TestInstructionContainerInstanceVersionsStruct struct {
-	TestInstructionContainerVersions     []TestInstructionContainerInstanceVersionStruct
-	TestInstructionContainerVersionsHash string // SHA256 of all TestInstructionContainerVersions.TestInstructionContainerInstanceHash using Fenix standard way of hashing values together
+	TestInstructionContainerVersions     []TestInstructionContainerInstanceVersionStruct // Last version is first in slice
+	TestInstructionContainerVersionsHash string                                          // SHA256 of all TestInstructionContainerVersions.TestInstructionContainerInstanceHash using Fenix standard way of hashing values together
 }
 
 // TestInstructionContainersStruct
-// Struct for all TestInstructionContainers, to be sent over gPRC to Fenix backend
+// Struct for all TestInstructionContainersMap, to be sent over gPRC to Fenix backend
 type TestInstructionContainersStruct struct {
-	TestInstructionContainers     []TestInstructionContainerInstanceVersionsStruct
-	TestInstructionContainersHash string // SHA256 of all TestInstructionContainers.TestInstructionContainerVersionsHash using Fenix standard way of hashing values together
+	TestInstructionContainersMap  map[TypeAndStructs.OriginalElementUUIDType]TestInstructionContainerInstanceVersionsStruct
+	TestInstructionContainersHash string // SHA256 of all TestInstructionContainersMap.TestInstructionContainerVersionsHash using Fenix standard way of hashing values together
 }
 
 // TestInstructionsAndTestInstructionsContainersStruct
@@ -88,18 +88,3 @@ type TestInstructionsAndTestInstructionsContainersStruct struct {
 	MessageCreationTimeStamp                                 time.Time
 	TestInstructionsAndTestInstructionsContainersMessageHash string // SHA256(TestInstructionsHash concat TestInstructionContainersHash)
 }
-
-/*
-// AllTestInstructions_SC_TestCaseSetUpStruct
-// Struct for holding all data for all TestInstructions
-type AllTestInstructions_SC_TestCaseSetUpStruct struct {
-	TestInstruction                    []TypeAndStructs.TestInstructionStruct
-	BasicTestInstructionInformation    []TypeAndStructs.BasicTestInstructionInformationStruct
-	ImmatureTestInstructionInformation []TypeAndStructs.ImmatureTestInstructionInformationStruct
-	TestInstructionAttribute           []TypeAndStructs.TestInstructionAttributeStruct
-	ImmatureElementModel               []TypeAndStructs.ImmatureElementModelMessageStruct
-	FangEngineClassesMethodsAttributes []FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct
-}
-
-
-*/

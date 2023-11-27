@@ -15,13 +15,13 @@ const (
 		"\"AttributeValueAsString\", \"AttributeValueUuid\", \"FirstImmatureElementUuid\"," +
 		"\"AttributeActionCommand\") "
 
-	// TestInstructions
+	// TestInstructionsMap
 	TestInstructionsSQLDelete = "SET search_path TO \"FenixGuiBuilder\";" +
-		"DELETE FROM \"TestInstructions\" " +
+		"DELETE FROM \"TestInstructionsMap\" " +
 		"WHERE \"TestInstructionUuid\" IN "
 
 	TestInstructionsSQLInsert = "SET search_path TO \"FenixGuiBuilder\";" +
-		"INSERT INTO \"TestInstructions\" " +
+		"INSERT INTO \"TestInstructionsMap\" " +
 		"(\"DomainUuid\", \"DomainName\", \"TestInstructionUuid\", \"TestInstructionName\"," +
 		"\"TestInstructionTypeUuid\", \"TestInstructionTypeName\", \"TestInstructionDescription\"," +
 		"\"TestInstructionMouseOverText\", \"Deprecated\", \"Enabled\", \"MajorVersionNumber\"," +

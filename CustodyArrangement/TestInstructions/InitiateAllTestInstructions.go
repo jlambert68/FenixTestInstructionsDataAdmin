@@ -4,12 +4,12 @@ func InitiateAllTestInstructionsForCA() AllTestInstructions_CA_TestCaseSetUpStru
 
 	var allTestInstructions_CA_TestCaseSetUp AllTestInstructions_CA_TestCaseSetUpStruct
 
-	// Generate data for TestInstructions within 'Custody Arrangement'
+	// Generate data for TestInstructionsMap within 'Custody Arrangement'
 	allTestInstructionsForGeneralSetupTearDown := InitiateTestInstructionsFor_GeneralSeupTearDown()
 	allTestInstructionsForCustodyAccount := InitiateTestInstructionsFor_CustodyAccount()
 	allTestInstructionsForSettlementAgreement := InitiateTestInstructionsFor_SettlementAgreement()
 
-	// Append 'GeneralSetupTearDown' TestInstructions into one structure
+	// Append 'GeneralSetupTearDown' TestInstructionsMap into one structure
 	allTestInstructions_CA_TestCaseSetUp.TestInstruction = append(
 		allTestInstructions_CA_TestCaseSetUp.TestInstruction,
 		allTestInstructionsForGeneralSetupTearDown.TestInstruction...)
@@ -29,7 +29,7 @@ func InitiateAllTestInstructionsForCA() AllTestInstructions_CA_TestCaseSetUpStru
 		allTestInstructions_CA_TestCaseSetUp.FangEngineClassesMethodsAttributes,
 		allTestInstructionsForGeneralSetupTearDown.FangEngineClassesMethodsAttributes...)
 
-	// Append 'CustodyAccount' TestInstructions into one structure
+	// Append 'CustodyAccount' TestInstructionsMap into one structure
 	allTestInstructions_CA_TestCaseSetUp.TestInstruction = append(
 		allTestInstructions_CA_TestCaseSetUp.TestInstruction,
 		allTestInstructionsForCustodyAccount.TestInstruction...)
@@ -49,7 +49,7 @@ func InitiateAllTestInstructionsForCA() AllTestInstructions_CA_TestCaseSetUpStru
 		allTestInstructions_CA_TestCaseSetUp.FangEngineClassesMethodsAttributes,
 		allTestInstructionsForCustodyAccount.FangEngineClassesMethodsAttributes...)
 
-	// Append 'SettlementAgreement' TestInstructions into one structure
+	// Append 'SettlementAgreement' TestInstructionsMap into one structure
 	allTestInstructions_CA_TestCaseSetUp.TestInstruction = append(
 		allTestInstructions_CA_TestCaseSetUp.TestInstruction,
 		allTestInstructionsForSettlementAgreement.TestInstruction...)

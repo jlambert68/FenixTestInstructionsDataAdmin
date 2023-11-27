@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	generalSetupTearDown_TestCaseSetUp_0_1 "github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseSetUp/0_1"
-	generalSetupTearDown_TestCaseSetUp_0_2 "github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseSetUp/0_2"
-	generalSetupTearDown_TestCaseTearDown_0_1 "github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseTearDown/0_1"
+	generalSetupTearDown_TestCaseSetUp_0_1 "github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseSetUp/version_1_0"
+	generalSetupTearDown_TestCaseSetUp_0_2 "github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseSetUp/version_1_1"
+	generalSetupTearDown_TestCaseTearDown_0_1 "github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseTearDown/version_1_0"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TestInstructionAndTestInstuctionContainerTypes"
 	"time"
 )
@@ -87,11 +87,11 @@ func generateTestInstructionsAndTestInstructionsContainers_SC() {
 
 				// generalSetupTearDown_TestCaseSetUp_0_1
 				TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
-					TestInstructionInstance:             generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown_0_1,
-					TestInstructionInstanceMajorVersion: generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown_0_1.TestInstruction.MajorVersionNumber,
-					TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown_0_1.TestInstruction.MajorVersionNumber,
-					Deprecated    :               generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown_0_1.TestInstruction.Deprecated,
-					Enabled        :              generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown_0_1.TestInstruction.Enabled,
+					TestInstructionInstance:             generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown,
+					TestInstructionInstanceMajorVersion: generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown.TestInstruction.MajorVersionNumber,
+					TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown.TestInstruction.MajorVersionNumber,
+					Deprecated    :               generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown.TestInstruction.Deprecated,
+					Enabled        :              generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown.TestInstruction.Enabled,
 					TestInstructionInstanceHash:         "HASH",
 				},
 			},
@@ -100,9 +100,9 @@ func generateTestInstructionsAndTestInstructionsContainers_SC() {
 
 
 
-		var TestInstructions TestInstructionAndTestInstuctionContainerTypes.TestInstructionsStruct
-		TestInstructions = TestInstructionAndTestInstuctionContainerTypes.TestInstructionsStruct{
-			TestInstructions:     []TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionsStruct{
+		var TestInstructionsMap TestInstructionAndTestInstuctionContainerTypes.TestInstructionsStruct
+		TestInstructionsMap = TestInstructionAndTestInstuctionContainerTypes.TestInstructionsStruct{
+			TestInstructionsMap:     []TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionsStruct{
 				TestInstruction_no1,
 				TestInstruction_no2,
 			},
@@ -115,7 +115,7 @@ func generateTestInstructionsAndTestInstructionsContainers_SC() {
 	var testInstructionsAndTestInstructionsContainers TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct
 	testInstructionsAndTestInstructionsContainers = TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct{
 		TestInstructions: TestInstructionAndTestInstuctionContainerTypes.TestInstructionsStruct{
-			TestInstructions: []TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionsStruct{
+			TestInstructionsMap: []TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionsStruct{
 
 				//TestInstruction 'generalSetupTearDown_TestCaseSetUp'
 				TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionsStruct{
@@ -148,11 +148,11 @@ func generateTestInstructionsAndTestInstructionsContainers_SC() {
 
 						// Version 'generalSetupTearDown_TestCaseSetUp_0_1'
 						TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
-							TestInstructionInstance:             generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown_0_1,
-							TestInstructionInstanceMajorVersion: generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown_0_1.TestInstruction.MajorVersionNumber,
-							TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown_0_1.TestInstruction.MajorVersionNumber,
-							Deprecated:                          generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown_0_1.TestInstruction.Deprecated,
-							Enabled:                             generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown_0_1.TestInstruction.Enabled,
+							TestInstructionInstance:             generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown,
+							TestInstructionInstanceMajorVersion: generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown.TestInstruction.MajorVersionNumber,
+							TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown.TestInstruction.MajorVersionNumber,
+							Deprecated:                          generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown.TestInstruction.Deprecated,
+							Enabled:                             generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown.TestInstruction.Enabled,
 							TestInstructionInstanceHash:         "HASH",
 						},
 					},

@@ -8,11 +8,11 @@ const (
 	TestCaseModelElementGrpcMappingId_B0 TypeAndStructs.TestCaseModelElementGrpcMappingIdType = 1
 
 	TestCaseModelElementType_B1f            TypeAndStructs.TestCaseModelElementTypeType          = "B1f_BOND_NONE_SWAPPABLE"
-	TestCaseModelElementTypeDescription_B1f TypeAndStructs.TestCaseModelElementDescriptionType   = "Bond with one connection. Use for starting a TestCase and is only found in pre-created TestInstructionContainers"
+	TestCaseModelElementTypeDescription_B1f TypeAndStructs.TestCaseModelElementDescriptionType   = "Bond with one connection. Use for starting a TestCase and is only found in pre-created TestInstructionContainersMap"
 	TestCaseModelElementGrpcMappingId_B1f   TypeAndStructs.TestCaseModelElementGrpcMappingIdType = 2
 
 	TestCaseModelElementType_B1l            TypeAndStructs.TestCaseModelElementTypeType          = "B1l_BOND_NONE_SWAPPABLE"
-	TestCaseModelElementTypeDescription_B1l TypeAndStructs.TestCaseModelElementDescriptionType   = "Bond with one connection. Use for ending a TestCase and is only found in pre-created TestInstructionContainers"
+	TestCaseModelElementTypeDescription_B1l TypeAndStructs.TestCaseModelElementDescriptionType   = "Bond with one connection. Use for ending a TestCase and is only found in pre-created TestInstructionContainersMap"
 	TestCaseModelElementGrpcMappingId_B1l   TypeAndStructs.TestCaseModelElementGrpcMappingIdType = 3
 
 	TestCaseModelElementType_B10            TypeAndStructs.TestCaseModelElementTypeType          = "B10_BOND"
@@ -28,7 +28,7 @@ const (
 	TestCaseModelElementGrpcMappingId_B11l   TypeAndStructs.TestCaseModelElementGrpcMappingIdType = 6
 
 	TestCaseModelElementType_B12            TypeAndStructs.TestCaseModelElementTypeType          = "B12_BOND"
-	TestCaseModelElementTypeDescription_B12 TypeAndStructs.TestCaseModelElementDescriptionType   = "Bond with two connections which connects TestInstructions or TestInstructionContainers"
+	TestCaseModelElementTypeDescription_B12 TypeAndStructs.TestCaseModelElementDescriptionType   = "Bond with two connections which connects TestInstructionsMap or TestInstructionContainersMap"
 	TestCaseModelElementGrpcMappingId_B12   TypeAndStructs.TestCaseModelElementGrpcMappingIdType = 7
 
 	TestCaseModelElementType_B10oxo            TypeAndStructs.TestCaseModelElementTypeType          = "B10oxo_BOND"
@@ -44,15 +44,15 @@ const (
 	TestCaseModelElementGrpcMappingId_B10xo   TypeAndStructs.TestCaseModelElementGrpcMappingIdType = 10
 
 	TestCaseModelElementType_B11fx            TypeAndStructs.TestCaseModelElementTypeType          = "B11fx_BOND_NONE_SWAPPABLE"
-	TestCaseModelElementTypeDescription_B11fx TypeAndStructs.TestCaseModelElementDescriptionType   = "Bond with one connection which appear as first element inside a TestInstructionContainer. This Bond is used in Pre-created containers and is used to stop a user to add new TestInstructions or TestInstructionsContainers before(first) structure."
+	TestCaseModelElementTypeDescription_B11fx TypeAndStructs.TestCaseModelElementDescriptionType   = "Bond with one connection which appear as first element inside a TestInstructionContainer. This Bond is used in Pre-created containers and is used to stop a user to add new TestInstructionsMap or TestInstructionsContainers before(first) structure."
 	TestCaseModelElementGrpcMappingId_B11fx   TypeAndStructs.TestCaseModelElementGrpcMappingIdType = 11
 
 	TestCaseModelElementType_B11lx            TypeAndStructs.TestCaseModelElementTypeType          = "B11lx_BOND_NONE_SWAPPABLE"
-	TestCaseModelElementTypeDescription_B11lx TypeAndStructs.TestCaseModelElementDescriptionType   = "Bond with two connections which connects TestInstructions or TestInstructionContainers. This Bond is used in Pre-created containers and is used to stop a user to add new TestInstructions or TestInstructionsContainers within a pre-created container."
+	TestCaseModelElementTypeDescription_B11lx TypeAndStructs.TestCaseModelElementDescriptionType   = "Bond with two connections which connects TestInstructionsMap or TestInstructionContainersMap. This Bond is used in Pre-created containers and is used to stop a user to add new TestInstructionsMap or TestInstructionsContainers within a pre-created container."
 	TestCaseModelElementGrpcMappingId_B11lx   TypeAndStructs.TestCaseModelElementGrpcMappingIdType = 12
 
 	TestCaseModelElementType_B12x            TypeAndStructs.TestCaseModelElementTypeType          = "B12x_BOND_NONE_SWAPPABLE"
-	TestCaseModelElementTypeDescription_B12x TypeAndStructs.TestCaseModelElementDescriptionType   = "Bond with two connections which connects TestInstructions or TestInstructionContainers. This Bond is used in Pre-created containers and is used to stop a user to add new TestInstructions or TestInstructionsContainers within a pre-created container."
+	TestCaseModelElementTypeDescription_B12x TypeAndStructs.TestCaseModelElementDescriptionType   = "Bond with two connections which connects TestInstructionsMap or TestInstructionContainersMap. This Bond is used in Pre-created containers and is used to stop a user to add new TestInstructionsMap or TestInstructionsContainers within a pre-created container."
 	TestCaseModelElementGrpcMappingId_B12x   TypeAndStructs.TestCaseModelElementGrpcMappingIdType = 13
 
 	TestCaseModelElementType_TI            TypeAndStructs.TestCaseModelElementTypeType          = "TI_TESTINSTRUCTION"

@@ -1,9 +1,10 @@
-package __1
+package version_1_0
 
 import (
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/Domains"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/FangEngineClassesAndMethods"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions"
+	fixedValuesOverVersions "github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseSetUp"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TestInstructionAndTestInstuctionContainerTypes"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TypeAndStructs"
@@ -14,12 +15,12 @@ const (
 
 	// *************************************
 	// *** TestInstruction *** 'TestCaseSetUp'
-	TestInstructionUUID_SC_TestCaseSetUp               TypeAndStructs.OriginalElementUUIDType = "26d38886-c112-48ef-a20f-4da8fb9a5ccb"
+	TestInstructionUUID_SC_TestCaseSetUp               TypeAndStructs.OriginalElementUUIDType = fixedValuesOverVersions.TestInstructionUUID_SC_TestCaseSetUp
 	TestInstructionName_SC_TestCaseSetUp               TypeAndStructs.TestInstructionNameType = "TestCaseSetUp"
 	TestInstructionTypeUUID_SC_TestCaseSetUp                                                  = TestInstructions.TestInstructionTypeUUID_SC_GeneralSetUpTearDown
 	TestInstructionTypeName_SC_TestCaseSetUp                                                  = TestInstructions.TestInstructionTypeName_SC_GeneralSetUpTearDown
-	TestInstructionDescription_SC_TestCaseSetUp        string                                 = "Initiate _SCs execution engine to be able to execute TestInstructions"
-	TestInstructionMouseOverText_SC_TestCaseSetUp      string                                 = "Initiate _SCs execution engine to be able to execute TestInstructions"
+	TestInstructionDescription_SC_TestCaseSetUp        string                                 = "Initiate _SCs execution engine to be able to execute TestInstructionsMap"
+	TestInstructionMouseOverText_SC_TestCaseSetUp      string                                 = "Initiate _SCs execution engine to be able to execute TestInstructionsMap"
 	TestInstructionDeprecated_SC_TestCaseSetUp         bool                                   = false
 	TestInstructionEnabled_SC_TestCaseSetUp            bool                                   = true
 	TestInstructionMajorVersionNumber_SC_TestCaseSetUp int                                    = 0

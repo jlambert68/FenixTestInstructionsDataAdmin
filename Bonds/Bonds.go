@@ -27,8 +27,8 @@ const (
 	// B1f_BOND
 	Bond_B1f_BondUuid                              TypeAndStructs.OriginalElementUUIDType               = "2faab7f8-9f08-44ad-bc02-15b205146f48"
 	Bond_B1f_BondName                              TypeAndStructs.BondNameType                          = "B1f_BOND_NONE_SWAPPABLE"
-	Bond_B1f_BondDescription                       TypeAndStructs.BondDescriptionType                   = "Bond with one connection. Use for starting and ending a TestCase and is only found in pre-created TestInstructionContainers"
-	Bond_B1f_BondMouseOverText                     TypeAndStructs.BondMouseOverTextType                 = "Bond with one connection. Use for starting and ending a TestCase and is only found in pre-created TestInstructionContainers"
+	Bond_B1f_BondDescription                       TypeAndStructs.BondDescriptionType                   = "Bond with one connection. Use for starting and ending a TestCase and is only found in pre-created TestInstructionContainersMap"
+	Bond_B1f_BondMouseOverText                     TypeAndStructs.BondMouseOverTextType                 = "Bond with one connection. Use for starting and ending a TestCase and is only found in pre-created TestInstructionContainersMap"
 	Bond_B1f_Deprecated                            TypeAndStructs.BondDeprecatedType                    = false
 	Bond_B1f_Enabled                               TypeAndStructs.BondEnabledType                       = true
 	Bond_B1f_Visible                               TypeAndStructs.BondVisibleType                       = true
@@ -78,8 +78,8 @@ const (
 	// B11fx_BOND
 	Bond_B11fx_BondUuid                              TypeAndStructs.OriginalElementUUIDType               = "a2361365-1cc6-449b-bcf4-525608adcf8f"
 	Bond_B11fx_BondName                              TypeAndStructs.BondNameType                          = "B11fx_BOND_NONE_SWAPPABLE"
-	Bond_B11fx_BondDescription                       TypeAndStructs.BondDescriptionType                   = "Bond with one connection which appear as first element inside a TestInstructionContainer. This Bond is used in Pre-created containers and is used to stop a user to add new TestInstructions or TestInstructionsContainers before(first) structure."
-	Bond_B11fx_BondMouseOverText                     TypeAndStructs.BondMouseOverTextType                 = "Bond with one connection which appear as first element inside a TestInstructionContainer. This Bond is used in Pre-created containers and is used to stop a user to add new TestInstructions or TestInstructionsContainers before(first) structure."
+	Bond_B11fx_BondDescription                       TypeAndStructs.BondDescriptionType                   = "Bond with one connection which appear as first element inside a TestInstructionContainer. This Bond is used in Pre-created containers and is used to stop a user to add new TestInstructionsMap or TestInstructionsContainers before(first) structure."
+	Bond_B11fx_BondMouseOverText                     TypeAndStructs.BondMouseOverTextType                 = "Bond with one connection which appear as first element inside a TestInstructionContainer. This Bond is used in Pre-created containers and is used to stop a user to add new TestInstructionsMap or TestInstructionsContainers before(first) structure."
 	Bond_B11fx_Deprecated                            TypeAndStructs.BondDeprecatedType                    = false
 	Bond_B11fx_Enabled                               TypeAndStructs.BondEnabledType                       = true
 	Bond_B11fx_Visible                               TypeAndStructs.BondVisibleType                       = true
@@ -112,8 +112,8 @@ const (
 	// B12_BOND
 	Bond_B12_BondUuid                              TypeAndStructs.OriginalElementUUIDType               = "78f4c8ef-b8f3-40a2-a335-b28d2ba02e76"
 	Bond_B12_BondName                              TypeAndStructs.BondNameType                          = "B12_BOND"
-	Bond_B12_BondDescription                       TypeAndStructs.BondDescriptionType                   = "Bond with two connections which connects TestInstructions or TestInstructionContainers"
-	Bond_B12_BondMouseOverText                     TypeAndStructs.BondMouseOverTextType                 = "Bond with two connections which connects TestInstructions or TestInstructionContainers"
+	Bond_B12_BondDescription                       TypeAndStructs.BondDescriptionType                   = "Bond with two connections which connects TestInstructionsMap or TestInstructionContainersMap"
+	Bond_B12_BondMouseOverText                     TypeAndStructs.BondMouseOverTextType                 = "Bond with two connections which connects TestInstructionsMap or TestInstructionContainersMap"
 	Bond_B12_Deprecated                            TypeAndStructs.BondDeprecatedType                    = false
 	Bond_B12_Enabled                               TypeAndStructs.BondEnabledType                       = true
 	Bond_B12_Visible                               TypeAndStructs.BondVisibleType                       = true
@@ -129,8 +129,8 @@ const (
 	// B11lx_BOND
 	Bond_B11lx_BondUuid                              TypeAndStructs.OriginalElementUUIDType               = "b1aaae68-076d-4527-a167-228958c9ab01"
 	Bond_B11lx_BondName                              TypeAndStructs.BondNameType                          = "B11lx_BOND_NONE_SWAPPABLE"
-	Bond_B11lx_BondDescription                       TypeAndStructs.BondDescriptionType                   = "Bond with one connection which appear as first element inside a TestInstructionContainer. This Bond is used in Pre-created containers and is used to stop a user to add new TestInstructions or TestInstructionsContainers after(last) structure."
-	Bond_B11lx_BondMouseOverText                     TypeAndStructs.BondMouseOverTextType                 = "Bond with one connection which appear as first element inside a TestInstructionContainer. This Bond is used in Pre-created containers and is used to stop a user to add new TestInstructions or TestInstructionsContainers after(last) structure."
+	Bond_B11lx_BondDescription                       TypeAndStructs.BondDescriptionType                   = "Bond with one connection which appear as last element inside a TestInstructionContainer. This Bond is used in Pre-created containers and is used to stop a user to add new TestInstructionsMap or TestInstructionsContainers after(last) structure."
+	Bond_B11lx_BondMouseOverText                     TypeAndStructs.BondMouseOverTextType                 = "Bond with one connection which appear as last element inside a TestInstructionContainer. This Bond is used in Pre-created containers and is used to stop a user to add new TestInstructionsMap or TestInstructionsContainers after(last) structure."
 	Bond_B11lx_Deprecated                            TypeAndStructs.BondDeprecatedType                    = false
 	Bond_B11lx_Enabled                               TypeAndStructs.BondEnabledType                       = true
 	Bond_B11lx_Visible                               TypeAndStructs.BondVisibleType                       = true
@@ -197,8 +197,8 @@ const (
 	// B1l_BOND
 	Bond_B1l_BondUuid                              TypeAndStructs.OriginalElementUUIDType               = "123ab7f8-9f08-44ad-bc02-15b205146f48"
 	Bond_B1l_BondName                              TypeAndStructs.BondNameType                          = "B1l_BOND_NONE_SWAPPABLE"
-	Bond_B1l_BondDescription                       TypeAndStructs.BondDescriptionType                   = "Bond with one connection. Use for starting and ending a TestCase and is only found in pre-created TestInstructionContainers"
-	Bond_B1l_BondMouseOverText                     TypeAndStructs.BondMouseOverTextType                 = "Bond with one connection. Use for starting and ending a TestCase and is only found in pre-created TestInstructionContainers"
+	Bond_B1l_BondDescription                       TypeAndStructs.BondDescriptionType                   = "Bond with one connection. Use for starting and ending a TestCase and is only found in pre-created TestInstructionContainersMap"
+	Bond_B1l_BondMouseOverText                     TypeAndStructs.BondMouseOverTextType                 = "Bond with one connection. Use for starting and ending a TestCase and is only found in pre-created TestInstructionContainersMap"
 	Bond_B1l_Deprecated                            TypeAndStructs.BondDeprecatedType                    = false
 	Bond_B1l_Enabled                               TypeAndStructs.BondEnabledType                       = true
 	Bond_B1l_Visible                               TypeAndStructs.BondVisibleType                       = true
@@ -214,8 +214,8 @@ const (
 	// B12x_BOND
 	Bond_B12x_BondUuid                              TypeAndStructs.OriginalElementUUIDType               = "9e613527-daa6-4559-9c73-adb8213eccd9"
 	Bond_B12x_BondName                              TypeAndStructs.BondNameType                          = "B12x_BOND_NONE_SWAPPABLE"
-	Bond_B12x_BondDescription                       TypeAndStructs.BondDescriptionType                   = "Bond with two connections which connects TestInstructions or TestInstructiB12x_BOND_NONE_SWAPPABLEonContainers. This Bond is used in Pre-created containers and is used to stop a user to add new TestInstructions or TestInstructionsContainers within a pre-created container."
-	Bond_B12x_BondMouseOverText                     TypeAndStructs.BondMouseOverTextType                 = "Bond with two connections which connects TestInstructions or TestInstructiB12x_BOND_NONE_SWAPPABLEonContainers. This Bond is used in Pre-created containers and is used to stop a user to add new TestInstructions or TestInstructionsContainers within a pre-created container."
+	Bond_B12x_BondDescription                       TypeAndStructs.BondDescriptionType                   = "Bond with two connections which connects TestInstructionsMap or TestInstructiB12x_BOND_NONE_SWAPPABLEonContainers. This Bond is used in Pre-created containers and is used to stop a user to add new TestInstructionsMap or TestInstructionsContainers within a pre-created container."
+	Bond_B12x_BondMouseOverText                     TypeAndStructs.BondMouseOverTextType                 = "Bond with two connections which connects TestInstructionsMap or TestInstructiB12x_BOND_NONE_SWAPPABLEonContainers. This Bond is used in Pre-created containers and is used to stop a user to add new TestInstructionsMap or TestInstructionsContainers within a pre-created container."
 	Bond_B12x_Deprecated                            TypeAndStructs.BondDeprecatedType                    = false
 	Bond_B12x_Enabled                               TypeAndStructs.BondEnabledType                       = true
 	Bond_B12x_Visible                               TypeAndStructs.BondVisibleType                       = true

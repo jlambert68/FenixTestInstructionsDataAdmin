@@ -2,7 +2,7 @@ package GenerateImmatureBuildingBlocks
 
 import fenixTestCaseBuilderServerGrpcApi "github.com/jlambert68/FenixGrpcApi/FenixTestCaseBuilderServer/fenixTestCaseBuilderServerGrpcApi/go_grpc_api"
 
-// Generate all Immature TestInstructionContainers for Sub Custody
+// Generate all Immature TestInstructionContainersMap for Sub Custody
 func generateImmatureTestInstructionContainersMessagesSubCustody() (
 	immatureTestInstructionContainers []*fenixTestCaseBuilderServerGrpcApi.ImmatureTestInstructionContainerMessage) {
 

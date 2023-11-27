@@ -4,10 +4,10 @@ func InitiateAllTestInstructionsForSC() AllTestInstructions_SC_TestCaseSetUpStru
 
 	var allTestInstructions_SC_TestCaseSetUp AllTestInstructions_SC_TestCaseSetUpStruct
 
-	// Generate data for TestInstructions within '_SC'
+	// Generate data for TestInstructionsMap within '_SC'
 	allTestInstructionsForGeneralSetupTearDown := InitiateTestInstructionsFor_GeneralSeupTearDown()
 
-	// Append 'GeneralSetupTearDown' TestInstructions into one structure
+	// Append 'GeneralSetupTearDown' TestInstructionsMap into one structure
 	allTestInstructions_SC_TestCaseSetUp.TestInstruction = append(
 		allTestInstructions_SC_TestCaseSetUp.TestInstruction,
 		allTestInstructionsForGeneralSetupTearDown.TestInstruction...)

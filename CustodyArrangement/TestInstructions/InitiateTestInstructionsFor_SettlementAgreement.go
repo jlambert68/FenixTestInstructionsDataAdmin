@@ -4,14 +4,14 @@ func InitiateTestInstructionsFor_SettlementAgreement() AllTestInstructions_CA_Te
 
 	var allTestInstructions_CA_SettlementAgreement AllTestInstructions_CA_TestCaseSetUpStruct
 
-	// Generate data for TestInstructions within 'CustodyAccount'
+	// Generate data for TestInstructionsMap within 'CustodyAccount'
 	testInstruction_CA_SettlementAgreement_Edit := Initate_TestInstruction_CA_SettlementAgreement_Edit()
 	testInstruction_CA_SettlementAgreement_AddSelectedSwift := Initate_TestInstruction_CA_SettlementAgreement_AddSelectedSwift()
 	testInstruction_CA_SettlementAgreement_DeleteSelectedSwift := Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift()
 	testInstruction_CA_SettlementAgreement_AddSelectedInstructedParties := Initate_TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties()
 	testInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties := Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties()
 
-	// Append 'SettlementAgreement_Edit' TestInstructions into one structure
+	// Append 'SettlementAgreement_Edit' TestInstructionsMap into one structure
 	allTestInstructions_CA_SettlementAgreement.TestInstruction = append(
 		allTestInstructions_CA_SettlementAgreement.TestInstruction,
 		testInstruction_CA_SettlementAgreement_Edit.TestInstruction)
@@ -31,7 +31,7 @@ func InitiateTestInstructionsFor_SettlementAgreement() AllTestInstructions_CA_Te
 		allTestInstructions_CA_SettlementAgreement.FangEngineClassesMethodsAttributes,
 		testInstruction_CA_SettlementAgreement_Edit.FangEngineClassesMethodsAttributes)
 
-	// Append 'SettlementAgreement_AddSelectedSwift' TestInstructions into one structure
+	// Append 'SettlementAgreement_AddSelectedSwift' TestInstructionsMap into one structure
 	allTestInstructions_CA_SettlementAgreement.TestInstruction = append(
 		allTestInstructions_CA_SettlementAgreement.TestInstruction,
 		testInstruction_CA_SettlementAgreement_AddSelectedSwift.TestInstruction)
@@ -51,7 +51,7 @@ func InitiateTestInstructionsFor_SettlementAgreement() AllTestInstructions_CA_Te
 		allTestInstructions_CA_SettlementAgreement.FangEngineClassesMethodsAttributes,
 		testInstruction_CA_SettlementAgreement_AddSelectedSwift.FangEngineClassesMethodsAttributes)
 
-	// Append 'SettlementAgreement_DeleteSelectedSwift' TestInstructions into one structure
+	// Append 'SettlementAgreement_DeleteSelectedSwift' TestInstructionsMap into one structure
 	allTestInstructions_CA_SettlementAgreement.TestInstruction = append(
 		allTestInstructions_CA_SettlementAgreement.TestInstruction,
 		testInstruction_CA_SettlementAgreement_DeleteSelectedSwift.TestInstruction)
@@ -71,7 +71,7 @@ func InitiateTestInstructionsFor_SettlementAgreement() AllTestInstructions_CA_Te
 		allTestInstructions_CA_SettlementAgreement.FangEngineClassesMethodsAttributes,
 		testInstruction_CA_SettlementAgreement_DeleteSelectedSwift.FangEngineClassesMethodsAttributes)
 
-	// Append 'SettlementAgreement_AddSelectedInstructedParties' TestInstructions into one structure
+	// Append 'SettlementAgreement_AddSelectedInstructedParties' TestInstructionsMap into one structure
 	allTestInstructions_CA_SettlementAgreement.TestInstruction = append(
 		allTestInstructions_CA_SettlementAgreement.TestInstruction,
 		testInstruction_CA_SettlementAgreement_AddSelectedInstructedParties.TestInstruction)
@@ -91,7 +91,7 @@ func InitiateTestInstructionsFor_SettlementAgreement() AllTestInstructions_CA_Te
 		allTestInstructions_CA_SettlementAgreement.FangEngineClassesMethodsAttributes,
 		testInstruction_CA_SettlementAgreement_AddSelectedInstructedParties.FangEngineClassesMethodsAttributes)
 
-	// Append 'SettlementAgreement_DeleteSelectedInstructedParties' TestInstructions into one structure
+	// Append 'SettlementAgreement_DeleteSelectedInstructedParties' TestInstructionsMap into one structure
 	allTestInstructions_CA_SettlementAgreement.TestInstruction = append(
 		allTestInstructions_CA_SettlementAgreement.TestInstruction,
 		testInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties.TestInstruction)

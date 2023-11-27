@@ -16,8 +16,8 @@ const (
 	TestInstructionName_CA_TestCaseSetUp               TypeAndStructs.TestInstructionNameType = "TestCaseSetUp"
 	TestInstructionTypeUUID_CA_TestCaseSetUp                                                  = TestInstructionTypeUUID_CA_GeneralSetUpTearDown
 	TestInstructionTypeName_CA_TestCaseSetUp                                                  = TestInstructionTypeName_CA_GeneralSetUpTearDown
-	TestInstructionDescription_CA_TestCaseSetUp        string                                 = "Initiate Custody Arrangements execution engine to be able to execute TestInstructions"
-	TestInstructionMouseOverText_CA_TestCaseSetUp      string                                 = "Initiate Custody Arrangements execution engine to be able to execute TestInstructions"
+	TestInstructionDescription_CA_TestCaseSetUp        string                                 = "Initiate Custody Arrangements execution engine to be able to execute TestInstructionsMap"
+	TestInstructionMouseOverText_CA_TestCaseSetUp      string                                 = "Initiate Custody Arrangements execution engine to be able to execute TestInstructionsMap"
 	TestInstructionDeprecated_CA_TestCaseSetUp         bool                                   = false
 	TestInstructionEnabled_CA_TestCaseSetUp            bool                                   = true
 	TestInstructionMajorVersionNumber_CA_TestCaseSetUp int                                    = 0

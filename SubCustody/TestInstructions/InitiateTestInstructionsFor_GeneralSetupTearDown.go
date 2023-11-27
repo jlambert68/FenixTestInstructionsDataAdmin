@@ -1,19 +1,19 @@
 package TestInstructions
 
 import (
-	"github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseSetUp/0_1"
-	__12 "github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseTearDown/0_1"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseSetUp/version_1_0"
+	__12 "github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseTearDown/version_1_0"
 )
 
 func InitiateTestInstructionsFor_GeneralSeupTearDown() AllTestInstructions_SC_TestCaseSetUpStruct {
 
 	var allTestInstructions_SC_TestCaseSetUp AllTestInstructions_SC_TestCaseSetUpStruct
 
-	// Generate data for TestInstructions within 'GeneralSeupTearDown'
-	testInstruction_SC_TestCaseSetUp := __1.Initate_TestInstruction_SC_TestCaseSetUp()
-	testInstruction_SC_TestCaseTearDown := __12.Initate_TestInstruction_SC_TestCaseTearDown0_1()
+	// Generate data for TestInstructionsMap within 'GeneralSeupTearDown'
+	testInstruction_SC_TestCaseSetUp := version_1_0.Initate_TestInstruction_SC_TestCaseSetUp()
+	testInstruction_SC_TestCaseTearDown := __12.Initate_TestInstruction_SC_TestCaseTearDown()
 
-	// Append 'TestCaseSetUp' TestInstructions into one structure
+	// Append 'TestCaseSetUp' TestInstructionsMap into one structure
 	allTestInstructions_SC_TestCaseSetUp.TestInstruction = append(
 		allTestInstructions_SC_TestCaseSetUp.TestInstruction,
 		testInstruction_SC_TestCaseSetUp.TestInstruction)
@@ -33,7 +33,7 @@ func InitiateTestInstructionsFor_GeneralSeupTearDown() AllTestInstructions_SC_Te
 		allTestInstructions_SC_TestCaseSetUp.FangEngineClassesMethodsAttributes,
 		testInstruction_SC_TestCaseSetUp.FangEngineClassesMethodsAttributes)
 
-	// Append 'TestCaseSetUp' TestInstructions into one structure
+	// Append 'TestCaseSetUp' TestInstructionsMap into one structure
 	allTestInstructions_SC_TestCaseSetUp.TestInstruction = append(
 		allTestInstructions_SC_TestCaseSetUp.TestInstruction,
 		testInstruction_SC_TestCaseTearDown.TestInstruction)

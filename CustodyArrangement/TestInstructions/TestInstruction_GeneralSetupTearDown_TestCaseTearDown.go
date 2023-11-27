@@ -16,8 +16,8 @@ const (
 	TestInstructionName_CA_TestCaseTearDown               TypeAndStructs.TestInstructionNameType = "TestCaseTearDown"
 	TestInstructionTypeUUID_CA_TestCaseTearDown                                                  = TestInstructionTypeUUID_CA_GeneralSetUpTearDown
 	TestInstructionTypeName_CA_TestCaseTearDown                                                  = TestInstructionTypeName_CA_GeneralSetUpTearDown
-	TestInstructionDescription_CA_TestCaseTearDown        string                                 = "TearDown the Custody Arrangements execution engine after executing TestInstructions"
-	TestInstructionMouseOverText_CA_TestCaseTearDown      string                                 = "TearDown the Custody Arrangements execution engine after executing TestInstructions"
+	TestInstructionDescription_CA_TestCaseTearDown        string                                 = "TearDown the Custody Arrangements execution engine after executing TestInstructionsMap"
+	TestInstructionMouseOverText_CA_TestCaseTearDown      string                                 = "TearDown the Custody Arrangements execution engine after executing TestInstructionsMap"
 	TestInstructionDeprecated_CA_TestCaseTearDown         bool                                   = false
 	TestInstructionEnabled_CA_TestCaseTearDown            bool                                   = true
 	TestInstructionMajorVersionNumber_CA_TestCaseTearDown int                                    = 0

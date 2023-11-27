@@ -19,7 +19,7 @@ func GenerateSqlDelete_For_TestInstructions_CA() {
 
 	var testInstructionUuidSlice []string
 
-	// Add all TestInstructions for Custody Arrangement
+	// Add all TestInstructionsMap for Custody Arrangement
 	// CustodyAccount
 	testInstructionUuidSlice = append(testInstructionUuidSlice,
 		string(TestInstructions.TestInstructionUUID_CA_CustodyAccount_Search))

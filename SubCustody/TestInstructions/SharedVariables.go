@@ -17,7 +17,7 @@ type TestInstruction_SC_TestCaseSetUpStruct struct {
 }
 
 // AllTestInstructions_SC_TestCaseSetUpStruct
-// Struct for holding all data for all TestInstructions
+// Struct for holding all data for all TestInstructionsMap
 type AllTestInstructions_SC_TestCaseSetUpStruct struct {
 	TestInstruction                    []TypeAndStructs.TestInstructionStruct
 	BasicTestInstructionInformation    []TypeAndStructs.BasicTestInstructionInformationStruct
