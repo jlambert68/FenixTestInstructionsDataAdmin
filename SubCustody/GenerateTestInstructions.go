@@ -10,12 +10,13 @@ import (
 	generalSetupTearDown_TestCaseTearDown_1_0 "github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseTearDown/version_1_0"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TestInstructionAndTestInstuctionContainerTypes"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TypeAndStructs"
+	"github.com/jlambert68/FenixTestInstructionsDataAdmin/shared_code"
 	"time"
 )
 
-var TestInstructionsAndTestInstructionContainers_SC TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct
+var TestInstructionsAndTestInstructionContainers_SC *TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct
 
-func generateTestInstructions_SC() {
+func GenerateTestInstructions_SC() {
 
 	// Generate TestInstructions
 	// GeneralSetupTearDown::TestCaseSetUp
@@ -30,18 +31,18 @@ func generateTestInstructions_SC() {
 	testInstructionContainer_SpecialSerialBaseContainer_1_0.Initiate_TestInstructionContainer_SC_Serial()
 
 	// Build structure for all TestInstructions & TestInstructionContainers to be sent over gRPC to Fenix Backend
-	TestInstructionsAndTestInstructionContainers_SC = TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct{
+	TestInstructionsAndTestInstructionContainers_SC = &TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct{
 
 		// TestInstructions
-		TestInstructions: TestInstructionAndTestInstuctionContainerTypes.TestInstructionsStruct{
-			TestInstructionsMap: map[TypeAndStructs.OriginalElementUUIDType]TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionsStruct{
+		TestInstructions: &TestInstructionAndTestInstuctionContainerTypes.TestInstructionsStruct{
+			TestInstructionsMap: map[TypeAndStructs.OriginalElementUUIDType]*TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionsStruct{
 
 				//TestInstruction 'generalSetupTearDown_TestCaseSetUp'
-				generalSetupTearDown_TestCaseSetUp.TestInstructionUUID_SC_TestCaseSetUp: TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionsStruct{
-					TestInstructionVersions: []TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
+				generalSetupTearDown_TestCaseSetUp.TestInstructionUUID_SC_TestCaseSetUp: &TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionsStruct{
+					TestInstructionVersions: []*TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
 
 						//Version 'generalSetupTearDown_TestCaseSetUp_1.1'
-						TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
+						&TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
 							TestInstructionInstance:             generalSetupTearDown_TestCaseSetUp_1_1.TestInstruction_SC_TestCaseSetUp,
 							TestInstructionInstanceMajorVersion: generalSetupTearDown_TestCaseSetUp_1_1.TestInstruction_SC_TestCaseSetUp.TestInstruction.MajorVersionNumber,
 							TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseSetUp_1_1.TestInstruction_SC_TestCaseSetUp.TestInstruction.MajorVersionNumber,
@@ -49,7 +50,7 @@ func generateTestInstructions_SC() {
 						},
 
 						// Version 'generalSetupTearDown_TestCaseSetUp_1.0'
-						TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
+						&TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
 							TestInstructionInstance:             generalSetupTearDown_TestCaseSetUp_1_0.TestInstruction_SC_TestCaseSetUp,
 							TestInstructionInstanceMajorVersion: generalSetupTearDown_TestCaseSetUp_1_0.TestInstruction_SC_TestCaseSetUp.TestInstruction.MajorVersionNumber,
 							TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseSetUp_1_0.TestInstruction_SC_TestCaseSetUp.TestInstruction.MajorVersionNumber,
@@ -62,11 +63,11 @@ func generateTestInstructions_SC() {
 				},
 
 				// TestInstruction 'generalSetupTearDown_TestCaseSetUp'
-				generalSetupTearDown_TestCaseTearDown.TestInstructionUUID_SC_TestCaseTearDown: TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionsStruct{
-					TestInstructionVersions: []TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
+				generalSetupTearDown_TestCaseTearDown.TestInstructionUUID_SC_TestCaseTearDown: &TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionsStruct{
+					TestInstructionVersions: []*TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
 
 						// Version 'generalSetupTearDown_TestCaseSetUp_1.0'
-						TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
+						&TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
 							TestInstructionInstance:             generalSetupTearDown_TestCaseTearDown_1_0.TestInstruction_SC_TestCaseTearDown,
 							TestInstructionInstanceMajorVersion: generalSetupTearDown_TestCaseTearDown_1_0.TestInstruction_SC_TestCaseTearDown.TestInstruction.MajorVersionNumber,
 							TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseTearDown_1_0.TestInstruction_SC_TestCaseTearDown.TestInstruction.MajorVersionNumber,
@@ -82,15 +83,15 @@ func generateTestInstructions_SC() {
 		},
 
 		// TestInstructionContainers
-		TestInstructionContainers: TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainersStruct{
-			TestInstructionContainersMap: map[TypeAndStructs.OriginalElementUUIDType]TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerInstanceVersionsStruct{
+		TestInstructionContainers: &TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainersStruct{
+			TestInstructionContainersMap: map[TypeAndStructs.OriginalElementUUIDType]*TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerInstanceVersionsStruct{
 
 				// 'SC_SpecialSerialBaseContainer'
-				testInstructionContainer_SpecialSerialBaseContainer.TestInstructionContainerUUID_SC_SpecialSerialBaseContainer: TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerInstanceVersionsStruct{
-					TestInstructionContainerVersions: []TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerInstanceVersionStruct{
+				testInstructionContainer_SpecialSerialBaseContainer.TestInstructionContainerUUID_SC_SpecialSerialBaseContainer: &TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerInstanceVersionsStruct{
+					TestInstructionContainerVersions: []*TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerInstanceVersionStruct{
 
 						//Version 'TestInstructionContainer_SpecialSerialBaseContainer_1.0'
-						TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerInstanceVersionStruct{
+						&TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerInstanceVersionStruct{
 							TestInstructionContainerInstance:             testInstructionContainer_SpecialSerialBaseContainer_1_0.TestInstructionContainer_SC_SpecialSerialBase,
 							TestInstructionContainerInstanceMajorVersion: testInstructionContainer_SpecialSerialBaseContainer_1_0.TestInstructionContainer_SC_SpecialSerialBase.TestInstructionContainer.MajorVersionNumber,
 							TestInstructionContainerInstanceMinorVersion: testInstructionContainer_SpecialSerialBaseContainer_1_0.TestInstructionContainer_SC_SpecialSerialBase.TestInstructionContainer.MinorVersionNumber,
@@ -109,7 +110,7 @@ func generateTestInstructions_SC() {
 		MessageCreationTimeStamp:                                 time.Now(),
 	}
 
-	// TODO Calculate alla Hashes for TestInstructions-block
+	// TODO Calculate alla Hashes for TestInstructions-block and TestInstructionContainersMap-block
+	shared_code.CalculateTestInstructionAndTestInstructionContainerMessageHashes(TestInstructionsAndTestInstructionContainers_SC)
 
-	// TODO Calculate alla Hashes for TestInstructionContainersMap-block
 }

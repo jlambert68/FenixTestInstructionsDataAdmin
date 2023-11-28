@@ -5,16 +5,9 @@ import (
 	"fmt"
 	"github.com/jlambert68/FenixSyncShared"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TestInstructionAndTestInstuctionContainerTypes"
-	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TypeAndStructs"
 )
 
-func CalculateTestInstuctionAndTestInstrucionContainerMessageHashes(testInstructionsAndTestInstructionContainersMessage *TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct) (err error) {
-
-	// List keys in TestInstructionMap
-	var mapKeys []TypeAndStructs.OriginalElementUUIDType
-	for tempMapKey := range testInstructionsAndTestInstructionContainersMessage.TestInstructions.TestInstructionsMap {
-		mapKeys = append(mapKeys, tempMapKey)
-	}
+func CalculateTestInstructionAndTestInstructionContainerMessageHashes(testInstructionsAndTestInstructionContainersMessage *TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct) (err error) {
 
 	// Used for converting before hashing and when hashing
 	var byteSlice []byte
