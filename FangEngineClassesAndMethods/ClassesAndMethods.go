@@ -12,21 +12,21 @@ type FangEngine_AttributeName_Name_SC_Type string
 
 // Type this is used for specifying Classes, Methods and Attributes for FangEngine which is used by _SCs TestAutomation
 type FangEngineClassesMethodsAttributesStruct struct {
-	TestInstructionOriginalUUID TypeAndStructs.OriginalElementUUIDType
-	TestInstructionName         TypeAndStructs.TestInstructionNameType
-	FangEngineClassNameUUID     FangEngine_ClassName_UUID_SC_Type
-	FangEngineClassNameNAME     FangEngine_ClassName_Name_SC_Type
-	FangEngineMethodNameUUID    FangEngine_MethodName_UUID_SC_Type
-	FangEngineMethodNameNAME    FangEngine_MethodName_Name_SC_Type
-	Attributes                  map[TypeAndStructs.TestInstructionAttributeUUIDType]FangEngineAttributesStruct
+	TestInstructionOriginalUUID TypeAndStructs.OriginalElementUUIDType                                          `json:"TestInstructionOriginalUUID"`
+	TestInstructionName         TypeAndStructs.TestInstructionNameType                                          `json:"TestInstructionName"`
+	FangEngineClassNameUUID     FangEngine_ClassName_UUID_SC_Type                                               `json:"FangEngineClassNameUUID"`
+	FangEngineClassNameNAME     FangEngine_ClassName_Name_SC_Type                                               `json:"FangEngineClassNameNAME"`
+	FangEngineMethodNameUUID    FangEngine_MethodName_UUID_SC_Type                                              `json:"FangEngineMethodNameUUID"`
+	FangEngineMethodNameNAME    FangEngine_MethodName_Name_SC_Type                                              `json:"FangEngineMethodNameNAME"`
+	Attributes                  map[TypeAndStructs.TestInstructionAttributeUUIDType]*FangEngineAttributesStruct `json:"Attributes"`
 }
 
 type FangEngineAttributesStruct struct {
-	TestInstructionAttributeUUID     TypeAndStructs.TestInstructionAttributeUUIDType
-	TestInstructionAttributeName     TypeAndStructs.TestInstructionAttributeNameType
-	TestInstructionAttributeTypeUUID TypeAndStructs.TestInstructionAttributeTypeUUIDType
-	FangEngineAttributeNameUUID      FangEngine_AttributeName_UUID_SC_Type
-	FangEngineAttributeNameName      FangEngine_AttributeName_Name_SC_Type
+	TestInstructionAttributeUUID     TypeAndStructs.TestInstructionAttributeUUIDType     `json:"TestInstructionAttributeUUID"`
+	TestInstructionAttributeName     TypeAndStructs.TestInstructionAttributeNameType     `json:"TestInstructionAttributeName"`
+	TestInstructionAttributeTypeUUID TypeAndStructs.TestInstructionAttributeTypeUUIDType `json:"TestInstructionAttributeTypeUUID"`
+	FangEngineAttributeNameUUID      FangEngine_AttributeName_UUID_SC_Type               `json:"FangEngineAttributeNameUUID"`
+	FangEngineAttributeNameName      FangEngine_AttributeName_Name_SC_Type               `json:"FangEngineAttributeNameName"`
 }
 
 // Classes, Methods and their Parameters in FangEngine for _SC

@@ -13,7 +13,7 @@ import (
 	"time"
 )
 
-var TestInstructions_SC TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct
+var TestInstructionsAndTestInstructionContainers_SC TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct
 
 func generateTestInstructions_SC() {
 
@@ -30,7 +30,7 @@ func generateTestInstructions_SC() {
 	testInstructionContainer_SpecialSerialBaseContainer_1_0.Initiate_TestInstructionContainer_SC_Serial()
 
 	// Build structure for all TestInstructions & TestInstructionContainers to be sent over gRPC to Fenix Backend
-	TestInstructions_SC = TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct{
+	TestInstructionsAndTestInstructionContainers_SC = TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct{
 
 		// TestInstructions
 		TestInstructions: TestInstructionAndTestInstuctionContainerTypes.TestInstructionsStruct{
@@ -45,7 +45,7 @@ func generateTestInstructions_SC() {
 							TestInstructionInstance:             generalSetupTearDown_TestCaseSetUp_1_1.TestInstruction_SC_TestCaseSetUp,
 							TestInstructionInstanceMajorVersion: generalSetupTearDown_TestCaseSetUp_1_1.TestInstruction_SC_TestCaseSetUp.TestInstruction.MajorVersionNumber,
 							TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseSetUp_1_1.TestInstruction_SC_TestCaseSetUp.TestInstruction.MajorVersionNumber,
-							TestInstructionInstanceHash:         "HASH",
+							TestInstructionInstanceVersionHash:  "HASH",
 						},
 
 						// Version 'generalSetupTearDown_TestCaseSetUp_1.0'
@@ -55,7 +55,7 @@ func generateTestInstructions_SC() {
 							TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseSetUp_1_0.TestInstruction_SC_TestCaseSetUp.TestInstruction.MajorVersionNumber,
 							Deprecated:                          generalSetupTearDown_TestCaseSetUp_1_0.TestInstruction_SC_TestCaseSetUp.TestInstruction.Deprecated,
 							Enabled:                             generalSetupTearDown_TestCaseSetUp_1_0.TestInstruction_SC_TestCaseSetUp.TestInstruction.Enabled,
-							TestInstructionInstanceHash:         "HASH",
+							TestInstructionInstanceVersionHash:  "HASH",
 						},
 					},
 					TestInstructionVersionsHash: "HASH",
@@ -72,7 +72,7 @@ func generateTestInstructions_SC() {
 							TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseTearDown_1_0.TestInstruction_SC_TestCaseTearDown.TestInstruction.MajorVersionNumber,
 							Deprecated:                          generalSetupTearDown_TestCaseTearDown_1_0.TestInstruction_SC_TestCaseTearDown.TestInstruction.Deprecated,
 							Enabled:                             generalSetupTearDown_TestCaseTearDown_1_0.TestInstruction_SC_TestCaseTearDown.TestInstruction.Enabled,
-							TestInstructionInstanceHash:         "HASH",
+							TestInstructionInstanceVersionHash:  "HASH",
 						},
 					},
 					TestInstructionVersionsHash: "HASH",

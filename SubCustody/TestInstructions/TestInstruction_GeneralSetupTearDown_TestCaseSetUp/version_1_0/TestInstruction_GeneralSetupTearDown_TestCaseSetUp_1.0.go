@@ -8,7 +8,6 @@ import (
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TestInstructionAndTestInstuctionContainerTypes"
 	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TypeAndStructs"
-	"github.com/jlambert68/FenixTestInstructionsDataAdmin/shared_code"
 )
 
 const (
@@ -23,11 +22,12 @@ const (
 	TestInstructionMouseOverText_SC_TestCaseSetUp      string                                 = "Initiate _SCs execution engine to be able to execute TestInstructionsMap"
 	TestInstructionDeprecated_SC_TestCaseSetUp         bool                                   = false
 	TestInstructionEnabled_SC_TestCaseSetUp            bool                                   = true
-	TestInstructionMajorVersionNumber_SC_TestCaseSetUp int                                    = 0
-	TestInstructionMinorVersionNumber_SC_TestCaseSetUp int                                    = 1
+	TestInstructionMajorVersionNumber_SC_TestCaseSetUp int                                    = 1
+	TestInstructionMinorVersionNumber_SC_TestCaseSetUp int                                    = 0
 	TestInstructionColor_SC_TestCaseSetUp              TypeAndStructs.ColorType               = "#00ff00AA"
 	TCRuleDeletion_SC_TestCaseSetUp                    TypeAndStructs.TCRuleDeletionType      = "TCRuleDeletion020"
 	TCRuleSwap_SC_TestCaseSetUp                        TypeAndStructs.TCRuleSwapType          = "TCRuleSwap020"
+	TestInstructionCreatingTimeStamp                   TypeAndStructs.UpdatedTimeStampType    = "2023-11-27 13:00:00"
 
 	// *** DropZone *** 'TestCaseSetUp_ExpectsToSucceed'
 	TestInstructionDropZoneUUID_SC_TestCaseSetUp_ExpectsToSucceed        TypeAndStructs.DropZoneUUIDType = "60a2492f-9b0d-4a0e-a374-5845ffabf37d"
@@ -49,35 +49,32 @@ const (
 
 // TestInstruction_SC_TestCaseSetUp
 // Variable that holds the data for the TestInstruction
-var TestInstruction_SC_TestCaseSetUp TestInstructionAndTestInstuctionContainerTypes.TestInstructionStruct
+var TestInstruction_SC_TestCaseSetUp *TestInstructionAndTestInstuctionContainerTypes.TestInstructionStruct
 
 // Initate_TestInstruction_SC_TestCaseSetUp
 // Function that creates all data for the TestInstruction
-func Initate_TestInstruction_SC_TestCaseSetUp() TestInstructionAndTestInstuctionContainerTypes.TestInstructionStruct {
+func Initate_TestInstruction_SC_TestCaseSetUp() *TestInstructionAndTestInstuctionContainerTypes.TestInstructionStruct {
 
 	// Initiate variable to store all TestInstruction data
-	TestInstruction_SC_TestCaseSetUp = TestInstructionAndTestInstuctionContainerTypes.TestInstructionStruct{
-		TestInstruction:                    TypeAndStructs.TestInstructionStruct{},
-		BasicTestInstructionInformation:    TypeAndStructs.BasicTestInstructionInformationStruct{},
+	TestInstruction_SC_TestCaseSetUp = &TestInstructionAndTestInstuctionContainerTypes.TestInstructionStruct{
+		TestInstruction:                    &TypeAndStructs.TestInstructionStruct{},
+		BasicTestInstructionInformation:    &TypeAndStructs.BasicTestInstructionInformationStruct{},
 		ImmatureTestInstructionInformation: nil,
 		TestInstructionAttribute:           nil,
 		ImmatureElementModel:               nil,
-		FangEngineClassesMethodsAttributes: FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct{
+		FangEngineClassesMethodsAttributes: &FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct{
 			TestInstructionOriginalUUID: TestInstructionUUID_SC_TestCaseSetUp,
 			TestInstructionName:         TestInstructionName_SC_TestCaseSetUp,
 			FangEngineClassNameUUID:     FangEngineClassesAndMethods.FangEngine_ClassName_UUID_SC_GeneralSetupTearDown,
 			FangEngineClassNameNAME:     FangEngineClassesAndMethods.FangEngine_ClassName_Name_SC_GeneralSetupTearDown,
 			FangEngineMethodNameUUID:    FangEngineClassesAndMethods.FangEngine_MethodName_UUID_SC_GeneralSetupTearDown_Setup,
 			FangEngineMethodNameNAME:    FangEngineClassesAndMethods.FangEngine_MethodName_Name_SC_GeneralSetupTearDown_Setup,
-			Attributes:                  make(map[TypeAndStructs.TestInstructionAttributeUUIDType]FangEngineClassesAndMethods.FangEngineAttributesStruct),
+			Attributes:                  make(map[TypeAndStructs.TestInstructionAttributeUUIDType]*FangEngineClassesAndMethods.FangEngineAttributesStruct),
 		},
 	}
 
-	// Create TimeStamp to be used on all places where creation/update timestamp is needed
-	updatedTimeStamp := TypeAndStructs.UpdatedTimeStampType(shared_code.GenerateDatetimeTimeStampForDB())
-
 	// TestInstruction - TestCaseSetUp
-	TestInstruction_SC_TestCaseSetUp.TestInstruction = TypeAndStructs.TestInstructionStruct{
+	TestInstruction_SC_TestCaseSetUp.TestInstruction = &TypeAndStructs.TestInstructionStruct{
 		DomainUUID:                   Domains.DomainUUID_SC,
 		DomainName:                   Domains.DomainName_SC,
 		TestInstructionUUID:          TestInstructionUUID_SC_TestCaseSetUp,
@@ -90,11 +87,11 @@ func Initate_TestInstruction_SC_TestCaseSetUp() TestInstructionAndTestInstuction
 		Enabled:                      TestInstructionEnabled_SC_TestCaseSetUp,
 		MajorVersionNumber:           TestInstructionMajorVersionNumber_SC_TestCaseSetUp,
 		MinorVersionNumber:           TestInstructionMinorVersionNumber_SC_TestCaseSetUp,
-		UpdatedTimeStamp:             updatedTimeStamp,
+		UpdatedTimeStamp:             TestInstructionCreatingTimeStamp,
 	}
 
 	// BasicTestInstructionInformation - TestCaseSetUp
-	TestInstruction_SC_TestCaseSetUp.BasicTestInstructionInformation = TypeAndStructs.BasicTestInstructionInformationStruct{
+	TestInstruction_SC_TestCaseSetUp.BasicTestInstructionInformation = &TypeAndStructs.BasicTestInstructionInformationStruct{
 		DomainUUID:                   Domains.DomainUUID_SC,
 		DomainName:                   Domains.DomainName_SC,
 		TestInstructionUUID:          TestInstructionUUID_SC_TestCaseSetUp,
@@ -104,7 +101,7 @@ func Initate_TestInstruction_SC_TestCaseSetUp() TestInstructionAndTestInstuction
 		Deprecated:                   TestInstructionDeprecated_SC_TestCaseSetUp,
 		MajorVersionNumber:           TestInstructionMajorVersionNumber_SC_TestCaseSetUp,
 		MinorVersionNumber:           TestInstructionMinorVersionNumber_SC_TestCaseSetUp,
-		UpdatedTimeStamp:             updatedTimeStamp,
+		UpdatedTimeStamp:             TestInstructionCreatingTimeStamp,
 		TestInstructionColor:         TestInstructionColor_SC_TestCaseSetUp,
 		TCRuleDeletion:               TCRuleDeletion_SC_TestCaseSetUp,
 		TCRuleSwap:                   TCRuleSwap_SC_TestCaseSetUp,
@@ -115,8 +112,8 @@ func Initate_TestInstruction_SC_TestCaseSetUp() TestInstructionAndTestInstuction
 
 	// DropZone 'TestCaseSetUp_ExpectsToSucceed'
 	// ImmatureTestInstructionInformation  - DropZone: TestCaseSetUp_ExpectsToSucceed, Attr: ExpectedToBePassed
-	var TestInstruction_SC_TestCaseSetUp_ExpectedToBePassed TypeAndStructs.ImmatureTestInstructionInformationStruct
-	TestInstruction_SC_TestCaseSetUp_ExpectedToBePassed = TypeAndStructs.ImmatureTestInstructionInformationStruct{
+	var TestInstruction_SC_TestCaseSetUp_ExpectedToBePassed *TypeAndStructs.ImmatureTestInstructionInformationStruct
+	TestInstruction_SC_TestCaseSetUp_ExpectedToBePassed = &TypeAndStructs.ImmatureTestInstructionInformationStruct{
 		DomainUUID:                   Domains.DomainUUID_SC,
 		DomainName:                   Domains.DomainName_SC,
 		TestInstructionUUID:          TestInstructionUUID_SC_TestCaseSetUp,
@@ -139,8 +136,8 @@ func Initate_TestInstruction_SC_TestCaseSetUp() TestInstructionAndTestInstuction
 		TestInstruction_SC_TestCaseSetUp_ExpectedToBePassed)
 
 	// TestInstruction Attribute - 'ExpectedToBePassed'
-	var TestInstructionAttribute_SC_TestCaseSetUp_ExpectedToBePassed TypeAndStructs.TestInstructionAttributeStruct
-	TestInstructionAttribute_SC_TestCaseSetUp_ExpectedToBePassed = TypeAndStructs.TestInstructionAttributeStruct{
+	var TestInstructionAttribute_SC_TestCaseSetUp_ExpectedToBePassed *TypeAndStructs.TestInstructionAttributeStruct
+	TestInstructionAttribute_SC_TestCaseSetUp_ExpectedToBePassed = &TypeAndStructs.TestInstructionAttributeStruct{
 		DomainUUID:                                    Domains.DomainUUID_SC,
 		DomainName:                                    Domains.DomainName_SC,
 		TestInstructionUUID:                           TestInstructionUUID_SC_TestCaseSetUp,
@@ -166,8 +163,8 @@ func Initate_TestInstruction_SC_TestCaseSetUp() TestInstructionAndTestInstuction
 		TestInstructionAttribute_SC_TestCaseSetUp_ExpectedToBePassed)
 
 	// Add FangEngine relation for Attribute - 'ExpectedToBePassed'
-	var tempFangEngineAttributeExpectedToBePassed FangEngineClassesAndMethods.FangEngineAttributesStruct
-	tempFangEngineAttributeExpectedToBePassed = FangEngineClassesAndMethods.FangEngineAttributesStruct{
+	var tempFangEngineAttributeExpectedToBePassed *FangEngineClassesAndMethods.FangEngineAttributesStruct
+	tempFangEngineAttributeExpectedToBePassed = &FangEngineClassesAndMethods.FangEngineAttributesStruct{
 		TestInstructionAttributeUUID:     TestInstructionAttributeUUID_SC_TestCaseSetUp_ExpectedToBePassed,
 		TestInstructionAttributeName:     TestInstructionAttributeName_SC_TestCaseSetUp_ExpectedToBePassed,
 		TestInstructionAttributeTypeUUID: TestInstructions.TestInstructionAttributeTypeUUID_SC_ExpectedToPass,
@@ -177,8 +174,8 @@ func Initate_TestInstruction_SC_TestCaseSetUp() TestInstructionAndTestInstuction
 	TestInstruction_SC_TestCaseSetUp.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_SC_TestCaseSetUp_ExpectedToBePassed] = tempFangEngineAttributeExpectedToBePassed
 
 	// ImmatureElementModel - TestCaseSetUp
-	var TestInstructionImmatureElementModel_SC_TestCaseSetUp TypeAndStructs.ImmatureElementModelMessageStruct
-	TestInstructionImmatureElementModel_SC_TestCaseSetUp = TypeAndStructs.ImmatureElementModelMessageStruct{
+	var TestInstructionImmatureElementModel_SC_TestCaseSetUp *TypeAndStructs.ImmatureElementModelMessageStruct
+	TestInstructionImmatureElementModel_SC_TestCaseSetUp = &TypeAndStructs.ImmatureElementModelMessageStruct{
 		DomainUUID:               Domains.DomainUUID_SC,
 		DomainName:               Domains.DomainName_SC,
 		ImmatureElementUUID:      TestInstructionUUID_SC_TestCaseSetUp,

@@ -24,14 +24,14 @@ func generateTestInstructionsAndTestInstructionsContainers_SC() {
 			TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseSetUp_0_1.TestInstruction_SC_TestCaseSetUp.TestInstruction.MajorVersionNumber,
 			Deprecated    :               generalSetupTearDown_TestCaseSetUp_0_1.TestInstruction_SC_TestCaseSetUp.TestInstruction.Deprecated,
 			Enabled        :              generalSetupTearDown_TestCaseSetUp_0_1.TestInstruction_SC_TestCaseSetUp.TestInstruction.Enabled,
-			TestInstructionInstanceHash:         "HASH",
+			TestInstructionInstanceVersionHash:         "HASH",
 		}
 		var TestInstructionInstanceVersion_0_2 TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct
 		TestInstructionInstanceVersion_0_2 = TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
 			TestInstructionInstance:             generalSetupTearDown_TestCaseSetUp_0_2.TestInstruction_SC_TestCaseSetUp,
 			TestInstructionInstanceMajorVersion: generalSetupTearDown_TestCaseSetUp_0_2.TestInstruction_SC_TestCaseSetUp.TestInstruction.MajorVersionNumber,
 			TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseSetUp_0_2.TestInstruction_SC_TestCaseSetUp.TestInstruction.MajorVersionNumber,
-			TestInstructionInstanceHash:         "HASH",
+			TestInstructionInstanceVersionHash:         "HASH",
 		}
 
 		var TestInstructionInstanceVersions []TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct
@@ -44,7 +44,7 @@ func generateTestInstructionsAndTestInstructionsContainers_SC() {
 				TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseSetUp_0_1.TestInstruction_SC_TestCaseSetUp.TestInstruction.MajorVersionNumber,
 				Deprecated    :               generalSetupTearDown_TestCaseSetUp_0_1.TestInstruction_SC_TestCaseSetUp.TestInstruction.Deprecated,
 				Enabled        :              generalSetupTearDown_TestCaseSetUp_0_1.TestInstruction_SC_TestCaseSetUp.TestInstruction.Enabled,
-				TestInstructionInstanceHash:         "HASH",
+				TestInstructionInstanceVersionHash:         "HASH",
 			},
 
 			//generalSetupTearDown_TestCaseSetUp_0_2
@@ -52,7 +52,7 @@ func generateTestInstructionsAndTestInstructionsContainers_SC() {
 				TestInstructionInstance:             generalSetupTearDown_TestCaseSetUp_0_2.TestInstruction_SC_TestCaseSetUp,
 				TestInstructionInstanceMajorVersion: generalSetupTearDown_TestCaseSetUp_0_2.TestInstruction_SC_TestCaseSetUp.TestInstruction.MajorVersionNumber,
 				TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseSetUp_0_2.TestInstruction_SC_TestCaseSetUp.TestInstruction.MajorVersionNumber,
-				TestInstructionInstanceHash:         "HASH",
+				TestInstructionInstanceVersionHash:         "HASH",
 			},
 		}
 
@@ -67,7 +67,7 @@ func generateTestInstructionsAndTestInstructionsContainers_SC() {
 					TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseSetUp_0_1.TestInstruction_SC_TestCaseSetUp.TestInstruction.MajorVersionNumber,
 					Deprecated    :               generalSetupTearDown_TestCaseSetUp_0_1.TestInstruction_SC_TestCaseSetUp.TestInstruction.Deprecated,
 					Enabled        :              generalSetupTearDown_TestCaseSetUp_0_1.TestInstruction_SC_TestCaseSetUp.TestInstruction.Enabled,
-					TestInstructionInstanceHash:         "HASH",
+					TestInstructionInstanceVersionHash:         "HASH",
 				},
 
 				//generalSetupTearDown_TestCaseSetUp_0_2
@@ -75,7 +75,7 @@ func generateTestInstructionsAndTestInstructionsContainers_SC() {
 					TestInstructionInstance:             generalSetupTearDown_TestCaseSetUp_0_2.TestInstruction_SC_TestCaseSetUp,
 					TestInstructionInstanceMajorVersion: generalSetupTearDown_TestCaseSetUp_0_2.TestInstruction_SC_TestCaseSetUp.TestInstruction.MajorVersionNumber,
 					TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseSetUp_0_2.TestInstruction_SC_TestCaseSetUp.TestInstruction.MajorVersionNumber,
-					TestInstructionInstanceHash:         "HASH",
+					TestInstructionInstanceVersionHash:         "HASH",
 				},
 			},
 			TestInstructionVersionsHash: "HASH",
@@ -92,7 +92,7 @@ func generateTestInstructionsAndTestInstructionsContainers_SC() {
 					TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown.TestInstruction.MajorVersionNumber,
 					Deprecated    :               generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown.TestInstruction.Deprecated,
 					Enabled        :              generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown.TestInstruction.Enabled,
-					TestInstructionInstanceHash:         "HASH",
+					TestInstructionInstanceVersionHash:         "HASH",
 				},
 			},
 			TestInstructionVersionsHash: "HASH",
@@ -128,7 +128,7 @@ func generateTestInstructionsAndTestInstructionsContainers_SC() {
 							TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseSetUp_0_1.TestInstruction_SC_TestCaseSetUp.TestInstruction.MajorVersionNumber,
 							Deprecated:                          generalSetupTearDown_TestCaseSetUp_0_1.TestInstruction_SC_TestCaseSetUp.TestInstruction.Deprecated,
 							Enabled:                             generalSetupTearDown_TestCaseSetUp_0_1.TestInstruction_SC_TestCaseSetUp.TestInstruction.Enabled,
-							TestInstructionInstanceHash:         "HASH",
+							TestInstructionInstanceVersionHash:  "HASH",
 						},
 
 						//Version 'generalSetupTearDown_TestCaseSetUp_0_2'
@@ -136,7 +136,7 @@ func generateTestInstructionsAndTestInstructionsContainers_SC() {
 							TestInstructionInstance:             generalSetupTearDown_TestCaseSetUp_0_2.TestInstruction_SC_TestCaseSetUp,
 							TestInstructionInstanceMajorVersion: generalSetupTearDown_TestCaseSetUp_0_2.TestInstruction_SC_TestCaseSetUp.TestInstruction.MajorVersionNumber,
 							TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseSetUp_0_2.TestInstruction_SC_TestCaseSetUp.TestInstruction.MajorVersionNumber,
-							TestInstructionInstanceHash:         "HASH",
+							TestInstructionInstanceVersionHash:  "HASH",
 						},
 					},
 					TestInstructionVersionsHash: "HASH",
@@ -153,7 +153,7 @@ func generateTestInstructionsAndTestInstructionsContainers_SC() {
 							TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown.TestInstruction.MajorVersionNumber,
 							Deprecated:                          generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown.TestInstruction.Deprecated,
 							Enabled:                             generalSetupTearDown_TestCaseTearDown_0_1.TestInstruction_SC_TestCaseTearDown.TestInstruction.Enabled,
-							TestInstructionInstanceHash:         "HASH",
+							TestInstructionInstanceVersionHash:  "HASH",
 						},
 					},
 					TestInstructionVersionsHash: "HASH",
