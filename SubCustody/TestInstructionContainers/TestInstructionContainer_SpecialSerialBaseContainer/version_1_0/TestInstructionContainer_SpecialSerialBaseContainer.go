@@ -3,7 +3,6 @@ package version_1_0
 import (
 	"FenixTestInstructionsDataAdmin/Bonds"
 	"FenixTestInstructionsDataAdmin/Domains"
-	"FenixTestInstructionsDataAdmin/SubCustody"
 	"FenixTestInstructionsDataAdmin/SubCustody/TestInstructionContainers"
 	fixedValuesOverVersions "FenixTestInstructionsDataAdmin/SubCustody/TestInstructionContainers/TestInstructionContainer_SpecialSerialBaseContainer"
 	"FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseSetUp"
@@ -41,7 +40,7 @@ var TestInstructionContainer_SC_SpecialSerialBase *TestInstructionAndTestInstuct
 
 // Initiate_TestInstructionContainer_SC_Serial
 // Function that creates all data for the TestInstructionContainer
-func Initiate_TestInstructionContainer_SC_Serial() {
+func Initiate_TestInstructionContainer_SC_Serial(testInstructionsAndTestInstructionContainersMessage *TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct) {
 
 	// TestInstructionContainer - 'SpecialSerialBaseContainer'
 	TestInstructionContainer_SC_SpecialSerialBase.TestInstructionContainer = &TypeAndStructs.TestInstructionContainerStruct{
@@ -111,13 +110,13 @@ func Initiate_TestInstructionContainer_SC_Serial() {
 		ImmatureElementUUID: Bonds.Bond_B11fx_BondUuid,
 		ImmatureElementName: TypeAndStructs.OriginalElementNameType(Bonds.Bond_B11fx_BondName),
 		PreviousElementUUID: Bonds.Bond_B11fx_BondUuid,
-		NextElementUUID: SubCustody.TestInstructionsAndTestInstructionContainers_SC.TestInstructions.
+		NextElementUUID: testInstructionsAndTestInstructionContainersMessage.TestInstructions.
 			TestInstructionsMap[TestInstruction_GeneralSetupTearDown_TestCaseSetUp.TestInstructionUUID_SC_TestCaseSetUp].
 			TestInstructionVersions[0].TestInstructionInstance.TestInstruction.TestInstructionUUID,
 		FirstChildElementUUID:    Bonds.Bond_B11fx_BondUuid,
 		ParentElementUUID:        TestInstructionContainerUUID_SC_SpecialSerialBaseContainer,
 		TestCaseModelElementType: TestCaseModelElementTypes.TestCaseModelElementType_B11fx,
-		OriginalElementUUID: SubCustody.TestInstructionsAndTestInstructionContainers_SC.TestInstructions.
+		OriginalElementUUID: testInstructionsAndTestInstructionContainersMessage.TestInstructions.
 			TestInstructionsMap[TestInstruction_GeneralSetupTearDown_TestCaseSetUp.TestInstructionUUID_SC_TestCaseSetUp].
 			TestInstructionVersions[0].TestInstructionInstance.TestInstruction.TestInstructionUUID,
 		TopImmatureElementUUID: TestInstructionContainerUUID_SC_SpecialSerialBaseContainer,
@@ -130,20 +129,20 @@ func Initiate_TestInstructionContainer_SC_Serial() {
 	ImmatureElementModel_TI_1 = &TypeAndStructs.ImmatureElementModelMessageStruct{
 		DomainUUID: Domains.DomainUUID_SC,
 		DomainName: Domains.DomainName_SC,
-		ImmatureElementUUID: SubCustody.TestInstructionsAndTestInstructionContainers_SC.TestInstructions.
+		ImmatureElementUUID: testInstructionsAndTestInstructionContainersMessage.TestInstructions.
 			TestInstructionsMap[TestInstruction_GeneralSetupTearDown_TestCaseSetUp.TestInstructionUUID_SC_TestCaseSetUp].
 			TestInstructionVersions[0].TestInstructionInstance.TestInstruction.TestInstructionUUID,
-		ImmatureElementName: TypeAndStructs.OriginalElementNameType(SubCustody.TestInstructionsAndTestInstructionContainers_SC.TestInstructions.
+		ImmatureElementName: TypeAndStructs.OriginalElementNameType(testInstructionsAndTestInstructionContainersMessage.TestInstructions.
 			TestInstructionsMap[TestInstruction_GeneralSetupTearDown_TestCaseSetUp.TestInstructionUUID_SC_TestCaseSetUp].
 			TestInstructionVersions[0].TestInstructionInstance.TestInstruction.TestInstructionName),
 		PreviousElementUUID: Bonds.Bond_B11fx_BondUuid,
 		NextElementUUID:     Bonds.Bond_B10_BondUuid,
-		FirstChildElementUUID: SubCustody.TestInstructionsAndTestInstructionContainers_SC.TestInstructions.
+		FirstChildElementUUID: testInstructionsAndTestInstructionContainersMessage.TestInstructions.
 			TestInstructionsMap[TestInstruction_GeneralSetupTearDown_TestCaseSetUp.TestInstructionUUID_SC_TestCaseSetUp].
 			TestInstructionVersions[0].TestInstructionInstance.TestInstruction.TestInstructionUUID,
 		ParentElementUUID:        TestInstructionContainerUUID_SC_SpecialSerialBaseContainer,
 		TestCaseModelElementType: TestCaseModelElementTypes.TestCaseModelElementType_TI,
-		OriginalElementUUID: SubCustody.TestInstructionsAndTestInstructionContainers_SC.TestInstructions.
+		OriginalElementUUID: testInstructionsAndTestInstructionContainersMessage.TestInstructions.
 			TestInstructionsMap[TestInstruction_GeneralSetupTearDown_TestCaseSetUp.TestInstructionUUID_SC_TestCaseSetUp].
 			TestInstructionVersions[0].TestInstructionInstance.TestInstruction.TestInstructionUUID,
 		TopImmatureElementUUID: TestInstructionContainerUUID_SC_SpecialSerialBaseContainer,
@@ -158,10 +157,10 @@ func Initiate_TestInstructionContainer_SC_Serial() {
 		DomainName:          Domains.DomainName_Fenix,
 		ImmatureElementUUID: Bonds.Bond_B12_BondUuid,
 		ImmatureElementName: TypeAndStructs.OriginalElementNameType(Bonds.Bond_B0_BondName),
-		PreviousElementUUID: SubCustody.TestInstructionsAndTestInstructionContainers_SC.TestInstructions.
+		PreviousElementUUID: testInstructionsAndTestInstructionContainersMessage.TestInstructions.
 			TestInstructionsMap[TestInstruction_GeneralSetupTearDown_TestCaseSetUp.TestInstructionUUID_SC_TestCaseSetUp].
 			TestInstructionVersions[0].TestInstructionInstance.TestInstruction.TestInstructionUUID,
-		NextElementUUID: SubCustody.TestInstructionsAndTestInstructionContainers_SC.TestInstructions.
+		NextElementUUID: testInstructionsAndTestInstructionContainersMessage.TestInstructions.
 			TestInstructionsMap[TestInstruction_GeneralSetupTearDown_TestCaseTearDown.TestInstructionUUID_SC_TestCaseTearDown].
 			TestInstructionVersions[0].TestInstructionInstance.TestInstruction.TestInstructionUUID,
 		FirstChildElementUUID:    Bonds.Bond_B12_BondUuid,
@@ -178,20 +177,20 @@ func Initiate_TestInstructionContainer_SC_Serial() {
 	ImmatureElementModel_TI_2 = &TypeAndStructs.ImmatureElementModelMessageStruct{
 		DomainUUID: Domains.DomainUUID_SC,
 		DomainName: Domains.DomainName_SC,
-		ImmatureElementUUID: SubCustody.TestInstructionsAndTestInstructionContainers_SC.TestInstructions.
+		ImmatureElementUUID: testInstructionsAndTestInstructionContainersMessage.TestInstructions.
 			TestInstructionsMap[TestInstruction_GeneralSetupTearDown_TestCaseTearDown.TestInstructionUUID_SC_TestCaseTearDown].
 			TestInstructionVersions[0].TestInstructionInstance.TestInstruction.TestInstructionUUID,
-		ImmatureElementName: TypeAndStructs.OriginalElementNameType(SubCustody.TestInstructionsAndTestInstructionContainers_SC.TestInstructions.
+		ImmatureElementName: TypeAndStructs.OriginalElementNameType(testInstructionsAndTestInstructionContainersMessage.TestInstructions.
 			TestInstructionsMap[TestInstruction_GeneralSetupTearDown_TestCaseTearDown.TestInstructionUUID_SC_TestCaseTearDown].
 			TestInstructionVersions[0].TestInstructionInstance.TestInstruction.TestInstructionName),
 		PreviousElementUUID: Bonds.Bond_B12_BondUuid,
 		NextElementUUID:     Bonds.Bond_B11lx_BondUuid,
-		FirstChildElementUUID: SubCustody.TestInstructionsAndTestInstructionContainers_SC.TestInstructions.
+		FirstChildElementUUID: testInstructionsAndTestInstructionContainersMessage.TestInstructions.
 			TestInstructionsMap[TestInstruction_GeneralSetupTearDown_TestCaseTearDown.TestInstructionUUID_SC_TestCaseTearDown].
 			TestInstructionVersions[0].TestInstructionInstance.TestInstruction.TestInstructionUUID,
 		ParentElementUUID:        TestInstructionContainerUUID_SC_SpecialSerialBaseContainer,
 		TestCaseModelElementType: TestCaseModelElementTypes.TestCaseModelElementType_TI,
-		OriginalElementUUID: SubCustody.TestInstructionsAndTestInstructionContainers_SC.TestInstructions.
+		OriginalElementUUID: testInstructionsAndTestInstructionContainersMessage.TestInstructions.
 			TestInstructionsMap[TestInstruction_GeneralSetupTearDown_TestCaseTearDown.TestInstructionUUID_SC_TestCaseTearDown].
 			TestInstructionVersions[0].TestInstructionInstance.TestInstruction.TestInstructionUUID,
 		TopImmatureElementUUID: TestInstructionContainerUUID_SC_SpecialSerialBaseContainer,
@@ -206,7 +205,7 @@ func Initiate_TestInstructionContainer_SC_Serial() {
 		DomainName:          Domains.DomainName_Fenix,
 		ImmatureElementUUID: Bonds.Bond_B11lx_BondUuid,
 		ImmatureElementName: TypeAndStructs.OriginalElementNameType(Bonds.Bond_B0_BondName),
-		PreviousElementUUID: SubCustody.TestInstructionsAndTestInstructionContainers_SC.TestInstructions.
+		PreviousElementUUID: testInstructionsAndTestInstructionContainersMessage.TestInstructions.
 			TestInstructionsMap[TestInstruction_GeneralSetupTearDown_TestCaseTearDown.TestInstructionUUID_SC_TestCaseTearDown].
 			TestInstructionVersions[0].TestInstructionInstance.TestInstruction.TestInstructionUUID,
 		NextElementUUID:          Bonds.Bond_B11lx_BondUuid,

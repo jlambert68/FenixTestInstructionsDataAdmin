@@ -1,11 +1,12 @@
 module FenixTestInstructionsDataAdmin
 
-go 1.18
+go 1.20
 
 require (
-	github.com/jlambert68/FenixGrpcApi v0.0.0-20221006075932-f3652b179e7c
+	//github.com/jlambert68/FenixGrpcApi v0.0.0-20221006075932-f3652b179e7c
 	github.com/jlambert68/FenixSyncShared v0.0.0-20231023123349-e891692cede8
 	google.golang.org/protobuf v1.31.0
+
 
 )
 

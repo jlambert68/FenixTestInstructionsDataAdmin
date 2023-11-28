@@ -28,7 +28,7 @@ func GenerateTestInstructions_SC() {
 
 	// Generate TestInstructionContainers
 	// testInstructionContainer_SpecialSerialBaseContainer
-	testInstructionContainer_SpecialSerialBaseContainer_1_0.Initiate_TestInstructionContainer_SC_Serial()
+	testInstructionContainer_SpecialSerialBaseContainer_1_0.Initiate_TestInstructionContainer_SC_Serial(TestInstructionsAndTestInstructionContainers_SC)
 
 	// Build structure for all TestInstructions & TestInstructionContainers to be sent over gRPC to Fenix Backend
 	TestInstructionsAndTestInstructionContainers_SC = &TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct{
