@@ -1,8 +1,8 @@
 package TestInstructions
 
 import (
-	"github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/FangEngineClassesAndMethods"
-	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TypeAndStructs"
+	"FenixTestInstructionsDataAdmin/SubCustody/FangEngineClassesAndMethods"
+	"FenixTestInstructionsDataAdmin/TypeAndStructs"
 )
 
 // TestInstruction_SC_TestCaseSetUpStruct

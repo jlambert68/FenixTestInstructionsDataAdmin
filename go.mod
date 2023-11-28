@@ -1,4 +1,4 @@
-module github.com/jlambert68/FenixTestInstructionsDataAdmin
+module FenixTestInstructionsDataAdmin
 
 go 1.18
 

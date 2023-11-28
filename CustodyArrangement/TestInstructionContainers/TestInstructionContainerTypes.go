@@ -1,6 +1,6 @@
 package TestInstructionContainers
 
-import "github.com/jlambert68/FenixTestInstructionsDataAdmin/TypeAndStructs"
+import "FenixTestInstructionsDataAdmin/TypeAndStructs"
 
 const (
 

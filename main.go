@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody"
+	"FenixTestInstructionsDataAdmin/SubCustody"
 )
 
 func main() {

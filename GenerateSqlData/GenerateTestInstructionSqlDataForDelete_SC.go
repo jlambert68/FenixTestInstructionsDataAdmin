@@ -1,11 +1,11 @@
 package GenerateSqlData
 
 import (
+	"FenixTestInstructionsDataAdmin/BaseSQL"
+	"FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseSetUp/version_1_0"
+	__12 "FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseTearDown/version_1_0"
+	"FenixTestInstructionsDataAdmin/shared_code"
 	"fmt"
-	"github.com/jlambert68/FenixTestInstructionsDataAdmin/BaseSQL"
-	"github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseSetUp/version_1_0"
-	__12 "github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseTearDown/version_1_0"
-	"github.com/jlambert68/FenixTestInstructionsDataAdmin/shared_code"
 )
 
 // Function that creates all data for the TestInstruction

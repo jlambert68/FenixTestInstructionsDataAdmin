@@ -1,6 +1,6 @@
 package TestCaseModelElementTypes
 
-import "github.com/jlambert68/FenixTestInstructionsDataAdmin/TypeAndStructs"
+import "FenixTestInstructionsDataAdmin/TypeAndStructs"
 
 const (
 	TestCaseModelElementType_B0          TypeAndStructs.TestCaseModelElementTypeType          = "B0_BOND"

@@ -1,8 +1,8 @@
 package TestInstructionAndTestInstuctionContainerTypes
 
 import (
-	"github.com/jlambert68/FenixTestInstructionsDataAdmin/FangEngineClassesAndMethods"
-	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TypeAndStructs"
+	"FenixTestInstructionsDataAdmin/FangEngineClassesAndMethods"
+	"FenixTestInstructionsDataAdmin/TypeAndStructs"
 	"time"
 )
 

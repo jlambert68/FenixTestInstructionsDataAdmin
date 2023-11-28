@@ -1,13 +1,13 @@
 package version_1_0
 
 import (
-	"github.com/jlambert68/FenixTestInstructionsDataAdmin/Domains"
-	"github.com/jlambert68/FenixTestInstructionsDataAdmin/FangEngineClassesAndMethods"
-	"github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions"
-	fixedValuesOverVersions "github.com/jlambert68/FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseTearDown"
-	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
-	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TestInstructionAndTestInstuctionContainerTypes"
-	"github.com/jlambert68/FenixTestInstructionsDataAdmin/TypeAndStructs"
+	"FenixTestInstructionsDataAdmin/Domains"
+	"FenixTestInstructionsDataAdmin/FangEngineClassesAndMethods"
+	"FenixTestInstructionsDataAdmin/SubCustody/TestInstructions"
+	fixedValuesOverVersions "FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseTearDown"
+	"FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
+	"FenixTestInstructionsDataAdmin/TestInstructionAndTestInstuctionContainerTypes"
+	"FenixTestInstructionsDataAdmin/TypeAndStructs"
 )
 
 const (
