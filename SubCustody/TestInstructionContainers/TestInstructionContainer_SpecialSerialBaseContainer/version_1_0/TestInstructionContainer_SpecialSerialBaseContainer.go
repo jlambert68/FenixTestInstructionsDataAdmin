@@ -42,6 +42,9 @@ var TestInstructionContainer_SC_SpecialSerialBase *TestInstructionAndTestInstuct
 // Function that creates all data for the TestInstructionContainer
 func Initiate_TestInstructionContainer_SC_Serial(testInstructionsAndTestInstructionContainersMessage *TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct) {
 
+	// Initiate the full structure
+	TestInstructionContainer_SC_SpecialSerialBase = &TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerStruct{}
+
 	// TestInstructionContainer - 'SpecialSerialBaseContainer'
 	TestInstructionContainer_SC_SpecialSerialBase.TestInstructionContainer = &TypeAndStructs.TestInstructionContainerStruct{
 		DomainUUID:                            Domains.DomainUUID_Fenix,

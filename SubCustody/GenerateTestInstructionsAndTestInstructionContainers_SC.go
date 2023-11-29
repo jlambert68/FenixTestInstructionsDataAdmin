@@ -26,10 +26,6 @@ func GenerateTestInstructions_SC() {
 	// GeneralSetupTearDown::TestCaseTearDown
 	generalSetupTearDown_TestCaseTearDown_1_0.Initate_TestInstruction_SC_TestCaseTearDown()
 
-	// Generate TestInstructionContainers
-	// testInstructionContainer_SpecialSerialBaseContainer
-	testInstructionContainer_SpecialSerialBaseContainer_1_0.Initiate_TestInstructionContainer_SC_Serial(TestInstructionsAndTestInstructionContainers_SC)
-
 	// Build structure for all TestInstructions & TestInstructionContainers to be sent over gRPC to Fenix Backend
 	TestInstructionsAndTestInstructionContainers_SC = &TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct{
 
@@ -45,7 +41,9 @@ func GenerateTestInstructions_SC() {
 						&TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
 							TestInstructionInstance:             generalSetupTearDown_TestCaseSetUp_1_1.TestInstruction_SC_TestCaseSetUp,
 							TestInstructionInstanceMajorVersion: generalSetupTearDown_TestCaseSetUp_1_1.TestInstruction_SC_TestCaseSetUp.TestInstruction.MajorVersionNumber,
-							TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseSetUp_1_1.TestInstruction_SC_TestCaseSetUp.TestInstruction.MajorVersionNumber,
+							TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseSetUp_1_1.TestInstruction_SC_TestCaseSetUp.TestInstruction.MinorVersionNumber,
+							Deprecated:                          generalSetupTearDown_TestCaseSetUp_1_1.TestInstruction_SC_TestCaseSetUp.TestInstruction.Deprecated,
+							Enabled:                             generalSetupTearDown_TestCaseSetUp_1_1.TestInstruction_SC_TestCaseSetUp.TestInstruction.Enabled,
 							TestInstructionInstanceVersionHash:  "HASH",
 						},
 
@@ -53,7 +51,7 @@ func GenerateTestInstructions_SC() {
 						&TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
 							TestInstructionInstance:             generalSetupTearDown_TestCaseSetUp_1_0.TestInstruction_SC_TestCaseSetUp,
 							TestInstructionInstanceMajorVersion: generalSetupTearDown_TestCaseSetUp_1_0.TestInstruction_SC_TestCaseSetUp.TestInstruction.MajorVersionNumber,
-							TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseSetUp_1_0.TestInstruction_SC_TestCaseSetUp.TestInstruction.MajorVersionNumber,
+							TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseSetUp_1_0.TestInstruction_SC_TestCaseSetUp.TestInstruction.MinorVersionNumber,
 							Deprecated:                          generalSetupTearDown_TestCaseSetUp_1_0.TestInstruction_SC_TestCaseSetUp.TestInstruction.Deprecated,
 							Enabled:                             generalSetupTearDown_TestCaseSetUp_1_0.TestInstruction_SC_TestCaseSetUp.TestInstruction.Enabled,
 							TestInstructionInstanceVersionHash:  "HASH",
@@ -70,7 +68,7 @@ func GenerateTestInstructions_SC() {
 						&TestInstructionAndTestInstuctionContainerTypes.TestInstructionInstanceVersionStruct{
 							TestInstructionInstance:             generalSetupTearDown_TestCaseTearDown_1_0.TestInstruction_SC_TestCaseTearDown,
 							TestInstructionInstanceMajorVersion: generalSetupTearDown_TestCaseTearDown_1_0.TestInstruction_SC_TestCaseTearDown.TestInstruction.MajorVersionNumber,
-							TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseTearDown_1_0.TestInstruction_SC_TestCaseTearDown.TestInstruction.MajorVersionNumber,
+							TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseTearDown_1_0.TestInstruction_SC_TestCaseTearDown.TestInstruction.MinorVersionNumber,
 							Deprecated:                          generalSetupTearDown_TestCaseTearDown_1_0.TestInstruction_SC_TestCaseTearDown.TestInstruction.Deprecated,
 							Enabled:                             generalSetupTearDown_TestCaseTearDown_1_0.TestInstruction_SC_TestCaseTearDown.TestInstruction.Enabled,
 							TestInstructionInstanceVersionHash:  "HASH",
@@ -83,32 +81,41 @@ func GenerateTestInstructions_SC() {
 		},
 
 		// TestInstructionContainers
-		TestInstructionContainers: &TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainersStruct{
-			TestInstructionContainersMap: map[TypeAndStructs.OriginalElementUUIDType]*TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerInstanceVersionsStruct{
-
-				// 'SC_SpecialSerialBaseContainer'
-				testInstructionContainer_SpecialSerialBaseContainer.TestInstructionContainerUUID_SC_SpecialSerialBaseContainer: &TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerInstanceVersionsStruct{
-					TestInstructionContainerVersions: []*TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerInstanceVersionStruct{
-
-						//Version 'TestInstructionContainer_SpecialSerialBaseContainer_1.0'
-						&TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerInstanceVersionStruct{
-							TestInstructionContainerInstance:             testInstructionContainer_SpecialSerialBaseContainer_1_0.TestInstructionContainer_SC_SpecialSerialBase,
-							TestInstructionContainerInstanceMajorVersion: testInstructionContainer_SpecialSerialBaseContainer_1_0.TestInstructionContainer_SC_SpecialSerialBase.TestInstructionContainer.MajorVersionNumber,
-							TestInstructionContainerInstanceMinorVersion: testInstructionContainer_SpecialSerialBaseContainer_1_0.TestInstructionContainer_SC_SpecialSerialBase.TestInstructionContainer.MinorVersionNumber,
-							Deprecated:                           testInstructionContainer_SpecialSerialBaseContainer_1_0.TestInstructionContainer_SC_SpecialSerialBase.TestInstructionContainer.Enabled,
-							Enabled:                              testInstructionContainer_SpecialSerialBaseContainer_1_0.TestInstructionContainer_SC_SpecialSerialBase.TestInstructionContainer.Enabled,
-							TestInstructionContainerInstanceHash: "HASH",
-						},
-					},
-					TestInstructionContainerVersionsHash: "HASH",
-				},
-			},
-
-			TestInstructionContainersHash: "HASH",
-		},
+		TestInstructionContainers:                                &TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainersStruct{},
 		TestInstructionsAndTestInstructionsContainersMessageHash: "HASH",
 		MessageCreationTimeStamp:                                 time.Now(),
 	}
+
+	// Generate TestInstructionContainers
+	// testInstructionContainer_SpecialSerialBaseContainer
+	testInstructionContainer_SpecialSerialBaseContainer_1_0.Initiate_TestInstructionContainer_SC_Serial(TestInstructionsAndTestInstructionContainers_SC)
+
+	// TestInstructionContainers
+	var testInstructionContainers *TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainersStruct
+	testInstructionContainers = &TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainersStruct{
+		TestInstructionContainersMap: map[TypeAndStructs.OriginalElementUUIDType]*TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerInstanceVersionsStruct{
+
+			// 'SC_SpecialSerialBaseContainer'
+			testInstructionContainer_SpecialSerialBaseContainer.TestInstructionContainerUUID_SC_SpecialSerialBaseContainer: &TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerInstanceVersionsStruct{
+				TestInstructionContainerVersions: []*TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerInstanceVersionStruct{
+
+					//Version 'TestInstructionContainer_SpecialSerialBaseContainer_1.0'
+					&TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainerInstanceVersionStruct{
+						TestInstructionContainerInstance:             testInstructionContainer_SpecialSerialBaseContainer_1_0.TestInstructionContainer_SC_SpecialSerialBase,
+						TestInstructionContainerInstanceMajorVersion: testInstructionContainer_SpecialSerialBaseContainer_1_0.TestInstructionContainer_SC_SpecialSerialBase.TestInstructionContainer.MajorVersionNumber,
+						TestInstructionContainerInstanceMinorVersion: testInstructionContainer_SpecialSerialBaseContainer_1_0.TestInstructionContainer_SC_SpecialSerialBase.TestInstructionContainer.MinorVersionNumber,
+						Deprecated:                           testInstructionContainer_SpecialSerialBaseContainer_1_0.TestInstructionContainer_SC_SpecialSerialBase.TestInstructionContainer.Deprecated,
+						Enabled:                              testInstructionContainer_SpecialSerialBaseContainer_1_0.TestInstructionContainer_SC_SpecialSerialBase.TestInstructionContainer.Enabled,
+						TestInstructionContainerInstanceHash: "HASH",
+					},
+				},
+				TestInstructionContainerVersionsHash: "HASH",
+			},
+		},
+
+		TestInstructionContainersHash: "HASH",
+	}
+	TestInstructionsAndTestInstructionContainers_SC.TestInstructionContainers = testInstructionContainers
 
 	// TODO Calculate alla Hashes for TestInstructions-block and TestInstructionContainersMap-block
 	shared_code.CalculateTestInstructionAndTestInstructionContainerMessageHashes(TestInstructionsAndTestInstructionContainers_SC)

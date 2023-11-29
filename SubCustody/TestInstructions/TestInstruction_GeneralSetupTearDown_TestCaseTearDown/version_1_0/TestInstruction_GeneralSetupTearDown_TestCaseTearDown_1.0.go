@@ -22,8 +22,8 @@ const (
 	TestInstructionMouseOverText_SC_TestCaseTearDown      string                                 = "TearDown the _SCs execution engine after executing TestInstructionsMap"
 	TestInstructionDeprecated_SC_TestCaseTearDown         bool                                   = false
 	TestInstructionEnabled_SC_TestCaseTearDown            bool                                   = true
-	TestInstructionMajorVersionNumber_SC_TestCaseTearDown int                                    = 0
-	TestInstructionMinorVersionNumber_SC_TestCaseTearDown int                                    = 1
+	TestInstructionMajorVersionNumber_SC_TestCaseTearDown int                                    = 1
+	TestInstructionMinorVersionNumber_SC_TestCaseTearDown int                                    = 0
 	TestInstructionColor_SC_TestCaseTearDown              TypeAndStructs.ColorType               = "#00ff00AA"
 	TCRuleDeletion_SC_TestCaseTearDown                    TypeAndStructs.TCRuleDeletionType      = "TCRuleDeletion020"
 	TCRuleSwap_SC_TestCaseTearDown                        TypeAndStructs.TCRuleSwapType          = "TCRuleSwap020"

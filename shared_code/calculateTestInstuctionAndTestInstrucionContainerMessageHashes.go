@@ -104,6 +104,21 @@ func CalculateTestInstructionAndTestInstructionContainerMessageHashes(testInstru
 	// Add hash for all TestInstructionContainerInstances
 	testInstructionsAndTestInstructionContainersMessage.TestInstructionContainers.TestInstructionContainersHash = hashedValue
 
+	// Create Message Hash
+	var messageHash []string
+
+	// Append TestInstructions-hash
+	messageHash = append(messageHash, testInstructionsAndTestInstructionContainersMessage.TestInstructions.TestInstructionsHash)
+
+	// Append TestInstructionContainers-hash
+	messageHash = append(messageHash, testInstructionsAndTestInstructionContainersMessage.TestInstructionContainers.TestInstructionContainersHash)
+
+	// Calculate message Hash
+	hashedValue = fenixSyncShared.HashValues(messageHash, false)
+
+	// Add message hash to message
+	testInstructionsAndTestInstructionContainersMessage.TestInstructionsAndTestInstructionsContainersMessageHash = hashedValue
+
 	return err
 
 }

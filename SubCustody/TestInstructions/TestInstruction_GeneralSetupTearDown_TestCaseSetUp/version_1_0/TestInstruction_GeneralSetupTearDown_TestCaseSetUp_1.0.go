@@ -20,7 +20,7 @@ const (
 	TestInstructionTypeName_SC_TestCaseSetUp                                                  = TestInstructions.TestInstructionTypeName_SC_GeneralSetUpTearDown
 	TestInstructionDescription_SC_TestCaseSetUp        string                                 = "Initiate _SCs execution engine to be able to execute TestInstructionsMap"
 	TestInstructionMouseOverText_SC_TestCaseSetUp      string                                 = "Initiate _SCs execution engine to be able to execute TestInstructionsMap"
-	TestInstructionDeprecated_SC_TestCaseSetUp         bool                                   = false
+	TestInstructionDeprecated_SC_TestCaseSetUp         bool                                   = true
 	TestInstructionEnabled_SC_TestCaseSetUp            bool                                   = true
 	TestInstructionMajorVersionNumber_SC_TestCaseSetUp int                                    = 1
 	TestInstructionMinorVersionNumber_SC_TestCaseSetUp int                                    = 0
