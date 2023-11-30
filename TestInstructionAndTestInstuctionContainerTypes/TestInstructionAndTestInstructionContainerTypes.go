@@ -80,11 +80,23 @@ type TestInstructionContainersStruct struct {
 	TestInstructionContainersHash string                                                                                     `json:"xxxTestInstructionContainersHashxxx"` // SHA256 of all TestInstructionContainersMap.TestInstructionContainerVersionsHash using Fenix standard way of hashing values together
 }
 
+// AllowedUserStruct
+// Struct containing all users that are allowed to access the connectors published TestInstructions and TestInstructionContainers
+type AllowedUserStruct struct {
+	UserId               string `json:"UserId"`
+	GCPAuthenticatedUser string `json:"GCPAuthenticatedUser"`
+	UserEmail            string `json:"UserEmail"`
+	UserFirstName        string `json:"UserFirstName"`
+	UserLastName         string `json:"UserLastName"`
+}
+
 // TestInstructionsAndTestInstructionsContainersStruct
 // Struct for all TestInstructions and TestInstructionsContainers from a "System" that should be sent to Fenix backen
 type TestInstructionsAndTestInstructionsContainersStruct struct {
-	TestInstructions                                         *TestInstructionsStruct          `json:"TestInstructions"`
-	TestInstructionContainers                                *TestInstructionContainersStruct `json:"TestInstructionContainers"`
-	MessageCreationTimeStamp                                 time.Time                        `json:"MessageCreationTimeStamp"`
-	TestInstructionsAndTestInstructionsContainersMessageHash string                           `json:"testinstructionsandtestinstructionscontainersmessagehash"` // SHA256(TestInstructionsHash concat TestInstructionContainersHash)
+	TestInstructions                                                *TestInstructionsStruct          `json:"TestInstructions"`
+	TestInstructionContainers                                       *TestInstructionContainersStruct `json:"TestInstructionContainers"`
+	AllowedUsers                                                    []*AllowedUserStruct             `json:"AllowedUsers"`
+	MessageCreationTimeStamp                                        time.Time                        `json:"MessageCreationTimeStamp"`
+	TestInstructionsAndTestInstructionsContainersMessageHash        string                           `json:"TestInstructionsAndTestInstructionsContainersMessageHash"` // SHA256(TestInstructionsHash concat TestInstructionContainersHash)
+	ForceNewBaseLineForTestInstructionsAndTestInstructionContainers bool                             `json:"ForceNewBaseLineForTestInstructionsAndTestInstructionContainers"`
 }

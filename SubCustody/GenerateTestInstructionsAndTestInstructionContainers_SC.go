@@ -81,9 +81,19 @@ func GenerateTestInstructions_SC() {
 		},
 
 		// TestInstructionContainers
-		TestInstructionContainers:                                &TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainersStruct{},
-		TestInstructionsAndTestInstructionsContainersMessageHash: "HASH",
-		MessageCreationTimeStamp:                                 time.Now(),
+		TestInstructionContainers: &TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainersStruct{},
+		AllowedUsers: []*TestInstructionAndTestInstuctionContainerTypes.AllowedUserStruct{
+			&TestInstructionAndTestInstuctionContainerTypes.AllowedUserStruct{
+				UserId:               "CORP1s41797",
+				GCPAuthenticatedUser: "jonas.lambert@seb.se",
+				UserEmail:            "jonas.lambert@seb.se",
+				UserFirstName:        "Jonas",
+				UserLastName:         "Lambert",
+			},
+		},
+		TestInstructionsAndTestInstructionsContainersMessageHash:        "HASH",
+		MessageCreationTimeStamp:                                        time.Now(),
+		ForceNewBaseLineForTestInstructionsAndTestInstructionContainers: false,
 	}
 
 	// Generate TestInstructionContainers
