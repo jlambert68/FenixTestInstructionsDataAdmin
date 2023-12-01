@@ -18,6 +18,9 @@ var TestInstructionsAndTestInstructionContainers_SC *TestInstructionAndTestInstu
 
 func GenerateTestInstructions_SC() {
 
+	// Load Allowed users from json-file
+	shared_code.ImportAllowedUsersFromFile()
+
 	// Generate TestInstructions
 	// GeneralSetupTearDown::TestCaseSetUp
 	generalSetupTearDown_TestCaseSetUp_1_1.Initate_TestInstruction_SC_TestCaseSetUp()
@@ -82,15 +85,7 @@ func GenerateTestInstructions_SC() {
 
 		// TestInstructionContainers
 		TestInstructionContainers: &TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainersStruct{},
-		AllowedUsers: []*TestInstructionAndTestInstuctionContainerTypes.AllowedUserStruct{
-			&TestInstructionAndTestInstuctionContainerTypes.AllowedUserStruct{
-				UserId:               "CORP1s41797",
-				GCPAuthenticatedUser: "jonas.lambert@seb.se",
-				UserEmail:            "jonas.lambert@seb.se",
-				UserFirstName:        "Jonas",
-				UserLastName:         "Lambert",
-			},
-		},
+		AllowedUsers:              shared_code.AllowedUsersLoadFronJsonFile.AllowedUsers,
 		TestInstructionsAndTestInstructionsContainersMessageHash:        "HASH",
 		MessageCreationTimeStamp:                                        time.Now(),
 		ForceNewBaseLineForTestInstructionsAndTestInstructionContainers: false,

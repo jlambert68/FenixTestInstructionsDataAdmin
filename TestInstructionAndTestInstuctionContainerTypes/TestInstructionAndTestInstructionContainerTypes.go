@@ -77,13 +77,19 @@ type TestInstructionContainerInstanceVersionsStruct struct {
 // Struct for all TestInstructionContainersMap, to be sent over gPRC to Fenix backend
 type TestInstructionContainersStruct struct {
 	TestInstructionContainersMap  map[TypeAndStructs.OriginalElementUUIDType]*TestInstructionContainerInstanceVersionsStruct `json:"TestInstructionContainersMap"`
-	TestInstructionContainersHash string                                                                                     `json:"xxxTestInstructionContainersHashxxx"` // SHA256 of all TestInstructionContainersMap.TestInstructionContainerVersionsHash using Fenix standard way of hashing values together
+	TestInstructionContainersHash string                                                                                     `json:"TestInstructionContainersHash"` // SHA256 of all TestInstructionContainersMap.TestInstructionContainerVersionsHash using Fenix standard way of hashing values together
+}
+
+// AllowedUsersStruct
+// Struct containing all users that are allowed to access the connectors published TestInstructions and TestInstructionContainers
+type AllowedUsersStruct struct {
+	AllowedUsers []*AllowedUserStruct `json:"AllowedUsers"`
 }
 
 // AllowedUserStruct
-// Struct containing all users that are allowed to access the connectors published TestInstructions and TestInstructionContainers
+// Struct containing a user that are allowed to access the connectors published TestInstructions and TestInstructionContainers
 type AllowedUserStruct struct {
-	UserId               string `json:"UserId"`
+	UserIdOnComputer     string `json:"UserIdOnComputer"`
 	GCPAuthenticatedUser string `json:"GCPAuthenticatedUser"`
 	UserEmail            string `json:"UserEmail"`
 	UserFirstName        string `json:"UserFirstName"`
