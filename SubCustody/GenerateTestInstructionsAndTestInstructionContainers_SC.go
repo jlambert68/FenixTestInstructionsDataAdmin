@@ -85,9 +85,9 @@ func GenerateTestInstructions_SC() {
 
 		// TestInstructionContainers
 		TestInstructionContainers: &TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainersStruct{},
-		AllowedUsers:              shared_code.AllowedUsersLoadFronJsonFile.AllowedUsers,
-		TestInstructionsAndTestInstructionsContainersMessageHash:        "HASH",
-		MessageCreationTimeStamp:                                        time.Now(),
+		AllowedUsers:              shared_code.AllowedUsersLoadFronJsonFile,
+		TestInstructionsAndTestInstructionsContainersAndUsersMessageHash: "HASH",
+		MessageCreationTimeStamp: time.Now(),
 		ForceNewBaseLineForTestInstructionsAndTestInstructionContainers: false,
 	}
 
@@ -123,6 +123,6 @@ func GenerateTestInstructions_SC() {
 	TestInstructionsAndTestInstructionContainers_SC.TestInstructionContainers = testInstructionContainers
 
 	// TODO Calculate alla Hashes for TestInstructions-block and TestInstructionContainersMap-block
-	shared_code.CalculateTestInstructionAndTestInstructionContainerMessageHashes(TestInstructionsAndTestInstructionContainers_SC)
+	shared_code.CalculateTestInstructionAndTestInstructionContaineAndUsersrMessageHashes(TestInstructionsAndTestInstructionContainers_SC)
 
 }

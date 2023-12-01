@@ -7,7 +7,7 @@ import (
 	"github.com/jlambert68/FenixSyncShared"
 )
 
-func CalculateTestInstructionAndTestInstructionContainerMessageHashes(testInstructionsAndTestInstructionContainersMessage *TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct) (err error) {
+func CalculateTestInstructionAndTestInstructionContaineAndUsersrMessageHashes(testInstructionsAndTestInstructionContainersMessage *TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct) (err error) {
 
 	// Used for converting before hashing and when hashing
 	var byteSlice []byte
@@ -104,7 +104,34 @@ func CalculateTestInstructionAndTestInstructionContainerMessageHashes(testInstru
 	// Add hash for all TestInstructionContainerInstances
 	testInstructionsAndTestInstructionContainersMessage.TestInstructionContainers.TestInstructionContainersHash = hashedValue
 
-	// Create Message Hash
+	// Loop Allowed Users
+	var allowedUsersHashesSlice []string
+	for _, tempAllowedUsers := range testInstructionsAndTestInstructionContainersMessage.AllowedUsers.AllowedUsers {
+
+		// Convert AllowedUser to byte-string and then Hash message
+		byteSlice, err = json.Marshal(&tempAllowedUsers)
+		if err != nil {
+			fmt.Printf("Error: %s", err)
+			return err
+		}
+
+		// Convert byteSlice into string
+		byteSliceAsString = string(byteSlice)
+
+		// Hash the json-string
+		hashedValue = fenixSyncShared.HashSingleValue(byteSliceAsString)
+
+		// Add the hash to slice of Hashes for Allowed Users
+		allowedUsersHashesSlice = append(allowedUsersHashesSlice, hashedValue)
+	}
+
+	// Hash all values in slice with hashes for Allowed Users
+	hashedValue = fenixSyncShared.HashValues(allowedUsersHashesSlice, false)
+
+	// Add hash for all AllowedUsers-message
+	testInstructionsAndTestInstructionContainersMessage.AllowedUsers.AllowedUsersHash = hashedValue
+
+	// Create the full Message Hash
 	var messageHash []string
 
 	// Append TestInstructions-hash
@@ -113,11 +140,14 @@ func CalculateTestInstructionAndTestInstructionContainerMessageHashes(testInstru
 	// Append TestInstructionContainers-hash
 	messageHash = append(messageHash, testInstructionsAndTestInstructionContainersMessage.TestInstructionContainers.TestInstructionContainersHash)
 
+	// Append AllowedUsers-hash
+	messageHash = append(messageHash, testInstructionsAndTestInstructionContainersMessage.AllowedUsers.AllowedUsersHash)
+
 	// Calculate message Hash
 	hashedValue = fenixSyncShared.HashValues(messageHash, false)
 
 	// Add message hash to message
-	testInstructionsAndTestInstructionContainersMessage.TestInstructionsAndTestInstructionsContainersMessageHash = hashedValue
+	testInstructionsAndTestInstructionContainersMessage.TestInstructionsAndTestInstructionsContainersAndUsersMessageHash = hashedValue
 
 	return err
 
