@@ -11,3 +11,5 @@ var (
 
 // AllowedUsers, which are loaded from a json-file
 var AllowedUsersLoadFronJsonFile *TestInstructionAndTestInstuctionContainerTypes.AllowedUsersStruct
+
+var highestExecutionWorkerProtoFileVersion int32 = -1

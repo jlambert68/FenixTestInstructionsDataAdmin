@@ -186,6 +186,7 @@ type ImmatureTestInstructionContainerMessageStruct struct {
 	AttributeValueAsString       AttributeValueAsStringType       `json:"AttributeValueAsString"`
 	AttributeValueUUID           AttributeValueUUIDType           `json:"AttributeValueUuid"`
 	FirstImmatureElementUUID     OriginalElementUUIDType          `json:"FirstImmatureElementUuid"`
+	AttributeActionCommand       AttributeActionCommandType       `json:"AttributeActionCommand"`
 }
 
 type ImmatureElementModelsMessage []ImmatureElementModelMessageStruct

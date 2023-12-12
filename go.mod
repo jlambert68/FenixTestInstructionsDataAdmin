@@ -3,7 +3,7 @@ module FenixTestInstructionsDataAdmin
 go 1.20
 
 require (
-	//github.com/jlambert68/FenixGrpcApi v0.0.0-20221006075932-f3652b179e7c
+	github.com/jlambert68/FenixGrpcApi v0.0.0-20231211151850-8b38fdb85885
 	github.com/jlambert68/FenixSyncShared v0.0.0-20231023123349-e891692cede8
 	google.golang.org/protobuf v1.31.0
 
@@ -11,6 +11,7 @@ require (
 
 require (
 	github.com/go-gota/gota v0.12.0 // indirect
+	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/jackc/chunkreader/v2 v2.0.1 // indirect
 	github.com/jackc/pgconn v1.11.0 // indirect
 	github.com/jackc/pgio v1.0.0 // indirect
@@ -27,4 +28,6 @@ require (
 	golang.org/x/sys v0.13.0 // indirect
 	golang.org/x/text v0.13.0 // indirect
 	gonum.org/v1/gonum v0.9.1 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20231009173412-8bfb1ae86b6c // indirect
+	google.golang.org/grpc v1.58.3 // indirect
 )

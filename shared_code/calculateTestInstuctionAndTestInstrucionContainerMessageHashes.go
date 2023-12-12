@@ -7,7 +7,7 @@ import (
 	"github.com/jlambert68/FenixSyncShared"
 )
 
-func CalculateTestInstructionAndTestInstructionContaineAndUsersrMessageHashes(testInstructionsAndTestInstructionContainersMessage *TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct) (err error) {
+func CalculateTestInstructionAndTestInstructionContainerAndUsersMessageHashes(testInstructionsAndTestInstructionContainersMessage *TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct) (err error) {
 
 	// Used for converting before hashing and when hashing
 	var byteSlice []byte

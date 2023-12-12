@@ -1,6 +1,7 @@
 package shared_code
 
 import (
+	fenixExecutionWorkerGrpcApi "github.com/jlambert68/FenixGrpcApi/FenixExecutionServer/fenixExecutionWorkerGrpcApi/go_grpc_api"
 	"google.golang.org/protobuf/types/known/timestamppb"
 	"time"
 )
@@ -36,4 +37,28 @@ func ConvertGrpcTimeStampToStringForDB(grpcTimeStamp *timestamppb.Timestamp) (gr
 	grpcTimeStampAsTimeStampAsString = grpcTimeStampAsTimeStamp.Format(timeStampLayOut)
 
 	return grpcTimeStampAsTimeStampAsString
+}
+
+// GetHighestExecutionWorkerProtoFileVersion
+// Get the highest GetHighestExecutionWorkerProtoFileVersion for Execution Worker
+func GetHighestExecutionWorkerProtoFileVersion() int32 {
+
+	// Check if there already is a 'highestExecutionWorkerProtoFileVersion' saved, if so use that one
+	if highestExecutionWorkerProtoFileVersion != -1 {
+		return highestExecutionWorkerProtoFileVersion
+	}
+
+	// Find the highest value for proto-file version
+	var maxValue int32
+	maxValue = 0
+
+	for _, v := range fenixExecutionWorkerGrpcApi.CurrentFenixExecutionWorkerProtoFileVersionEnum_value {
+		if v > maxValue {
+			maxValue = v
+		}
+	}
+
+	highestExecutionWorkerProtoFileVersion = maxValue
+
+	return highestExecutionWorkerProtoFileVersion
 }

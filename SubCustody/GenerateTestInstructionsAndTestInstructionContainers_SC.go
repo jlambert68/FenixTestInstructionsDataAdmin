@@ -123,6 +123,6 @@ func GenerateTestInstructions_SC() {
 	TestInstructionsAndTestInstructionContainers_SC.TestInstructionContainers = testInstructionContainers
 
 	// TODO Calculate alla Hashes for TestInstructions-block and TestInstructionContainersMap-block
-	shared_code.CalculateTestInstructionAndTestInstructionContaineAndUsersrMessageHashes(TestInstructionsAndTestInstructionContainers_SC)
+	shared_code.CalculateTestInstructionAndTestInstructionContainerAndUsersMessageHashes(TestInstructionsAndTestInstructionContainers_SC)
 
 }
