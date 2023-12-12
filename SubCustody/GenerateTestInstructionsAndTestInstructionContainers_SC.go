@@ -1,6 +1,7 @@
 package SubCustody
 
 import (
+	"FenixTestInstructionsDataAdmin/Domains"
 	testInstructionContainer_SpecialSerialBaseContainer "FenixTestInstructionsDataAdmin/SubCustody/TestInstructionContainers/TestInstructionContainer_SpecialSerialBaseContainer"
 	testInstructionContainer_SpecialSerialBaseContainer_1_0 "FenixTestInstructionsDataAdmin/SubCustody/TestInstructionContainers/TestInstructionContainer_SpecialSerialBaseContainer/version_1_0"
 	generalSetupTearDown_TestCaseSetUp "FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseSetUp"
@@ -11,6 +12,9 @@ import (
 	"FenixTestInstructionsDataAdmin/TestInstructionAndTestInstuctionContainerTypes"
 	"FenixTestInstructionsDataAdmin/TypeAndStructs"
 	"FenixTestInstructionsDataAdmin/shared_code"
+	"fmt"
+	fenixExecutionWorkerGrpcApi "github.com/jlambert68/FenixGrpcApi/FenixExecutionServer/fenixExecutionWorkerGrpcApi/go_grpc_api"
+	"os"
 	"time"
 )
 
@@ -122,7 +126,28 @@ func GenerateTestInstructions_SC() {
 	}
 	TestInstructionsAndTestInstructionContainers_SC.TestInstructionContainers = testInstructionContainers
 
-	// TODO Calculate alla Hashes for TestInstructions-block and TestInstructionContainersMap-block
-	shared_code.CalculateTestInstructionAndTestInstructionContainerAndUsersMessageHashes(TestInstructionsAndTestInstructionContainers_SC)
+	// Calculate hashes that is included in the Supported TestInstructions, TestInstructionContainers and Allowed Users message
+	var err error
+	err = shared_code.CalculateTestInstructionAndTestInstructionContainerAndUsersMessageHashes(TestInstructionsAndTestInstructionContainers_SC)
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
+
+	// Convert supported TestInstructions, TestInstructionContainers and Allowed Users message into a gRPC-version of the message
+	var supportedTestInstructionsAndTestInstructionContainersAndAllowedUsersMessage *fenixExecutionWorkerGrpcApi.SupportedTestInstructionsAndTestInstructionContainersAndAllowedUsersMessage
+	supportedTestInstructionsAndTestInstructionContainersAndAllowedUsersMessage, err = shared_code.
+		GenerateTestInstructionAndTestInstructionContainerAndUserGrpcMessage(string(Domains.DomainUUID_SC), TestInstructionsAndTestInstructionContainers_SC)
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
+
+	// Send supported TestInstructions, TestInstructionContainers and Allowed Users message to Worker
+	err = shared_code.SendGrpcTestInstructionsAndTestInstructionContainersAndAllowedUsersMessageToWorker(supportedTestInstructionsAndTestInstructionContainersAndAllowedUsersMessage)
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
 
 }

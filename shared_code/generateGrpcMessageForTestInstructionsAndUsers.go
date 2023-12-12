@@ -15,6 +15,8 @@ func GenerateTestInstructionAndTestInstructionContainerAndUserGrpcMessage(
 	// Convert TestInstructions into gRPC-message-version
 	// Generate gRPC-version of TestInstructionInstanceVersionsMessageMap
 	var testInstructionInstanceVersionsMessageMap map[string]*fenixExecutionWorkerGrpcApi.TestInstructionInstanceVersionsMessage
+	testInstructionInstanceVersionsMessageMap = make(map[string]*fenixExecutionWorkerGrpcApi.TestInstructionInstanceVersionsMessage)
+
 	// Loop all TestInstructionInstanceVersionsMessages
 	for originalElementUUIDType, testInstructionInstanceVersionsMessage := range testInstructionsAndTestInstructionContainersMessage.TestInstructions.TestInstructionsMap {
 
@@ -174,6 +176,8 @@ func GenerateTestInstructionAndTestInstructionContainerAndUserGrpcMessage(
 	// Convert TestInstructionContainers into gRPC-message-version
 	// Generate gRPC-version of TestInstructionContainerInstanceVersionsMessageMap
 	var testInstructionContainerInstanceVersionsMessageMap map[string]*fenixExecutionWorkerGrpcApi.TestInstructionContainerInstanceVersionsMessage
+	testInstructionContainerInstanceVersionsMessageMap = make(map[string]*fenixExecutionWorkerGrpcApi.TestInstructionContainerInstanceVersionsMessage)
+
 	// Loop all TestInstructionContainerInstanceVersionsMessages
 	for originalElementUUIDType, testInstructionContainerInstanceVersionsMessage := range testInstructionsAndTestInstructionContainersMessage.TestInstructionContainers.TestInstructionContainersMap {
 

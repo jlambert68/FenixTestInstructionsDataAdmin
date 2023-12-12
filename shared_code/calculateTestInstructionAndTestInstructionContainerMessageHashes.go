@@ -7,6 +7,8 @@ import (
 	"github.com/jlambert68/FenixSyncShared"
 )
 
+// CalculateTestInstructionAndTestInstructionContainerAndUsersMessageHashes
+// Calculates the hashes for the test instructions, test instruction containers, and allowed users in the given message
 func CalculateTestInstructionAndTestInstructionContainerAndUsersMessageHashes(testInstructionsAndTestInstructionContainersMessage *TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct) (err error) {
 
 	// Used for converting before hashing and when hashing
