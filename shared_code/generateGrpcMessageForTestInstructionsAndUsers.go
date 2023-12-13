@@ -257,6 +257,7 @@ func GenerateTestInstructionAndTestInstructionContainerAndUserGrpcMessage(
 						MajorVersionNumber:                    int32(testInstructionContainerInstanceVersionMessage.TestInstructionContainerInstance.TestInstructionContainer.MajorVersionNumber),
 						MinorVersionNumber:                    int32(testInstructionContainerInstanceVersionMessage.TestInstructionContainerInstance.TestInstructionContainer.MinorVersionNumber),
 						UpdatedTimeStamp:                      string(testInstructionContainerInstanceVersionMessage.TestInstructionContainerInstance.TestInstructionContainer.UpdatedTimeStamp),
+						ChildrenIsParallelProcessed:           testInstructionContainerInstanceVersionMessage.TestInstructionContainerInstance.TestInstructionContainer.ChildrenIsParallelProcessed,
 					},
 					BasicTestInstructionContainerInformation: &fenixExecutionWorkerGrpcApi.BasicTestInstructionContainerInformationMessage{
 						DomainUUID:                            string(testInstructionContainerInstanceVersionMessage.TestInstructionContainerInstance.BasicTestInstructionContainerInformation.DomainUUID),
@@ -275,6 +276,7 @@ func GenerateTestInstructionAndTestInstructionContainerAndUserGrpcMessage(
 						TestInstructionContainerDescription:   string(testInstructionContainerInstanceVersionMessage.TestInstructionContainerInstance.BasicTestInstructionContainerInformation.TestInstructionContainerDescription),
 						TestInstructionContainerMouseOverText: string(testInstructionContainerInstanceVersionMessage.TestInstructionContainerInstance.BasicTestInstructionContainerInformation.TestInstructionContainerMouseOverText),
 						Enabled:                               testInstructionContainerInstanceVersionMessage.TestInstructionContainerInstance.BasicTestInstructionContainerInformation.Enabled,
+						TestInstructionContainerExecutionType: string(testInstructionContainerInstanceVersionMessage.TestInstructionContainerInstance.BasicTestInstructionContainerInformation.TestInstructionContainerExecutionType),
 					},
 					ImmatureTestInstructionContainerInformations: immatureTestInstructionContainerInformationMessagesGrpc,
 					ImmatureElementModel:                         immatureElementModelMessagesGrpc,
