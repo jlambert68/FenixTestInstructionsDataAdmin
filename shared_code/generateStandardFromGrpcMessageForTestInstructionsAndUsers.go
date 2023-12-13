@@ -150,7 +150,7 @@ func GenerateStandardFromGrpcMessageForTestInstructionsAndUsers(
 					ImmatureTestInstructionInformation: immatureTestInstructionInformationMessages,
 					TestInstructionAttribute:           testInstructionAttributes,
 					ImmatureElementModel:               immatureElementModelMessages,
-					FangEngineClassesMethodsAttributes: nil, // Not needed here
+					LocalExecutionMethods:              nil, // Not needed here
 				},
 				TestInstructionInstanceMajorVersion: int(testInstructionInstanceVersionMessageGrpc.GetTestInstructionInstanceMajorVersion()),
 				TestInstructionInstanceMinorVersion: int(testInstructionInstanceVersionMessageGrpc.GetTestInstructionInstanceMinorVersion()),

@@ -1,7 +1,7 @@
 package TestInstructionAndTestInstuctionContainerTypes
 
 import (
-	"FenixTestInstructionsDataAdmin/FangEngineClassesAndMethods"
+	"FenixTestInstructionsDataAdmin/LocalExecutionMethods"
 	"FenixTestInstructionsDataAdmin/TypeAndStructs"
 	"time"
 )
@@ -11,12 +11,13 @@ import (
 // TestInstructionStruct
 // Struct for holding all data for a TestInstruction
 type TestInstructionStruct struct {
-	TestInstruction                    *TypeAndStructs.TestInstructionStruct                                 `json:"TestInstruction"`
-	BasicTestInstructionInformation    *TypeAndStructs.BasicTestInstructionInformationStruct                 `json:"BasicTestInstructionInformation"`
-	ImmatureTestInstructionInformation []*TypeAndStructs.ImmatureTestInstructionInformationStruct            `json:"ImmatureTestInstructionInformation"`
-	TestInstructionAttribute           []*TypeAndStructs.TestInstructionAttributeStruct                      `json:"TestInstructionAttribute"`
-	ImmatureElementModel               []*TypeAndStructs.ImmatureElementModelMessageStruct                   `json:"ImmatureElementModel"`
-	FangEngineClassesMethodsAttributes *FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct `json:"FangEngineClassesMethodsAttributes"`
+	TestInstruction                    *TypeAndStructs.TestInstructionStruct                      `json:"TestInstruction"`
+	BasicTestInstructionInformation    *TypeAndStructs.BasicTestInstructionInformationStruct      `json:"BasicTestInstructionInformation"`
+	ImmatureTestInstructionInformation []*TypeAndStructs.ImmatureTestInstructionInformationStruct `json:"ImmatureTestInstructionInformation"`
+	TestInstructionAttribute           []*TypeAndStructs.TestInstructionAttributeStruct           `json:"TestInstructionAttribute"`
+	ImmatureElementModel               []*TypeAndStructs.ImmatureElementModelMessageStruct        `json:"ImmatureElementModel"`
+	//FangEngineClassesMethodsAttributes *FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct `json:"FangEngineClassesMethodsAttributes"`
+	LocalExecutionMethods *LocalExecutionMethods.MethodsForLocalExecutionsStruct `json:"LocalExecutionMethods"`
 }
 
 // TestInstructionContainerStruct

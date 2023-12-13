@@ -2,7 +2,8 @@ package version_1_0
 
 import (
 	"FenixTestInstructionsDataAdmin/Domains"
-	"FenixTestInstructionsDataAdmin/FangEngineClassesAndMethods"
+	"FenixTestInstructionsDataAdmin/LocalExecutionMethods"
+	"FenixTestInstructionsDataAdmin/LocalExecutionMethods/FangEngineClassesAndMethods"
 	"FenixTestInstructionsDataAdmin/SubCustody/TestInstructions"
 	fixedValuesOverVersions "FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseTearDown"
 	"FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
@@ -64,14 +65,18 @@ func Initate_TestInstruction_SC_TestCaseTearDown() *TestInstructionAndTestInstuc
 		ImmatureTestInstructionInformation: nil,
 		TestInstructionAttribute:           nil,
 		ImmatureElementModel:               nil,
-		FangEngineClassesMethodsAttributes: &FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct{
-			TestInstructionOriginalUUID: TestInstructionUUID_SC_TestCaseTearDown,
-			TestInstructionName:         TestInstructionName_SC_TestCaseTearDown,
-			FangEngineClassNameUUID:     FangEngineClassesAndMethods.FangEngine_ClassName_UUID_SC_GeneralSetupTearDown,
-			FangEngineClassNameNAME:     FangEngineClassesAndMethods.FangEngine_ClassName_Name_SC_GeneralSetupTearDown,
-			FangEngineMethodNameUUID:    FangEngineClassesAndMethods.FangEngine_MethodName_UUID_SC_GeneralSetupTearDown_TearDown,
-			FangEngineMethodNameNAME:    FangEngineClassesAndMethods.FangEngine_MethodName_Name_SC_GeneralSetupTearDown_TearDown,
-			Attributes:                  make(map[TypeAndStructs.TestInstructionAttributeUUIDType]*FangEngineClassesAndMethods.FangEngineAttributesStruct),
+
+		// Local Execution Methods are specified here
+		LocalExecutionMethods: &LocalExecutionMethods.MethodsForLocalExecutionsStruct{
+			FangEngineClassesMethodsAttributes: &FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct{
+				TestInstructionOriginalUUID: TestInstructionUUID_SC_TestCaseTearDown,
+				TestInstructionName:         TestInstructionName_SC_TestCaseTearDown,
+				FangEngineClassNameUUID:     FangEngineClassesAndMethods.FangEngine_ClassName_UUID_SC_GeneralSetupTearDown,
+				FangEngineClassNameNAME:     FangEngineClassesAndMethods.FangEngine_ClassName_Name_SC_GeneralSetupTearDown,
+				FangEngineMethodNameUUID:    FangEngineClassesAndMethods.FangEngine_MethodName_UUID_SC_GeneralSetupTearDown_TearDown,
+				FangEngineMethodNameNAME:    FangEngineClassesAndMethods.FangEngine_MethodName_Name_SC_GeneralSetupTearDown_TearDown,
+				Attributes:                  make(map[TypeAndStructs.TestInstructionAttributeUUIDType]*FangEngineClassesAndMethods.FangEngineAttributesStruct),
+			},
 		},
 	}
 
@@ -173,7 +178,7 @@ func Initate_TestInstruction_SC_TestCaseTearDown() *TestInstructionAndTestInstuc
 		FangEngineAttributeNameUUID:      FangEngineClassesAndMethods.FangEngine_ClassName_UUID_SC_GeneralAttribute_ExpectedToBePassed,
 		FangEngineAttributeNameName:      FangEngineClassesAndMethods.FangEngine_ClassName_Name_SC_GeneralAttribute_ExpectedToBePassed,
 	}
-	TestInstruction_SC_TestCaseTearDown.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_SC_TestCaseTearDown_ExpectedToBePassed] = tempFangEngineAttributeExpectedToBePassed
+	TestInstruction_SC_TestCaseTearDown.LocalExecutionMethods.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_SC_TestCaseTearDown_ExpectedToBePassed] = tempFangEngineAttributeExpectedToBePassed
 
 	// ImmatureElementModel - TestCaseTearDown
 	var TestInstructionImmatureElementModel_SC_TestCaseTearDown *TypeAndStructs.ImmatureElementModelMessageStruct

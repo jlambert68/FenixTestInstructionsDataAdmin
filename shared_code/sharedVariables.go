@@ -13,3 +13,5 @@ var (
 var AllowedUsersLoadFronJsonFile *TestInstructionAndTestInstuctionContainerTypes.AllowedUsersStruct
 
 var highestExecutionWorkerProtoFileVersion int32 = -1
+
+const InitialValueBeforeHashed = "HASH"

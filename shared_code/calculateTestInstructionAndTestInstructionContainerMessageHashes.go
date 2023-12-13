@@ -1,6 +1,7 @@
 package shared_code
 
 import (
+	"FenixTestInstructionsDataAdmin/LocalExecutionMethods"
 	"FenixTestInstructionsDataAdmin/TestInstructionAndTestInstuctionContainerTypes"
 	"encoding/json"
 	"fmt"
@@ -24,12 +25,24 @@ func CalculateTestInstructionAndTestInstructionContainerAndUsersMessageHashes(te
 		var testInstructionVersionsHashesSlice []string
 		for _, tempTestInstructionVersion := range tempTestInstruction.TestInstructionVersions {
 
+			// Temporary set Local Execution Methods to nil due to they shouldn't be included in Hash
+			var tempLocalExecutionMethods *LocalExecutionMethods.MethodsForLocalExecutionsStruct
+
+			// Save reference copy LocalExecution-object
+			tempLocalExecutionMethods = tempTestInstructionVersion.TestInstructionInstance.LocalExecutionMethods
+
+			// Clear LocalExecution before hashing
+			tempTestInstructionVersion.TestInstructionInstance.LocalExecutionMethods = nil
+
 			// Convert TestInstructionVersion to byte-string and then Hash message
 			byteSlice, err = json.Marshal(&tempTestInstructionVersion)
 			if err != nil {
 				fmt.Printf("Error: %s", err)
 				return err
 			}
+
+			// Repopulate LocalExecution-object after Hashing
+			tempTestInstructionVersion.TestInstructionInstance.LocalExecutionMethods = tempLocalExecutionMethods
 
 			// Convert byteSlice into string
 			byteSliceAsString = string(byteSlice)

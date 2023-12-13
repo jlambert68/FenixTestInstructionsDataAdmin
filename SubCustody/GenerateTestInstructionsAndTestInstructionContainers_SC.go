@@ -51,7 +51,7 @@ func GenerateTestInstructions_SC() {
 							TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseSetUp_1_1.TestInstruction_SC_TestCaseSetUp.TestInstruction.MinorVersionNumber,
 							Deprecated:                          generalSetupTearDown_TestCaseSetUp_1_1.TestInstruction_SC_TestCaseSetUp.TestInstruction.Deprecated,
 							Enabled:                             generalSetupTearDown_TestCaseSetUp_1_1.TestInstruction_SC_TestCaseSetUp.TestInstruction.Enabled,
-							TestInstructionInstanceVersionHash:  "HASH",
+							TestInstructionInstanceVersionHash:  shared_code.InitialValueBeforeHashed,
 						},
 
 						// Version 'generalSetupTearDown_TestCaseSetUp_1.0'
@@ -61,10 +61,10 @@ func GenerateTestInstructions_SC() {
 							TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseSetUp_1_0.TestInstruction_SC_TestCaseSetUp.TestInstruction.MinorVersionNumber,
 							Deprecated:                          generalSetupTearDown_TestCaseSetUp_1_0.TestInstruction_SC_TestCaseSetUp.TestInstruction.Deprecated,
 							Enabled:                             generalSetupTearDown_TestCaseSetUp_1_0.TestInstruction_SC_TestCaseSetUp.TestInstruction.Enabled,
-							TestInstructionInstanceVersionHash:  "HASH",
+							TestInstructionInstanceVersionHash:  shared_code.InitialValueBeforeHashed,
 						},
 					},
-					TestInstructionVersionsHash: "HASH",
+					TestInstructionVersionsHash: shared_code.InitialValueBeforeHashed,
 				},
 
 				// TestInstruction 'generalSetupTearDown_TestCaseSetUp'
@@ -78,19 +78,19 @@ func GenerateTestInstructions_SC() {
 							TestInstructionInstanceMinorVersion: generalSetupTearDown_TestCaseTearDown_1_0.TestInstruction_SC_TestCaseTearDown.TestInstruction.MinorVersionNumber,
 							Deprecated:                          generalSetupTearDown_TestCaseTearDown_1_0.TestInstruction_SC_TestCaseTearDown.TestInstruction.Deprecated,
 							Enabled:                             generalSetupTearDown_TestCaseTearDown_1_0.TestInstruction_SC_TestCaseTearDown.TestInstruction.Enabled,
-							TestInstructionInstanceVersionHash:  "HASH",
+							TestInstructionInstanceVersionHash:  shared_code.InitialValueBeforeHashed,
 						},
 					},
-					TestInstructionVersionsHash: "HASH",
+					TestInstructionVersionsHash: shared_code.InitialValueBeforeHashed,
 				},
 			},
-			TestInstructionsHash: "HASH",
+			TestInstructionsHash: shared_code.InitialValueBeforeHashed,
 		},
 
 		// TestInstructionContainers
 		TestInstructionContainers: &TestInstructionAndTestInstuctionContainerTypes.TestInstructionContainersStruct{},
 		AllowedUsers:              shared_code.AllowedUsersLoadFronJsonFile,
-		TestInstructionsAndTestInstructionsContainersAndUsersMessageHash: "HASH",
+		TestInstructionsAndTestInstructionsContainersAndUsersMessageHash: shared_code.InitialValueBeforeHashed,
 		MessageCreationTimeStamp: time.Now(),
 		ForceNewBaseLineForTestInstructionsAndTestInstructionContainers: false,
 	}
@@ -115,14 +115,14 @@ func GenerateTestInstructions_SC() {
 						TestInstructionContainerInstanceMinorVersion: testInstructionContainer_SpecialSerialBaseContainer_1_0.TestInstructionContainer_SC_SpecialSerialBase.TestInstructionContainer.MinorVersionNumber,
 						Deprecated:                           testInstructionContainer_SpecialSerialBaseContainer_1_0.TestInstructionContainer_SC_SpecialSerialBase.TestInstructionContainer.Deprecated,
 						Enabled:                              testInstructionContainer_SpecialSerialBaseContainer_1_0.TestInstructionContainer_SC_SpecialSerialBase.TestInstructionContainer.Enabled,
-						TestInstructionContainerInstanceHash: "HASH",
+						TestInstructionContainerInstanceHash: shared_code.InitialValueBeforeHashed,
 					},
 				},
-				TestInstructionContainerVersionsHash: "HASH",
+				TestInstructionContainerVersionsHash: shared_code.InitialValueBeforeHashed,
 			},
 		},
 
-		TestInstructionContainersHash: "HASH",
+		TestInstructionContainersHash: shared_code.InitialValueBeforeHashed,
 	}
 	TestInstructionsAndTestInstructionContainers_SC.TestInstructionContainers = testInstructionContainers
 
@@ -140,6 +140,25 @@ func GenerateTestInstructions_SC() {
 		GenerateTestInstructionAndTestInstructionContainerAndUserGrpcMessage(string(Domains.DomainUUID_SC), TestInstructionsAndTestInstructionContainers_SC)
 	if err != nil {
 		fmt.Println(err)
+		os.Exit(1)
+	}
+
+	// Convert back supported TestInstructions, TestInstructionContainers and Allowed Users message from a gRPC-version of the message and check correctness of Hashes
+	var testInstructionsAndTestInstructionContainersMessage *TestInstructionAndTestInstuctionContainerTypes.TestInstructionsAndTestInstructionsContainersStruct
+	testInstructionsAndTestInstructionContainersMessage, err = shared_code.
+		GenerateStandardFromGrpcMessageForTestInstructionsAndUsers(supportedTestInstructionsAndTestInstructionContainersAndAllowedUsersMessage)
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
+
+	// Verify recreated Hashes from gRPC-message
+	var errorSlice []error
+	errorSlice = shared_code.VerifyTestInstructionAndTestInstructionContainerAndUsersMessageHashes(testInstructionsAndTestInstructionContainersMessage)
+	if errorSlice != nil {
+		for _, errFromSlice := range errorSlice {
+			fmt.Println(errFromSlice)
+		}
 		os.Exit(1)
 	}
 
