@@ -73,6 +73,9 @@ func Initate_TestInstruction_SC_TestCaseTearDown() *TestInstructionAndTestInstuc
 		// Local Execution Methods are specified here
 		LocalExecutionMethods: TestInstructionAndTestInstuctionContainerTypes.AnyType{
 			&LocalExecutionMethods.MethodsForLocalExecutionsStruct{
+				LocalParametersUsedInRunTime: &LocalExecutionMethods.LocalParametersUsedInRunTimeStruct{
+					ExpectedTestInstructionExecutionDuration: 360,
+				},
 				FangEngineClassesMethodsAttributes: &FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct{
 					TestInstructionOriginalUUID: TestInstructionUUID_SC_TestCaseTearDown,
 					TestInstructionName:         TestInstructionName_SC_TestCaseTearDown,
