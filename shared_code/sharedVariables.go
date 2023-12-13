@@ -15,3 +15,6 @@ var AllowedUsersLoadFronJsonFile *TestInstructionAndTestInstuctionContainerTypes
 var highestExecutionWorkerProtoFileVersion int32 = -1
 
 const InitialValueBeforeHashed = "HASH"
+
+type PushToTempStoreFunctionType[T any] func(T)
+type PullFromTempStoreFunctionType[T any] func() T

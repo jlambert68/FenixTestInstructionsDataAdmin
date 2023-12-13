@@ -57,6 +57,9 @@ var TestInstruction_SC_TestCaseSetUp *TestInstructionAndTestInstuctionContainerT
 // Function that creates all data for the TestInstruction
 func Initate_TestInstruction_SC_TestCaseSetUp() *TestInstructionAndTestInstuctionContainerTypes.TestInstructionStruct {
 
+	var fangMethodAttributeMap map[TypeAndStructs.TestInstructionAttributeUUIDType]*FangEngineClassesAndMethods.FangEngineAttributesStruct
+	fangMethodAttributeMap = make(map[TypeAndStructs.TestInstructionAttributeUUIDType]*FangEngineClassesAndMethods.FangEngineAttributesStruct)
+
 	// Initiate variable to store all TestInstruction data
 	TestInstruction_SC_TestCaseSetUp = &TestInstructionAndTestInstuctionContainerTypes.TestInstructionStruct{
 		TestInstruction:                    &TypeAndStructs.TestInstructionStruct{},
@@ -66,15 +69,17 @@ func Initate_TestInstruction_SC_TestCaseSetUp() *TestInstructionAndTestInstuctio
 		ImmatureElementModel:               nil,
 
 		// Local Execution Methods are specified here
-		LocalExecutionMethods: &LocalExecutionMethods.MethodsForLocalExecutionsStruct{
-			FangEngineClassesMethodsAttributes: &FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct{
-				TestInstructionOriginalUUID: TestInstructionUUID_SC_TestCaseSetUp,
-				TestInstructionName:         TestInstructionName_SC_TestCaseSetUp,
-				FangEngineClassNameUUID:     FangEngineClassesAndMethods.FangEngine_ClassName_UUID_SC_GeneralSetupTearDown,
-				FangEngineClassNameNAME:     FangEngineClassesAndMethods.FangEngine_ClassName_Name_SC_GeneralSetupTearDown,
-				FangEngineMethodNameUUID:    FangEngineClassesAndMethods.FangEngine_MethodName_UUID_SC_GeneralSetupTearDown_Setup,
-				FangEngineMethodNameNAME:    FangEngineClassesAndMethods.FangEngine_MethodName_Name_SC_GeneralSetupTearDown_Setup,
-				Attributes:                  make(map[TypeAndStructs.TestInstructionAttributeUUIDType]*FangEngineClassesAndMethods.FangEngineAttributesStruct),
+		LocalExecutionMethods: TestInstructionAndTestInstuctionContainerTypes.AnyType{
+			&LocalExecutionMethods.MethodsForLocalExecutionsStruct{
+				FangEngineClassesMethodsAttributes: &FangEngineClassesAndMethods.FangEngineClassesMethodsAttributesStruct{
+					TestInstructionOriginalUUID: TestInstructionUUID_SC_TestCaseSetUp,
+					TestInstructionName:         TestInstructionName_SC_TestCaseSetUp,
+					FangEngineClassNameUUID:     FangEngineClassesAndMethods.FangEngine_ClassName_UUID_SC_GeneralSetupTearDown,
+					FangEngineClassNameNAME:     FangEngineClassesAndMethods.FangEngine_ClassName_Name_SC_GeneralSetupTearDown,
+					FangEngineMethodNameUUID:    FangEngineClassesAndMethods.FangEngine_MethodName_UUID_SC_GeneralSetupTearDown_Setup,
+					FangEngineMethodNameNAME:    FangEngineClassesAndMethods.FangEngine_MethodName_Name_SC_GeneralSetupTearDown_Setup,
+					Attributes:                  fangMethodAttributeMap, //make(map[TypeAndStructs.TestInstructionAttributeUUIDType]*FangEngineClassesAndMethods.FangEngineAttributesStruct),
+				},
 			},
 		},
 	}
@@ -177,7 +182,8 @@ func Initate_TestInstruction_SC_TestCaseSetUp() *TestInstructionAndTestInstuctio
 		FangEngineAttributeNameUUID:      FangEngineClassesAndMethods.FangEngine_ClassName_UUID_SC_GeneralAttribute_ExpectedToBePassed,
 		FangEngineAttributeNameName:      FangEngineClassesAndMethods.FangEngine_ClassName_Name_SC_GeneralAttribute_ExpectedToBePassed,
 	}
-	TestInstruction_SC_TestCaseSetUp.LocalExecutionMethods.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_SC_TestCaseSetUp_ExpectedToBePassed] = tempFangEngineAttributeExpectedToBePassed
+	fangMethodAttributeMap[TestInstructionAttributeUUID_SC_TestCaseSetUp_ExpectedToBePassed] = tempFangEngineAttributeExpectedToBePassed
+	//TestInstruction_SC_TestCaseSetUp.LocalExecutionMethods.FangEngineClassesMethodsAttributes.Attributes[TestInstructionAttributeUUID_SC_TestCaseSetUp_ExpectedToBePassed] = tempFangEngineAttributeExpectedToBePassed
 
 	// ImmatureElementModel - TestCaseSetUp
 	var TestInstructionImmatureElementModel_SC_TestCaseSetUp *TypeAndStructs.ImmatureElementModelMessageStruct
