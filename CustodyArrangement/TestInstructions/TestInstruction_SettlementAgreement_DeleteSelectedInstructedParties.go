@@ -3,6 +3,7 @@ package TestInstructions
 import (
 	"FenixTestInstructionsDataAdmin/CustodyArrangement/FangEngineClassesAndMethods"
 	"FenixTestInstructionsDataAdmin/Domains"
+	"FenixTestInstructionsDataAdmin/SubCustody/DomainData"
 	"FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
 	"FenixTestInstructionsDataAdmin/TypeAndStructs"
 	"FenixTestInstructionsDataAdmin/shared_code"
@@ -73,8 +74,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedPart
 
 	// TestInstruction - SettlementAgreement_DeleteSelectedInstructedParties
 	TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties.TestInstruction = TypeAndStructs.TestInstructionStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_SettlementAgreement_DeleteSelectedInstructedParties,
 		TestInstructionName:          TestInstructionName_CA_SettlementAgreement_DeleteSelectedInstructedParties,
 		TestInstructionTypeUUID:      TestInstructionTypeUUID_CA_SettlementAgreement_DeleteSelectedInstructedParties,
@@ -90,8 +91,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedPart
 
 	// BasicTestInstructionInformation - SettlementAgreement_DeleteSelectedInstructedParties
 	TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties.BasicTestInstructionInformation = TypeAndStructs.BasicTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_SettlementAgreement_DeleteSelectedInstructedParties,
 		TestInstructionName:          TestInstructionName_CA_SettlementAgreement_DeleteSelectedInstructedParties,
 		TestInstructionTypeUUID:      TestInstructionTypeUUID_CA_SettlementAgreement_DeleteSelectedInstructedParties,
@@ -112,8 +113,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedPart
 	// ImmatureTestInstructionInformation  - DropZone: SettlementAgreement_DeleteSelectedInstructedParties_ExpectsToSucceed, Attr: ExpectedToBePassed
 	var TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties_ExpectedToBePassed TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedParties_ExpectedToBePassed = TypeAndStructs.ImmatureTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_SettlementAgreement_DeleteSelectedInstructedParties,
 		TestInstructionName:          TestInstructionName_CA_SettlementAgreement_DeleteSelectedInstructedParties,
 		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_SettlementAgreement_DeleteSelectedInstructedParties_ExpectsToSucceed,
@@ -136,8 +137,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedPart
 	// TestInstruction Attribute - 'ExpectedToBePassed'
 	var TestInstructionAttribute_CA_SettlementAgreement_DeleteSelectedInstructedParties_ExpectedToBePassed TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_SettlementAgreement_DeleteSelectedInstructedParties_ExpectedToBePassed = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_DeleteSelectedInstructedParties,
 		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_DeleteSelectedInstructedParties,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_DeleteSelectedInstructedParties_ExpectedToBePassed,
@@ -174,8 +175,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedInstructedPart
 	// ImmatureElementModel - 'SettlementAgreement' - MethodName: 'DeleteSelectedInstructedParties'
 	var TestInstructionImmatureElementModel_CA_SettlementAgreement_DeleteSelectedInstructedParties TypeAndStructs.ImmatureElementModelMessageStruct
 	TestInstructionImmatureElementModel_CA_SettlementAgreement_DeleteSelectedInstructedParties = TypeAndStructs.ImmatureElementModelMessageStruct{
-		DomainUUID:               Domains.DomainUUID_CA,
-		DomainName:               Domains.DomainName_CA,
+		DomainUUID:               DomainData.DomainUUID_CA,
+		DomainName:               DomainData.DomainName_CA,
 		ImmatureElementUUID:      TestInstructionUUID_CA_SettlementAgreement_DeleteSelectedInstructedParties,
 		ImmatureElementName:      TypeAndStructs.OriginalElementNameType(TestInstructionName_CA_SettlementAgreement_DeleteSelectedInstructedParties),
 		PreviousElementUUID:      TestInstructionUUID_CA_SettlementAgreement_DeleteSelectedInstructedParties,

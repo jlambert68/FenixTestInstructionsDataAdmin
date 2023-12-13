@@ -3,6 +3,7 @@ package TestInstructions
 import (
 	"FenixTestInstructionsDataAdmin/CustodyArrangement/FangEngineClassesAndMethods"
 	"FenixTestInstructionsDataAdmin/Domains"
+	"FenixTestInstructionsDataAdmin/SubCustody/DomainData"
 	"FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
 	"FenixTestInstructionsDataAdmin/TypeAndStructs"
 	"FenixTestInstructionsDataAdmin/shared_code"
@@ -101,8 +102,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_AddSelectedSwift() TestInstr
 
 	// TestInstruction - SettlementAgreement_AddSelectedSwift
 	TestInstruction_CA_SettlementAgreement_AddSelectedSwift.TestInstruction = TypeAndStructs.TestInstructionStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_SettlementAgreement_AddSelectedSwift,
 		TestInstructionName:          TestInstructionName_CA_SettlementAgreement_AddSelectedSwift,
 		TestInstructionTypeUUID:      TestInstructionTypeUUID_CA_SettlementAgreement_AddSelectedSwift,
@@ -118,8 +119,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_AddSelectedSwift() TestInstr
 
 	// BasicTestInstructionInformation - SettlementAgreement_AddSelectedSwift
 	TestInstruction_CA_SettlementAgreement_AddSelectedSwift.BasicTestInstructionInformation = TypeAndStructs.BasicTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_SettlementAgreement_AddSelectedSwift,
 		TestInstructionName:          TestInstructionName_CA_SettlementAgreement_AddSelectedSwift,
 		TestInstructionTypeUUID:      TestInstructionTypeUUID_CA_SettlementAgreement_AddSelectedSwift,
@@ -140,8 +141,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_AddSelectedSwift() TestInstr
 	// ImmatureTestInstructionInformation  - DropZone: SettlementAgreement_AddSelectedSwift_ExpectsToSucceed, Attr: ExpectedToBePassed
 	var TestInstruction_CA_SettlementAgreement_AddSelectedSwift_ExpectedToBePassed TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstruction_CA_SettlementAgreement_AddSelectedSwift_ExpectedToBePassed = TypeAndStructs.ImmatureTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_SettlementAgreement_AddSelectedSwift,
 		TestInstructionName:          TestInstructionName_CA_SettlementAgreement_AddSelectedSwift,
 		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_SettlementAgreement_AddSelectedSwift_ExpectsToSucceed,
@@ -164,8 +165,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_AddSelectedSwift() TestInstr
 	// TestInstruction Attribute - 'ExpectedToBePassed'
 	var TestInstructionAttribute_CA_SettlementAgreement_AddSelectedSwift_ExpectedToBePassed TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_SettlementAgreement_AddSelectedSwift_ExpectedToBePassed = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_AddSelectedSwift,
 		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_AddSelectedSwift,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_AddSelectedSwift_ExpectedToBePassed,
@@ -202,8 +203,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_AddSelectedSwift() TestInstr
 	// TestInstruction Attribute - 'TestDataType'
 	var TestInstructionAttribute_CA_SettlementAgreement_AddSelectedSwift_TestDataType TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_SettlementAgreement_AddSelectedSwift_TestDataType = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_AddSelectedSwift,
 		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_AddSelectedSwift,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_AddSelectedSwift_TestDataType,
@@ -240,8 +241,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_AddSelectedSwift() TestInstr
 	// TestInstruction Attribute - 'TestDataChannel'
 	var TestInstructionAttribute_CA_SettlementAgreement_AddSelectedSwift_TestDataChannel TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_SettlementAgreement_AddSelectedSwift_TestDataChannel = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_AddSelectedSwift,
 		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_AddSelectedSwift,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_AddSelectedSwift_TestDataChannel,
@@ -278,8 +279,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_AddSelectedSwift() TestInstr
 	// TestInstruction Attribute - 'TestDataBic'
 	var TestInstructionAttribute_CA_SettlementAgreement_AddSelectedSwift_TestDataBic TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_SettlementAgreement_AddSelectedSwift_TestDataBic = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_AddSelectedSwift,
 		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_AddSelectedSwift,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_AddSelectedSwift_TestDataBic,
@@ -316,8 +317,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_AddSelectedSwift() TestInstr
 	// TestInstruction Attribute - 'TestDataInterval'
 	var TestInstructionAttribute_CA_SettlementAgreement_AddSelectedSwift_TestDataInterval TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_SettlementAgreement_AddSelectedSwift_TestDataInterval = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_AddSelectedSwift,
 		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_AddSelectedSwift,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_AddSelectedSwift_TestDataInterval,
@@ -354,8 +355,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_AddSelectedSwift() TestInstr
 	// ImmatureElementModel - 'SettlementAgreement' - MethodName: 'AddSelectedSwift'
 	var TestInstructionImmatureElementModel_CA_SettlementAgreement_AddSelectedSwift TypeAndStructs.ImmatureElementModelMessageStruct
 	TestInstructionImmatureElementModel_CA_SettlementAgreement_AddSelectedSwift = TypeAndStructs.ImmatureElementModelMessageStruct{
-		DomainUUID:               Domains.DomainUUID_CA,
-		DomainName:               Domains.DomainName_CA,
+		DomainUUID:               DomainData.DomainUUID_CA,
+		DomainName:               DomainData.DomainName_CA,
 		ImmatureElementUUID:      TestInstructionUUID_CA_SettlementAgreement_AddSelectedSwift,
 		ImmatureElementName:      TypeAndStructs.OriginalElementNameType(TestInstructionName_CA_SettlementAgreement_AddSelectedSwift),
 		PreviousElementUUID:      TestInstructionUUID_CA_SettlementAgreement_AddSelectedSwift,

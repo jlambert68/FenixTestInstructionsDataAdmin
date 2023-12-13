@@ -3,6 +3,7 @@ package TestInstructions
 import (
 	"FenixTestInstructionsDataAdmin/CustodyArrangement/FangEngineClassesAndMethods"
 	"FenixTestInstructionsDataAdmin/Domains"
+	"FenixTestInstructionsDataAdmin/SubCustody/DomainData"
 	"FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
 	"FenixTestInstructionsDataAdmin/TypeAndStructs"
 	"FenixTestInstructionsDataAdmin/shared_code"
@@ -82,8 +83,8 @@ func Initate_TestInstruction_CA_CustodyAccount_Search() TestInstruction_CA_TestC
 
 	// TestInstruction - Search
 	TestInstruction_CA_CustodyAccount_Search.TestInstruction = TypeAndStructs.TestInstructionStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_CustodyAccount_Search,
 		TestInstructionName:          TestInstructionName_CA_CustodyAccount_Search,
 		TestInstructionTypeUUID:      TestInstructionTypeUUID_CA_CustodyAccount_Search,
@@ -99,8 +100,8 @@ func Initate_TestInstruction_CA_CustodyAccount_Search() TestInstruction_CA_TestC
 
 	// BasicTestInstructionInformation - CustodyAccount_Search
 	TestInstruction_CA_CustodyAccount_Search.BasicTestInstructionInformation = TypeAndStructs.BasicTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_CustodyAccount_Search,
 		TestInstructionName:          TestInstructionName_CA_CustodyAccount_Search,
 		TestInstructionTypeUUID:      TestInstructionTypeUUID_CA_CustodyAccount_Search,
@@ -122,8 +123,8 @@ func Initate_TestInstruction_CA_CustodyAccount_Search() TestInstruction_CA_TestC
 	// ImmatureTestInstructionInformation  - DropZone: CustodyAccount_Search_ExpectsToSucceed, Attr: ExpectedToBePassed
 	var TestInstruction_CA_CustodyAccount_Search_ExpectedToBePassed TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstruction_CA_CustodyAccount_Search_ExpectedToBePassed = TypeAndStructs.ImmatureTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_CustodyAccount_Search,
 		TestInstructionName:          TestInstructionName_CA_CustodyAccount_Search,
 		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_CustodyAccount_Search_ExpectsToSucceed,
@@ -146,8 +147,8 @@ func Initate_TestInstruction_CA_CustodyAccount_Search() TestInstruction_CA_TestC
 	// TestInstruction Attribute - 'ExpectedToBePassed'
 	var TestInstructionAttribute_CA_CustodyAccount_Search_ExpectedToBePassed TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_CustodyAccount_Search_ExpectedToBePassed = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_CustodyAccount_Search,
 		TestInstructionName:                           TestInstructionName_CA_CustodyAccount_Search,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_CustodyAccount_Search_ExpectedToBePassed,
@@ -184,8 +185,8 @@ func Initate_TestInstruction_CA_CustodyAccount_Search() TestInstruction_CA_TestC
 	// TestInstruction Attribute - 'CustodyAccountId'
 	var TestInstructionAttribute_CA_CustodyAccount_Search_CustodyAccountId TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_CustodyAccount_Search_CustodyAccountId = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_CustodyAccount_Search,
 		TestInstructionName:                           TestInstructionName_CA_CustodyAccount_Search,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_CustodyAccount_Search_CustodyAccountId,
@@ -223,8 +224,8 @@ func Initate_TestInstruction_CA_CustodyAccount_Search() TestInstruction_CA_TestC
 	// ImmatureElementModel - Search
 	var TestInstructionImmatureElementModel_CA_CustodyAccount_Search TypeAndStructs.ImmatureElementModelMessageStruct
 	TestInstructionImmatureElementModel_CA_CustodyAccount_Search = TypeAndStructs.ImmatureElementModelMessageStruct{
-		DomainUUID:               Domains.DomainUUID_CA,
-		DomainName:               Domains.DomainName_CA,
+		DomainUUID:               DomainData.DomainUUID_CA,
+		DomainName:               DomainData.DomainName_CA,
 		ImmatureElementUUID:      TestInstructionUUID_CA_CustodyAccount_Search,
 		ImmatureElementName:      TypeAndStructs.OriginalElementNameType(TestInstructionName_CA_CustodyAccount_Search),
 		PreviousElementUUID:      TestInstructionUUID_CA_CustodyAccount_Search,

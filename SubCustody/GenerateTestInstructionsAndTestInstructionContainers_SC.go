@@ -1,7 +1,7 @@
 package SubCustody
 
 import (
-	"FenixTestInstructionsDataAdmin/Domains"
+	"FenixTestInstructionsDataAdmin/SubCustody/DomainData"
 	testInstructionContainer_SpecialSerialBaseContainer "FenixTestInstructionsDataAdmin/SubCustody/TestInstructionContainers/TestInstructionContainer_SpecialSerialBaseContainer"
 	testInstructionContainer_SpecialSerialBaseContainer_1_0 "FenixTestInstructionsDataAdmin/SubCustody/TestInstructionContainers/TestInstructionContainer_SpecialSerialBaseContainer/version_1_0"
 	generalSetupTearDown_TestCaseSetUp "FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseSetUp"
@@ -137,7 +137,7 @@ func GenerateTestInstructions_SC() {
 	// Convert supported TestInstructions, TestInstructionContainers and Allowed Users message into a gRPC-version of the message
 	var supportedTestInstructionsAndTestInstructionContainersAndAllowedUsersMessage *fenixExecutionWorkerGrpcApi.SupportedTestInstructionsAndTestInstructionContainersAndAllowedUsersMessage
 	supportedTestInstructionsAndTestInstructionContainersAndAllowedUsersMessage, err = shared_code.
-		GenerateTestInstructionAndTestInstructionContainerAndUserGrpcMessage(string(Domains.DomainUUID_SC), TestInstructionsAndTestInstructionContainers_SC)
+		GenerateTestInstructionAndTestInstructionContainerAndUserGrpcMessage(string(DomainData.DomainUUID_SC), TestInstructionsAndTestInstructionContainers_SC)
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)

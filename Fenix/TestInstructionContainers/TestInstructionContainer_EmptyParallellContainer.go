@@ -3,6 +3,7 @@ package TestInstructionContainers
 import (
 	"FenixTestInstructionsDataAdmin/Bonds"
 	"FenixTestInstructionsDataAdmin/Domains"
+	"FenixTestInstructionsDataAdmin/SubCustody/DomainData"
 	"FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
 	"FenixTestInstructionsDataAdmin/TypeAndStructs"
 	"FenixTestInstructionsDataAdmin/shared_code"
@@ -51,8 +52,8 @@ func Initiate_TestInstructionContainer_Fenix_Parallell() {
 
 	// TestInstructionContainer - 'EmptyParallellContainer'
 	TestInstructionContainer_Fenix_Parallell.TestInstructionContainer = TypeAndStructs.TestInstructionContainerStruct{
-		DomainUUID:                            Domains.DomainUUID_Fenix,
-		DomainName:                            Domains.DomainName_Fenix,
+		DomainUUID:                            DomainData.DomainUUID_Fenix,
+		DomainName:                            DomainData.DomainName_Fenix,
 		TestInstructionContainerUUID:          TestInstructionContainerUUID_Fenix_EmptyParallellContainer,
 		TestInstructionContainerName:          TestInstructionContainerName_Fenix_EmptyParallellContainer,
 		TestInstructionContainerTypeUUID:      TestInstructionContainerTypeUUID_Fenix_EmptyParallellContainer,
@@ -69,8 +70,8 @@ func Initiate_TestInstructionContainer_Fenix_Parallell() {
 
 	// BasicTestInstructionContainerInformation - 'EmptyParallellContainer'
 	TestInstructionContainer_Fenix_Parallell.BasicTestInstructionContainerInformation = TypeAndStructs.BasicTestInstructionContainerInformationStruct{
-		DomainUUID:                            Domains.DomainUUID_Fenix,
-		DomainName:                            Domains.DomainName_Fenix,
+		DomainUUID:                            DomainData.DomainUUID_Fenix,
+		DomainName:                            DomainData.DomainName_Fenix,
 		TestInstructionContainerUUID:          TestInstructionContainerUUID_Fenix_EmptyParallellContainer,
 		TestInstructionContainerName:          TestInstructionContainerName_Fenix_EmptyParallellContainer,
 		TestInstructionContainerTypeUUID:      TestInstructionContainerTypeUUID_Fenix_EmptyParallellContainer,
@@ -94,8 +95,8 @@ func Initiate_TestInstructionContainer_Fenix_Parallell() {
 	// ImmatureElementModelMessage - 'EmptyParallellContainer' - 'TIC' in 'TIC(B10)'
 	var ImmatureElementModel_TIC TypeAndStructs.ImmatureElementModelMessageStruct
 	ImmatureElementModel_TIC = TypeAndStructs.ImmatureElementModelMessageStruct{
-		DomainUUID:               Domains.DomainUUID_Fenix,
-		DomainName:               Domains.DomainName_Fenix,
+		DomainUUID:               DomainData.DomainUUID_Fenix,
+		DomainName:               DomainData.DomainName_Fenix,
 		ImmatureElementUUID:      TestInstructionContainerUUID_Fenix_EmptyParallellContainer,
 		ImmatureElementName:      TypeAndStructs.OriginalElementNameType(TestInstructionContainerName_Fenix_EmptyParallellContainer),
 		PreviousElementUUID:      TestInstructionContainerUUID_Fenix_EmptyParallellContainer,
@@ -112,8 +113,8 @@ func Initiate_TestInstructionContainer_Fenix_Parallell() {
 	// ImmatureElementModelMessage - 'EmptyParallellContainer' - 'B10' in 'TIC(B10)'
 	var ImmatureElementModel_B10 TypeAndStructs.ImmatureElementModelMessageStruct
 	ImmatureElementModel_B10 = TypeAndStructs.ImmatureElementModelMessageStruct{
-		DomainUUID:               Domains.DomainUUID_Fenix,
-		DomainName:               Domains.DomainName_Fenix,
+		DomainUUID:               DomainData.DomainUUID_Fenix,
+		DomainName:               DomainData.DomainName_Fenix,
 		ImmatureElementUUID:      Bonds.Bond_B10_BondUuid,
 		ImmatureElementName:      TypeAndStructs.OriginalElementNameType(Bonds.Bond_B0_BondName),
 		PreviousElementUUID:      Bonds.Bond_B10_BondUuid,

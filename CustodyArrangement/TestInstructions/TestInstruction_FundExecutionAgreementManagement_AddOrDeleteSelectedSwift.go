@@ -3,6 +3,7 @@ package TestInstructions
 import (
 	"FenixTestInstructionsDataAdmin/CustodyArrangement/FangEngineClassesAndMethods"
 	"FenixTestInstructionsDataAdmin/Domains"
+	"FenixTestInstructionsDataAdmin/SubCustody/DomainData"
 	"FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
 	"FenixTestInstructionsDataAdmin/TypeAndStructs"
 	"FenixTestInstructionsDataAdmin/shared_code"
@@ -115,8 +116,8 @@ func Initate_TestInstruction_CA_AddOrDeleteSelectedSwift() {
 
 	// TestInstruction - AddOrDeleteSelectedSwift
 	TestInstruction_CA_AddOrDeleteSelectedSwift.TestInstruction = TypeAndStructs.TestInstructionStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
 		TestInstructionName:          TestInstructionName_CA_AddOrDeleteSelectedSwift,
 		TestInstructionTypeUUID:      TestInstructionTypeUUID_CA_AddOrDeleteSelectedSwift,
@@ -132,8 +133,8 @@ func Initate_TestInstruction_CA_AddOrDeleteSelectedSwift() {
 
 	// BasicTestInstructionInformation - AddOrDeleteSelectedSwift
 	TestInstruction_CA_AddOrDeleteSelectedSwift.BasicTestInstructionInformation = TypeAndStructs.BasicTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
 		TestInstructionName:          TestInstructionName_CA_AddOrDeleteSelectedSwift,
 		TestInstructionTypeUUID:      TestInstructionTypeUUID_CA_AddOrDeleteSelectedSwift,
@@ -154,8 +155,8 @@ func Initate_TestInstruction_CA_AddOrDeleteSelectedSwift() {
 	// ImmatureTestInstructionInformation  - DropZone: AddOrDeleteSelectedSwift_Add, Attr: ExpectedToBePassed
 	var TestInstruction_CA_AddOrDeleteSelectedSwift_Add_ExpectedToBePassed TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstruction_CA_AddOrDeleteSelectedSwift_Add_ExpectedToBePassed = TypeAndStructs.ImmatureTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
 		TestInstructionName:          TestInstructionName_CA_AddOrDeleteSelectedSwift,
 		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_AddOrDeleteSelectedSwift_Add,
@@ -178,8 +179,8 @@ func Initate_TestInstruction_CA_AddOrDeleteSelectedSwift() {
 	// ImmatureTestInstructionInformation  - DropZone: Add, Attr: TestDataInterval
 	var TestInstruction_CA_AddOrDeleteSelectedSwift_Add_TestDataInterval TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstruction_CA_AddOrDeleteSelectedSwift_Add_TestDataInterval = TypeAndStructs.ImmatureTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
 		TestInstructionName:          TestInstructionName_CA_AddOrDeleteSelectedSwift,
 		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_AddOrDeleteSelectedSwift_Add,
@@ -202,8 +203,8 @@ func Initate_TestInstruction_CA_AddOrDeleteSelectedSwift() {
 	// ImmatureTestInstructionInformation  - DropZone: Add, Attr: TestDataType
 	var TestInstruction_CA_AddOrDeleteSelectedSwift_Add_TestDataType TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstruction_CA_AddOrDeleteSelectedSwift_Add_TestDataType = TypeAndStructs.ImmatureTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
 		TestInstructionName:          TestInstructionName_CA_AddOrDeleteSelectedSwift,
 		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_AddOrDeleteSelectedSwift_Add,
@@ -226,8 +227,8 @@ func Initate_TestInstruction_CA_AddOrDeleteSelectedSwift() {
 	// ImmatureTestInstructionInformation  - DropZone: Add, Attr: TestDataBIC
 	var TestInstruction_CA_AddOrDeleteSelectedSwift_Add_TestDataBIC TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstruction_CA_AddOrDeleteSelectedSwift_Add_TestDataBIC = TypeAndStructs.ImmatureTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
 		TestInstructionName:          TestInstructionName_CA_AddOrDeleteSelectedSwift,
 		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_AddOrDeleteSelectedSwift_Add,
@@ -250,8 +251,8 @@ func Initate_TestInstruction_CA_AddOrDeleteSelectedSwift() {
 	// ImmatureTestInstructionInformation  - DropZone: Add, Attr: TestDataChannel
 	var TestInstruction_CA_AddOrDeleteSelectedSwift_Add_TestDataChannel TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstruction_CA_AddOrDeleteSelectedSwift_Add_TestDataChannel = TypeAndStructs.ImmatureTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
 		TestInstructionName:          TestInstructionName_CA_AddOrDeleteSelectedSwift,
 		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_AddOrDeleteSelectedSwift_Add,
@@ -275,8 +276,8 @@ func Initate_TestInstruction_CA_AddOrDeleteSelectedSwift() {
 	// ImmatureTestInstructionInformation  - DropZone: AddOrDeleteSelectedSwift_Delete, Attr: ExpectedToBePassed
 	var TestInstruction_CA_AddOrDeleteSelectedSwift_Delete_ExpectedToBePassed TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstruction_CA_AddOrDeleteSelectedSwift_Delete_ExpectedToBePassed = TypeAndStructs.ImmatureTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
 		TestInstructionName:          TestInstructionName_CA_AddOrDeleteSelectedSwift,
 		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_AddOrDeleteSelectedSwift_Delete,
@@ -299,8 +300,8 @@ func Initate_TestInstruction_CA_AddOrDeleteSelectedSwift() {
 	// ImmatureTestInstructionInformation  - DropZone: Delete, Attr: TestDataInterval
 	var TestInstruction_CA_AddOrDeleteSelectedSwift_Delete_TestDataInterval TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstruction_CA_AddOrDeleteSelectedSwift_Delete_TestDataInterval = TypeAndStructs.ImmatureTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
 		TestInstructionName:          TestInstructionName_CA_AddOrDeleteSelectedSwift,
 		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_AddOrDeleteSelectedSwift_Delete,
@@ -323,8 +324,8 @@ func Initate_TestInstruction_CA_AddOrDeleteSelectedSwift() {
 	// ImmatureTestInstructionInformation  - DropZone: Delete, Attr: TestDataType
 	var TestInstruction_CA_AddOrDeleteSelectedSwift_Delete_TestDataType TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstruction_CA_AddOrDeleteSelectedSwift_Delete_TestDataType = TypeAndStructs.ImmatureTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
 		TestInstructionName:          TestInstructionName_CA_AddOrDeleteSelectedSwift,
 		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_AddOrDeleteSelectedSwift_Delete,
@@ -347,8 +348,8 @@ func Initate_TestInstruction_CA_AddOrDeleteSelectedSwift() {
 	// ImmatureTestInstructionInformation  - DropZone: Delete, Attr: TestDataBIC
 	var TestInstruction_CA_AddOrDeleteSelectedSwift_Delete_TestDataBIC TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstruction_CA_AddOrDeleteSelectedSwift_Delete_TestDataBIC = TypeAndStructs.ImmatureTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
 		TestInstructionName:          TestInstructionName_CA_AddOrDeleteSelectedSwift,
 		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_AddOrDeleteSelectedSwift_Delete,
@@ -371,8 +372,8 @@ func Initate_TestInstruction_CA_AddOrDeleteSelectedSwift() {
 	// ImmatureTestInstructionInformation  - DropZone: Delete, Attr: TestDataChannel
 	var TestInstruction_CA_AddOrDeleteSelectedSwift_Delete_TestDataChannel TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstruction_CA_AddOrDeleteSelectedSwift_Delete_TestDataChannel = TypeAndStructs.ImmatureTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
 		TestInstructionName:          TestInstructionName_CA_AddOrDeleteSelectedSwift,
 		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_AddOrDeleteSelectedSwift_Delete,
@@ -395,8 +396,8 @@ func Initate_TestInstruction_CA_AddOrDeleteSelectedSwift() {
 	// TestInstruction Attribute - 'ExpectedToBePassed'
 	var TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
 		TestInstructionName:                           TestInstructionName_CA_AddOrDeleteSelectedSwift,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_AddOrDeleteSelectedSwift_ExpectedToBePassed,
@@ -433,8 +434,8 @@ func Initate_TestInstruction_CA_AddOrDeleteSelectedSwift() {
 	// TestInstruction Attribute - 'TestDataInterval'
 	var TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_TestDataInterval TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_TestDataInterval = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
 		TestInstructionName:                           TestInstructionName_CA_AddOrDeleteSelectedSwift,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_AddOrDeleteSelectedSwift_TestDataInterval,
@@ -460,8 +461,8 @@ func Initate_TestInstruction_CA_AddOrDeleteSelectedSwift() {
 	// TestInstruction Attribute - 'TestDataType'
 	var TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_TestDataType TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_TestDataType = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
 		TestInstructionName:                           TestInstructionName_CA_AddOrDeleteSelectedSwift,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_AddOrDeleteSelectedSwift_TestDataType,
@@ -487,8 +488,8 @@ func Initate_TestInstruction_CA_AddOrDeleteSelectedSwift() {
 	// TestInstruction Attribute - 'TestDataBIC'
 	var TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_TestDataBIC TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_TestDataBIC = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
 		TestInstructionName:                           TestInstructionName_CA_AddOrDeleteSelectedSwift,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_AddOrDeleteSelectedSwift_TestDataBIC,
@@ -514,8 +515,8 @@ func Initate_TestInstruction_CA_AddOrDeleteSelectedSwift() {
 	// TestInstruction Attribute - 'TestDataChannel'
 	var TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_TestDataChannel TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_AddOrDeleteSelectedSwift_TestDataChannel = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
 		TestInstructionName:                           TestInstructionName_CA_AddOrDeleteSelectedSwift,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_AddOrDeleteSelectedSwift_TestDataChannel,
@@ -541,8 +542,8 @@ func Initate_TestInstruction_CA_AddOrDeleteSelectedSwift() {
 	// ImmatureElementModel - AddOrDeleteSelectedSwift
 	var TestInstructionImmatureElementModel_CA_AddOrDeleteSelectedSwift TypeAndStructs.ImmatureElementModelMessageStruct
 	TestInstructionImmatureElementModel_CA_AddOrDeleteSelectedSwift = TypeAndStructs.ImmatureElementModelMessageStruct{
-		DomainUUID:               Domains.DomainUUID_CA,
-		DomainName:               Domains.DomainName_CA,
+		DomainUUID:               DomainData.DomainUUID_CA,
+		DomainName:               DomainData.DomainName_CA,
 		ImmatureElementUUID:      TestInstructionUUID_CA_AddOrDeleteSelectedSwift,
 		ImmatureElementName:      TypeAndStructs.OriginalElementNameType(TestInstructionName_CA_AddOrDeleteSelectedSwift),
 		PreviousElementUUID:      TestInstructionUUID_CA_AddOrDeleteSelectedSwift,

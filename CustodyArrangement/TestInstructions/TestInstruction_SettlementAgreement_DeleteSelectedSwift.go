@@ -3,6 +3,7 @@ package TestInstructions
 import (
 	"FenixTestInstructionsDataAdmin/CustodyArrangement/FangEngineClassesAndMethods"
 	"FenixTestInstructionsDataAdmin/Domains"
+	"FenixTestInstructionsDataAdmin/SubCustody/DomainData"
 	"FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
 	"FenixTestInstructionsDataAdmin/TypeAndStructs"
 	"FenixTestInstructionsDataAdmin/shared_code"
@@ -80,8 +81,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift() TestIn
 
 	// TestInstruction - SettlementAgreement_DeleteSelectedSwift
 	TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift.TestInstruction = TypeAndStructs.TestInstructionStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_SettlementAgreement_DeleteSelectedSwift,
 		TestInstructionName:          TestInstructionName_CA_SettlementAgreement_DeleteSelectedSwift,
 		TestInstructionTypeUUID:      TestInstructionTypeUUID_CA_SettlementAgreement_DeleteSelectedSwift,
@@ -97,8 +98,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift() TestIn
 
 	// BasicTestInstructionInformation - SettlementAgreement_DeleteSelectedSwift
 	TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift.BasicTestInstructionInformation = TypeAndStructs.BasicTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_SettlementAgreement_DeleteSelectedSwift,
 		TestInstructionName:          TestInstructionName_CA_SettlementAgreement_DeleteSelectedSwift,
 		TestInstructionTypeUUID:      TestInstructionTypeUUID_CA_SettlementAgreement_DeleteSelectedSwift,
@@ -119,8 +120,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift() TestIn
 	// ImmatureTestInstructionInformation  - DropZone: SettlementAgreement_DeleteSelectedSwift_ExpectsToSucceed, Attr: ExpectedToBePassed
 	var TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift_ExpectedToBePassed TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift_ExpectedToBePassed = TypeAndStructs.ImmatureTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_SettlementAgreement_DeleteSelectedSwift,
 		TestInstructionName:          TestInstructionName_CA_SettlementAgreement_DeleteSelectedSwift,
 		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_SettlementAgreement_DeleteSelectedSwift_ExpectsToSucceed,
@@ -143,8 +144,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift() TestIn
 	// TestInstruction Attribute - 'ExpectedToBePassed'
 	var TestInstructionAttribute_CA_SettlementAgreement_DeleteSelectedSwift_ExpectedToBePassed TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_SettlementAgreement_DeleteSelectedSwift_ExpectedToBePassed = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_DeleteSelectedSwift,
 		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_DeleteSelectedSwift,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_DeleteSelectedSwift_ExpectedToBePassed,
@@ -181,8 +182,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift() TestIn
 	// TestInstruction Attribute - 'bicAddress'
 	var TestInstructionAttribute_CA_SettlementAgreement_DeleteSelectedSwift_bicAddress TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_SettlementAgreement_DeleteSelectedSwift_bicAddress = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_DeleteSelectedSwift,
 		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_DeleteSelectedSwift,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_DeleteSelectedSwift_bicAddress,
@@ -219,8 +220,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_DeleteSelectedSwift() TestIn
 	// ImmatureElementModel - 'SettlementAgreement' - MethodName: 'DeleteSelectedSwift'
 	var TestInstructionImmatureElementModel_CA_SettlementAgreement_DeleteSelectedSwift TypeAndStructs.ImmatureElementModelMessageStruct
 	TestInstructionImmatureElementModel_CA_SettlementAgreement_DeleteSelectedSwift = TypeAndStructs.ImmatureElementModelMessageStruct{
-		DomainUUID:               Domains.DomainUUID_CA,
-		DomainName:               Domains.DomainName_CA,
+		DomainUUID:               DomainData.DomainUUID_CA,
+		DomainName:               DomainData.DomainName_CA,
 		ImmatureElementUUID:      TestInstructionUUID_CA_SettlementAgreement_DeleteSelectedSwift,
 		ImmatureElementName:      TypeAndStructs.OriginalElementNameType(TestInstructionName_CA_SettlementAgreement_DeleteSelectedSwift),
 		PreviousElementUUID:      TestInstructionUUID_CA_SettlementAgreement_DeleteSelectedSwift,

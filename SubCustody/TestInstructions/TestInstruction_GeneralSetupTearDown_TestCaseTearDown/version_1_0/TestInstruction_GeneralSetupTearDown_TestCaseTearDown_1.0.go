@@ -4,6 +4,7 @@ import (
 	"FenixTestInstructionsDataAdmin/Domains"
 	"FenixTestInstructionsDataAdmin/LocalExecutionMethods"
 	"FenixTestInstructionsDataAdmin/LocalExecutionMethods/FangEngineClassesAndMethods"
+	"FenixTestInstructionsDataAdmin/SubCustody/DomainData"
 	"FenixTestInstructionsDataAdmin/SubCustody/TestInstructions"
 	fixedValuesOverVersions "FenixTestInstructionsDataAdmin/SubCustody/TestInstructions/TestInstruction_GeneralSetupTearDown_TestCaseTearDown"
 	"FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
@@ -82,8 +83,8 @@ func Initate_TestInstruction_SC_TestCaseTearDown() *TestInstructionAndTestInstuc
 
 	// TestInstruction - TestCaseTearDown
 	TestInstruction_SC_TestCaseTearDown.TestInstruction = &TypeAndStructs.TestInstructionStruct{
-		DomainUUID:                   Domains.DomainUUID_SC,
-		DomainName:                   Domains.DomainName_SC,
+		DomainUUID:                   DomainData.DomainUUID_SC,
+		DomainName:                   DomainData.DomainName_SC,
 		TestInstructionUUID:          TestInstructionUUID_SC_TestCaseTearDown,
 		TestInstructionName:          TestInstructionName_SC_TestCaseTearDown,
 		TestInstructionTypeUUID:      TestInstructionTypeUUID_SC_TestCaseTearDown,
@@ -99,8 +100,8 @@ func Initate_TestInstruction_SC_TestCaseTearDown() *TestInstructionAndTestInstuc
 
 	// BasicTestInstructionInformation - TestCaseTearDown
 	TestInstruction_SC_TestCaseTearDown.BasicTestInstructionInformation = &TypeAndStructs.BasicTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_SC,
-		DomainName:                   Domains.DomainName_SC,
+		DomainUUID:                   DomainData.DomainUUID_SC,
+		DomainName:                   DomainData.DomainName_SC,
 		TestInstructionUUID:          TestInstructionUUID_SC_TestCaseTearDown,
 		TestInstructionName:          TestInstructionName_SC_TestCaseTearDown,
 		TestInstructionTypeUUID:      TestInstructionTypeUUID_SC_TestCaseTearDown,
@@ -121,8 +122,8 @@ func Initate_TestInstruction_SC_TestCaseTearDown() *TestInstructionAndTestInstuc
 	// ImmatureTestInstructionInformation  - DropZone: TestCaseTearDown_ExpectsToSucceed, Attr: ExpectedToBePassed
 	var TestInstruction_SC_TestCaseTearDown_ExpectedToBePassed *TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstruction_SC_TestCaseTearDown_ExpectedToBePassed = &TypeAndStructs.ImmatureTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_SC,
-		DomainName:                   Domains.DomainName_SC,
+		DomainUUID:                   DomainData.DomainUUID_SC,
+		DomainName:                   DomainData.DomainName_SC,
 		TestInstructionUUID:          TestInstructionUUID_SC_TestCaseTearDown,
 		TestInstructionName:          TestInstructionName_SC_TestCaseTearDown,
 		DropZoneUUID:                 TestInstructionDropZoneUUID_SC_TestCaseTearDown_ExpectsToSucceed,
@@ -145,8 +146,8 @@ func Initate_TestInstruction_SC_TestCaseTearDown() *TestInstructionAndTestInstuc
 	// TestInstruction Attribute - 'ExpectedToBePassed'
 	var TestInstructionAttribute_SC_TestCaseTearDown_ExpectedToBePassed *TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_SC_TestCaseTearDown_ExpectedToBePassed = &TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_SC,
-		DomainName:                                    Domains.DomainName_SC,
+		DomainUUID:                                    DomainData.DomainUUID_SC,
+		DomainName:                                    DomainData.DomainName_SC,
 		TestInstructionUUID:                           TestInstructionUUID_SC_TestCaseTearDown,
 		TestInstructionName:                           TestInstructionName_SC_TestCaseTearDown,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_SC_TestCaseTearDown_ExpectedToBePassed,
@@ -183,8 +184,8 @@ func Initate_TestInstruction_SC_TestCaseTearDown() *TestInstructionAndTestInstuc
 	// ImmatureElementModel - TestCaseTearDown
 	var TestInstructionImmatureElementModel_SC_TestCaseTearDown *TypeAndStructs.ImmatureElementModelMessageStruct
 	TestInstructionImmatureElementModel_SC_TestCaseTearDown = &TypeAndStructs.ImmatureElementModelMessageStruct{
-		DomainUUID:               Domains.DomainUUID_SC,
-		DomainName:               Domains.DomainName_SC,
+		DomainUUID:               DomainData.DomainUUID_SC,
+		DomainName:               DomainData.DomainName_SC,
 		ImmatureElementUUID:      TestInstructionUUID_SC_TestCaseTearDown,
 		ImmatureElementName:      TypeAndStructs.OriginalElementNameType(TestInstructionName_SC_TestCaseTearDown),
 		PreviousElementUUID:      TestInstructionUUID_SC_TestCaseTearDown,

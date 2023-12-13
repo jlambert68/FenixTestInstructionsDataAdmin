@@ -3,6 +3,7 @@ package TestInstructions
 import (
 	"FenixTestInstructionsDataAdmin/CustodyArrangement/FangEngineClassesAndMethods"
 	"FenixTestInstructionsDataAdmin/Domains"
+	"FenixTestInstructionsDataAdmin/SubCustody/DomainData"
 	"FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
 	"FenixTestInstructionsDataAdmin/TypeAndStructs"
 	"FenixTestInstructionsDataAdmin/shared_code"
@@ -129,8 +130,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() TestInstruction_CA_Te
 
 	// TestInstruction - SettlementAgreement_Edit
 	TestInstruction_CA_SettlementAgreement_Edit.TestInstruction = TypeAndStructs.TestInstructionStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_SettlementAgreement_Edit,
 		TestInstructionName:          TestInstructionName_CA_SettlementAgreement_Edit,
 		TestInstructionTypeUUID:      TestInstructionTypeUUID_CA_SettlementAgreement_Edit,
@@ -146,8 +147,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() TestInstruction_CA_Te
 
 	// BasicTestInstructionInformation - SettlementAgreement_Edit
 	TestInstruction_CA_SettlementAgreement_Edit.BasicTestInstructionInformation = TypeAndStructs.BasicTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_SettlementAgreement_Edit,
 		TestInstructionName:          TestInstructionName_CA_SettlementAgreement_Edit,
 		TestInstructionTypeUUID:      TestInstructionTypeUUID_CA_SettlementAgreement_Edit,
@@ -168,8 +169,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() TestInstruction_CA_Te
 	// ImmatureTestInstructionInformation  - DropZone: SettlementAgreement_Edit_ExpectsToSucceed, Attr: ExpectedToBePassed
 	var TestInstruction_CA_SettlementAgreement_Edit_ExpectedToBePassed TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstruction_CA_SettlementAgreement_Edit_ExpectedToBePassed = TypeAndStructs.ImmatureTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_SettlementAgreement_Edit,
 		TestInstructionName:          TestInstructionName_CA_SettlementAgreement_Edit,
 		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_SettlementAgreement_Edit_ExpectsToSucceed,
@@ -192,8 +193,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() TestInstruction_CA_Te
 	// TestInstruction Attribute - 'ExpectedToBePassed'
 	var TestInstructionAttribute_CA_SettlementAgreement_Edit_ExpectedToBePassed TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_SettlementAgreement_Edit_ExpectedToBePassed = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_Edit,
 		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_Edit,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_ExpectedToBePassed,
@@ -230,8 +231,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() TestInstruction_CA_Te
 	// TestInstruction Attribute - 'TestDataDuplicateCheck'
 	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataDuplicateCheck TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataDuplicateCheck = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_Edit,
 		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_Edit,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataDuplicateCheck,
@@ -268,8 +269,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() TestInstruction_CA_Te
 	// TestInstruction Attribute - 'TestDataContractualRule'
 	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataContractualRule TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataContractualRule = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_Edit,
 		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_Edit,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataContractualRule,
@@ -306,8 +307,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() TestInstruction_CA_Te
 	// TestInstruction Attribute - 'TestDataMatchAffirmEligible'
 	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataMatchAffirmEligible TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataMatchAffirmEligible = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_Edit,
 		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_Edit,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataMatchAffirmEligible,
@@ -344,8 +345,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() TestInstruction_CA_Te
 	// TestInstruction Attribute - 'TestDataDirectAffirmInd'
 	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataDirectAffirmInd TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataDirectAffirmInd = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_Edit,
 		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_Edit,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataDirectAffirmInd,
@@ -382,8 +383,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() TestInstruction_CA_Te
 	// TestInstruction Attribute - 'TestDataAffirmDublicateCheck'
 	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_Edit,
 		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_Edit,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataAffirmDublicateCheck,
@@ -420,8 +421,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() TestInstruction_CA_Te
 	// TestInstruction Attribute - 'TestDataAffirmCancelledInd'
 	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataAffirmCancelledInd TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataAffirmCancelledInd = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_Edit,
 		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_Edit,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataAffirmCancelledInd,
@@ -458,8 +459,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() TestInstruction_CA_Te
 	// TestInstruction Attribute - 'TestDataNearMatch'
 	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataNearMatch TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataNearMatch = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_Edit,
 		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_Edit,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataNearMatch,
@@ -496,8 +497,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() TestInstruction_CA_Te
 	// TestInstruction Attribute - 'TestDataReturnDeliveryService'
 	var TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataReturnDeliveryService TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_SettlementAgreement_Edit_TestDataReturnDeliveryService = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_Edit,
 		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_Edit,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_Edit_TestDataReturnDeliveryService,
@@ -534,8 +535,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_Edit() TestInstruction_CA_Te
 	// ImmatureElementModel - 'SettlementAgreement' - MethodName: 'Edit'
 	var TestInstructionImmatureElementModel_CA_SettlementAgreement_Edit TypeAndStructs.ImmatureElementModelMessageStruct
 	TestInstructionImmatureElementModel_CA_SettlementAgreement_Edit = TypeAndStructs.ImmatureElementModelMessageStruct{
-		DomainUUID:               Domains.DomainUUID_CA,
-		DomainName:               Domains.DomainName_CA,
+		DomainUUID:               DomainData.DomainUUID_CA,
+		DomainName:               DomainData.DomainName_CA,
 		ImmatureElementUUID:      TestInstructionUUID_CA_SettlementAgreement_Edit,
 		ImmatureElementName:      TypeAndStructs.OriginalElementNameType(TestInstructionName_CA_SettlementAgreement_Edit),
 		PreviousElementUUID:      TestInstructionUUID_CA_SettlementAgreement_Edit,

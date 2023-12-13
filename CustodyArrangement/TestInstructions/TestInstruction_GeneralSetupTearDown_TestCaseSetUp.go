@@ -3,6 +3,7 @@ package TestInstructions
 import (
 	"FenixTestInstructionsDataAdmin/CustodyArrangement/FangEngineClassesAndMethods"
 	"FenixTestInstructionsDataAdmin/Domains"
+	"FenixTestInstructionsDataAdmin/SubCustody/DomainData"
 	"FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
 	"FenixTestInstructionsDataAdmin/TypeAndStructs"
 	"FenixTestInstructionsDataAdmin/shared_code"
@@ -75,8 +76,8 @@ func Initate_TestInstruction_CA_TestCaseSetUp() TestInstruction_CA_TestCaseSetUp
 
 	// TestInstruction - TestCaseSetUp
 	TestInstruction_CA_TestCaseSetUp.TestInstruction = TypeAndStructs.TestInstructionStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_TestCaseSetUp,
 		TestInstructionName:          TestInstructionName_CA_TestCaseSetUp,
 		TestInstructionTypeUUID:      TestInstructionTypeUUID_CA_TestCaseSetUp,
@@ -92,8 +93,8 @@ func Initate_TestInstruction_CA_TestCaseSetUp() TestInstruction_CA_TestCaseSetUp
 
 	// BasicTestInstructionInformation - TestCaseSetUp
 	TestInstruction_CA_TestCaseSetUp.BasicTestInstructionInformation = TypeAndStructs.BasicTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_TestCaseSetUp,
 		TestInstructionName:          TestInstructionName_CA_TestCaseSetUp,
 		TestInstructionTypeUUID:      TestInstructionTypeUUID_CA_TestCaseSetUp,
@@ -114,8 +115,8 @@ func Initate_TestInstruction_CA_TestCaseSetUp() TestInstruction_CA_TestCaseSetUp
 	// ImmatureTestInstructionInformation  - DropZone: TestCaseSetUp_ExpectsToSucceed, Attr: ExpectedToBePassed
 	var TestInstruction_CA_TestCaseSetUp_ExpectedToBePassed TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstruction_CA_TestCaseSetUp_ExpectedToBePassed = TypeAndStructs.ImmatureTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_TestCaseSetUp,
 		TestInstructionName:          TestInstructionName_CA_TestCaseSetUp,
 		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_TestCaseSetUp_ExpectsToSucceed,
@@ -138,8 +139,8 @@ func Initate_TestInstruction_CA_TestCaseSetUp() TestInstruction_CA_TestCaseSetUp
 	// TestInstruction Attribute - 'ExpectedToBePassed'
 	var TestInstructionAttribute_CA_TestCaseSetUp_ExpectedToBePassed TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_TestCaseSetUp_ExpectedToBePassed = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_TestCaseSetUp,
 		TestInstructionName:                           TestInstructionName_CA_TestCaseSetUp,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_TestCaseSetUp_ExpectedToBePassed,
@@ -176,8 +177,8 @@ func Initate_TestInstruction_CA_TestCaseSetUp() TestInstruction_CA_TestCaseSetUp
 	// ImmatureElementModel - TestCaseSetUp
 	var TestInstructionImmatureElementModel_CA_TestCaseSetUp TypeAndStructs.ImmatureElementModelMessageStruct
 	TestInstructionImmatureElementModel_CA_TestCaseSetUp = TypeAndStructs.ImmatureElementModelMessageStruct{
-		DomainUUID:               Domains.DomainUUID_CA,
-		DomainName:               Domains.DomainName_CA,
+		DomainUUID:               DomainData.DomainUUID_CA,
+		DomainName:               DomainData.DomainName_CA,
 		ImmatureElementUUID:      TestInstructionUUID_CA_TestCaseSetUp,
 		ImmatureElementName:      TypeAndStructs.OriginalElementNameType(TestInstructionName_CA_TestCaseSetUp),
 		PreviousElementUUID:      TestInstructionUUID_CA_TestCaseSetUp,

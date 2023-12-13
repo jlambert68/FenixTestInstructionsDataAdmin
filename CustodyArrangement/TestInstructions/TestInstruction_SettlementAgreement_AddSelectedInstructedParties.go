@@ -3,6 +3,7 @@ package TestInstructions
 import (
 	"FenixTestInstructionsDataAdmin/CustodyArrangement/FangEngineClassesAndMethods"
 	"FenixTestInstructionsDataAdmin/Domains"
+	"FenixTestInstructionsDataAdmin/SubCustody/DomainData"
 	"FenixTestInstructionsDataAdmin/TestCaseModelElementTypes"
 	"FenixTestInstructionsDataAdmin/TypeAndStructs"
 	"FenixTestInstructionsDataAdmin/shared_code"
@@ -80,8 +81,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties
 
 	// TestInstruction - SettlementAgreement_AddSelectedInstructedParties
 	TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties.TestInstruction = TypeAndStructs.TestInstructionStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_SettlementAgreement_AddSelectedInstructedParties,
 		TestInstructionName:          TestInstructionName_CA_SettlementAgreement_AddSelectedInstructedParties,
 		TestInstructionTypeUUID:      TestInstructionTypeUUID_CA_SettlementAgreement_AddSelectedInstructedParties,
@@ -97,8 +98,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties
 
 	// BasicTestInstructionInformation - SettlementAgreement_AddSelectedInstructedParties
 	TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties.BasicTestInstructionInformation = TypeAndStructs.BasicTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_SettlementAgreement_AddSelectedInstructedParties,
 		TestInstructionName:          TestInstructionName_CA_SettlementAgreement_AddSelectedInstructedParties,
 		TestInstructionTypeUUID:      TestInstructionTypeUUID_CA_SettlementAgreement_AddSelectedInstructedParties,
@@ -119,8 +120,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties
 	// ImmatureTestInstructionInformation  - DropZone: SettlementAgreement_AddSelectedInstructedParties_ExpectsToSucceed, Attr: ExpectedToBePassed
 	var TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed TypeAndStructs.ImmatureTestInstructionInformationStruct
 	TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed = TypeAndStructs.ImmatureTestInstructionInformationStruct{
-		DomainUUID:                   Domains.DomainUUID_CA,
-		DomainName:                   Domains.DomainName_CA,
+		DomainUUID:                   DomainData.DomainUUID_CA,
+		DomainName:                   DomainData.DomainName_CA,
 		TestInstructionUUID:          TestInstructionUUID_CA_SettlementAgreement_AddSelectedInstructedParties,
 		TestInstructionName:          TestInstructionName_CA_SettlementAgreement_AddSelectedInstructedParties,
 		DropZoneUUID:                 TestInstructionDropZoneUUID_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectsToSucceed,
@@ -143,8 +144,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties
 	// TestInstruction Attribute - 'ExpectedToBePassed'
 	var TestInstructionAttribute_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_AddSelectedInstructedParties,
 		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_AddSelectedInstructedParties,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_AddSelectedInstructedParties_ExpectedToBePassed,
@@ -181,8 +182,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties
 	// TestInstruction Attribute - 'bicAddress'
 	var TestInstructionAttribute_CA_SettlementAgreement_AddSelectedInstructedParties_bicAddress TypeAndStructs.TestInstructionAttributeStruct
 	TestInstructionAttribute_CA_SettlementAgreement_AddSelectedInstructedParties_bicAddress = TypeAndStructs.TestInstructionAttributeStruct{
-		DomainUUID:                                    Domains.DomainUUID_CA,
-		DomainName:                                    Domains.DomainName_CA,
+		DomainUUID:                                    DomainData.DomainUUID_CA,
+		DomainName:                                    DomainData.DomainName_CA,
 		TestInstructionUUID:                           TestInstructionUUID_CA_SettlementAgreement_AddSelectedInstructedParties,
 		TestInstructionName:                           TestInstructionName_CA_SettlementAgreement_AddSelectedInstructedParties,
 		TestInstructionAttributeUUID:                  TestInstructionAttributeUUID_CA_SettlementAgreement_AddSelectedInstructedParties_bicAddress,
@@ -219,8 +220,8 @@ func Initate_TestInstruction_CA_SettlementAgreement_AddSelectedInstructedParties
 	// ImmatureElementModel - 'SettlementAgreement' - MethodName: 'AddSelectedInstructedParties'
 	var TestInstructionImmatureElementModel_CA_SettlementAgreement_AddSelectedInstructedParties TypeAndStructs.ImmatureElementModelMessageStruct
 	TestInstructionImmatureElementModel_CA_SettlementAgreement_AddSelectedInstructedParties = TypeAndStructs.ImmatureElementModelMessageStruct{
-		DomainUUID:               Domains.DomainUUID_CA,
-		DomainName:               Domains.DomainName_CA,
+		DomainUUID:               DomainData.DomainUUID_CA,
+		DomainName:               DomainData.DomainName_CA,
 		ImmatureElementUUID:      TestInstructionUUID_CA_SettlementAgreement_AddSelectedInstructedParties,
 		ImmatureElementName:      TypeAndStructs.OriginalElementNameType(TestInstructionName_CA_SettlementAgreement_AddSelectedInstructedParties),
 		PreviousElementUUID:      TestInstructionUUID_CA_SettlementAgreement_AddSelectedInstructedParties,

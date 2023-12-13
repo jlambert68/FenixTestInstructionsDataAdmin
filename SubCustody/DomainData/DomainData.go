@@ -1,4 +1,4 @@
-package Domains
+package DomainData
 
 import "FenixTestInstructionsDataAdmin/TypeAndStructs"
 
